@@ -10,7 +10,7 @@ obj/%.o: src/%.c
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 app: $(OBJS) $(MAIN_OBJ)
-	@$(CC) $(CFLAGS) $^ $(LDFLAGS) -o app
+	@$(CC) $(CFLAGS) $^ $(LDFLAGS) -o "Bangkok Metro"
 
 main.o: main.c
 	@$(CC) $(CFLAGS) -c $< -o $@
@@ -18,7 +18,7 @@ main.o: main.c
 .PHONY: run clean
 
 run: app
-	@./app
+	@./Bangkok Metro
 
 clean:
-	@rm -f $(OBJS) $(MAIN_OBJ) app
+	@rm -f $(OBJS) $(MAIN_OBJ) "Bangkok Metro"

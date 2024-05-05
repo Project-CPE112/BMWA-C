@@ -331,7 +331,6 @@ char** FindRoute(Station graph[], char* startStation, char* endStation, int rout
 
 int main() {
     readStationsFromFile("metro_graph.csv");
-    int option = 0;
     firstPanel();
     return 0;
 }
@@ -396,7 +395,7 @@ void firstPanel(){
         }
         case 3: {
         	clearScreen();
-            printf(ANSI_COLOR_LIGHT_CYAN "Exiting program...\n" ANSI_COLOR_LIGHT_YELLOW);
+            printf(ANSI_COLOR_GOLD "Exiting program...\n" ANSI_RESET_ALL);
             exit(EXIT_SUCCESS);
             break;
         }
