@@ -117,3 +117,100 @@ void enterAnyKey(){
        	break;
 	}
 }
+
+void parse_csv_line_graph_station(char *line, Station *station) {
+    const char *delim = ",";
+    char *token = strtok(line, delim);
+
+    int col = 0;
+    int cCount = 0, iCount = 0;
+    while (token != NULL) {
+        switch (col) {
+			case 0:
+				station->staID = atoi(token);
+				break;	
+            case 1:
+                strcpy(station->name, token);
+                break;
+            case 2:
+                strcpy(station->shortCode, token);
+                break;
+            case 3:
+                strcpy(station->fullCode, token);
+                break;
+            case 4:
+                strcpy(station->connectionWith, token);
+                break;
+            case 5:
+                strcpy(station->connectionWith2, token);
+                break;
+            case 6:
+                station->conCount = atoi(token);
+                cCount = atoi(token);
+                break;
+            case 7:
+            case 11:
+            case 15:
+                station->connections[(col - 7)/4].staID = atoi(token);
+                break;
+            case 8:
+            case 12:
+            case 16:
+                strcpy(station->connections[(col - 8)/4].sta, token);
+                break;
+            case 9:
+            case 13:
+            case 17:
+                station->connections[(col - 9)/4].time = atoi(token);
+                break;
+            case 10:
+            case 14:
+            case 18:
+                strcpy(station->connections[(col - 10)/4].platform, token);
+                break;
+            case 19:
+                station->intCount = atoi(token);
+                iCount = atoi(token);
+                break;
+            case 20:
+            case 23:
+            case 26:
+            	station->interchanges[(col - 20)/3].staID = atoi(token);
+                break;
+            case 21:
+            case 24:
+            case 27:
+                strcpy(station->interchanges[(col-21)/3].sta, token);
+                break;
+            case 22:
+            case 25:
+            case 28:
+                station->interchanges[(col-22)/3].time = atoi(token);
+                break;
+            default:
+                break;
+        }
+        col++;
+        token = strtok(NULL, delim);
+    }
+    int unionTotal = 0;
+    for(int i = 0;i < cCount;i++){
+    	strcpy(station->connectAll[unionTotal].sta, station->connections[i].sta);
+    	strcpy(station->connectAll[unionTotal].platform, station->connections[i].platform);
+    	station->connectAll[unionTotal].time = station->connections[i].time;
+    	station->connectAll[unionTotal].staID = station->connections[i].staID;
+		station->connectAll[unionTotal].type = 1;
+    	unionTotal++;
+	}
+	for(int i = 0; i < iCount;i++){
+//		printf("Adding Interchange #%d of: %s %s\n", i, station->name, station->interchanges[i].sta);
+		strcpy(station->connectAll[unionTotal].sta, station->interchanges[i].sta);
+		station->connectAll[unionTotal].time = station->interchanges[i].time;
+		char *platform = "999UKN";
+		strcpy(station->connectAll[unionTotal].platform, platform);
+		station->connectAll[unionTotal].staID = station->interchanges[i].staID;
+		station->connectAll[unionTotal].type = 2;
+		unionTotal++;
+	}
+	station->connectAllCount = unionTotal;
+}
