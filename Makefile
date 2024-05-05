@@ -1,24 +1,24 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c11
+CFLAGS = -Iinclude -mconsole
+LDFLAGS = -luser32 -lgdi32 # Additional libraries might be needed for console apps
 
-SRCDIR = src
-INCDIR = include
-BUILDDIR = build
-TARGETDIR = bin
+SRCS = $(wildcard src/*.c)
+OBJS = $(patsubst src/%.c,obj/%.o,$(SRCS))
+MAIN_OBJ = main.o
 
-SOURCES := $(wildcard $(SRCDIR)/*.c)
-OBJECTS := $(patsubst $(SRCDIR)/%.c, $(BUILDDIR)/%.o, $(SOURCES))
-TARGET = $(TARGETDIR)/output
+obj/%.o: src/%.c
+	@$(CC) $(CFLAGS) -c $< -o $@
 
-$(TARGET): $(OBJECTS)
-	@mkdir -p $(TARGETDIR)
-	$(CC) $(CFLAGS) $^ -o $@
+app: $(OBJS) $(MAIN_OBJ)
+	@$(CC) $(CFLAGS) $^ $(LDFLAGS) -o app
 
-$(BUILDDIR)/%.o: $(SRCDIR)/%.c
-	@mkdir -p $(BUILDDIR)
-	$(CC) $(CFLAGS) -I$(INCDIR) -c $< -o $@
+main.o: main.c
+	@$(CC) $(CFLAGS) -c $< -o $@
+
+.PHONY: run clean
+
+run: app
+	@./app
 
 clean:
-	@rm -rf $(BUILDDIR) $(TARGET)
-
-.PHONY: clean
+	@rm -f $(OBJS) $(MAIN_OBJ) app

@@ -8,7 +8,6 @@
 #include <ctype.h>
 
 #include "../include/rotfaifah.h"
-#include "../include/structure.h"
 #include "../include/textDecoration.h"
 
 void clearScreen(void){
@@ -107,4 +106,14 @@ int count_string(char *main_string, char *sub_string) {
         ptr++; // Move pointer to search for the next occurrence
     }
     return count;
+}
+
+void enterAnyKey(){
+	while (getchar() != '\n');
+    printMSGLightWhite("Enter any key to continue...");
+    char ch;
+    while(1){
+        ch = _getch();
+       	break;
+	}
 }
