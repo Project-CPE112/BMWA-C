@@ -1,0 +1,625 @@
+{
+  "MRTBL": {
+    "fq": {
+      "everyday": {
+        "period":[0,1,2,3,4,5,6,7],
+        "title": {
+          "th": "ทุกวัน",
+          "en": "Everyday"
+        },
+        "fq": {
+          "0600-0700": ["0700"],
+          "0700-0900": ["0400"],
+          "0900-1630": ["0700"],
+          "1630-1930": ["0400"],
+          "1930-2400": ["0700"]
+        },
+        "remark": []
+      }
+    },
+    "fq_stations": {
+      "BL01": ["everyday"],
+      "BL02": ["everyday"],
+      "BL03": ["everyday"],
+      "BL04": ["everyday"],
+      "BL05": ["everyday"],
+      "BL06": ["everyday"],
+      "BL07": ["everyday"],
+      "BL08": ["everyday"],
+      "BL09": ["everyday"],
+      "BL10": ["everyday"],
+      "BL11": ["everyday"],
+      "BL12": ["everyday"],
+      "BL13": ["everyday"],
+      "BL14": ["everyday"],
+      "BL15": ["everyday"],
+      "BL16": ["everyday"],
+      "BL17": ["everyday"],
+      "BL18": ["everyday"],
+      "BL19": ["everyday"],
+      "BL20": ["everyday"],
+      "BL21": ["everyday"],
+      "BL22": ["everyday"],
+      "BL23": ["everyday"],
+      "BL24": ["everyday"],
+      "BL25": ["everyday"],
+      "BL26": ["everyday"],
+      "BL27": ["everyday"],
+      "BL28": ["everyday"],
+      "BL29": ["everyday"],
+      "BL30": ["everyday"],
+      "BL31": ["everyday"],
+      "BL32": ["everyday"],
+      "BL33": ["everyday"],
+      "BL34": ["everyday"],
+      "BL35": ["everyday"],
+      "BL36": ["everyday"],
+      "BL37": ["everyday"],
+      "BL38": ["everyday"],
+      "BL39": ["everyday"],
+      "BL40": ["everyday"],
+      "BL41": ["everyday"],
+      "BL42": ["everyday"]
+    }
+  },
+  "MRTPL": {
+    "fq": {
+      "weekday": {
+        "period":[1,2,3,4,5],
+        "title": {
+          "th": "วันจันทร์ - วันศุกร์",
+          "en": "Monday - Friday"
+        },
+        "fq": {
+          "0530-0630": ["0900"],
+          "0630-0830": ["0600"],
+          "0830-1700": ["0900"],
+          "1700-1930": ["0600"],
+          "1930-2400": ["0900"]
+        },
+        "remark": []
+      },
+      "h1": {
+        "period":[0,6,7],
+        "title": {
+          "th": "วันเสาร์ - วันอาทิตย์ และวันหยุดนักขัตฤกษ์",
+          "en": "Saturday, Sunday and Public Holidays"
+        },
+        "fq": {
+          "0600-2400": ["0900"]
+        },
+        "remark": []
+      }
+    },
+    "fq_stations": {
+      "PP01": ["weekday", "h1"],
+      "PP02": ["weekday", "h1"],
+      "PP03": ["weekday", "h1"],
+      "PP04": ["weekday", "h1"],
+      "PP05": ["weekday", "h1"],
+      "PP06": ["weekday", "h1"],
+      "PP07": ["weekday", "h1"],
+      "PP08": ["weekday", "h1"],
+      "PP09": ["weekday", "h1"],
+      "PP10": ["weekday", "h1"],
+      "PP11": ["weekday", "h1"],
+      "PP12": ["weekday", "h1"],
+      "PP13": ["weekday", "h1"],
+      "PP14": ["weekday", "h1"],
+      "PP15": ["weekday", "h1"],
+      "PP16": ["weekday", "h1"],
+      "PP17": ["weekday", "h1"],
+      "PP18": ["weekday", "h1"],
+      "PP19": ["weekday", "h1"],
+      "PP20": ["weekday", "h1"],
+      "PP21": ["weekday", "h1"],
+      "PP22": ["weekday", "h1"],
+      "PP23": ["weekday", "h1"],
+      "PP24": ["weekday", "h1"],
+      "PP25": ["weekday", "h1"],
+      "PP26": ["weekday", "h1"],
+      "PP27": ["weekday", "h1"],
+      "PP28": ["weekday", "h1"],
+      "PP29": ["weekday", "h1"],
+      "PP30": ["weekday", "h1"],
+      "PP31": ["weekday", "h1"],
+      "PP32": ["weekday", "h1"],
+      "PP33": ["weekday", "h1"]
+    }
+  },
+  "BTSGL": {
+    "fq": {
+      "weekday": {
+        "period":[1,2,3,4,5],
+        "title": {
+          "th": "วันจันทร์ - วันศุกร์",
+          "en": "Monday - Friday"
+        },
+        "fq": {
+          "0600-1100": ["2000"],
+          "1100-2200": ["1500"],
+          "2200-2400": ["2000"]
+        },
+        "remark": []
+      },
+      "h1": {
+        "period":[0,6,7],
+        "title": {
+          "th": "วันเสาร์ - วันอาทิตย์ และวันหยุดนักขัตฤกษ์",
+          "en": "Saturday, Sunday and Public Holidays"
+        },
+        "fq": {
+          "0600-1100": ["2000"],
+          "1100-2200": ["1500"],
+          "2200-2400": ["2000"]
+        },
+        "remark": []
+      }
+    },
+    "fq_stations": {
+      "G1": ["weekday", "h1"],
+      "G2": ["weekday", "h1"],
+      "G3": ["weekday", "h1"],
+      "G4": ["weekday", "h1"]
+    }
+  },
+  "BTSSIL": {
+    "fq": {
+      "weekday": {
+        "period":[1,2,3,4,5],
+        "title": {
+          "th": "วันจันทร์ - วันศุกร์",
+          "en": "Monday - Friday"
+        },
+        "fq": {
+          "0600-0700": ["0600"],
+          "0700-0900": ["0345"],
+          "0900-0930": ["0600"],
+          "0930-1600": ["0600"],
+          "1600-1630": ["0600"],
+          "1630-1700": ["0600"],
+          "1700-2000": ["0345"],
+          "2000-2100": ["0600"],
+          "2100-2200": ["0600"],
+          "2200-2400": ["0800"]
+        },
+        "remark": []
+      },
+      "h1": {
+        "period":[0,6,7],
+        "title": {
+          "th": "วันเสาร์ - วันอาทิตย์ และวันหยุดนักขัตฤกษ์",
+          "en": "Saturday, Sunday and Public Holidays"
+        },
+        "fq": {
+          "0600-0800": ["0700"],
+          "0800-0900": ["0700"],
+          "0900-1100": ["0540"],
+          "1100-2100": ["0540"],
+          "2100-2200": ["0700"],
+          "2200-2400": ["0800"]
+        },
+        "remark": []
+      }
+    },
+    "fq_stations": {
+      "W2": ["weekday", "h1"],
+      "W1": ["weekday", "h1"],
+      "CEN": ["weekday", "h1"],
+      "S1": ["weekday", "h1"],
+      "S2": ["weekday", "h1"],
+      "S3": ["weekday", "h1"],
+      "S4": ["weekday", "h1"],
+      "S5": ["weekday", "h1"],
+      "S6": ["weekday", "h1"],
+      "S7": ["weekday", "h1"],
+      "S8": ["weekday", "h1"],
+      "S9": ["weekday", "h1"],
+      "S10": ["weekday", "h1"],
+      "S11": ["weekday", "h1"],
+      "S12": ["weekday", "h1"],
+      "S13": ["weekday", "h1"],
+      "S14": ["weekday", "h1"],
+      "S15": ["weekday", "h1"],
+      "S16": ["weekday", "h1"],
+      "S17": ["weekday", "h1"],
+      "S18": ["weekday", "h1"]
+    }
+  },
+  "BTSSUK": {
+    "fq": {
+      "weekday": {
+        "period":[1,2,3,4,5],
+        "title": {
+          "th": "วันจันทร์ - วันศุกร์",
+          "en": "Monday - Friday"
+        },
+        "fq": {
+          "0600-0700": ["0500"],
+          "0700-0900": ["0240", "0520"],
+          "0900-0930": ["0335"],
+          "0930-1600": ["0630"],
+          "1600-1630": ["0425"],
+          "1630-1700": ["0240", "0520"],
+          "1700-2000": ["0240", "0520"],
+          "2000-2100": ["0425"],
+          "2100-2200": ["0600"],
+          "2200-2400": ["0800"]
+        },
+        "remark": [
+          { "th": "หมอชิต - สำโรง", "en": "Mo Chit - Samrong" },
+          {
+            "th": "สำโรง - เคหะฯ และ หมอชิต - คูคต",
+            "en": "Samrong - Kheha and Mo Chit - Khu Khot"
+          }
+        ]
+      },
+      "h1": {
+        "period":[0,6,7],
+        "title": {
+          "th": "วันเสาร์ - วันอาทิตย์ และวันหยุดนักขัตฤกษ์",
+          "en": "Saturday, Sunday and Public Holidays"
+        },
+        "fq": {
+          "0600-0800": ["0700"],
+          "0800-0900": ["0555"],
+          "0900-1100": ["0555"],
+          "1100-2100": ["0430", "0600"],
+          "2100-2200": ["0700"],
+          "2200-2400": ["0800"]
+        },
+        "remark": [
+          { "th": "หมอชิต - สำโรง", "en": "Mo Chit - Samrong" },
+          {
+            "th": "สำโรง - เคหะ และ หมอชิต - คูคต",
+            "en": "Samrong - Kheha and Mo Chit - Khu Khot"
+          }
+        ]
+      }
+    },
+    "fq_stations": {
+      "N28": ["weekday", "h1"],
+      "N27": ["weekday", "h1"],
+      "N26": ["weekday", "h1"],
+      "N25": ["weekday", "h1"],
+      "N24": ["weekday", "h1"],
+      "N23": ["weekday", "h1"],
+      "N22": ["weekday", "h1"],
+      "N21": ["weekday", "h1"],
+      "N20": ["weekday", "h1"],
+      "N19": ["weekday", "h1"],
+      "N18": ["weekday", "h1"],
+      "N17": ["weekday", "h1"],
+      "N16": ["weekday", "h1"],
+      "N15": ["weekday", "h1"],
+      "N14": ["weekday", "h1"],
+      "N13": ["weekday", "h1"],
+      "N12": ["weekday", "h1"],
+      "N11": ["weekday", "h1"],
+      "N10": ["weekday", "h1"],
+      "N9": ["weekday", "h1"],
+      "N8": ["weekday", "h1"],
+      "N7": ["weekday", "h1"],
+      "N6": ["weekday", "h1"],
+      "N5": ["weekday", "h1"],
+      "N4": ["weekday", "h1"],
+      "N3": ["weekday", "h1"],
+      "N2": ["weekday", "h1"],
+      "N1": ["weekday", "h1"],
+      "CEN": ["weekday", "h1"],
+      "E1": ["weekday", "h1"],
+      "E2": ["weekday", "h1"],
+      "E3": ["weekday", "h1"],
+      "E4": ["weekday", "h1"],
+      "E5": ["weekday", "h1"],
+      "E6": ["weekday", "h1"],
+      "E7": ["weekday", "h1"],
+      "E8": ["weekday", "h1"],
+      "E9": ["weekday", "h1"],
+      "E10": ["weekday", "h1"],
+      "E11": ["weekday", "h1"],
+      "E12": ["weekday", "h1"],
+      "E13": ["weekday", "h1"],
+      "E14": ["weekday", "h1"],
+      "E15": ["weekday", "h1"],
+      "E16": ["weekday", "h1"],
+      "E17": ["weekday", "h1"],
+      "E18": ["weekday", "h1"],
+      "E19": ["weekday", "h1"],
+      "E20": ["weekday", "h1"],
+      "E21": ["weekday", "h1"],
+      "E22": ["weekday", "h1"],
+      "E23": ["weekday", "h1"],
+      "E24": ["weekday", "h1"],
+      "E25": ["weekday", "h1"],
+      "E26": ["weekday", "h1"],
+      "E27": ["weekday", "h1"],
+      "E28": ["weekday", "h1"]
+    }
+  },
+  "ARL": {
+    "fq": {
+      "weekday": {
+        "period":[1,2,3,4,5],
+        "title": { "th": "วันจันทร์ - วันศุกร์", "en": "Monday - Friday" },
+        "fq": {
+          "0530-2400": ["1000", "1500"]
+        },
+        "remark": []
+      },
+      "h1": {
+        "period":[0,6,7],
+        "title": {
+          "th": "วันเสาร์ - วันอาทิตย์ และวันหยุดนักขัตฤกษ์",
+          "en": "Saturday, Sunday and Public Holidays"
+        },
+        "fq": {
+          "0530-2400": ["1200", "1500"]
+        },
+        "remark": []
+      }
+    },
+    "fq_stations": {
+      "A1": ["weekday", "h1"],
+      "A2": ["weekday", "h1"],
+      "A3": ["weekday", "h1"],
+      "A4": ["weekday", "h1"],
+      "A5": ["weekday", "h1"],
+      "A6": ["weekday", "h1"],
+      "A7": ["weekday", "h1"],
+      "A8": ["weekday", "h1"],
+      "A9": ["weekday", "h1"],
+      "A10": ["weekday", "h1"]
+    }
+  },
+  "MRTYL": {
+    "fq": {
+      "weekday": {
+        "period":[1,2,3,4,5],
+        "title": { "th": "วันจันทร์ - วันศุกร์", "en": "Monday - Friday" },
+        "fq": {
+          "0600-0630": ["1000"],
+          "0630-0930": ["0500"],
+          "0930-1700": ["1000"],
+          "1700-1900": ["0500"],
+          "1900-2400": ["1000"]
+        },
+        "remark": []
+      },
+      "h1": {
+        "period":[0,6,7],
+        "title": {
+          "th": "วันเสาร์ - วันอาทิตย์ และวันหยุดนักขัตฤกษ์",
+          "en": "Saturday, Sunday and Public Holidays"
+        },
+        "fq": {
+          "0600-1500": ["1000"],
+          "1500-2000": ["1000"],
+          "2000-2400": ["1000"]
+        },
+        "remark": []
+      }
+    },
+    "fq_stations": {
+      "YLEX02": ["weekday", "h1"],
+      "YLEX01": ["weekday", "h1"],
+      "YL01": ["weekday", "h1"],
+      "YL02": ["weekday", "h1"],
+      "YL03": ["weekday", "h1"],
+      "YL04": ["weekday", "h1"],
+      "YL05": ["weekday", "h1"],
+      "YL06": ["weekday", "h1"],
+      "YL07": ["weekday", "h1"],
+      "YL08": ["weekday", "h1"],
+      "YL09": ["weekday", "h1"],
+      "YL10": ["weekday", "h1"],
+      "YL11": ["weekday", "h1"],
+      "YL12": ["weekday", "h1"],
+      "YL13": ["weekday", "h1"],
+      "YL14": ["weekday", "h1"],
+      "YL15": ["weekday", "h1"],
+      "YL16": ["weekday", "h1"],
+      "YL17": ["weekday", "h1"],
+      "YL18": ["weekday", "h1"],
+      "YL19": ["weekday", "h1"],
+      "YL20": ["weekday", "h1"],
+      "YL21": ["weekday", "h1"],
+      "YL22": ["weekday", "h1"],
+      "YL23": ["weekday", "h1"]
+    }
+  },
+  "SRTETDR": {
+    "fq": {
+      "everyday": {
+        "period":[0,1,2,3,4,5,6,7],
+        "title": { "th": "ทุกวัน", "en": "Everyday" },
+        "fq": {
+          "0530-0700": ["1500"],
+          "0700-0930": ["1000"],
+          "0930-1700": ["1500"],
+          "1700-1930": ["1000"],
+          "1930-2400": ["1500"]
+        },
+        "remark": []
+      }
+    },
+    "fq_stations": {
+      "RN01": ["everyday"],
+      "RN02": ["everyday"],
+      "RN03": ["everyday"],
+      "RN04": ["everyday"],
+      "RN05": ["everyday"],
+      "RN06": ["everyday"],
+      "RN07": ["everyday"],
+      "RN08": ["everyday"],
+      "RN09": ["everyday"],
+      "RN10": ["everyday"],
+      "RN11": ["everyday"],
+      "RN12": ["everyday"],
+      "RN13": ["everyday"],
+      "RN14": ["everyday"],
+      "RN15": ["everyday"],
+      "RN16": ["everyday"],
+      "RN17": ["everyday"],
+      "RN18": ["everyday"],
+      "RN19": ["everyday"],
+      "RN20": ["everyday"],
+      "RN21": ["everyday"],
+      "RN22": ["everyday"],
+      "RN23": ["everyday"],
+      "RS01": ["everyday"],
+      "RS02": ["everyday"],
+      "RS03": ["everyday"],
+      "RS04": ["everyday"],
+      "RS05": ["everyday"],
+      "RS06": ["everyday"],
+      "RS07": ["everyday"],
+      "RS08": ["everyday"],
+      "RS09": ["everyday"],
+      "RS10": ["everyday"],
+      "RS11": ["everyday"],
+      "RS12": ["everyday"],
+      "RS13": ["everyday"],
+      "RS14": ["everyday"],
+      "RS15": ["everyday"],
+      "RS16": ["everyday"],
+      "RS17": ["everyday"],
+      "RS18": ["everyday"],
+      "RS19": ["everyday"],
+      "RS20": ["everyday"],
+      "RS21": ["everyday"],
+      "RS22": ["everyday"],
+      "RS23": ["everyday"],
+      "RS24": ["everyday"],
+      "RS25": ["everyday"],
+      "RS26": ["everyday"],
+      "RS27": ["everyday"],
+      "RS28": ["everyday"],
+      "RS29": ["everyday"],
+      "RS30": ["everyday"],
+      "RS31": ["everyday"],
+      "RS32": ["everyday"],
+      "RS33": ["everyday"],
+      "RS34": ["everyday"],
+      "RS35": ["everyday"],
+      "RS36": ["everyday"],
+      "RS37": ["everyday"],
+      "RS38": ["everyday"],
+      "RS39": ["everyday"],
+      "RS40": ["everyday"]
+    }
+  },
+  "SRTETLR": {
+    "fq": {
+      "everyday": {
+        "period":[0,1,2,3,4,5,6,7],
+        "title": { "th": "ทุกวัน", "en": "Everyday" },
+        "fq": {
+          "0530-2400": ["2000"]
+        },
+        "remark": []
+      }
+    },
+    "fq_stations": {
+      "RW01": ["everyday"],
+      "RW02": ["everyday"],
+      "RW03": ["everyday"],
+      "RW04": ["everyday"],
+      "RW05": ["everyday"],
+      "RW06": ["everyday"],
+      "RW07": ["everyday"],
+      "RW08": ["everyday"],
+      "RW09": ["everyday"],
+      "RW10": ["everyday"],
+      "RW11": ["everyday"],
+      "RW12": ["everyday"],
+      "RW13": ["everyday"],
+      "RW14": ["everyday"],
+      "RW15": ["everyday"],
+      "RW16": ["everyday"],
+      "RE01": ["everyday"],
+      "RE02": ["everyday"],
+      "RE03": ["everyday"],
+      "RE04": ["everyday"],
+      "RE05": ["everyday"],
+      "RE06": ["everyday"],
+      "RE07": ["everyday"],
+      "RE08": ["everyday"],
+      "RE09": ["everyday"],
+      "RE10": ["everyday"],
+      "RE11": ["everyday"],
+      "RE12": ["everyday"],
+      "RE13": ["everyday"],
+      "RE14": ["everyday"],
+      "RE15": ["everyday"],
+      "RE16": ["everyday"],
+      "RES01": ["everyday"],
+      "RES02": ["everyday"],
+      "RES03": ["everyday"],
+      "RWS01": ["everyday"],
+      "RWS02": ["everyday"],
+      "RWS03": ["everyday"]
+    }
+  },
+  "MRTPK": {
+    "fq": {
+      "everyday": {
+        "period":[1,2,3,4,5],
+        "title": { "th": "วันจันทร์ - วันศุกร์", "en": "Monday - Friday" },
+        "fq": {
+          "0600-0630": ["1000"],
+          "0630-0830": ["0500"],
+          "0830-1630": ["1000"],
+          "1630-1930": ["0500"],
+          "1930-2400": ["1000"]
+        },
+        "remark": []
+      },
+      "h1": {
+        "period":[0,6,7],
+        "title": { 
+           "th": "วันเสาร์ - วันอาทิตย์ และวันหยุดนักขัตฤกษ์",
+           "en": "Saturday, Sunday and Public Holidays"
+         },
+        "fq": {
+          "0600-2400": ["1000"]
+        },
+        "remark": []
+      }
+    },
+    "fq_stations": {
+      "MT01": ["everyday", "h1"],
+      "MT02": ["everyday", "h1"],
+      "PK01": ["everyday", "h1"],
+      "PK02": ["everyday", "h1"],
+      "PK03": ["everyday", "h1"],
+      "PK04": ["everyday", "h1"],
+      "PK05": ["everyday", "h1"],
+      "PK06": ["everyday", "h1"],
+      "PK07": ["everyday", "h1"],
+      "PK08": ["everyday", "h1"],
+      "PK09": ["everyday", "h1"],
+      "PK10": ["everyday", "h1"],
+      "PK11": ["everyday", "h1"],
+      "PK12": ["everyday", "h1"],
+      "PK13": ["everyday", "h1"],
+      "PK14": ["everyday", "h1"],
+      "PK15": ["everyday", "h1"],
+      "PK16": ["everyday", "h1"],
+      "PK17": ["everyday", "h1"],
+      "PK18": ["everyday", "h1"],
+      "PK19": ["everyday", "h1"],
+      "PK20": ["everyday", "h1"],
+      "PK21": ["everyday", "h1"],
+      "PK22": ["everyday", "h1"],
+      "PK23": ["everyday", "h1"],
+      "PK24": ["everyday", "h1"],
+      "PK25": ["everyday", "h1"],
+      "PK26": ["everyday", "h1"],
+      "PK27": ["everyday", "h1"],
+      "PK28": ["everyday", "h1"],
+      "PK29": ["everyday", "h1"],
+      "PK30": ["everyday", "h1"]
+    }
+  }
+}

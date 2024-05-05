@@ -1,0 +1,1080 @@
+{
+    "BTSSUK":{
+        "CEN":[
+            {"exitNumber":"1","name":{"th":"ป้ายรถประจำทางไปราชประสงค์ (บันไดเลื่อน), สยามเซ็นเตอร์ ชั้น M และชั้น 1 (สะพานเชื่อม)","en":"Bus stop to Ratchaprasong, Siam Center Floor 1 and Floor M (Saphan cherm)"}},
+            {"exitNumber":"2","name":{"th":"ป้ายรถประจำทางไปสี่แยกปทุมวัน, สยามสแควร์ ซอย 3 และซอย 4 (บันไดเลื่อน)","en":"Bus stop to Pathumwan Intersection, Siam Square Soi 3 and Soi 4"}},
+            {"exitNumber":"3","name":{"th":"พาร์คพารากอน (Parc Paragon), สยามพารากอน ชั้น M และ ชั้น G (สะพานเชื่อม-ฝั่ง The Jewel)","en":"Parc Paragon, Siam Paragon floor M and floor G"}},
+            {"exitNumber":"4","name":{"th":"สยามสแควร์วัน สยามสแควร์ซอย 5 และซอย 6, ธนาคารกรุงเทพ สาขาสยามสแควร์","en":"Siam Square one, Bangkok Bank branch Siam Square, Siam Square Soi 5 and 6"}},
+            {"exitNumber":"5","name":{"th":"สยามพารากอน ชั้น M (สะพานเชื่อม-ฝั่ง Star Dome), สยามโอเชี่ยนเวิลด์, วัดปทุมวนาราม, ป้ายรถประจำทางไปราชประสงค์","en":"Siam Paragon floor M, Sea Life Bangkok Ocean World, Wat Pathum Wanaram, Bus stop to Rajprasong"}},
+            {"exitNumber":"6","name":{"th":"สยามสแควร์ซอย 6, สามแยกเฉลิมเผ่า ถนนอังรีดูนังต์, Sky Walk สามแยกเฉลิมเผ่า-เซ็นทรัลเวิลด์-ราชประสงค์","en":"Siam Square Soi 6, Chaloem Phao Junction Henri Dunant Road"}}
+        ],
+        "E1":[
+            {"exitNumber":"1","name":{"th":"บริษัท ทีโอที จำกัด (มหาชน) สำนักงานเพลินจิต","en":"TOT Public Company Limited Phloen Chit Office"}},
+            {"exitNumber":"2","name":{"th":"อาคารภาณุนี และมณียาเซ็นเตอร์ (สะพานเชื่อม), อมรินทร์พลาซ่า ป้ายรถประจำทางไปสยาม","en":"Panunee Building, Maneeya Center, Amarin Plaza, Bus stop to Siam"}},
+            {"exitNumber":"3","name":{"th":"ซอยชิดลม, การไฟฟ้านครหลวง, ป้ายรถประจำทางไปอโศก","en":"  Soi Chit Lom, Metropolitan Electricity Authority, Bus stop to Asok"}},
+            {"exitNumber":"4","name":{"th":"ซอยหลังสวน, อาคารเพลินจิตทาวเวอร์, โรงเรียนมาแตร์เดอีวิทยาลัย, ป้ายรถประจำทางไปสยาม","en":"Soi Lang Suan, Ploen Chit Tower, Mater Dei School, Bus stop to Siam"}},
+            {"exitNumber":"5","name":{"th":"เซ็นทรัล ดีพาร์ทเมนท์ สโตร์ ชิดลม (สะพานเชื่อม)","en":"Central Department Store Chit Lom"}},
+            {"exitNumber":"6","name":{"th":"เมอร์คิวรี่ ทาวเวอร์ และเมอร์คิวรี่ วิลล์ (สะพานเชื่อม), Sky Walk เชื่อมแยกราชประสงค์, อมรินทร์พลาซ่า และห้างสรรพสินค้าโซโก้ (สะพานเชื่อม-บันไดเลื่อน), โรงแรมอินเตอร์คอนติเนนตัล กรุงเทพ ป้ายรถประจำทางไปอโศก (บันไดเลื่อน), โรงแรมแกรนด์ ไฮแอท เอราวัณ และเอราวัณ บางกอก (สะพานเชื่อม), เกษรพลาซ่า (สะพานเชื่อม), Sky Walk @ Central World ระหว่าง Sky Walk แยกราชประสงค์ ถึง สถานีสยาม, เซน แอท เซ็นทรัลเวิลด","en":"Mercury Tower, Mercury Ville, Intercontinental Hotel Bangkok, Bus to Ask, Gaysorn Plaza, Sky Walk from Central World to Siam, Grant Hyatt Erawan Bangkok Hotel, Zen @ Central World, Amarin Plaza, Logo Department Store"}}
+        ],
+        "E10":[
+            {"exitNumber":"1","name":{"th":"ซอยสุขุมวิท 95/1, ซอยสุขุมวิท 97 (บันไดเลื่อน)","en":"Soi Sukhumvit 95/1, Soi Sukhumvit 97"}},
+            {"exitNumber":"2","name":{"th":"ซอยสุขุมวิท 60/2 (อัตโนมัติ), แก้วสารพัดนึก, กรุงเทพคลินิกแพทย์สาขา 2 (บันไดเลื่อน)","en":"Soi Sukhumvit 60/2, Kaewsarapadnuek Hall, Bangkok Medical Clinic Branch 2"}},
+            {"exitNumber":"3","name":{"th":"ซอยสุขุมวิท 97/1 (ซอยแสงตะวัน), ธนาคารไทยพาณิชย์ สาขาบางจาก, โรงเรียนเทคโนโลยีกรุงเทพ, ซอยสุขุมวิท 99","en":"Soi Sukhumvit 97/1, Siam Commercial Bank branch Bang Chak, Bangkok Technology School, Soi Sukhumvit 99"}},
+            {"exitNumber":"4","name":{"th":"ซอยสุขุมวิท 62, อาคารยังเต็งซือ, อาคารเอ็ม ทาวเวอร์, ปั๊มน้ำมันเชลล์, โรงงานเภสัชกรรมแอตแลนติค, ซิมโฟนีสุขุมวิท","en":"M Tower, shell fuel station, Atlantic Laboratories Corp., Ltd., Symphony Sukhumvit"}},
+            {"exitNumber":"5","name":{"th":"ตลาดบางจาก (ทางเดินเชื่อมสะพานลอย ระยะทาง 100 เมตร), โรงเรียนสมาหารศึกษา, ซอยสุขุมวิท 60/1 (ซอยสุคนธชาติ 3), วีว่า การ์เดน","en":"Samahan Suksa School, Soi Sukhumvit 60/1, Viva Garden, Bang Chak market"}}
+        ],
+        "E11":[
+            {"exitNumber":"1","name":{"th":"ร้านอาหารฮั่ว เซ่ง ฮง, ซอยสุขุมวิท 101 (ปุณณวิถี), เคซีจี กิมจั๊ว พาณิชย์ (บันไดเลื่อน)","en":"HUA SENG HONG Restaurant, Soi Sukhumvit 101 (Punnawithi), KCG Corporation"}},
+            {"exitNumber":"2","name":{"th":"ซอยสุขุมวิท 62/3, เดอะรูม สุขุมวิท 62","en":"Soi Sukhumvit 62/3, TheRoom Sukhumvit 62"}},
+            {"exitNumber":"3","name":{"th":"โชว์รูมรถยนต์สโกด้า, โรงเรียนดนตรีและนาฏลีลา กรุงเทพฯ","en":"skoda showroom, Nataleela academy"}},
+            {"exitNumber":"4","name":{"th":"ซอยสุขุมวิท 64 (พงษ์เวชอนุสรณ์), โรงเรียนศิลปะการทำเบเกอรี่และอาหาร (บันไดเลื่อน)","en":"Soi Sukhumvit 64 (Phong Wet Anuson), Baking art school"}},
+            {"exitNumber":"5","name":{"th":"เคซีจี กิมจั๊ว พาณิชย์","en":"Kim Chua Trading LTD., Part"}},
+            {"exitNumber":"6","name":{"th":"โรงเรียนดนตรีและนาฏลีลา กรุงเทพฯ, โรเรียนนานาชาติแองโกลสิงคโปร์, ซอยสุขุมวิท 64 (พงษ์เวชอนุสรณ์), วิซดอม วันโอวัน (ทางเดินเชื่อมสะพานลอยและสกายวอล์ค)","en":"Nataleela academy, Anglo Singapore International School, Soi Sukhumvit 64 (Phong Wet Anuson), WHIZDOM 101"}}
+        ],
+        "E12":[
+            {"exitNumber":"1","name":{"th":"ซิตี้โฮม สุขุมวิท, ไอดีโอ มิกซ์ สุขุมวิท 103, ตลาดอุดมสุข","en":"City Home Sukhumvit, Ideo Mix Sukhumvit 103, Udom Suk Market"}},
+            {"exitNumber":"2","name":{"th":"ปั๊มน้ำมันเชลล์, ซอยสุขุมวิท 66","en":"Shell Patrol station, Soi Sukhumvit 66"}},
+            {"exitNumber":"3","name":{"th":"ซอยสุขุมวิท 103 (อุดมสุข) (บันไดเลื่อน)","en":"Soi Sukhumvit 103"}},
+            {"exitNumber":"4","name":{"th":"ไอดีโอ บลูโคฟ สุขุมวิท, โชว์รูมรถยนต์ฮอนด้า, ซอยสุขุมวิท 66/1 (พูนสิน) (บันไดเลื่อน)","en":"Ideo BluCove Sukhumvit, honda showroom, Soi Sukhumvit 66/1"}},
+            {"exitNumber":"5","name":{"th":"ซิตี้โฮม สุขุมวิท, ไอดีโอ มิกซ์ สุขุมวิท 103, ตลาดอุดมสุข","en":"City Home Sukhumvit, IDEO Mix Sukhumvit 103, UdomSuk market"}}
+        ],
+        "E13":[
+            {"exitNumber":"1","name":{"th":"พิพิธภัณฑ์การเรียนรู้อุตุนิยมวิทยา, กรมอุตุนิยมวิทยา (บันไดเลื่อน)","en":"Museum of Meteorological Department of Thailand, Meteorological Department of Thailand (esculator)"}},
+            {"exitNumber":"2","name":{"th":"ที่ทำการไปรษณีย์คลองบางนา, บริษัท แลคตาซอย จำกัด (บันไดเลื่อน)","en":"Bang Na Canel Post Office, Lactasoy Head Office (esculator)"}},
+            {"exitNumber":"3","name":{"th":"ปั๊มน้ำมันบางจาก, กรมอุตุนิยมวิทยา","en":"Bangchak petrol station, The Meteorological Department"}},
+            {"exitNumber":"4","name":{"th":"โชว์รูมรถยนต์โตโยต้า, ปั๊มน้ำมันคาลเท็กซ์, โชว์รูมรถยนต์มิตซูบิชิ, โรงแรม ไลค์ อิน โฮเต็ล","en":"toyota showroom, esso fuel station, mitsubishi showroom, Like Inn Hotel"}},
+            {"exitNumber":"5","name":{"th":"กรมอุตุนิยมวิทยา","en":"The Meteorological Department"}},
+            {"exitNumber":"6","name":{"th":"ไบเทค บางนา (ทางเดินเชื่อมชั่วคราว)","en":"Bi-tec Bangna (Temporary walk path)"}}
+        ],
+        "E14":[
+            {"exitNumber":"1","name":{"th":"ซอยสุขุมวิท 105 (ลาซาล), เซ็นเตอร์พ้อยท์ สตูดิโอ ไทยแลนด์ (บันไดเลื่อน)","en":"Soi Sukhumvit 105 (Lasalle), Center Point Studio Thailand"}},
+            {"exitNumber":"2","name":{"th":"ซอยสุขุมวิท 70/4","en":"Soi Sukhumvit 70/4"}},
+            {"exitNumber":"3","name":{"th":"ซอยสุขุมวิท 107 (แบริ่ง), โรงเรียนนานาชาติ เซ็นต์แอนดรูวส์ สุขุมวิท 107","en":"Soi Sukhumvit 107, St.Andrews Samakee school"}},
+            {"exitNumber":"4","name":{"th":"ซอยสุขุมวิท 70/5, ปั๊มน้ำมันเอสโซ่, เบ็นซ์ บีเคเค กรุ๊ป, บีเคเค แกรนด์ เอสเตท, สยามนิสสันบีเคเค (บันไดเลื่อน)","en":"Soi Sukhumvit 70/5, Esso Gas Station, Benz BKK Group Co., Ltd., BKK grand estates, Siam Nissan BKK"}},
+            {"exitNumber":"5","name":{"th":"เอพีที แบริ่ง มอลล์","en":"APT Bearing Mall Market"}}
+        ],
+        "E15":[
+            {"exitNumber":"1","name":{"th":"ซอยนครทอง 1 ซอยนครทอง 2 (ลิฟท์), ทางเดินเชื่อมศูนย์การค้าอิมพีเรียลเวิลด์ สำโรง, ตลาดสำโรง, โรงพยาบาลสำโรงการแพทย์","en":"Soi Nakorn Thong 1 and 2, Imperial World Samrong, Samrong Market, Samrong Medical Hospital"}},
+            {"exitNumber":"2","name":{"th":"โรงน้ำแข็งสำโรง, ไปรษณีย์สำโรง","en":"Samrong Icehouse, Post Office Samrong"}},
+            {"exitNumber":"3","name":{"th":"สถานีตำรวจภูธรสำโรงเหนือ, ป้ายรถประจำทางไปถนนเทพารักษ์ อำเภอบางพลี","en":"Sam Rong Nuea Police Station, Bus stop to Thepharak Road"}},
+            {"exitNumber":"4","name":{"th":"ซอยสุขุมวิท 80, บ.ว่องไวอุตสาหกรรม (ลิฟท์)","en":"Soi Sukhumvit 80, Cibes Lift (Thailand) Co., Ltd."}},
+            {"exitNumber":"5","name":{"th":"ปากทางแยกเทพารักษ์ ทิศใต้ ป้ายรถประจำ ทางไปปากน้ำ บางปู (บันไดเลื่อน)","en":"Thepharak intersection"}},
+            {"exitNumber":"6","name":{"th":"หจก.สำโรงรวมกิจ, ป้ายรถประจำทางไปบางนา (บันไดเลื่อน)","en":"Sam Rong Ruamkij Limited Partnership, Bus stop to Bang Na"}}
+        ],
+        "E16":[
+            {"exitNumber":"1","name":{"th":"ที่ทำการไปรษณีย์สำโรง, บิ๊กซี ซูเปอร์เซ็นเตอร์ สาขา สำโรง 2, อาคารชัยนิยม","en":"Samrong Post Office, Big C Jumbo, Chainiyom Building"}},
+            {"exitNumber":"2","name":{"th":"ตลาดสด ปู่เจ้าฯ สำโรง, บริษัท ไทยบริติช ซีเคียวริตี้ พริ้นติ้ง จำกัด, ปั๊มน้ำมัน ปตท.","en":"Puchao Samrong Market, Thai British Security Printing Company (Infozafe & Sales Office), PTT Gas Station"}},
+            {"exitNumber":"3","name":{"th":"บริษัทพานาโซนิค เอเนอร์จี (ประเทศไทย) จำกัด, เซเว่น อีเลฟเว่น","en":"Panasonic Energy (Thailand) Co., Ltd., 7 Eleven"}},
+            {"exitNumber":"4","name":{"th":"บริษัท ทีที มารูโนะอุจิ (ประเทศไทย) จำกัด, ศูนย์ฝึกขับขี่ปลอดภัยฮอนด้า, บริษัท โตโยต้า มอเตอร์ ประเทศไทย จำกัด, โตโยต้าสำโรง สำนักงานใหญ่, บจก. โตโยต้า มอเตอร์ ประเทศไทย","en":"TT Marunouchi Thailand Co., Ltd., Safety Riding Center, Toyota Motor (Thailand) Co., Ltd., Toyota Samrong (Head Office), Toyota Motor Thailand (Samrong Plant)"}}
+        ],
+        "E17":[
+            {"exitNumber":"1","name":{"th":"โชว์รูมโตโยต้า, บริษัท เอส. เอ็ม. ฟาร์มาซูติคอล จำกัด, สหกรณ์ออมทรัพย์ครูสมุทรปราการ จำกัด, พิพิธภัณฑ์ช้างเอราวัณ, เซเว่น อิเลฟเว่น, สวนสุขุมวิท","en":"Toyota Showroom, S.M. Pharmaceutical Company Limited, Samutprakan Teacher Saving and Credit Cooperative Limited, The Erawan Museum, 7 Eleven, Sukhumvit Park"}},
+            {"exitNumber":"2","name":{"th":"สำนักงานพระพุทธศาสนา จังหวัด สมุทรปราการ, สำนักงานเขตพื้นที่การศึกษา ประถมศึกษา สมุทรปราการ เขต 1, กศน. อำเภอเมืองสมุทรปราการ, สำนักงานศึกษาธิการ จังหวัดสมุทรปราการ","en":"Samutprakan Provincial Office of Buddhism, Samutprakan Primary Education Service Area Office 1, Muang Samutprakan  District Non-Formal and Informal Education Center, Samutprakan Provincial Education Office, "}}
+        ],
+        "E18":[
+            {"exitNumber":"1","name":{"th":"การไฟ้านครหลวง สถานีย่อยปากน้ำ, โชว์รูม โตโยต้า, ปั๊มน้ำมันเชลล์, โรงเรียนบุรารักษ์, ไปรษณีย์สมุทรปราการ, พิพิธภัณฑ์ทหารเรือ","en":"Pak Nam Sub Station, Metropolitan Electricity Authority, Toyota Showroom, Shell Gas Station, Burarak School, Samutprakan Post Office, Naval Museum"}},
+            {"exitNumber":"2","name":{"th":"หอเกียรติยศ โรงเรียนนายเรือ, โรงเรียนนายเรือ","en":"Royal Thai Naval Academy Hall of Fame, Royal Thai Naval Academy"}},
+            {"exitNumber":"3","name":{"th":"เจ.เค. คาร์เคร์, ปั๊มน้ำมันบางจาก, กมลวันท์แมนชั่น. บุญศิริแมนชั่น","en":"J.K. Car Care, Bangchak Gas Station, Kamolwan Mansion, Boonsiri Mansion"}},
+            {"exitNumber":"4","name":{"th":"ร้านบ้านเมษา","en":"Ban Meysa"}}
+        ],
+        "E19":[
+            {"exitNumber":"1","name":{"th":"สำนักงานประปา สาขาสมุทรปราการ","en":"Metropolitan Waterworks Authority"}},
+            {"exitNumber":"2","name":{"th":"วิทยาลัยสารพัดช่างสมุทรปราการ, วัดมหาวงษ์","en":"Samutprakan Polytechnic college, Mahawong Temple"}},
+            {"exitNumber":"3","name":{"th":"สำนักงานธนารักษ์พื้นที่สมุทรปราการ, ธนาคารออมสิน, ศูนย์ป้องกันภัย และ บรรเทาสาธารณภัย เทศบาลนครสมุทรปราการ","en":"The treasury Department Samutprakan, Government Savings Bank, Department of Disaster Prevention and Mitigation Samutprakan"}},
+            {"exitNumber":"4","name":{"th":"สำนักงานสรรพสามิตพื้นที่สมุทรปราการ 1, ศาลจังหวัดสมุทรปราการ, สำนักงานที่ดินจังหวัดสมุทรปราการ, หอชมเมืองสมุทรปราการ, ห้องสมุดประชาชน จังหวัดสมุทรปราการ, สวนสุขภาพ ร.9, วิหารพระพุทธชินราชมงคงปราการ, อุทยานการเรียนรู้อ่าวไทย, สำนักงานพานิชย์ จังหวัดสมุทรปราการ, สำนักงานสรรพากรพื้นที่จังหวัดสมุทรปราการ 1, ไปรษณีย์ปากน้ำ, สำนักงานเทศบาลนครสมุทรปราการ, สภ. เมืองสมุทรปราการ, ที่ว่าการอำเภอเมืองสมุทรปราการ, ศาลากลางจังหวัดสมุทรปราการ","en":"Area Excise Samutprakan, Court of Justice, Samutprakan Provincial Court, Department of Land Samutprakan, Samutprakan Bay Sky Tower, Samutprakan Public Library, Rama 9 Health Garden, Pra Putthachinaratch Mongkol Prakan, Gulf of Thailand Learning Park, Office of Commercial Affairs Samutprakan, Samutprakan 1 Area Revenue Office, Pak Nam Post Office, Samutprakan Municipality Office, Mueang Samutprakan Police Station, Mueang Samutprakan District Office, Samutprakan Provincial Office"}},
+            {"exitNumber":"5","name":{"th":"ศูนย์ป้องกันภัย และ บรรเทาสาธารณภัย จังหวัดสมุทรปราการ, ด่านตรวจศุลกากร สมุทรปราการ, ตรวจคนเข้าเมือง จังหวัดสมุทรปราการ","en":"Department of Disaster Prevention and Mitigation Samutprakan, Pak Nam Customs Boarding Station, Samutprakan Immigration Office"}}
+        ],
+        "E2":[
+            {"exitNumber":"1","name":{"th":"ถนนวิทยุ หน้าอาคารเวฟเพลส","en":"Witthayu road infront of Wave Place Building"}},
+            {"exitNumber":"2","name":{"th":"ธนาคารกรุงเทพ สาขาเพลินจิต, ป้ายรถประจำทางไปราชประสงค์","en":"Bangkok Bank Phloen Chit Branch, Bus stop to Ratchaprasong"}},
+            {"exitNumber":"3","name":{"th":"ป้ายรถประจำทางไปอโศก, ซอยนายเลิศ, รพ.บำรุงราษฎร์ (บันไดเลื่อน)","en":"Bus stop to Asok, Soi Nai Lert, Bumrungrad International Hospital"}},
+            {"exitNumber":"4","name":{"th":"ซอยร่วมฤดี, อาคารคิวเฮาส์, เพลินจิตเซ็นเตอร์ (บันไดเลื่อน)","en":"Soi Ruam Ruedi, Q.House, Ploenchit Center"}},
+            {"exitNumber":"5","name":{"th":"อาคารเวฟเพลส และเซ็นทรัล เอ็มบาสซี (สะพานเชื่อม), ป้ายรถประจำทางไปราชประสงค์, ธนาคารกรุงศรีอยุธยา สำนักเพลินจิต, สถานทูตเนเธอร์แลนด์ (ทางเดินยกระดับไปยังสี่แยกเพลินจิต)","en":"Wave Place Building, Central Embassy, Bus Stop to Ratchaprasong, Ayuthaya Bank Ploenchit branch, Netherland Embassy"}}
+        ],
+        "E20":[
+            {"exitNumber":"1","name":{"th":"ไอ-มอลล์, โรงเรียนสิริศึกษา, โรงเรียนนพคุณวิทยา","en":"i Mall, Sirisuksa School, Nopphakhun Witthaya School"}},
+            {"exitNumber":"3","name":{"th":"โรงเรียนเสงี่ยมพิทยานุกูล, ","en":"Sangiam Phitthayanukun School"}},
+            {"exitNumber":"4","name":{"th":"ศูนย์พัฒนาเด็กเล็กเทศบาลนครสมุทรปราการ, โรงเรียนเทศบาล 1 (เยี่ยมเกษสุวรรณ), คริสตจักรเทียนสั่งปากน้ำ, ศูนย์บริการสาธารณสุข เทศบาลนครสมุทรปราการ, โรงพยาบาลสัตว์เทศบาลนครสมุทรปราการ, ศาลเจ้าพ่อหลวง, วัดชัยมงคล","en":"Samutprakan Child Development Center, Tessaban 1 (Yiamketsuwan) School, Thian Sang Church, Public Health Service Center Thetsaban Mueang Samutprakan, Samutprakan Pet Hospital, Chaopaho Luang Shine, Chai Mongkhol Temple"}}
+        ],
+        "E21":[
+            {"exitNumber":"3","name":{"th":"โรบินสัน สมุทรปราการ","en":"Robinson Samutprakan"}},
+            {"exitNumber":"4","name":{"th":"ปั๊มน้ำมัน คาลเท็กซ์, บิ๊กซี สมุทรปราการ","en":"Caltex Gas station, Big C Samutprakkan"}}
+        ],
+        "E22":[
+            {"exitNumber":"1","name":{"th":"เทสโก้ โลตัส เอ็กซ์เพลส","en":"Tesco Lotus Express"}},
+            {"exitNumber":"2","name":{"th":"ที่ทำการไปรษณีย์","en":"Post Office"}},
+            {"exitNumber":"3","name":{"th":"บริษัท สยามเบลท์ เอ็นจิเนียริ่ง จำกัด","en":"Siam Belt Engineering"}},
+            {"exitNumber":"4","name":{"th":"รุ่งเจริญ เฟอร์นิเจอร์, ธนาคาร กรุงเทพ, ปั๊มแอลพีจี, ศูนย์ซ่อมรถในโครงการวิริยะประกันภัย, ปั๊มน้ำมันบางจาก","en":"Rungchareon Furniture Paknam, Bangkok Bank, LPG Gas Station, Certified Repair Centers The Viriyah Insurance, Bangchak Gas Station"}}
+        ],
+        "E23":[
+            {"exitNumber":"2","name":{"th":"โตโยต้า แอทยูไนเต็ด บางปู, ปั๊มน้ำมันเชลล์, วัดราษฎร์โพธิ์ทอง, ลานจอดรถ, โรงเรียนวัดราษฎร์โพธิ์ทอง","en":"Toyota@United Co., Ltd. (Bangpoo Branch), Shell Gas Station, Watradphotong Temple, Park & Ride, Watradphotong School"}},
+            {"exitNumber":"3","name":{"th":"สถานีตำรวจชุมชน กม. 30, อิงธาร เพลส, เคหะบางปู","en":"KM. 30 Community Police Station, Ing Than Place, Khaha Bang Pu"}},
+            {"exitNumber":"4","name":{"th":"โรงเรียนปราณีเนาวบุตร, โรงเรียนบ้านคลองหลวง, บริษัท โรงงายสยามบอลล์สปอร์ต จำกัด","en":"Prani Naowabut School, Bangklongluang School, Siam Ball Sport Factory Co., Ltd."}}
+        ],
+        "E3":[
+            {"exitNumber":"1","name":{"th":"ซอยสุขุมวิท 7, ถนนสุขุมวิท 3 (นานาเหนือ), ป้ายรถประจำทางไปอโศก (บันไดเลื่อน)","en":"Soi Sukhumvit 7, Sukhumvit 3 (Nana Nua), Bus stop to Asok"}},
+            {"exitNumber":"2","name":{"th":"อาคารแปซิฟิคเพลส 2, ซอยสุขุมวิท 6, ป้ายรถประจำทางไปเพลินจิต","en":"Two Pacific Place, Soi Sukhumvit 6, Bus stop to Phloen Chit"}},
+            {"exitNumber":"3","name":{"th":"ซอยสุขุมวิท 9 และ 11, โรงแรมแอมบาสซาเดอร์","en":"Soi Sukhumvit 9 and 11, Ambassador Hotel Bangkok"}},
+            {"exitNumber":"4","name":{"th":"ซอยสุขุมวิท 8 (บันไดเลื่อน)","en":"Soi Sukhumvit 8"}}
+        ],
+        "E4":[
+            {"exitNumber":"1","name":{"th":"ซอยสุขุมวิท 19, ป้ายรถประจำทางไปพร้อมพงษ์ (บันไดเลื่อน), ชั้น M เทอร์มินัล 21","en":"Soi Sukhumvit 19, Bus stop to Phrom Phong, M Floor of Terminal 21 Shopping Mall"}},
+            {"exitNumber":"2","name":{"th":"ป้ายรถประจำทางไปนานา, โรงแรมเชอราตัน แกรนด์ สุขุมวิท, ซอยสุขุมวิท 12","en":"Bus stop to Nana, Sheraton Grande Sukhumvit, Soi Sukhumvit 12"}},
+            {"exitNumber":"3","name":{"th":"รถไฟฟ้ามหานคร สถานีสุขุมวิท (อาคารเชื่อมพร้อมบันไดเลื่อน), ถนนอโศกมนตรี, สยามสมาคม ในพระบรมราชูปถัมภ์, มหาวิทยาลัยศรีนครินทรวิโรฒ, ชั้น M เทอร์มินัล 21 (ลิฟต์)","en":"Thailand Cultural MRT Station Sukhumvit, Asok Montri Road, siam Samakhom Nai Phraborom Rachupatham, Srinakharinwirot University, M Floor of Terminal 21 Shopping Mall"}},
+            {"exitNumber":"4","name":{"th":"ซอยสุขุมวิท 14, ซอยสุขุมวิท 16, ถนนรัชดาภิเษก, สวนเบญจกิตติ","en":"Soi Sukhumvit 14, Soi Sukhumvit 16, Ratchadaphisek Road, Benjakitti Park"}},
+            {"exitNumber":"5","name":{"th":"โรงแรมเชอราตัน แกรนด์ สุขุมวิท, เวสทิน แกรนด์ สุขุมวิท, อาคารไทม์ สแควร์, โรบินสันสาขาสุขุมวิท","en":"Sheraton Grande Sukhumvit Hotel, The Westin Grande Sukhumvit, Times Square Building Mall, Robinson branch Sukhumvit"}},
+            {"exitNumber":"6","name":{"th":"อาคารอินเตอร์เชนจ์ 21, อาคารเอ็กซ์เชนจ์","en":"Interchange21, Exchange Tower"}},
+            {"exitNumber":"7","name":{"th":"ชั้น G เทอร์มินัล 21","en":"G Floor of Terminal 21 Shopping Mall"}}
+        ],
+        "E5":[
+            {"exitNumber":"1","name":{"th":"เอ็มควอเทียร์ (ทางเชื่อมผ่านลานควอเทียร์ ปาร์ค) ป้ายรถประจำทางไปทองหล่อ, ธนาคารออมสิน สาขาพร้อมพงษ์ (บันไดเลื่อน)","en":"Emquatier, Bus stop to Thong Lo, Government Savings Bank Branch Phrom Phong"}},
+            {"exitNumber":"2","name":{"th":"เอ็มโพเรียม (สะพานเชื่อม), ซอยสุขุมวิท 24 ป้ายรถประจำทางไปอโศก","en":"Emporium, Soi Sukhumvit 24, Bus stop to Asok"}},
+            {"exitNumber":"3","name":{"th":"ซอยสุขุมวิท 39 (พร้อมพงษ์)","en":"Soi Sukhumvit 39"}},
+            {"exitNumber":"4","name":{"th":"ซอยสุขุมวิท 24 และ 26 (อารีย์), ป้ายรถประจำทางไปอโศก","en":"Soi Sukhumvit 24 and 26 (Ari), Bus stop to Asok"}},
+            {"exitNumber":"5","name":{"th":"ซอยสุขุมวิท 33 และ 35","en":"Soi Sukhumvit 33 and 35"}},
+            {"exitNumber":"6","name":{"th":"เอ็มโพเรียม (สะพานเชื่อมผ่านเอ็มดิสทริค แกลลอรี่), อุทยานเบญจสิริ ซอยสุขุมวิท 22","en":"Emporium, Benchasiri Park, Soi Sukhumvit 22"}}
+        ],
+        "E6":[
+            {"exitNumber":"1","name":{"th":"ซอยสุขุมวิท 53 ป้ายรถประจำทางไปเอกมัย, โรงเรียนนานาชาติบางกอกเพรพ","en":"Soi Sukhumvit 53, Bus stop to Ekkamai, Bangkok International Preparatory School"}},
+            {"exitNumber":"2","name":{"th":"ที่ทำการไปรษณีย์สันติสุข, ซอยสุขุมวิท 36","en":"Santisuk Post Office, Soi Sukhumvit 36"}},
+            {"exitNumber":"3","name":{"th":"ซอยสุขุมวิท 55 (ทองหล่อ), สถาบันปรีดี พนมยงค์ (บันไดเลื่อน)","en":"Soi Sukhumvit 55 (Thong Lo), Pridi Banomyong Institute"}},
+            {"exitNumber":"4","name":{"th":"ซอยสุขุมวิท 38, ป้ายรถประจำทางไปพร้อมพงษ์ (บันไดเลื่อน)","en":"Soi Sukhumvit 38, Bus stop to Phrom Phong"}}
+        ],
+        "E7":[
+            {"exitNumber":"1","name":{"th":"โรงภาพยนตร์เมเจอร์ซีนีเพล็กซ์ สุขุมวิท, สหกรณ์กรุงเทพ ซอยสุขุมวิท 63 (เอกมัย), บ้านใร่กาแฟ, โชว์รูมรถยนต์ฮอนด้า","en":"Major Cineplex Cinema Sukhumvit, Krungdeb Co-operative Store, Soi Sukhumvit 63, Baan Rai Coffee House, Honda Showroom"}},
+            {"exitNumber":"2","name":{"th":"ซอยสุขุมวิท 42 อาคารณุศาศิริ (สะพานเชื่อม), แบงคอค เมดิเพล็กซ์ (บันไดเลื่อน)","en":"Nusasiri Building, Bankok MediPlex, Soi Sukhumvit 42"}},
+            {"exitNumber":"3","name":{"th":"วัดธาตุทอง โรงเรียนวัดธาตุทอง, โรงพยาบาลสุขุมวิท, ป้ายรถประจำทางไปพระโขนง (บันไดเลื่อน)","en":"Wat Thatthong, Wat Thatthong School, Sukumvit Hospital, Bus stop to Phra Khanong"}},
+            {"exitNumber":"4","name":{"th":"โรงเรียนศรีวิกรม์, ธนาคารทหารไทย, เกตเวย์ เอกมัย, ป้ายรถประจำทางไปทองหล่อ (สะพานเชื่อม)","en":"Sriwikrom Shool, St Andrews High School, TMB Bank, Gateway Ekamai, Bus stop to Thong Lo"}}
+        ],
+        "E8":[
+            {"exitNumber":"1","name":{"th":"โรงแรมจัสมิน รีสอร์ท แอนด์ ปาร์ค โฮเทล, อาคารไทซิน","en":"Tissin Building, Jasmine Resort & Park Hotel"}},
+            {"exitNumber":"2","name":{"th":"ริทึ่ม สุขุมวิท 44/1, ซอยสุขุมวิท 44/1, ป้ายรถประจำทางไปเอกมัย","en":"Rhythm Sukhumvit 44/1, Soi Sukhumvit 44/1, Bus stop to Ekkamai"}},
+            {"exitNumber":"3","name":{"th":"ซอยสุขุมวิท 69, ที่ทำการไปรษณีย์พระโขนง, เวลท์ส เรสซิเดนซ์, ป้ายรถประจำทางไปอ่อนนุช (บันไดเลื่อน)","en":"Soi Sukhumvit 69, Phra Khanong post station, Wen residence, Bus stop to On Nut"}},
+            {"exitNumber":"4","name":{"th":"ถนนพระราม 4, อีเกิ้ล สโตร์ สุขุมวิท-พระราม 4, ซอยสุขุมวิท 46 (ซอยภูมิจิตร)","en":"rama 4 road, Eagle Store Sukhumvit-rama 4, Soi Sukhumvit 46"}}
+        ],
+        "E9":[
+            {"exitNumber":"1","name":{"th":"สถานีตำรวจนครบาลพระโขนง, สถานีดับเพลิงพระโขนง, ไอดีโอ เวิร์ฟ สุขุมวิท, ซอยสุขุมวิท 79, ป้ายรถประจำทางไปสำโรง (บันไดเลื่อน)","en":"Phra Khanong Metro Police Office, Phra Khanong Fire Station, Ideo Verve Sukhumvit, Bus stop to Samrong (Esculator)"}},
+            {"exitNumber":"2","name":{"th":"เทสโก้ โลตัส (สะพานเชื่อม), ซอยสุขุมวิท 50","en":"Tesco Lotus (Saphan Chaurm), Soi Sukhumvit 50"}},
+            {"exitNumber":"3","name":{"th":"เซ็นจูรี่ เดอะมูฟวี่ พลาซา สุขุมวิท, ซอยสุขุมวิท 81","en":"Century Movie Plaza Sukhumvit, Soi Sukhumvit 81"}},
+            {"exitNumber":"4","name":{"th":"สำนักงานเขตพระโขนง, ซอยสุขุมวิท 52, ป้ายรถประจำทางไปสำโรง (บันไดเลื่อน)","en":"Phra Khanong District Office, Soi Sukhumvit 52, Bus stop to Samrong"}}
+        ],
+        "N1":[
+            {"exitNumber":"1","name":{"th":"โรงแรมเอเชีย (สะพานเชื่อม), ซอยพญานาค-ราชเทวี, สะพานหัวช้าง, ป้ายรถประจำทางไปสี่แยกพญาไท","en":"Asia Hotel, Soi Phaya Nak-Ratchatewi, Saphan Hua Chang, Bus stop to Phayathai Intersection"}},
+            {"exitNumber":"2","name":{"th":"ฮอลลีวู้ด สตรีท, สะพานหัวช้าง, วังสระปทุม, ป้ายรถประจำทางไปสี่แยกปทุมวัน","en":"Holiwood Street, Saphan Hua Chang, Srapathum Palace, Bus stop to Pathumwan Intersection"}},
+            {"exitNumber":"3","name":{"th":"สี่แยกราชเทวี, ซอยกิ่งเพชร","en":"Ratchathewi Intersection, Soi KingPhet"}},
+            {"exitNumber":"4","name":{"th":"สี่แยกราชเทวี, ประตูน้ำ (บันไดเลื่อน)","en":"Ratchathewi Intersection, Pratunam"}}
+        ],
+        "N10":[
+            {"exitNumber":"1","name":{"th":"มาสด้าพระนคร สาขารัชโยธิน, ลานจอดรถอีซูซุ, ศุภาลัยปาร์ค, อาคารพหล 19, ป้ายรถเมล์, จุดรวมพล 1, ลิฟท์, พื้นที่สำหรับหนีภัยของคนพิการ","en":"Mazda Phranakhon, Isuzu Car Park, Supalai Park, Phahol 19 Building, Bus Stop, Muster Point 1, Lift, Refuge Area for Disabled persons"}},
+            {"exitNumber":"2","name":{"th":"วิทยาลัยอาชีวศึกษาสันติราษฎร์, สำนักงานที่ดินกรุงเทพมหานคร สาขาจตุจักร, โรงเรียนสตรีวรนาถบางเขน, สนามโกคาร์ท มอร์เตอร์สปอร์ตแลนด์, ปั๊มน้ำมันซัสโก้, บันไดเลื่อน, ลิฟท์ ","en":"Santirat International and Business Administration Colege, Bangkok Land Office Chatuchak Branch, Strivoranart Bangkhen School, Go Kart Motor Sports Land, Susco Gas Station, Escalator, Lift"}},
+            {"exitNumber":"3","name":{"th":"เอสซีบีปาร์ค, เคเพ็ท, ไนท์บริดจ์ ไพร์ม รัชโยธิน, บันไดเลื่อน, ลิฟท์, พื้นที่สำหรับหนีภัยของคนพิการ, ป้ายรถเมล์","en":"SCB Park, K-Pet, Knightbridge, Escalator, Lift, Refuge Area for Disabled persons, Bus Stop"}},
+            {"exitNumber":"4","name":{"th":"ตึกช้าง, สถานีตำรวจนครบาลพหลโยธิน, วิวัฒน์ชัย บิลดิ้ง, ป้ายรถเมล์, จุดรวมพล 2, ลิฟท์","en":"Chang, Phaholyothin Police Station, Wiwatchai Building, Bus Stop, Muster Point 2, Lift"}}
+        ],
+        "N11":[
+            {"exitNumber":"1","name":{"th":"อีซูซุ กรุงเทพเซลล์, เมเจอร์ซีนีเพล็กซ์ รัชโยธิน, กรีนเฮาส์ แมนชั่น, ป้ายรถเมล์,","en":"Isuzu Krungthep Sales, Major Cineplex Ratchyothin, Green House Mansion, Bus Stop,"}},
+            {"exitNumber":"2","name":{"th":"ธนาคารไทยพานิชย์, จุดรวมพล 1, บันไดเลื่อน, แมสซารีน รัชโยธิน, พื้นที่สำหรับหนีภัยของคนพิการ","en":"Siam Commercial Bank, Muster Point 1, Escalator, Mazarine Ratchayothin, Refuge Area for Disabled persons"}},
+            {"exitNumber":"3","name":{"th":"วิทยาลัยเทคโนโลยีไทยวิจิตศิลป์, โรงเรียนอรรถมิตร, ดีสเคาท์เอ้าท์เล็ท, เดอะซี้ด เตร์เร่-รัชโยธิน, ศูนย์บริการอีเกิ้ลสโตร์-รัชโยธิน, ปั๊มน้ำมันเอสโซ่, จุดรวมพล 2, ป้ายรถเมล์, ลิฟท์","en":"Thaivichitsilp Technological College, Attamit School, Discount Outlet, The Seed Tere Ratchayothin, Eagle Store Ratchayothin, Esso Gas Station, Muster Point 2, Bus Stop, Lift"}},
+            {"exitNumber":"4","name":{"th":"ธนาคารเอสเอ็มอี, เซนทริค รัชโยธิน, ธนาคารกสิกร, ลุมพินีเพลส รัชโยธิน, ป้ายรถเมล์, ลิฟต์, พื้นที่สำหรับหนีภัยของคนพิการ","en":"Small and Medium Enterprise Development Bank of Thailand, Centric Ratchaypthin Condominium, Kasikorn Bank, Lumpini Place Ratchayothin, Bus Stop, Lift, Refuge Area for Disabled persons"}}
+        ],
+        "N12":[
+            {"exitNumber":"1","name":{"th":"โรงเรียนอนุบาลเศรษฐบุตร, ธนาคารกรุงไทย, ป้ายรถเมล์, ลุมพินี พาร์ค พหล 32, ตลาดบางเขน, พรีมิโอ ควินโต, โรงพยาบาลเปาโล สมุทรปราการ, ป้ายรถเมล์, จุดรวมพล 1, บันไดเลื่อน, กรมพัฒนาที่ดิน, พิพิธภัณฑ์ดิน, ธนาคารกรุงศรีอยุธยา, ลิฟต์, ","en":"Setthabut Kindergarten, Krungthai Bank, Bus Stop, Lumpini Park Phahon 32, Bangkhen Market, Premio Quinto, Paolo Hospital, Bus Stop, Muster Point 1, Escalator, Land Development Department, Soil Museum, Bank of Ayudhya, Lift, "}},
+            {"exitNumber":"3","name":{"th":"ป้ายรถเมล์, แซปเตอร์วัน เดอะแคมปัส, จุดรวมพล 2, บันไดเลื่อน, กองตำรวจสื่อสารสถานีวิทยุพิทักษ์สันติราษฎร์ (สวพ.91), ลิฟต์, พื้นที่สำหรับหนีภับของคนพิการ","en":"Bus Stop, Chapter One The Campus, Muster Point 2, Escalator, Police Communications Division Royal Thai Police Radio Station FM91 Traffic, Lift, Refuge Area for Disabled persons"}},
+            {"exitNumber":"4","name":{"th":"ป้ายรถเมล์, ลิฟต์, ฟิล พหล 34","en":"Bus Stop, Lift, Phyll Phahol 34"}}
+        ],
+        "N13":[
+            {"exitNumber":"1","name":{"th":"มหาวิทยาลัยเกษตรศาสตร์, ตลาดอมรพันธ์, ธนาคารออมสิน, ป้ายรถเมล์, บันไดเลื่อน, ลิฟต์","en":"Kasetsart Univesity, Amonphan Market, Government Saving Bank, Bus Stop, Escalator, Lift"}},
+            {"exitNumber":"2","name":{"th":"ป้ายรถเมล์, จุดรวมพล 1, สำนักงานชุมสายโทรศัพท์ บางเขน, กรมยุทธโยธาทหารบก, บันไดเลื่อน, พื้นที่สำหรับหนีภัยของคนพิการ, ลิฟต์","en":"Bus Stop, Muster Point 1, Bangkhen Telephone Exchange Office, Post Engineer Department, Escalator, Refuge Area for Disabled persons, Lift"}},
+            {"exitNumber":"3","name":{"th":"กรมส่งเสริมการเกษตร, โรงพยาบาลสัตว์มหาวิทยาลัยเกษตรศาสตร์, จุดรวมพล 2, ป้ายรถเมล์, สำนักงานการวิจัยแห่งชาติ, ลิฟต์, พื้นที่สำหรับหนีภัยของคนพิการ","en":"Department of Agricultural Extension, Kasetsart University Veterinary Teaching Hospital, Muster Point 2, Bus Stop, National Research Council Thailand, Lift, Refuge Area for Disabled persons"}},
+            {"exitNumber":"4","name":{"th":"ป้ายรถเมล์, ธนาคารกรุงไทย, ศูนย์โตโยต้า กรุงไทย, ธกส. สำนักงานใหญ่ บางเขน, โรงแรมมารวย","en":"Bus Stop, Krungthai Bank, Toyota Krungthai, ฺBank of Agriculture and Agricultural Cooperatives, Lift, Maruay Garden,"}}
+        ],
+        "N14":[
+            {"exitNumber":"1","name":{"th":"กองบังคับการปราบปรามการกระทำผิดเกี่ยวกับทรัพยากรธรรมชาติและสิ่งแวดล้อม, กรมอุทยานแห่งชาติ สัตว์ป่า และพันธุ์พืช, กรมป่าไม้","en":"Natural Resources and Environment Crime Division, Department of National Parks, Wildlife and Plant Conservation, Royal Forest Department"}},
+            {"exitNumber":"2","name":{"th":"กรมวิทยาศาสตร์ทหารบก","en":"Royal Thai Army Chemical Department"}},
+            {"exitNumber":"3","name":{"th":"ที่ทำการไปรษณีย์จตุจักร","en":"Chutuchak Post Office"}},
+            {"exitNumber":"4","name":{"th":"โรงเรียนสารวิทยา","en":"Sarawittaya School"}}
+        ],
+        "N15":[
+            {"exitNumber":"1","name":{"th":"บริษัท วอง ฮอนด้าคาร์ส จำกัด สาขาบางบัว-ศรีปทุม","en":"Wong Honda Cars Bangbua-Sripatum"}},
+            {"exitNumber":"2","name":{"th":"มหาวิทยาลัยศรีปทุม","en":"Sripatum University"}},
+            {"exitNumber":"3","name":{"th":"โรงเรียนบางบัว, เซียล่า ศรีปทุม","en":"Bang Bua School, Ciela Sripatum"}},
+            {"exitNumber":"4","name":{"th":"วัดบางบัว","en":"Bangbua Temple "}}
+        ],
+        "N16":[
+            {"exitNumber":"1","name":{"th":"ปั้มน้ำมัน ปตท.","en":"PTT Gas Station"}},
+            {"exitNumber":"2","name":{"th":"ป้ายรถเมล์","en":"Bus Stop"}},
+            {"exitNumber":"3","name":{"th":"ธนาคารอาคารสงเคราะห์","en":"Government Saving Bank"}},
+            {"exitNumber":"4","name":{"th":"กรมทหารราบที่ 11","en":"11th Infantry Regiment"}}
+        ],
+        "N17":[
+            {"exitNumber":"1","name":{"th":"รีเจ้นท์ โฮม, บริษัท ทีโอที จำกัด (มหาชน), สำนักงานประปา สาขาบางเขน, พุทธวิชชาลัย มหาวิทยาลัยราชภัฎพระนคร, วัดพระศรีมหาธาตุวรมหาวิหาร","en":"Regent Home, TOT Public Company Limited, Provincial Waterworks Authority Bangkhen, Buddha Witchalai Phrankhon Rajabhat University, Phra Sri Mahathat Temple"}},
+            {"exitNumber":"2","name":{"th":"ฌาปนสถานกองทัพอากาศ, การไฟฟ้านครหลวง สาขาบางเขน, สถานีดับเพลิงและกู้ภัยบางเขน, สถานบันป้องกันควบคุมโรคเขตเมือง, สถานันพัฒนาสุขภาวะเมือง, สำนักงานเขตบางเขน, ห้องสมุดประชาชนกรุงเทพเขตบางเขน, โรงเรียนประชาภิบาล","en":"Crematorium of Royal Thai Air Force, Electricity Authority Bangkhen District, Bangkhen Fire and Rescue Station, Urban Desease Control and Prevention, Metropolitan Health and Wellness Institution, Bangkhen District Office, Bangkok Public Library Office, Prachapiban School."}},
+            {"exitNumber":"3","name":{"th":"ซิลค์ เพลส พหลโยธิน หลักสี่","en":"Silk Place Phaholythin Laksi"}},
+            {"exitNumber":"4","name":{"th":"โมดิซ อินเตอร์เชนจ์, สถานตำรวจนครบาลบางเขน, หมู่บ้านอัมรินทร์นิเวศน์ 1, สวนรักษ์ธรรมชาติ, คริสจักรหลักสี่ลูเธอร์แรน, มหาวิทยาลัยเกริก, ไปรษณีย์รามอินทรา, โรงเรียนไทยนิยมสงเคราะห์, กรมทหารขนส่งรักษาพระองค์","en":"Modiz Interchange, Bangkhen Police Station, Ammarin Niwet Village 1, Rak Thammachat Park, Laksi Lutheran Church, Krirk University, Ramintra Post Office, Thainiyomsongkroa School."}}
+        ],
+        "N18":[
+            {"exitNumber":"1","name":{"th":"สภาทนายความในพระบรมราชูปถัมภ์, ปั้มน้ำมัน ปตท. , ปั้มน้ำมันเชลล์","en":"LAWYERS CONCIAL UNDER THE ROYAL PATRONAGE , PTT Gas Station, Shell Gas Station"}},
+            {"exitNumber":"2","name":{"th":"เทสโก้ โลตัส หลักสี่","en":"Tesco Lotus Laksi"}},
+            {"exitNumber":"3","name":{"th":"ป้ายรถเมล์","en":"Bus Stop"}},
+            {"exitNumber":"4","name":{"th":"กองพันทหารสื่อสารที่ 21 กองทัพภาคที่ 1 , กองซ่อมเครื่องสื่อสารอิเล็กทรอนิกส์ กรมการทหารสื่อสาร, ธนาคารไทยพาณิชย์, ป้ายรถเมล์","en":"21st SIGNAL BATTALION, 1st ARMY AREA,COMMUNICATION ELECTRONIC MAINTENANCE DIVISION SIGNAL DEPARTMENT, Siam Commercial Bank, Bus Stop"}}
+        ],
+        "N19":[
+            {"exitNumber":"1","name":{"th":"สถาบันสายตาและโรคตา, ป้ายรถเมล์","en":"Bangkok Eye Institute, Bus Stop"}},
+            {"exitNumber":"2","name":{"th":"ปั้มน้ำมัน ปตท. , ป้ายรถเมล์","en":"PTT Gas Station, Bus Stop"}},
+            {"exitNumber":"3","name":{"th":"ป้ายรถเมล์, ธนาคากรุงไทย, ธนาคารกรุงศรีอยุธยา, ปั้มน้ำมันเอสโซ่","en":"Bus Stop, Krungthai Bank, Krungsri Bank, ESSO Gas Staion"}},
+            {"exitNumber":"4","name":{"th":"ที่ทำการไปรษณีย์สะพานใหม่, โรงพยาบาลซีจีเอช, บิ๊กซี, ป้ายรถเมล์","en":"Saphan Mai Post Office, CGH Hospital, Big C, Bus Stop"}}
+        ],
+        "N2":[
+            {"exitNumber":"1","name":{"th":"อาคารพญาไทพลาซ่า, จุดหยุดรถไฟพญาไทฝั่งใต้, คอนโดบ้านปทุมวัน, ร้าน HEAP","en":"Phayathai Plaza, South Phaya Thai Station, Baan Pathumwan Condo, HEAP pub & restaurant"}},
+            {"exitNumber":"2","name":{"th":"ที่ทำการไปรษณีย์ราชเทวี, กรมปศุสัตว์ จุดหยุดรถไฟพญาไทฝั่งเหนือ, ป้ายรถประจำทางไปราชเทวี","en":"Ratchatewi Post office, Department of Livestock Development, North Phaya Thai Station, Bus stop to Ratchatewi"}},
+            {"exitNumber":"3","name":{"th":"อาคารซี.พี.ทาวเวอร์ 3 (พญาไท), โรงเรียนสันติราษฎร์, สำนักงานคณะรรมการการอุดมศึกษา, ป้ายรถประจำทางไปสะพานเสาวนี-นางเลิ้ง","en":"C.P.Tower 3 (Phyathai), Santirat Witthayalai School, Samnakngan Khanakammakan Kan Udomsueksa, Bus stop to Saphan Saowani - Nang Loeng"}},
+            {"exitNumber":"4","name":{"th":"โรงแรมฟลอริดา, อาคารวรรณสรณ์, โรงแรมสยามซิตี้, โรงพยาบาลเดชา, วังสวนผักกาด","en":"Florida Hotel, Wannasorn Tower, Sukosol Bangkok Hotel, Decha General Hospital"}},
+            {"exitNumber":"5","name":{"th":"สถานีพญาไท (รถไฟฟ้าเชื่อมท่าอากาศยานสุวรรณภูมิ) (ทางเดินเชื่อม)","en":"Phaya Thai station"}}
+        ],
+        "N20":[
+            {"exitNumber":"1","name":{"th":"ธนาคาไทยพาณิชย์, ธนาคารกสิกรไทย\\r\\n\\r\\n","en":"Siam Commercial Bank, Kasikorn Bank"}},
+            {"exitNumber":"2","name":{"th":"ธนาคารออมสิน, ธนาคารอิสลามแห่งประเทศไทย, ป้ายรถเมล์","en":"Government Savings Bank, Islamic Bank of Thailand, Bus Stop"}},
+            {"exitNumber":"3","name":{"th":"ตลาดยิ่งเจริญ, ป้ายรถเมล์","en":"Ying Charoen Market, Bus Stop"}},
+            {"exitNumber":"4","name":{"th":"ธนาคารทหารไทย, ธนาคารธนชาติ, ธนาคารแลนด์ แอนด์ เฮาส์","en":"TMB Bank, Thanachart Bank, Land and House Bank"}}
+        ],
+        "N21":[
+            {"exitNumber":"1","name":{"th":"สนามกีฬากองทัพอากาศจันทรุเบกษา, ฐานทัพอากาศดอนเมือง, ป้ายรถเมล์","en":"Chanthubeksa Royal Thai Air Force Stadium, Don Mueang Air Force Base, Bus Stop"}},
+            {"exitNumber":"2","name":{"th":"โรงพยาบาลภูมิพลอดุลยเดช, วิทยาลัยพยาบาลทหารอากาศ, ป้ายรถเมล์","en":"Bhumibol Adulyadaj, Royal Thai Air Force College of Nursing, Bus Stop"}},
+            {"exitNumber":"3","name":{"th":"กรมสื่อสารอิเล็กทรอนิกส์ กองทัพอากาศ, ป้ายรถเมล์","en":"Royal Thai Air Force Directorate of Communication Electronics, Bus Stop"}},
+            {"exitNumber":"4","name":{"th":"กรมแพทย์ทหารอากาศ, สถาบันเวชศาสตร์การบินกองทัพอากาศ, หอประชุมกองทัพอากาศ, ป้ายรถเมล์","en":"Directorate of Air Medical Service, Air Force Institute of Aviation Medicine, Royal Thai Air Force Convention Hall, Bus Stop"}}
+        ],
+        "N22":[
+            {"exitNumber":"1","name":{"th":"กรมทหารอากาศโยธินรักษาพระองค์ หน่วยบัญชาการอากาศโยธิน, หน่วยบัญชาการอากาศโยธิน, ป้ายรถเมล์","en":"Air Force Base, Royal Thai Air Force, Security Forces Command, Bus Stop"}},
+            {"exitNumber":"2","name":{"th":"ป้ายรถเมล์","en":"Bus Stop"}},
+            {"exitNumber":"3","name":{"th":"พิพิธภัณฑ์กองทัพอากาศ, กองบัญชาการกองทัพอากาศ, ป้ายรถเมล์","en":"Royal Thai Air Force Museum, Royal Thai Air Force Command Center, Bus Stop"}},
+            {"exitNumber":"4","name":{"th":"อุทยานการบินกองทัพอากาศ, โรงเรียนนายเรืออากาศนวมินทกษัตริยาธิราช, ป้ายรถเมล์","en":"Royal Thai Air Force Aviation Park, Navaminda Kasatriyadhiraj Royal Thai Air Force Academy, Bus Stop"}}
+        ],
+        "N23":[
+            {"exitNumber":"1","name":{"th":"กองบัญชาการกองทัพอากาศ, ศูนย์กีฬาสวนเฉลิมพระเกียรติฯ ฉลองสิริราชสมบัติครบ 50 ปี, ป้ายรถเมล์","en":"Royal Thai Air Force Command Center, Royal Thai Air Force Health Park, Bus Stop"}},
+            {"exitNumber":"2","name":{"th":"อุทยานการบินกองทัพอากาศ, โรงเรียนนายเรืออากาศนวมินทกษัตริยาธิราช, กรมควบคุมการปฏิบัติทางอากาศ, ป้ายรถเมล์","en":"Royal Thai Air Force Aviation Park, Navaminda Kasatriyadhiraj Royal Thai Air Force Academy, Directorate of Air Operations Control, Bus Stop"}},
+            {"exitNumber":"3","name":{"th":"อาคารจอดแล้วจร แยก คปอ., ป้ายรถเมล์","en":"Park&Ride Yeak Kor por Aor, Bus Stop"}},
+            {"exitNumber":"4","name":{"th":"ประตูกรุงเทพ พลาซ่า, สโมสรชุมนุมสัญญาบัตร คปอ.","en":"Bangkok Gate Plaza, Government Building"}}
+        ],
+        "N24":[
+            {"exitNumber":"2","name":{"th":"สถานีตำรวจภูธรคูคต, อาคารจอดแล้วจรคูคต, ป้ายรถเมล์","en":"Khu Khot Police Station, Park&Ride Khu Khot, Bus Stop"}},
+            {"exitNumber":"3","name":{"th":"ปั้มน้ำมันเอสโซ่, ปั้มน้ำมัน ปตท., ป้ายรถเมล์","en":"Esso Gas Station, PTT Gas Station, Bus Stop"}},
+            {"exitNumber":"4","name":{"th":"ปั้มน้ำมันเชลล์","en":"Shell Gas Station"}}
+        ],
+        "N3":[
+            {"exitNumber":"1","name":{"th":"ป้ายรถประจำทางไปอนุสาวรีย์ฯ, ถนนโยธี, วิทยาลัยพยาบาลบรมราชชนนี กรุงเทพ, สำนักงานเขตราชเทวี, กรมแพทย์ทหารบก","en":"Boromarajonani College of Nursing Bangkok, Ratchathewi District Office, Army Medical Department, Yo thi Road"}},
+            {"exitNumber":"2","name":{"th":"เซ็นจูรี่ เดอะมูฟวี่พลาซ่า (สะพานเชื่อม), รถรับ-ส่ง ไปยังคิง เพาเวอร์ คอมเพล็กซ์, โรงแรมพูลแมน คิง เพาเวอร์ กรุงเทพ, ป้ายรถประจำทางไปราชเทวี, ถนนรางน้ำ","en":"Century the Movies Plaza(Saphan Cherm), รถรับ-ส่ง to King Power Complex, Pullman BKK King Power, Rang Nam Road"}},
+            {"exitNumber":"3","name":{"th":"โรงพยาบาลราชวิถี (บันไดเลื่อน)","en":"Rajavithi Hospital"}},
+            {"exitNumber":"4","name":{"th":"สมาคมผู้บำเพ็ญประโยชน์แห่งประเทศไทย","en":"Samakhom Phu Bamphen Prayot Haeng Prathet Thai"}}
+        ],
+        "N4":[
+            {"exitNumber":"1","name":{"th":"โรงพยาบาลพญาไท 2, เอส เอ็ม ทาวเวอร์, โชว์รูมรถยนต์ฮอนด้า, เอส ซี ซุปเปอร์ คาร์, ธนาคารกรุงเทพ สาขาสนามเป้า, ธนาคารกสิกรไทย สาขาสนามเป้า, อาคารยาคูลท์, ป้ายรถประจำทางไปหมอชิต (บันไดเลื่อน)","en":"Phyathai 2 Hospital, SM Tower, Yakult Building, Bangkok Bank"}},
+            {"exitNumber":"2","name":{"th":"กองพลทหารม้าที่ 2 รักษาพระองค์, สถานีวิทยุโทรทัศน์กองทัพบกช่อง 5, ป้ายรถประจำทางไปอนุสาวรีย์ชัยสมรภูมิ","en":"2nd Cavalry Division King's Guard, Royal thai army television channel 5, Bus stop to Victory Monument"}},
+            {"exitNumber":"3","name":{"th":"เซเว่นอิเลฟเว่น ซอยพหลโยธิน 3 (ซอยลือชา 2), กิฟฟารีน, บริษัทบริหารสิน่ทรัพย์สถาบันการเงิน (บบส.), ป้ายรถประจำทางไปหมอชิต","en":"7-Eleven, Soi Phahon Yothin 3 (Soi Lue Cha 2), Giffarine, Bangkok Commercial Asset Management Public Company Limited"}},
+            {"exitNumber":"4","name":{"th":"ซอยพหลโยธิน 2 (ซอยกาญจนาคม), อาคารแสงโสม ธนาคารกรุงศรีอยุธยา สาขาสนามเป้า, อาคารวิเศษศิริ, บริษัท ฟอร์ท คอร์ปอเรชัน จำกัด (มหาชน), โชว์รูมรถยนต์โตโยต้า","en":"Soi Phahon Yothin 2 (Soi Kanchanakom), Forth Corporation Public Company Limited, toyota showroom, SangSom Building"}}
+        ],
+        "N5":[
+            {"exitNumber":"1","name":{"th":"อาคารเอ็กซิม แบงก์, อาคารปิยวรรณ, ซอยพหลโยธิน 5 (ราชครู)","en":"EXIM Bank Building, Piyawan Tower, Soi Phahon Yothin 5"}},
+            {"exitNumber":"2","name":{"th":"SME Tower, ธนาคารทหารไทย สาขาสนามเป้า","en":"SME Tower, TMB Bank"}},
+            {"exitNumber":"3","name":{"th":"ป้ายรถประจำทางไปหมอชิต, สหกรณ์พระนคร, ซอยพหลโยธิน 7 (อารีย์) (บันไดเลื่อน)","en":"Bus stop to Mo Chit, Phranakorn Co-Operative Store, Soi Phahon Yothin 7 (Ari)"}},
+            {"exitNumber":"4","name":{"th":"ลา วิลล่า, ป้ายรถประจำทางไปอนุสาวรีย์ชัยสมรภูมิ, อาคารไอ บี เอ็ม, ซอยพหลโยธิน 6 (บันไดเลื่อน)","en":"La Villa, Bus stop to Victory Monument, IBM Building"}}
+        ],
+        "N7":[
+            {"exitNumber":"1","name":{"th":"ตลาดสะพานควาย, ถนนประดิพัทธ์, ที่ทำการไปรษณีย์สามเสนใน, ป้ายรถประจำทางสะพานควายไปหมอชิต (บันไดเลื่อน)","en":"Saphan Khwai market, Pradipat Road, Samsen Nai Post Office, Bus stop Saphan Khwai to Mo Chit"}},
+            {"exitNumber":"2","name":{"th":"บิ๊กซี สะพานควาย, โรงพยาบาลเปาโลเมโมเรียล, ถนนสุทธิสารวินิจฉัย, ธนาคารออมสิน สำนักงานใหญ่, ป้ายรถประจำทางสะพานควายไปอารีย์","en":"BigC Saphan Khwai, Paolo Memorial Hospital, Sutthisarn Winitchai Road, Government Savings Bank Head Office"}},
+            {"exitNumber":"3","name":{"th":"วัดไผ่ตัน, ป้ายรถประจำทางวัดไผ่ตันไปหมอชิต, ที่ทำการไปรษณีย์สามเสนใน, พิพิธภัณฑ์ไปรษณีย์สามเสนใน","en":"Wat PhaiTan, Bus stop Wat PhaiTan to Mo Chit, Samsen Nai Post Office, Postal Museum of Sam Sen Nai"}},
+            {"exitNumber":"4","name":{"th":"ป้ายรถประจำทางวัดไผ่ตันไปอารีย์, บริษัท แสงชัยมิเตอร์ จำกัด, ไอดีโอมิกซ์ พหลโยธิน คอนโดมิเนียม","en":"Bus stop Wat PhaiTan to Ari, Sang Chai Meter Co., Ideo Mix Phaholyothin Bangkok condo"}}
+        ],
+        "N8":[
+            {"exitNumber":"1","name":{"th":"สวนจตุจักร, ตลาดนัดจตุจักร, ป้ายรถประจำทางไปห้าแยกลาดพร้าว","en":"Chatuchak park, Bus stop to lad prao intersection, Chatuchak market"}},
+            {"exitNumber":"2","name":{"th":"ป้ายรถประจำทางไปสะพานควาย, สถาบันการบินพลเรือน, กรมการขนส่งทางบก","en":"Bus stop to Saphan Khwai, Civil Aviation Training Center,  Department of Land Transport"}},
+            {"exitNumber":"3","name":{"th":"สวนจตุจักร, ป้ายรถประจำทางไปห้าแยกลาดพร้าว (บันไดเลื่อนขึ้นช่วงเช้า และเลื่อนลงช่วงเย็น)","en":"Chatuchak park, Bus stop to lad prao intersection"}},
+            {"exitNumber":"4","name":{"th":"ป้ายรถประจำทางไปสะพานควายและสถานีขนส่งจตุจักร, ลานจอดรถ, อาคารบีทีเอส, ซอยเฉยพ่วง (บันไดเลื่อน)","en":"Bus stop to Saphan Khwai and Bus Exit Chatuchak, car park, BTS Tower, Soi Choei Phuang"}}
+        ],
+        "N9":[
+            {"exitNumber":"1","name":{"th":"สวนสมเด็จย่า ๘๔, เซ็นทรัลพลาซา ลาดพร้าว, ป้ายรถเมล์, สถานีรถไฟฟ้ามหานคร, พื้นที่สำหรับหนีภัยของคนพิการ, บันไดเลื่อน","en":"Somdet Ya 84 Park, Central Plaza Ladprao, Bus Stop, MRT Station, Refuge Area for Disabled persons, Escalator"}},
+            {"exitNumber":"2","name":{"th":"ยูเนียน มอลล์, โรงภาพยนต์ ยู ฮอลลี่วูด, ป้ายรถเมล์, สถานีรถไฟฟ้ามหานคร, ลิฟต์, จุดรวมพล 1","en":"Union Mall, Major Hollywood (Union Mall), Bus Stop, MRT Station, Lift, Muster Point 1"}},
+            {"exitNumber":"3","name":{"th":"ศุนย์บริการบราเดิร์, โรงเรียนหอวัง, โรงแรมเซนทาราแกรนด์ เซ็นทรัล พลาซา ลาดพร้าว กรุงเทพฯ, โรงภาพยนต์เอส เอ็กซ์ ซีเนม่า เซนทรัลพลาซา ลาดพร้าว, ป้ายรถเมล์, ลิฟต์, จุดรวมพล 2","en":"Brother Service Center (Head office), Horwang School, Centara Grand at Central Plaza Ladprao Bangkok Hotel, SFX Cinema Central Plaza Ladprao, Bus Stop, Lift, Muster Point 2"}},
+            {"exitNumber":"4","name":{"th":"สนามโกคาร์ท มอเตอร์สปอร์ตแลนด์, กองปราบปราม, แอ๊บแสตร๊กส พหลโยธิน พาร์ค คอนโด, วอง ฮอนด้า (สาขาลาดพร้าว), เทสโก้ โลตัส ลาดพร้าว, ป้ายรถเมล์, บันไดเลื่อน","en":"Go Kart Motor Sports Land, Crime Suppression Division, Abstracts Phahonyothin Park, Wong Honda Ladprao, Tesco Lotus Ladprao, Bus Stop, Escalator"}}
+        ]
+    },
+    "BTSSIL":{
+        "CEN":[
+            {"exitNumber":"1","name":{"th":"ป้ายรถประจำทางไปราชประสงค์ (บันไดเลื่อน), สยามเซ็นเตอร์ ชั้น M และชั้น 1 (สะพานเชื่อม)","en":"Bus stop to Ratchaprasong, Siam Center Floor 1 and Floor M (Saphan cherm)"}},
+            {"exitNumber":"2","name":{"th":"ป้ายรถประจำทางไปสี่แยกปทุมวัน, สยามสแควร์ ซอย 3 และซอย 4 (บันไดเลื่อน)","en":"Bus stop to Pathumwan Intersection, Siam Square Soi 3 and Soi 4"}},
+            {"exitNumber":"3","name":{"th":"พาร์คพารากอน (Parc Paragon), สยามพารากอน ชั้น M และ ชั้น G (สะพานเชื่อม-ฝั่ง The Jewel)","en":"Parc Paragon, Siam Paragon floor M and floor G"}},
+            {"exitNumber":"4","name":{"th":"สยามสแควร์วัน สยามสแควร์ซอย 5 และซอย 6, ธนาคารกรุงเทพ สาขาสยามสแควร์","en":"Siam Square one, Bangkok Bank branch Siam Square, Siam Square Soi 5 and 6"}},
+            {"exitNumber":"5","name":{"th":"สยามพารากอน ชั้น M (สะพานเชื่อม-ฝั่ง Star Dome), สยามโอเชี่ยนเวิลด์, วัดปทุมวนาราม, ป้ายรถประจำทางไปราชประสงค์","en":"Siam Paragon floor M, Sea Life Bangkok Ocean World, Wat Pathum Wanaram, Bus stop to Rajprasong"}},
+            {"exitNumber":"6","name":{"th":"สยามสแควร์ซอย 6, สามแยกเฉลิมเผ่า ถนนอังรีดูนังต์, Sky Walk สามแยกเฉลิมเผ่า-เซ็นทรัลเวิลด์-ราชประสงค์","en":"Siam Square Soi 6, Chaloem Phao Junction Henri Dunant Road"}}
+        ],
+        "S1":[
+            {"exitNumber":"1","name":{"th":"ตรงข้ามซอยมหาดเล็กหลวง 3, ป้ายรถประจำทางไปราชประสงค์","en":"opposite Soi Mahadlekluang 3, Bus stop to Ratchaprasong"}},
+            {"exitNumber":"2","name":{"th":"อาคารนันทวัน, ซอยมหาดเล็กหลวง 3, เอ.ยู.เอ. (บันไดเลื่อน)","en":"Nantawan Building, Soi Mahadlekluang 3, AUA (esculator)"}},
+            {"exitNumber":"3","name":{"th":"ตรงข้ามซอยมหาดเล็กหลวง 2, โรงพยาบาลตำรวจ","en":"opposite Soi Mahatlek Luang 2, Police General Hospital"}},
+            {"exitNumber":"4","name":{"th":"ซอยมหาดเล็กหลวง 2, โรงแรมอนันตรา กรุงเทพ สยาม, ป้ายรถประจำทางไปสวนลุมพินี","en":"Soi Mahatlek Luang 2, Anantara Siam Bangkok Hotel, Bus stop to Lumphini Park"}}
+        ],
+        "S10":[
+            {"exitNumber":"1","name":{"th":"คาซ่าคอนโด รัชดา-ราชพฤกษ์, วัดบางสะแกใน","en":"Casa Condo Ratchada-Ratchapruek, Wat Bang Sakae Ni"}},
+            {"exitNumber":"2","name":{"th":"คาซ่าคอนโด รัชดา-ท่าพระ","en":"Casa Condo Ratchada-Thapra"}},
+            {"exitNumber":"3","name":{"th":"ธนาคารกสิกรไทย","en":"Kasikornbank"}},
+            {"exitNumber":"4","name":{"th":"ธนาคารกรุงศรีอยุธยา, เดอะมอลล์ท่าพระ","en":"Bank of Ayudhya, The Mall Thapra"}}
+        ],
+        "S11":[
+            {"exitNumber":"1","name":{"th":"ถนนราชพฤกษ์","en":"Ratchaphruek Road"}},
+            {"exitNumber":"2","name":{"th":"ถนนราชพฤกษ์ (บันไดเลื่อนและลิฟต์)","en":"Ratchaphruek Road"}},
+            {"exitNumber":"3","name":{"th":"วัดใหม่ยายนุ้ย","en":"Wat Mai Yai Nui"}},
+            {"exitNumber":"4","name":{"th":"ซอยวุฒากาศ 27 (ลิฟต์)","en":"Soi Wutthakat 27"}},
+            {"exitNumber":"5","name":{"th":"คลองด่าน","en":"Khlong Dan"}}
+        ],
+        "S12":[
+            {"exitNumber":"1","name":{"th":"ถนนราชพฤกษ์, วัดประดู่บางจาก, โรงเรียนวัดประดู่บางจาก, ป้ายรถประจำทางไปบางแวก (บันไดเลื่อน)","en":"Ratchaphruek Road, Wat Pradu Bang Chak, Watpradoobangjak School, Bus stop to Bang Waek"}},
+            {"exitNumber":"2","name":{"th":"ถนนราชพฤกษ์, วัดประดู่บางจาก, โรงเรียนวัดประดู่บางจาก, ป้ายรถประจำทางไปบางแวก (บันไดเลื่อน)","en":"Ratchaphruek Road, Watpradoobangjak, Watpradoobangjak School, Bus stop to Bang Waek"}},
+            {"exitNumber":"3","name":{"th":"ถนนเพชรเกษม, ซอยเพชรเกษม 34 (บันไดเลื่อน)","en":"Phet Kasem Road, Soi Phet Kasem 34"}},
+            {"exitNumber":"4","name":{"th":"ท่าเรือโดยสารคลองภาษีเจริญ สะพานตากสิน-เพชรเกษม, ป้ายรถประจำทางไปบางแค","en":"dock Khlong Phasi Charoen, Bus stop to Bang Khae"}}
+        ],
+        "S2":[
+            {"exitNumber":"1","name":{"th":"อาคารธนิยะ และ อาคารสีลม 64 (สะพานเชื่อม), ถนนธนิยะ, ถนนพัฒน์พงศ์, ป้ายรถประจำทางไปพระรามที่ 4, โรงพยาบาลกรุงเทพคริสเตียน","en":"Bus stop to Rama 4, The Bangkok Christian Hospital, Thaniya Plaza, Silom Buiding 64"}},
+            {"exitNumber":"2","name":{"th":"ป้ายรถประจำทางไปบางรัก, ถนนคอนแวนต์, อาคารซีพี (บันไดเลื่อน)","en":"Bus stop to Bang Rak, Convent street, CP Building (escalator)"}},
+            {"exitNumber":"3","name":{"th":"อาคารญาดา, ธนาคาร ยูโอบี สาขาสีลม 2 (บันไดเลื่อน)","en":"Yada Building, bank UBO branch Si Lom 2"}},
+            {"exitNumber":"4","name":{"th":"เซ็นทรัล สีลมคอมเพล็กซ์ ชั้น 2 (สะพานเชื่อม)","en":"Central Silom Complex floor 2"}},
+            {"exitNumber":"5","name":{"th":"โรบินสัน สีลม, อาคาร ชาญอิสสระ ทาวเวอร์, สี่แยกศาลาแดง, Walk Way ไปยังรถไฟฟ้ามหานคร สถานีสีลม (ทางเดินเชื่อมสี่แยกศาลาแดง พร้อมบันไดเลื่อน), โรงแรมดุสิตธานี, อาคารอับดุลราฮิม เพลส, อาคารอื้อ จือ เหลียง","en":"Robinson Si Lom, Charn Issara Tower, Saladaeng Intersection, U Chu Liand Building, Dusit Thani Hotel, Abdulahim Building"}}
+        ],
+        "S3":[
+            {"exitNumber":"1","name":{"th":"โครงการสาธรสแควร์ (สถานเอกอัครราชทูตรัสเซียประจำประเทศไทยเก่า), ดิ อินฟินิตี้ โกลเด้นแลนด์, ดิ อินฟินิตี้, สำนักงานการบินไทย สาขาสีลม, โรงแรมดับเบิ้ลยูแบงคอก","en":"Sathorn Square, The Infinity, Thai Airways International Public Company Limited Branch Silom, W Bankok hotel"}},
+            {"exitNumber":"2","name":{"th":"เซเว่น อิเลฟเว่น, โรงแรมไอ-เรสซิเด้นท์ สีลม, ธนาคารสแตนดาร์ดชาร์เตอร์ด สำนักงานใหญ่, อาคารสาธรธานี, ถนนสาทร, โรงแรมฟูรามา เอกซ์คลูซีฟ สาทร (ทางเดินเชื่อมสะพานลอยต่อรถโดยสารด่วนพิเศษ","en":"7-Eleven, I-resident Silom, Standard Chartered, Head Office, Sathorn Thani Building"}},
+            {"exitNumber":"3","name":{"th":"อาคารมหานคร (เดอะ ริทช์-คาร์ลตัน เรสซิเดนเซส โรงแรมแบงค็อก เอดิชัน), มหานคร คิวบ์ (สะพานเชื่อม), ป้ายรถประจำทางไปสีลม","en":"MahaNakhon, Mahanakorn Cube, Bus stop to Si Lom"}},
+            {"exitNumber":"4","name":{"th":"อาคารไดมอนด์ ทาวเวอร์, เชียงการีลา สวีท, โรงแรมเดอะเฮอริเทจ สีลม, ซอยพิพัฒน์ 2, พี.เอ็ม.ที แมนชั่น, โกลว์ ตรินิตี้ สีลม, ป้ายรถประจำทางไปสาทร (บันไดเลื่อน)","en":"Diamond Tower, Shangarila Suite Hotel, Heritage Hotel Si Lom, Soi Pipat 2, "}}
+        ],
+        "S4":[
+            {"exitNumber":"1","name":{"th":"ดิ แอดเดรส สาทร, เฮลท์แลนด์ สาทร, สีลม สวีท คอนโดมิเนียม","en":"The Address Sathorn,  Health Land Sathorn, Silom Suite Condominium"}},
+            {"exitNumber":"2","name":{"th":"เอไอเอ สาทร ทาวเวอร์,สถานฑูตอังกฤษ, คอนโด เซนต์หลุยส์แกรนด์เทอเรส, เซ็นทริค สาทร-เซ็นหลุยส์, สมาคมส่งเสริมพัฒนาเศรฐกิจไทย-จีน, โรงเรียนอัสสัมชันแผนกประถม, โรงเรียนอัสสัมชันพาณิชยการ, มาวิน สวีทส์, โรงพยาบาลเซนต์หลุยส์, วิทยาลัยเซนต์หลุยส์, วัดเซนต์หลุยส์, ธนาคารไทยพาณิชย์, ธนาคารกรุงเทพ, โรงเรียนเซนต์หลุยส์ศึกษา, ศูนย์ภาษาสาทร, สถานเอกอัครสมณฑูตวาติกัน","en":"AIA Sathorn Tower, British Embassy, St.Louis Grand Terrace Condominium, Centric Sathon-St. Louis, Thai-China Economic Development Association, Assumption College Primary Section, Assumption Commercial College, Marvin Suites, Sant Louis Hospital, Sant Louis College, Sant Louis Catholic Church, Thai Siam Commercial Bank, Bangkok Bank, Sant Louis Sucks School, Sathorn Center, Apostolic Nunciature Embassy of the Holy See"}},
+            {"exitNumber":"3","name":{"th":"ไลฟ์แอทสาทร 10, แพลนทอยส์, พิพิธภัณฑ์แม่, อนุบาลชวนชื่น, มูลนิธิกองทุนนิยมไทย, บริษัท ไทยแลนด์ พริวิลเลจการ์ด, โรงแรมดับเบิลยู กรุงเทพ, เดอะ เฮาส์ ออน สาทร, สถานเอกอัครราชฑูตเบลเยียม, สาทร สแควร์","en":"Life@Sathorn 10 Condominium, Plan Toys, Mother's Spiritual Museum, Joy Kindergarten, Niyom Thai Fund Foundation, Thailand Privilege, W Bangkok Hotel, The House on Sathorn, Embassy of Belgium."}},
+            {"exitNumber":"4","name":{"th":"อาคารเอ็มไพร์, อาคารรัจนาการ, โรงแรมเอสคอทท์ สาทร บางกอก, FITFAC มวยไทยสากล, สกาย วิลล่า สาทร, โรงพยาบาลบางรัก, เคอรี่ เอ็กซ์เพรส, บริษัท โซลวอนเทีย โซลาร์ จำกัด, อมรธานี, อาคาร ยูโอบี โรบอท, ธนาคารยูโอบี, ","en":"Empire Tower, Rajanakarn Building, Ascott Sathorn Bangkok, FITFAC Muaythai Sathorn, Sky Villas, Bangkok Hospital, Kerry Express Retail Service Point, Solventia Solar Co.Ltd, Amorn Thani Building, UOB Robot Building, United Overseas Bank."}},
+            {"exitNumber":"5","name":{"th":"เอส แอนด์ บี ทาวเวอร์, เศรษฐีวรรณ ทาวเวอร์, เมอร์คูล่า ดอท คอม, สาทร แกลลอรี่ เรสซิเดนซ์, โรงเรียนกรุงเทพคริสเตียนวิทยาลัย, ศูนย์ทำพาสปอร์ตพม่า, บริษัท ไบเออร์ไทย จำกัด, เวสเทิร์น ยูเนี่ยน,  บริษัท วอง จิวเวลรี่, สถานเอกอัครราชฑูตเมียนมา, เอเอ็นไอแอล สาทร 12","en":"S&B Tower, Sethiwan Tower, Mercula.com, Sathorn Gallery Residence, Bangkok Christian College, Myanmar Worker Passport Center, Bayer Thai Co.,Ltd, Western Union, Wong Jewelry Co.,Ltd, Embassy of Myanmar, ANIL Sathorn 12."}}
+        ],
+        "S5":[
+            {"exitNumber":"1","name":{"th":"ชาเตอร์สแควร์, ถนนสุรศักดิ์, ศูนย์บริการรถยนต์ฮอนด้า สาธร, นานมีบุ๊คส์, เอ.ไอ.เอ เซ็นเตอร์","en":"Chatered Square, Sathon Honda Cars, Nanmee Books, AIA Center"}},
+            {"exitNumber":"2","name":{"th":"ร้านอาหารบลูเอเลเฟ่นท์, อาคารหอการค้าไทย-จีน, โรงแรมคิง รอยัล การ์เด้นท์ อินน์, ออโต้ ซิตี้, เดอะ แบงค็อก สาทร (กำลังก่อสร้าง)","en":"Blue Elephant Restaurant, THAI CC Tower, King Royal Garden Inn, Auto City"}},
+            {"exitNumber":"3","name":{"th":"เอ.ไอ.เอ เซ็นเตอร์, โรงแรม โหมด สาทร แมเนจ บาย สยาม แอท สยาม, เดอะ ดิโพลแมท สาทร (กำลังก่อสร้าง), ถนนประมวญ, ป้ายรถประจำทางไปสี่แยกนราทร (บันไดเลื่อน)","en":"AIA Center Building, Mode Sathorn Hotel Bangkok, The Diplomat Sathorn, Pramuan Road"}},
+            {"exitNumber":"4","name":{"th":"มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี, โรงแรมอิสติน แกรนด์ สาทร กรุงเทพฯ, บางกอก โค้ด","en":"King Mongkut's University of Technology Thonburi, Eastin Grand Hotel Sathorn, Bangkok Code"}}
+        ],
+        "S6":[
+            {"exitNumber":"1","name":{"th":"ท่าเรือข้ามฟาก-ท่าเรือเป็ปซี่ (บันไดเลื่อน)","en":"Pepsi Pier"}},
+            {"exitNumber":"2","name":{"th":"ท่าเรือสาทร, ศูนย์บริการร่วมคมนาคม","en":"Sathorn Pier, Transportation Service Center"}},
+            {"exitNumber":"3","name":{"th":"ธนาคารกรุงเทพ, ถนนเจริญกรุง, ป้ายรถประจำทางถนนเจริญกรุง (บันไดเลื่อน)","en":"Bangkok Bank, Charoen Krung Road, Bus stop Charoen Krung Road"}},
+            {"exitNumber":"4","name":{"th":"ถนนเจริญกรุง, ป้ายรถประจำทางถนนเจริญกรุง","en":"Charoen Krung Road, Bus stop Charoen Krung Road"}}
+        ],
+        "S7":[
+            {"exitNumber":"1","name":{"th":"ซอยกรุงธนบุรี 3, สินสาธรทาวเวอร์, ธนาคารกรุงศรีอยุธยา, คิว เฮ้าส์ คอนโด สาทร, ท่ารถประจำทางรับอากาศสาย 84 (บันไดเลื่อน)","en":"Sinn Sathorn Tower, Bank of Ayudhya Public Company Limited, Q.House Condo Sathorn, Bus station 84"}},
+            {"exitNumber":"2","name":{"th":"ไอดีโอ สาทร-ตากสิน, อาคารไทยศรีประกันภัย, ปั๊มน้ำมันบางจาก, ศูนย์บริการสาธารณสุข 28 กรุงธนบุรี, ป้ายรถประจำทางไปแยกตากสิน","en":"IDO Sathorn-Taksin, Thaisri Insurance Public Company Limited, Bang Chak Petrol Station, Public Health Service Center, Thon Buri 28"}},
+            {"exitNumber":"3","name":{"th":"ไฮฟ์ สาธร, วิลล่า สาทร คอนโดมีเนียม, ซอยกรุงธนบุรี 5","en":"Hive Sathorn, Villa Sathorn Condominium, Soi Krung Thonburi 5"}},
+            {"exitNumber":"4","name":{"th":"ซอยกรุงธนบุรี 8, ร้านอาหารนทีทิพย์ & บ้านหลังที่ 2, เดอะ แบงค็อก สาทร-ตากสิน, ไอดีโอ โมบิ สาทร-ตากสิน, ป้ายรถประจำทางไปแยกตากสิน (บันไดเลื่อน)","en":"Soi Krung Thonburi 8, Natheethip restaurants, The Bangkok Sathorn-Taksin, Ideo Mobi Sathorn"}}
+        ],
+        "S8":[
+            {"exitNumber":"1","name":{"th":"สถาบันเดอะเกน, อาคารสตีมมาสเตอร์, ป้ายรถประจำทางไปสะพานตากสิน (บันไดเลื่อน), สกายวอล์ค","en":"The Gain Academy, Steam Master Building, Bus stop to Saphan Taksin (esculator), Sky Walk"}},
+            {"exitNumber":"2","name":{"th":"เดอะ รูม คอนโด (กำลังก่อสร้าง), อาคารลีแมชชีนทูลส์ ซอยกรุงธนบุรี 2, ทีล คอนโด ป้ายรถประจำทางไปแยกตากสิน, สกายวอล์ค","en":"Theroom Condo, Lee Machine Tools, Soi Thon Buri 2, Teal Condo, Bus stop to Taksin Intersection, Sky Walk"}},
+            {"exitNumber":"3","name":{"th":"ซอยกรุงธนบุรี 1, ป้ายรถประจำทางไปสะพานตากสิน","en":"Soi Krung Thonburi 1, Bus stop to Saphan Taksin"}},
+            {"exitNumber":"4","name":{"th":"ซอยกรุงธนบุรี 4, ป้ายรถประจำทางไปแยกตากสิน (บันไดเลื่อน)","en":"Soi Krung Thonburi 4, Bus stop to Taksin Intersection"}}
+        ],
+        "S9":[
+            {"exitNumber":"1","name":{"th":"วัดโพฺธิ์นิมิตสถิตมหาสีมาราม, ซอยเทอคไท 21","en":"โพธิ์นิมิตWat Pho Statue of Maha Sammaram, Soi Terdithi 21"}},
+            {"exitNumber":"2","name":{"th":"โรงเรียนมณีวิทยา, เดอะรูม คอนโด, ไอดีโอสาทร-ท่าพระ","en":"Maneewattana School, TheRoom Condo, IDO Sathorn-ThaPhra"}},
+            {"exitNumber":"3","name":{"th":"โรงเรียนโพธิ์นิมิต, ซอยเทอคไท 19","en":"Potinimitwittayakom School, Soi Thoet Thai 19"}},
+            {"exitNumber":"4","name":{"th":"ซอยสมเด็จพระเจ้าตากสิน 8, ซอยสมเด็จพระเจ้าตากสิน 14, ธนาคารกรุงเทพ, ธนาคารกรุงไทย, ธนาคารกรุงศรีอยุธยา, ธนาคารไทยพาณิชย์, โรงพยาบาลสมิติเวช ธนบุรี","en":"Soi Somdet Phrachao Tak Sin 8, Soi Somdet Phrachao Tak Sin 14, Samitivej Hospital in Thonburi, Siam Commercial bank, Bangkok Bank, Krung Thai Bank, Bank of Ayudhya"}}
+        ],
+        "W1":[
+            {"exitNumber":"1","name":{"th":"ซอยเกษมสันต์ 2 พิพิธภัณฑ์บ้านจิม ทอมป์สัน, สถาบันเทคโนโลยีปทุมวัน, เทสโก้ โลตัส พระราม 1, ป้ายรถประจำทางไปสยาม (บันไดเลื่อน)","en":"Jim Thompson House, Pathumwan Institute of Technology, Tesco Lotus Rama1, Bus stop to Siam"}},
+            {"exitNumber":"2","name":{"th":"ศาลาวชิราวุธ สนามกีฬาแห่งชาติ สี่แยกเจริญผล, ป้ายรถประจำทางไปยศเส (บันไดเลื่อน)","en":"Sala Vajiravat National StadiumBus stop to Yossae, Charoen Phon Intersection"}},
+            {"exitNumber":"3","name":{"th":"หอศิลป์ กทม. (สะพานเชื่อม)","en":"Bangkok Art and Culture Centre"}},
+            {"exitNumber":"4","name":{"th":"ห้างสรรพสินค้าโตคิว ชั้น 2 (สะพานเชื่อม), ลานหน้ามาบุญครอง, Skywalk เชื่อมต่อสี่แยกปทุมวัน, มาบุญครอง ชั้น 2 และ 3 (สะพานเชื่อม) ลานหน้ามาบุญครอง, หอศิลป์ กทม. ปปง. สะพานหัวช้าง และท่าเรือสะพานหัวช้าง, สยามสแควร์ ซอยกลาง-ซอย 2, สยามดิสคัฟเวอรี่ ชั้น M และ 1 (สะพานเชื่อม)","en":"Tokyu Department Store floor 2, MBK Center, Sky Walk Pratumwan Intersection, Hua Chang Bridge, Siam Square, M & 1st Floor Siam Discovery"}}
+        ]
+    },
+    "MRTBL":{
+        "BL01":[
+            {"exitNumber":"1","name":{"th":"ซอยเพชรเกษม 10/2","en":"Soi Phet Kasem 10/2"}},
+            {"exitNumber":"2A","name":{"th":"ซอยเพชรเกษม 11","en":"Soi Phet Kasem 11"}},
+            {"exitNumber":"2B","name":{"th":"สำนักงานเขตบางกอกใหญ่, ซอยเพชรเกษม 15","en":"Bangkokyai District Office, Soi Phet Kasem 15"}},
+            {"exitNumber":"3","name":{"th":"ซอยเพชรเกษม 12","en":"Soi Phet Kasem 12"}},
+            {"exitNumber":"4","name":{"th":"ซอยคริสตจักร","en":"Soi Krittajak"}}
+        ],
+        "BL02":[
+            {"exitNumber":"1","name":{"th":"ซอยจรัญสนิทวงศ์ 11, วัดเจ้ามูล","en":"Soi Charansanitwong 11, Wat Chaomun"}},
+            {"exitNumber":"2","name":{"th":"ซอยจรัญสนิทวงศ์ 13, วิทยาลัยพาณิชยการธนบุรี","en":"Soi Charansanitwong 13, Thonburi Commercial College"}},
+            {"exitNumber":"3","name":{"th":"การไฟฟ้านครหลวงธนบุรี, วัดโพธิ์เรียง","en":"Metropolitan Electricity Authority Thonburi Branch Office, Wat Phoreang"}},
+            {"exitNumber":"4","name":{"th":"วิทยาลัยเทคโนโลยีสยาม","en":"Siam Technology College"}}
+        ],
+        "BL03":[
+            {"exitNumber":"1","name":{"th":"ซอยพรานนก 1","en":"Soi Pranok 1"}},
+            {"exitNumber":"2","name":{"th":"ซอยจรัญสนิทวงศ์ 31/1","en":"Soi Charansanitwong 31/1"}},
+            {"exitNumber":"3","name":{"th":"ซอยจรัญสนิทวงศ์ 31/2, วัดรวกสุทธาราม, ตลาดบางขุนศรี","en":"Soi Charansanitwong 31/2, Wat Ruag Suttaram, Bang Khunsri Market"}},
+            {"exitNumber":"4","name":{"th":"โรงพยาบาลวิชัยเวช","en":"Vichaivej Hospital"}}
+        ],
+        "BL04":[
+            {"exitNumber":"1","name":{"th":"วัดสุทธาวาส, สถานีรถไฟธนบุรี, สำนักงานประปา เขตบางกอกน้อย, สถานีตำรวจนครบาลบางกอกน้อย, ซอยจรัญสนิทวงศ์ 30/1","en":"Wat Sutthawat, Thonburi Railway Station, Metropolitan waterworks Authority Bangkoknoi Branch Office,  Bangkoknoi Police Station, Soi Charansanitwong 30/1"}},
+            {"exitNumber":"2","name":{"th":"ซอยจรัญสนิทวงศ์ 39","en":"Soi Charansanitwong 39"}},
+            {"exitNumber":"3","name":{"th":"แยกบางขุนนนท์","en":"Bang Khun Non Intersection"}},
+            {"exitNumber":"4","name":{"th":"สำนักงานเขตบางกอกน้อย,  วัดสุวรรณารามราชวรวิหาร","en":"Bangkoknoi District Office, Watsuwannaram"}}
+        ],
+        "BL05":[
+            {"exitNumber":"1","name":{"th":"ซอยจรัญสนิทวงศ์ 49/1","en":"Soi Charansanitwong 49/1"}},
+            {"exitNumber":"2","name":{"th":"ซอยจรัญสนิทวงศ์ 55","en":"Soi Charansanitwong 55"}},
+            {"exitNumber":"3","name":{"th":"ซอยจรัญสนิทวงศ์ 42","en":"Soi Charansanitwong 42"}},
+            {"exitNumber":"4","name":{"th":"ซอยจรัญสนิทวงศ์ 40/1","en":"Soi Charansanitwong 40/1"}}
+        ],
+        "BL06":[
+            {"exitNumber":"1","name":{"th":"ซอยจรัญสนิทวงศ์ 64, วัดสิงห์","en":"Soi Charansanitwong 64, Wat Sing"}},
+            {"exitNumber":"2A","name":{"th":"ซอยจรัญสนิทวงศ์ 62","en":"Soi Charansanitwong 62"}},
+            {"exitNumber":"2B","name":{"th":"ซอยจรัญสนิทวงศ์ 56","en":"Soi Charansanitwong 56"}},
+            {"exitNumber":"3A, 3B","name":{"th":"สำนักงานที่ดิน บางกอกน้อย, ซอยจรัญสนิทวงศ์ 59","en":"Bangkok Noi Land Office, Soi Charansanitwong 59"}},
+            {"exitNumber":"3C","name":{"th":"ถนนสิรินธร","en":"Sirindhorn Road"}},
+            {"exitNumber":"3D, 3E, 3F","name":{"th":"ถนนราชวิถี","en":"Ratchawithi Road."}}
+        ],
+        "BL07":[
+            {"exitNumber":"1","name":{"th":"ซอยจรัญสนิทวงศ์ 81","en":"Soi Charansanitwong 81"}},
+            {"exitNumber":"2","name":{"th":"สำนักงานเขตบางพลัด, ซอยจรัญสนิทวงศ์ 83/1","en":"Bangphlat District Office, Soi Charansanitwong 83/1"}},
+            {"exitNumber":"3","name":{"th":"ซอยจรัญสนิทวงศ์ 76","en":"Soi Charansanitwong 76"}},
+            {"exitNumber":"4","name":{"th":"ซอยจรัญสนิทวงศ์ 72, วัดอาวุธวิกสิตาราม","en":"Soi Charansanitwong 72, Wat Awutvikasitaram"}}
+        ],
+        "BL08":[
+            {"exitNumber":"1","name":{"th":"ซอยจรัญสนิทวงศ์ 86/2, ศูนย์บริการสาธารณสุข 31, มัสยิดบางอ้อ","en":"Soi Charansanitwong 86/2, Health Center 31, Bang O Mosque"}},
+            {"exitNumber":"2","name":{"th":"ซอยจรัญสนิทวงศ์ 85, วัดสามัคคีสุทธาวาส","en":"Soi Charansanitwong 85, Wat Samakisutthawat"}},
+            {"exitNumber":"3","name":{"th":"ซอยจรัญสนิทวงศ์ 89/2","en":"Soi Charansanitwong 89/2"}},
+            {"exitNumber":"4","name":{"th":"โรงพยาบาลยันฮี, สถานีดับเพลิงบางอ้อ, วัดฉัตรแก้วจงกลณี","en":"Yanhee Hospital, Bang O Fire Station, Wat Chatkaew Chongkolnee"}}
+        ],
+        "BL09":[
+            {"exitNumber":"1A","name":{"th":"ท่าเรือบางโพ","en":"Bang Pho Pier"}},
+            {"exitNumber":"1B","name":{"th":"โรงเรียนทหารพลาธิการ","en":"Quartermaster Department Royal Thai Army"}},
+            {"exitNumber":"1C","name":{"th":"ท่าเรือบางโพ","en":"Bang Pho Pier"}},
+            {"exitNumber":"2A","name":{"th":"ถนนประชาราษฎร์ สาย 2, วัดบางโพโอมาวาส","en":"Thanon Pracha Rat Sai 2, Wat Bangpho Omawat"}},
+            {"exitNumber":"2B","name":{"th":"โรงพยาบาลบางโพ, ตลาดบางโพ","en":"Bangpho Hospital, Bangpho Market"}},
+            {"exitNumber":"3A","name":{"th":"ที่ทำการไปรษณีย์บางโพ, สถานีดับเพลิงบางโพ, ที่ทำการด่านป่าไม้กรุงเทพ","en":"Bang Pho Post Office, Bangpho Fire Station, Bangkok Forest Checkpoint Office"}},
+            {"exitNumber":"3B","name":{"th":"ซอยประชาราษฏร์สาย 1 ซอย 7","en":"Soi Pracha Rat Sai 1 Soi 7"}}
+        ],
+        "BL10":[
+            {"exitNumber":"1","name":{"th":"ซอยนำชัย","en":"Soi Namchai"}},
+            {"exitNumber":"2","name":{"th":"ซอยกรุงเทพ-นนทบุรี 1","en":"Soi Bangkok - Nonthaburi 1"}},
+            {"exitNumber":"3","name":{"th":"ซอยกรุงเทพ-นนทบุรี 2","en":"Soi Krung Thep - Nonthaburi 2"}},
+            {"exitNumber":"4","name":{"th":"ถนนประชาราษฎร์ สาย 2","en":"Pracha Rat Sai 2 Road"}}
+        ],
+        "BL11":[
+            {"exitNumber":"1","name":{"th":"ถนนเทอดดำริ","en":"Tathra Road"}},
+            {"exitNumber":"2","name":{"th":"ถนนรถไฟ","en":"Train Road"}}
+        ],
+        "BL12":[
+            {"exitNumber":"1","name":{"th":"ตลาดนัดจตุจักร","en":"Chatuchak market"}},
+            {"exitNumber":"2","name":{"th":"ตลาดนัดจตุจักร ถนนกำแพงเพชร 2","en":"Chatuchak market, Kamphaeng Phet 2"}},
+            {"exitNumber":"3","name":{"th":"ตลาด อตก. ถนนกำแพงเพชร","en":"market, Kamphaengphet Road"}}
+        ],
+        "BL13":[
+            {"exitNumber":"1","name":{"th":"ตลาดนัดจตุจักร","en":"Chatuchak market"}},
+            {"exitNumber":"2","name":{"th":"สวนจตุจักร","en":"Chatuchak park"}},
+            {"exitNumber":"3","name":{"th":"สถานีรถไฟฟ้าบีทีเอส หมอชิต","en":"BTS Mo Chit"}},
+            {"exitNumber":"4","name":{"th":"สถาบันการบินพลเรือน","en":"Civil Aviation Training Centre"}}
+        ],
+        "BL14":[
+            {"exitNumber":"1","name":{"th":"ซอยลาดพร้าว 4","en":"Soi Ladprao 4"}},
+            {"exitNumber":"2","name":{"th":"มหาวิทยาลัยเซนต์จอห์น","en":"Saint John's University"}},
+            {"exitNumber":"3","name":{"th":"สวนสมเด็จย่า 84","en":"Somdejya 84 Park"}},
+            {"exitNumber":"4","name":{"th":"เทสโก้ โลตัส","en":"Tesco Lotus"}},
+            {"exitNumber":"5","name":{"th":"ยูเนี่ยนมอลล์","en":"Union Mall"}}
+        ],
+        "BL15":[
+            {"exitNumber":"1","name":{"th":"ซอยลาดพร้าว26","en":"Soi Ladprao 26"}},
+            {"exitNumber":"2","name":{"th":"ซอยลาดพร้าว 24","en":"Soi Ladprao 24"}},
+            {"exitNumber":"3","name":{"th":"ซอยลาดพร้าว 17","en":"Soi Ladphrao 17"}},
+            {"exitNumber":"4","name":{"th":"อาคารจอดแล้วจร","en":"MRTA Park and Ride Building"}}
+        ],
+        "BL16":[
+            {"exitNumber":"1","name":{"th":"โรงเรียนปัญจทรัพย์","en":"Panchasap School"}},
+            {"exitNumber":"2","name":{"th":"ซอยโชคชัย 29","en":"Soi Chok Chai 29"}},
+            {"exitNumber":"3","name":{"th":"ซอยรัชดาภิเษก 28","en":"Soi Ratchadaphisek 28"}},
+            {"exitNumber":"4","name":{"th":"ซอยรัชดาภิเษก 24","en":"Soi Ratchadaphisek 24"}}
+        ],
+        "BL17":[
+            {"exitNumber":"1","name":{"th":"สถานีตำรวจนครบาลสุทธิสาร","en":"Suthisarn Metro Police Office"}},
+            {"exitNumber":"2","name":{"th":"ซอยรัชดาภิเษก 20","en":"Soi Ratchadapisek 20"}},
+            {"exitNumber":"3","name":{"th":"ถนนสุทธิสารวินิจฉัย","en":"Sutthisarn Winichai road"}},
+            {"exitNumber":"4","name":{"th":"อาคารธนชาติ","en":"Thanachart Building"}}
+        ],
+        "BL18":[
+            {"exitNumber":"1","name":{"th":"ถนนประชาราษฎร์บำเพ็ญ","en":"Pracharat Bumpan Road"}},
+            {"exitNumber":"2","name":{"th":"สวิสโซเทล เลอคองคอร์ด กรุงเทพฯ","en":"Swissotel Le Concorde Bangkok"}},
+            {"exitNumber":"3","name":{"th":"ถนนประชาสงเคราะห์","en":"Pracha Songkhro Road"}},
+            {"exitNumber":"4","name":{"th":"โรงเรียนกุนนทีรุทธารามวิทยาคม","en":"Kunnatee Rutharam Wittayakhom School"}}
+        ],
+        "BL19":[
+            {"exitNumber":"1","name":{"th":"ศูนย์วัฒนธรรมแห่งประเทศไทย","en":"Thailand Cultural Centre"}},
+            {"exitNumber":"2","name":{"th":"อาคารจอดแล้วจร","en":"Park and Ride Building"}},
+            {"exitNumber":"3","name":{"th":"อาคารตลาดหลักทรัพย์แห่งประเทศไทย","en":"The tock Exchange of Thailand"}},
+            {"exitNumber":"4","name":{"th":"อาร์เอสทาวเวอร์","en":"RS Tower"}}
+        ],
+        "BL20":[
+            {"exitNumber":"1","name":{"th":"อาคารฟอร์จูน ทาวน์","en":"Fortune Town Building"}},
+            {"exitNumber":"2","name":{"th":"ศูนย์การค้าเซ็นทรัลพลาซ่า แกรนด์ พระราม 9","en":"CentralPlaza Grand RAMA 9"}},
+            {"exitNumber":"3","name":{"th":"แยกพระราม 9","en":"Rama 9 Intersection"}}
+        ],
+        "BL21":[
+            {"exitNumber":"1","name":{"th":"ถนนอโศก-ดินแดง, ทางเชื่อม สะพานเดินลอยฟ้า รถไฟฟ้าใต้ดิน - รถไฟฟ้าแอร์พอร์ตลิงค์ สถานีมัีกกะสัน","en":"Makkasarn station (Airport Rail Link) - MRT skywalk"}},
+            {"exitNumber":"2","name":{"th":"ท่าเรืออโศก คลองแสนแสบ","en":"Asoke Pier, Klong Saen Seap"}},
+            {"exitNumber":"3","name":{"th":"พี เค ทาวน์","en":"PK Town"}}
+        ],
+        "BL22":[
+            {"exitNumber":"1","name":{"th":"ถนนอโศกมนตรี","en":"Asok Montri Road"}},
+            {"exitNumber":"2","name":{"th":"อินเตอร์เชนจ์ 21","en":"Interchange 21"}},
+            {"exitNumber":"3","name":{"th":"ถนนสุขุมวิท","en":"Sukhumvit Road"}}
+        ],
+        "BL23":[
+            {"exitNumber":"1","name":{"th":"ซอยไผ่สิงห์โต ","en":"Soi Phai Singto"}},
+            {"exitNumber":"2","name":{"th":"โรงเรียนคลองเตยวิทยา","en":"Khlong Toei School"}},
+            {"exitNumber":"3","name":{"th":"ศูนย์การประชุมแห่งชาติสิริกิติ์","en":"Queen Sirikit National Convention Center"}},
+            {"exitNumber":"4","name":{"th":"ซอยไผ่สิงห์โต","en":"Soi Phai Singto"}}
+        ],
+        "BL24":[
+            {"exitNumber":"1","name":{"th":"การไฟฟ้านครหลวงเขตคลองเตย","en":"Metropolitan Electricity Authority, Klong Toey"}},
+            {"exitNumber":"2","name":{"th":"โรงงานยาสูบ","en":"Tobacco factory"}}
+        ],
+        "BL25":[
+            {"exitNumber":"1","name":{"th":"ถนนพระราม 4","en":"Rama 4 Road"}},
+            {"exitNumber":"2","name":{"th":"ถนนสาทรใต้","en":"South Sathorn Road"}},
+            {"exitNumber":"3","name":{"th":"ถนนวิทยุ","en":"Wireless Road"}}
+        ],
+        "BL26":[
+            {"exitNumber":"1","name":{"th":"สวนลุมพินี","en":"Lumphini Park"}},
+            {"exitNumber":"2","name":{"th":"สถานีรถไฟฟ้าบีทีเอส ศาลาแดง","en":"BTS Station, Sala Daeng"}}
+        ],
+        "BL27":[
+            {"exitNumber":"1","name":{"th":"วัดหัวลำโพง","en":"Wat Hua Lamphong"}},
+            {"exitNumber":"2","name":{"th":"จตุรัสจามจุรี","en":"Chamchuri Square"}}
+        ],
+        "BL28":[
+            {"exitNumber":"1","name":{"th":"ถนนมหาพฤฒาราม","en":"Mahaphruettharam Road"}},
+            {"exitNumber":"2","name":{"th":"สถานีรถไฟกรุงเทพ(หัวลำโพง)","en":"Bankok Train Station(Hua Lamphong Station)"}},
+            {"exitNumber":"3","name":{"th":"ถนนรองเมือง","en":"Rong Mueang Road"}},
+            {"exitNumber":"4","name":{"th":"โรงแรมบางกอกเซ็นเตอร์","en":"Bangkok Center Hotel"}}
+        ],
+        "BL29":[
+            {"exitNumber":"1","name":{"th":"ถนนเจริญกรุง","en":"Chareon Krung Road"}},
+            {"exitNumber":"2","name":{"th":"วัดกันมาตุยาราม","en":"Wat Kanmatuyaram"}},
+            {"exitNumber":"3","name":{"th":"วัดมังกรกมลาวาส","en":"Wat Mangkon Kammalawat"}}
+        ],
+        "BL30":[
+            {"exitNumber":"1","name":{"th":"ถนนมหาไชย , เมก้า พลาซ่า","en":"Maha Chai Road , Mega Plaza"}},
+            {"exitNumber":"2","name":{"th":"ถนนเจริญกรุง","en":"Charoenkrung Road"}},
+            {"exitNumber":"3","name":{"th":"ดิโอลด์สยาม พลาซ่า","en":"The Old Siam Plaza"}}
+        ],
+        "BL31":[
+            {"exitNumber":"1","name":{"th":"มิวเซียม สยาม","en":"Museum Siam"}},
+            {"exitNumber":"2","name":{"th":"โรงเรียนวัดราชบพิธ","en":"Wat Rajabopit School"}},
+            {"exitNumber":"3","name":{"th":"โรงเรียนวัดราชบพิธ","en":"Wat Rajabopit School"}},
+            {"exitNumber":"4","name":{"th":"ปากคลองตลาด","en":"Flower market"}},
+            {"exitNumber":"5","name":{"th":"สถานีตำรวจนครบาล พระราชวัง , โรงเรียนราชินี","en":"Phra Ratchawang Police Station , Rajini School"}}
+        ],
+        "BL32":[
+            {"exitNumber":"1","name":{"th":"ซอยอิสรภาพ 34","en":"Soi Itsaraphap 34"}},
+            {"exitNumber":"2","name":{"th":"วัดราชสิทธาราม , ซอยอิสรภาพ 23","en":"Wat Ratchasittharam , Soi Itsaraphap 23"}}
+        ],
+        "BL33":[
+            {"exitNumber":"1","name":{"th":"โรงเรียนวัดนวลนรดิศ","en":"Wat Nuannoradit School"}},
+            {"exitNumber":"2","name":{"th":"โรงพยาบาลพญาไท 3","en":"Phayathai 3 Hospital"}},
+            {"exitNumber":"3","name":{"th":"โรงพยาบาลบางไผ่, ซอยเพชรเกษม 22","en":"โรงพยาบาลบางไผ่, ซอยเพชรเกษม 22"}},
+            {"exitNumber":"4","name":{"th":"โรงเรียนเผดิมศึกษา","en":"Phadermsuksa School"}}
+        ],
+        "BL34":[
+            {"exitNumber":"1","name":{"th":"ซอยเพชรเกษม 36, มหาวิทยาลัยสยาม, วัดประดู่บางจาก","en":"Soi Petchkasem 36, Siam University, Wat Pradu Bang Chak"}},
+            {"exitNumber":"2","name":{"th":"ซอยเพชรเกษม 25/3","en":"Soi Petchkasem 25/3"}},
+            {"exitNumber":"3","name":{"th":"บีทีเอส บางหว้า","en":"BTS Bang Wa Station"}},
+            {"exitNumber":"4","name":{"th":"บีทีเอส บางหว้า","en":"BTS Bang Wa Station"}}
+        ],
+        "BL35":[
+            {"exitNumber":"1","name":{"th":"ซอยเพชรเกษม 46/3, โรงเรียนวัดจันทร์ประดิษฐาราม, วัดจันทร์ประดิษฐาราม","en":"Soi Petchkasem 46/3, Wat Chanpradittharam School, Wat Chanpradittharam"}},
+            {"exitNumber":"2","name":{"th":"ซอยเพชรเกษม 46/1, ขุนด่านศาลเจ้าพ่อเสือ","en":"Soi Petchkasem 46/1, Kundan chao-por-seua shrine"}},
+            {"exitNumber":"3","name":{"th":"ซอยเพชรเกษม 29/1","en":"Soi Petchkasem 29/1"}},
+            {"exitNumber":"4","name":{"th":"ซอยเพชรเกษม 31/3, วัดรางบัว","en":"Soi Petchkasem 31/3, Wat Rang Bua"}}
+        ],
+        "BL36":[
+            {"exitNumber":"1","name":{"th":"ซอยเพชรเกษม 33/8, สถานีกาชาดที่ 11 วิเศษนิยม","en":"Soi Petchkasem 33/8, Red Cross Health Station No.11 Visesniyom"}},
+            {"exitNumber":"2","name":{"th":"ซอยเพชรเกษม 35, ท่าเรือเพชรเกษม 35, โรงพยาบาลเพชรเกษม 2","en":"Soi Petchkasem 35, Petchkasem 35 Pier, Petchkasem 2 Hospital"}},
+            {"exitNumber":"3","name":{"th":"ซอยเพชรเกษม 56","en":"Soi Petchkasem 56"}},
+            {"exitNumber":"4","name":{"th":"ซอยเพชรเกษม 54, สำนักงานเขตภาษีเจริญ, สถานีตำรวจภาษีเจริญ","en":"Soi Petchkasem 54, Phasi Charoen District Office, Phasi Charoen Police Station"}}
+        ],
+        "BL37":[
+            {"exitNumber":"1","name":{"th":"โรงเรียนราชวินิตประถม บางแค, ซอยเพชรเกษม 62/4","en":"Ratchawinit School, Soi Petchkasem 62/4"}},
+            {"exitNumber":"2","name":{"th":"ซอยเพชรเกษม 62/3","en":"Soi Petchkasem 62/3"}},
+            {"exitNumber":"3","name":{"th":"ตลาดบางแค","en":"Bang Khae Market"}},
+            {"exitNumber":"4","name":{"th":"แยกบางแค, วัดนิมมานนรดี, โรงเรียนวัดนิมมานรดี, โรงเรียนเตรียมสาธิตศึกษา, สถานีดับเพลิงและกู้ภัยบางแค","en":"Bang Khae Intersection, Wat Nimma-noradi, Wat Nimma-noradi School, Triamsatitsuksa School, Bangkae Fire & Rescue Station"}}
+        ],
+        "BL38":[
+            {"exitNumber":"1","name":{"th":"อาคารจอดแล้วจร 1, ซอยเพชรเกษม 80","en":"Park and Ride Building 1, Soi Petchkasem 80"}},
+            {"exitNumber":"2","name":{"th":"อาคารจอดแล้วจร 2, ซอยเพชรเกษม 47/1","en":"Park and Ride Building 2, Soi Petchkasem 47/1"}},
+            {"exitNumber":"3","name":{"th":"ซอยเพชรเกษม 47/2, โรงพยาบาลเกษมราษฏร์ บางแค, ศูนย์บริการสาธารณสุข 40 บางแค","en":"Soi Petchkasem 84, Kasemrad Bangkae Hospital, Health Center 40 Bangkae"}},
+            {"exitNumber":"4","name":{"th":"ซอยเพชรเกษม 84","en":"Soi Petchkasem 84"}}
+        ]
+    },
+    "MRTPL":{
+        "PP01":[
+            {"exitNumber":"1","name":{"th":"ถนนหมู่บ้านบัวทอง","en":"Banbuathong Village Road"}},
+            {"exitNumber":"2","name":{"th":"ถนนเลียบคลองบางไผ่","en":"Liab Khlong Bang Phai Road"}},
+            {"exitNumber":"3","name":{"th":"อาคารจอดรถ","en":"Park & Ride Building"}},
+            {"exitNumber":"4","name":{"th":"อาคารศูนย์ซ่อมบำรุงรถไฟฟ้า","en":"Main Depot"}}
+        ],
+        "PP02":[
+            {"exitNumber":"1","name":{"th":"ซอยหมู่บ้านบางใหญ่ซิตี้ เซ็นเตอร์","en":"Soi Bang Yai City Center"}},
+            {"exitNumber":"2","name":{"th":"ถนนกาญจนาภิเษก เลียบคลองบางแพรก","en":"Kanchanaphisek Road"}},
+            {"exitNumber":"3","name":{"th":"ซอยหมู่บ้านรัตนาธิเบศร์","en":"Rattanathibet Village"}},
+            {"exitNumber":"4","name":{"th":"เซ็นทรัล เวสท์เกต บางใหญ่ , โรงพยาบาลเกษมราษฎร์รัตนาธิเบศร์","en":"CentralPlaza Westgate Bang Yai , Kasemrad Rattanathibet Hospital"}}
+        ],
+        "PP03":[
+            {"exitNumber":"1","name":{"th":"หมู่บ้านกฤษดานคร 10","en":"Krisada Nakhon 10 Village"}},
+            {"exitNumber":"2","name":{"th":"ทางเชื่อมต่ออาคารจอดรถ","en":"Park and Ride Building"}},
+            {"exitNumber":"3","name":{"th":"ซอยวัดมะเดื่อ","en":"Soi Wat Maduea"}},
+            {"exitNumber":"4","name":{"th":"ซอยหมู่บ้านธนกาญจน์","en":"Soi Thanakan Village"}}
+        ],
+        "PP04":[
+            {"exitNumber":"1","name":{"th":"วัดบางไผ่","en":"Wat Bang Phai"}},
+            {"exitNumber":"2","name":{"th":"ซอยหมู่บ้านภัสสร","en":"Soi Passorn Village"}},
+            {"exitNumber":"3","name":{"th":"ซอยหมู่บ้านราชพฤกษ์","en":"Ratchaphruek Village"}},
+            {"exitNumber":"4","name":{"th":"วัดบางแพรก","en":"Wat Bang Phraek"}}
+        ],
+        "PP05":[
+            {"exitNumber":"1","name":{"th":"หมู่บ้านธนาสิริ","en":"Thana Siri Village"}},
+            {"exitNumber":"2","name":{"th":"ซอยโยธาธิการ นนทบุรี","en":"Soi Yothathikarn Nonthaburi"}},
+            {"exitNumber":"3","name":{"th":"วัดบางรักใหญ่","en":"Wat Bang Rak Yai"}},
+            {"exitNumber":"4","name":{"th":"ถนนบางกรวย-ไทรน้อย(ฝั่งใต้)","en":"Bang Kruai - Sai Noi Road(South)"}}
+        ],
+        "PP06":[
+            {"exitNumber":"1","name":{"th":"อาคารจอดรถ","en":"Park and Ride Building "}},
+            {"exitNumber":"2","name":{"th":"หมู่บ้านลัดดาวัลย์","en":"Ladawan Village"}},
+            {"exitNumber":"3","name":{"th":"ถนนราชพฤกษ์(ฝั่งใต้) ","en":"Ratchaphruek Road (South)"}},
+            {"exitNumber":"4","name":{"th":"ถนนราชพฤกษ์(ฝั่งเหนือ) ","en":"Ratchaphruek Road (North)"}}
+        ],
+        "PP07":[
+            {"exitNumber":"1","name":{"th":"ซอยหมู่บ้านลัดดารมย์","en":"Soi Laddarom Village"}},
+            {"exitNumber":"2","name":{"th":"ซอยตาหรั่ง","en":"Soi Tarang"}},
+            {"exitNumber":"3","name":{"th":"ซอยหมู่บ้านซื่อตรงรัตนาธิเบศร์","en":"Soi Suetrong Housing Rattanathibet"}},
+            {"exitNumber":"4","name":{"th":"ซอยหมู่บ้านนราธิป","en":"Soi Narathip Village"}}
+        ],
+        "PP08":[
+            {"exitNumber":"1","name":{"th":"มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ","en":"Rajamangala University of Technology Suvarnabhumi"}},
+            {"exitNumber":"2","name":{"th":"โรงพยาบาลพระนั่งเกล้า","en":"Pranangklao Hospital"}},
+            {"exitNumber":"3","name":{"th":"ท่าเรือพระนั่งเกล้า","en":"Pranangklao Pier"}}
+        ],
+        "PP09":[
+            {"exitNumber":"1","name":{"th":"ซอยเลี่ยงเมืองนนทบุรี 10","en":"Soi Liang Mueang Nonthaburi 10"}},
+            {"exitNumber":"2","name":{"th":"ซอยประชาอุทิศ","en":"Soi Pracha Uthit"}},
+            {"exitNumber":"3","name":{"th":"ธนาคากรุงเทพ สาขาถนนรัตนาธิเบศร์","en":"Bangkok Bank Rattanathibet Road Branch"}},
+            {"exitNumber":"4","name":{"th":"อาคารจอดรถ","en":"Park and Ride Building"}}
+        ],
+        "PP10":[
+            {"exitNumber":"1","name":{"th":"ซอยรัตนาธิเบศร์ 13 ","en":"Soi Rattanathibet 13 "}},
+            {"exitNumber":"2","name":{"th":"ซอยรัตนาธิเบศร์ 17 ","en":"Soi Rattanathibet 17"}},
+            {"exitNumber":"3","name":{"th":"ซอยรัตนาธิเบศร์ 24","en":"Soi Rattanathibet 24"}},
+            {"exitNumber":"4","name":{"th":"ซอยรัตนาธิเบศร์ 20 ","en":"Soi Rattanathibet 20"}}
+        ],
+        "PP11":[
+            {"exitNumber":"1","name":{"th":"ศูนย์ราชการนนทบุรี","en":"Nonthaburi Civic Center"}},
+            {"exitNumber":"2","name":{"th":"บริษัท ไทยคม จำกัด (มหาชน)","en":"Thaicom Public Company Limited"}},
+            {"exitNumber":"3","name":{"th":"ซอยรัตนาธิเบศร์ 7","en":"Soi Rattanathibet 7"}},
+            {"exitNumber":"4","name":{"th":"ซอยรัตนาธิเบศร์ 10","en":"Soi Rattanathibet 10"}}
+        ],
+        "PP12":[
+            {"exitNumber":"1","name":{"th":"ซอยติวานนท์ 6","en":"Soi Tiwanon 6"}},
+            {"exitNumber":"2","name":{"th":"กระทรวงสาธารณสุข","en":"Ministry of Public Health"}},
+            {"exitNumber":"3","name":{"th":"ซอยติวานนท์ 1/1","en":"Soi Tiwanon 1/1"}},
+            {"exitNumber":"4","name":{"th":"สำนักงานสรรพากร ภาค 4","en":"Regional Revenue Office 4"}}
+        ],
+        "PP13":[
+            {"exitNumber":"1","name":{"th":"ซอยกรุงเทพนนท์ 14","en":"Soi Krungthepnon 14"}},
+            {"exitNumber":"2","name":{"th":"ซอยกรุงเทพนนท์ 12","en":"Soi Krungthepnon 12"}},
+            {"exitNumber":"3","name":{"th":"ซอยกรุงเทพนนท์ 7","en":"Soi Krungthepnon 7"}},
+            {"exitNumber":"4","name":{"th":"ซอยกรุงเทพนนท์ 11","en":"Soi Krungthepnon 11"}}
+        ],
+        "PP14":[
+            {"exitNumber":"1","name":{"th":"ซอยกรุงเทพ-นนทบุรี 41","en":"Soi Krungthep-Nonthaburi 41"}},
+            {"exitNumber":"2","name":{"th":"วัดทองสุทธาราม","en":"Wat Thong Suttharam "}},
+            {"exitNumber":"3","name":{"th":"สถานีดับเพลิงบางซ่อน","en":"Bang Son Fire Station"}},
+            {"exitNumber":"4","name":{"th":"แยกวงศ์สว่าง","en":"Yaek Wong Sawang"}}
+        ],
+        "PP15":[
+            {"exitNumber":"1","name":{"th":"ซอยกรุงเทพ-นนทบุรี 36","en":"Soi Bangkok - Nonthaburi 36"}},
+            {"exitNumber":"2","name":{"th":"ซอยกรุงเทพ-นนทบุรี 34","en":"Soi Bangkok - Nonthaburi 34"}},
+            {"exitNumber":"3","name":{"th":"ซอยกรุงเทพ-นนทบุรี 23/1","en":"Soi Bangkok - Nonthaburi 23/1"}},
+            {"exitNumber":"4","name":{"th":"ซอยกรุงเทพ-นนทบุรี 25","en":"Soi Bangkok - Nonthaburi 25"}},
+            {"exitNumber":"5","name":{"th":"สถานีรถไฟบางซ่อน (สายสีแดง)","en":"Bang Son Railway Station (Red Line)"}}
+        ],
+        "PP16":[
+            {"exitNumber":"1","name":{"th":"ซอยนำชัย","en":"Soi Namchai"}},
+            {"exitNumber":"2","name":{"th":"ซอยกรุงเทพ-นนทบุรี 1","en":"Soi Krungthep-Nonthaburi 1"}},
+            {"exitNumber":"3","name":{"th":"ซอยกรุงเทพ-นนทบุรี 2","en":"Soi Krungthep-Nonthaburi 2"}},
+            {"exitNumber":"4","name":{"th":"ถนนประชาราษฎร์ สาย 2","en":"Pracha Rat Sai 2 Road"}}
+        ]
+    },
+    "ARL":{
+        "A1":[
+            {"exitNumber":"0","name":{"th":"สนามบินสุวรรณภูมิ","en":"Suvarnabhumi Airport"}}
+        ],
+        "A2":[
+            {"exitNumber":"0","name":{"th":"สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง (ต่อรถไฟเข้าสถาบันฯ), วัดลาดกระบัง (วัดสาม)","en":""}}
+        ],
+        "A3":[
+            {"exitNumber":"0","name":{"th":"โรงเรียนสุเหร่าทับช้าง, มัสยิดเนี้ยะมาตุ้ลอิสลาม (ทับช้างล่าง) และมัสยิดกามาลุ้ลอีมาน (ปากคลองทับช้าง), โรงเรียนสุเหร่าทับช้างคลองบน, มัสยิดนูรุ้บเอี๊ยะห์ซาน (ทับช้างคลองบน), หมู่บ้านนักกีฬาแหลมทอง","en":""}}
+        ],
+        "A4":[
+            {"exitNumber":"0","name":{"th":"สถาบันเทคโนโลยีไทย-ญี่ปุ่น, มหาวิทยาลัยเกษมบัณทิต, โรงเรียนหัวหมาก, โรงพยาบาลสมิติเวช ศรีนครินทร์, โรงพยาบาลวิภาราม, ห้าง Max Value พัฒนาการ, มัสยิดดาริสลาม พัฒนาการ","en":""}}
+        ],
+        "A5":[
+            {"exitNumber":"0","name":{"th":"ตลาดคลองตัน, มัสยิดคลองตัน, มัสยิดมูลนิธิเพื่อศูนย์กลางศาสนาอิสลามแห่งประเทศไทย, สถานีไฟฟ้าแรงสูงบางกะปิ, มหาวิทยาลัยรามคำแหง, มหาวิทยาลัยอัสสัมชัญ, สนามกีฬาหัวหมาก, อาคาร UM Tower, สถาบันยุวทัศน์แห่งประเทศไทย, โรงเรียนเทพลีลา, ห้างสรรพสินค้า เดอะมอลล์ รามคำแหง 2, ห้างสรรพสินค้า เดอะมอลล์ รามคำแหง 3","en":""}}
+        ],
+        "A6":[
+            {"exitNumber":"0","name":{"th":"ถนนรัชดาภิเษก (อโศก-ดินแดง), ถนนกำแพงเพชร 7 (เชื่อมจากถนนนิคมมักกะสัน ถนนนานาเหนือ และสี่แยกมิตรสัมพันธ์), ถนนจตุรทิศ (ถนนเลียบบึงมักกะสัน), ทางพิเศษเฉลิมมหานคร (ทางด่วนขั้นที่ 1), ทางพิเศษศรีรัช (ทางด่วนขั้นที่ 2), โครงการมักกะสันคอมเพล็กซ์","en":""}}
+        ],
+        "A7":[
+            {"exitNumber":"0","name":{"th":"อยู่ทั้งสองฝั่งของถนนราชปรารภ โดยจะมีทั้งฝั่งขาออกของถนน (ไปแยกสามเหลี่ยมดินแดง) และฝั่งขาเข้าของถนน (ไปแยกประตูน้ำ/ราชประสงค์/สยาม) ซึ่งเป็นฝั่งเดียวกันกับที่หยุดรถไฟราชปรารภ","en":""}}
+        ],
+        "A8":[
+            {"exitNumber":"1","name":{"th":"อาคารพญาไทพลาซ่า, จุดหยุดรถไฟพญาไทฝั่งใต้, คอนโดบ้านปทุมวัน, ร้าน HEAP","en":"Phayathai Plaza Building, South Phayathai train stop, Baan Pathumwan, HEAP pub & restaurant"}},
+            {"exitNumber":"2","name":{"th":"ที่ทำการไปรษณีย์ราชเทวี, กรมปศุสัตว์, จุดหยุดรถไฟพญาไทฝั่งเหนือ, ป้ายรถประจำทางไปราชเทวี","en":"Ratchatewi Post Office, Department of Livestock Development, North Phayathai train stop, Bus stop to Ratchatewi"}},
+            {"exitNumber":"3","name":{"th":"อาคารซี.พี.ทาวเวอร์ 3 (พญาไท), โรงเรียนสันติราษฎร์, สำนักงานคณะรรมการการอุดมศึกษา, ป้ายรถประจำทางไปสะพานเสาวนี-นางเลิ้ง","en":"C.P.Tower 3 (Phyathai), Santirat Witthayalai School, Samnakngan Khanakammakan Kan Udomsueksa, Bus stop to Saphan Saowa Ni Nangloeng"}},
+            {"exitNumber":"4","name":{"th":"โรงแรมฟลอริดา, อาคารวรรณสรณ์, โรงแรมสยามซิตี้, โรงพยาบาลเดชา, วังสวนผักกาด","en":"Florida Hotel, Wannasorn Tower, The Sukosol Bangkok, Decha General Hospital"}},
+            {"exitNumber":"5","name":{"th":"สถานี BTS พญาไท (รถไฟฟ้าเชื่อมท่าอากาศยานสุวรรณภูมิ) (ทางเดินเชื่อม)","en":"BTS Phayathai station"}}
+        ]
+    },
+    "BTSGL":{
+        "G1":[
+            {"exitNumber":"1","name":{"th":"ซอยเจริญนคร 14, วัดทองเพลง, โรงเรียนนานาชาติอินเตอร์เนชั่นแนลไพโอเนียรส,โรงเรียนวัดทองเพลง, สินสาธร ทาวเวอร์,คิวเฮาส์คอนโด สาทร, ไฮฟ์ สาทร, ธนาคารกรุงศรีอยุธยา","en":"Soi Charoen Charoen 14, Q House Condo Sathorn"}},
+            {"exitNumber":"2","name":{"th":"ซอยกรุงธนบุรี 5, วัดสุวรรณ, โรงเรียนสอนดนตรีและเต้น,โรงเรียนวัดสุวรรณ, วิลล่า สาทร คอนโดมิเนียม, เดอะ ริเวอร์, วู ไลฟ์สไตล์ มอลล์, สราสินีออลสวีท,โรงแรมแกรนด์ ทาวเวอร์ อินน์ สาธร กรุงเทพ,โรงแรมคิง รอยัล ทู,โรงแรมเพนนินซูล่า, สราสินีออลสวีท,โรงแรมแกรนด์ ทาวเวอร์ อินน์ สาธร กรุงเทพ,โรงแรมคิง รอยัล ทู,โรงแรมเพนนินซูล่า, ท่าเรือโรงแรมเพนนินซูล่า, โกดังเสริมสุข, เรือแกรนด์เพิร์ล, ท่าเรือข้ามฟาก","en":"Soi Krungthonburi 5, Villa Sathorn Condominium"}},
+            {"exitNumber":"3","name":{"th":"สถานีกรุงธนบุรี สายสีเขียว (สายสีลม), อาคารเคเอกซ์, ไทยศรีประกันภัย,ไอดิโอ สาทร-ตากสิน,ไอดิโอ โมบิ สาทร-ตากสิน, ศูนย์บริการสาธารณะสุข 28 กรุงธนบุรี, ปั๊มน้ำมันบางจาก","en":"Krung Thonburi Station Green Line (Silom Line)"}},
+            {"exitNumber":"4","name":{"th":"ซอยกรุงธนบุรี 8, ร้านอาหารนทีทิพย์ & บ้านหลังที่ 2, ไอดีโอ โมบิ สาทร-ตากสิน, ป้ายรถประจำทางไปทางแยกตากสิน (บันไดเลื่อน), วัดยานนาวา, เดอะ แบงค็อกสาทร-ตากสิน,อาคารชูยศและบุตร, บ้านสาทรเจ้าพระยา, ศูนย์บริการร่วมคมนาคม, ไอบิส กรุงเทพ ริเวอร์ไซด์,ไอบิส กรุงเทพ ริเวอร์ไซด์, ศูนย์การค้า เสนาเฟสท์, ไอบิส กรุงเทพ ริเวอร์ไซด์,ไอบิส กรุงเทพ ริเวอร์ไซด์, สวนป่าเฉลิมพระเกียรติ, ท่าเรือเป็ปซี่","en":"Soi Krungthonburi 8, Nateitip Restaurant & House 2, The Bangkok Sathorn-Taksin, Ideo Mobi Sathorn-Taksin, bus stop to Taksin intersection (escalator)"}}
+        ],
+        "G2":[
+            {"exitNumber":"1","name":{"th":"ไอคอนสยาม (อาคารไอซีเอส), วิทยาลัยเทคโนโลยีมิตรผลบริหารธุรกิจ, ซอยเจริญนคร 2, ซอยเจริญนคร 4","en":"Icon Siam (ICS Building), Mitr Phol Business Administration Technology College, Soi Charoennakorn 2, Soi Charoennakorn 4"}},
+            {"exitNumber":"2","name":{"th":"ไอคอนสยาม (สะพานเชื่อมผ่านลานเจริญนครฮอลล์)","en":"Icon Siam (connecting bridge through the Lan Charoennakorn Hall)"}},
+            {"exitNumber":"3","name":{"th":"ไอคอนสยาม (อาคารหลัก), แมกโนเลียส์ วอเตอร์ฟร้อนท์ เรสซิเดนเซส และเดอะ เรสซิเดนเซส แอท แมนดาริน โอเรียนเต็ล แบงค็อก, โรงแรมมิลเลนเนียม ฮิลตัน, ซอยเจริญนคร 3, ซอยเจริญนคร 5","en":"Icon Siam (Main Building), Magnolias Waterfront Residences and The Residences at Mandarin Oriental Bangkok, Millennium Hilton Hotel , Soi Charoennakorn 3, Soi Charoen Nakorn 5"}}
+        ],
+        "G3":[
+            {"exitNumber":"1","name":{"th":"ศุภาลัย พรีเมียร์ เจริญนคร, ถนนลาดหญ้า","en":"Supalai Premier Charoen, Ladya Road"}},
+            {"exitNumber":"2","name":{"th":"โรงพยาบาลตากสิน, สำนักงานเขตคลองสาน, สถานีดับเพลิงปากคลองสาน, ถนนลาดหญ้า","en":"Taksin Hospital, Khlong San District Office, Pak Klongsan Fire Station, Lat Ya Road"}},
+            {"exitNumber":"3","name":{"th":"โรงพยาบาลตากสิน (ทางเชื่อม), ซอยสมเด็จเจ้าพระยา 17 (วัดทองนพคุณ), วัดทองนพคุณ","en":"Taksin Hospital (connecting way), Soi Somdet Chaopraya 17 (Wat Thong Noppakhun), Thong Noppakhun Temple"}}
+        ]
+    },
+    "SRTETDR":{
+        "RN01":[
+            {"exitNumber":"1","name":{"th":"ทดสอบ","en":"ทดสอบ"}}
+        ],
+        "RN02":[],
+        "RN03":[],
+        "RN04":[],
+        "RN05":[],
+        "RN06":[],
+        "RN07":[],
+        "RN08":[],
+        "RN09":[],
+        "RN10":[]
+    },
+    "SRTETLR":{
+        "RW01":[],
+        "RW02":[],
+        "RW05":[],
+        "RW06":[]
+    },
+    "MRTYL":{
+        "YL01":[
+            {"exitNumber":"1","name":{"th":"ศูนย์บริการส่งออกแบบเบ็ดเสร็จ,กรมส่งเสริมการค้าระหว่างประเทศ,ดิ ออริจิ้น รัชดา-ลาดพร้าว, ธนาคารกรุงเทพ","en":"ONESTOP Export service Center,Department of International Trade Promotion,The Origin Ratchada-Ladphrao, Bangkok Bank"}},
+            {"exitNumber":"2","name":{"th":"เฮ้าส์ 23 รัชดา-ลาดพร้าว,บ้านกลางเมือง แยกรัชดา-ลาดพร้าว, ปั๊มน้ำมัน ปตท.","en":"Haus 23 Ratchada-Ladprao, PTT Gas Station"}},
+            {"exitNumber":"3","name":{"th":"โชว์รูม อีซูซุ,ไอดีโอ ลาดพร้าว 17,วิสซ์ดอม อเวนิว รัชดา-ลาดพร้าว, โรงแรม เดอะ บาซาร์ แบงค็อก","en":"Isuzu Car Dealer,Ideo Lat Phrrao 17,Whizdom Avenue Ratchada-Ladprao, The Bazaar Hotel Bangkok"}},
+            {"exitNumber":"4","name":{"th":"อาคารจอดแล้วจร สถานีลาดพร้าว","en":"Park & Ride Building (Lad Phrao Station)"}},
+            {"exitNumber":"5","name":{"th":"ศาลอุทธรณ์,ศาลแขวงพระนครเหนือ,พิพิธภัณฑ์ศาลไทยหอจดหมายเหตุ,สถาบันพัฒนาข้าราชการ ฝ่ายตุลาการศาลยุติธรรม,เดอะ เบลกราเวีย รัชดา-ลาดพร้าว 15","en":"The Court of Appeal,Bangkok North Municapal Court,Court Museum of Thailand and Archives,Judicial Training Institute,The Belgravia Ratchada-Ladprao 15"}}
+        ],
+        "YL02":[
+            {"exitNumber":"1","name":{"th":"โชว์รูม เกีย มอเตอร์,พีเค แมนชั่น, ธนาคารกรุงไทย","en":"Kia Motor Car Dealer,P K Mansion, krung Thai Bank"}},
+            {"exitNumber":"2","name":{"th":"โรงเรียนอรัญญารักษ์บริบาล","en":"Aranyarak Nursing School"}},
+            {"exitNumber":"3","name":{"th":"สำนักงานเขตพื้นที่การศึกษา มัธยมศึกษากรุงเทพมหานคร เขต 2, โรงเรียนพิบูลอุปถัมภ์, คลินิก ก้าวใหม่ ลาดพร้าว","en":"The Secondary Educational Service Area Office Bangkok 2, Phiboon Uppathum School, New Step Clinic BMA Ladprao"}},
+            {"exitNumber":"4","name":{"th":"เดอะ ราฟเฟิล คอนโดมิเนียม,เดอะพัลซ์ ลาดพร้าว 44 ,เดอะเน็กซ์ คอนโดมิเนียม, ธนาคารกรุงเทพ, ปั๊มน้ำมัน เชลล์","en":"The Raffles Condominium,The Pulse Ladprao 44,The Next Condominium, Bangkok Bank, Shell Gas Station"}}
+        ],
+        "YL03":[
+            {"exitNumber":"1","name":{"th":"สถานีตำรวจนครบาลโชคชัย, ตลาดโชคชัย 4, โรงเรียนเศรษฐบุตรอุปถัมภ์, Settabutr Upathum School","en":"Chokchai Metropolitan Police Station, Chokchai 4 Market, "}},
+            {"exitNumber":"3","name":{"th":"กรมแผนที่ทหาร กองบัญชาการกองทัพไทย","en":"Royal Thai Survey Department"}},
+            {"exitNumber":"5","name":{"th":"ตลาดทรัพย์จันทร์ผัน","en":"Sabjanphan Market"}}
+        ],
+        "YL04":[
+            {"exitNumber":"1","name":{"th":"ที่ทำการไปรษณีย์ ลาดพร้าว, ธนาคารกสิกรไทย","en":"Lat Phrao Post Office, Kasikorn Bank"}},
+            {"exitNumber":"2","name":{"th":"เอ็มดี คลินิก, ปั๊มน้ำมันและแอลพีจี บางจาก,ปั๊มน้ำมันเชลล์","en":"MD Clinic, Bang Chak Gas & LPG Station,Shell Gas Station"}},
+            {"exitNumber":"3","name":{"th":"ศูนย์บริการ NT ลาดพร้าว,สำนักงานสรรพากรพื้นที่ สาขาวังทองหลาง, โรงพยาบาลเฉพาะกระดูกสันหลัง","en":"NT Service Center Ladprao,Wangthonglang Area Revenue Office, S Spine and Nerve Hospital"}}
+        ],
+        "YL05":[
+            {"exitNumber":"1","name":{"th":"ปั๊มน้ำมันและแอลพีจี บางจาก,ปั๊มน้ำมันเชลล์, บิ๊กซี ลาดพร้าว 1 (อิมพีเรียล ลาดพร้าว), ชายคาพักกาย","en":"Bang Chak Gas & LPG Station,Shell Gas Station, Big C Lat Phrao 1 (Imperial Lat Phrao), Chaychaphakay"}},
+            {"exitNumber":"3","name":{"th":"ธนาคารกรุงศรีอยุธยา,ธนาคารกรุงไทย","en":"Bank of Ayudthya, Khungthai Bank"}},
+            {"exitNumber":"4","name":{"th":"ศูนย์บริการ NT ลาดพร้าว,สำนักงานสรรพากรพื้นที่ สาขาวังทองหลาง","en":"NT Service Center Ladprao,Wangthonglang Area Revenue Office"}}
+        ],
+        "YL06":[
+            {"exitNumber":"1","name":{"th":"ฟู้ดแลนด์ ลาดพร้าว, โชว์รูมและศูนย์ อีซูซุ","en":"Foodland Ladprao, Isuzu Car Dealer"}},
+            {"exitNumber":"2","name":{"th":"โรงพยาบาลลาดพร้าว, ปั๊มน้ำมันเอสโซ่, ธนาคารกรุงเทพ, คริสตจักรร่วมนิมิตกรุงเทพฯ","en":"Ladprao General Hospital, Esso Gas Station, Bangkok Bank, Tha vision Full Gospel Bangkok Church (Ruamnimit)\\r\\n\\r\\n"}},
+            {"exitNumber":"3","name":{"th":"วัดแม่พระกุหลาบทิพย์","en":"Maria Rosa Mystica Church"}},
+            {"exitNumber":"4","name":{"th":"โรงเรียนบางกอกศึกษา, ออมนิ บิสซิเนส มอลล์","en":"Bangkok Suksa School, Omni Business Mall"}}
+        ],
+        "YL07":[
+            {"exitNumber":"1","name":{"th":"ปั๊มน้ำมัน เอสโซ่, ธนาคารกรุงเทพ, คริสตจักรร่วมนิมิตกรุงเทพฯ, ตลาดสดนครไทย","en":"Esso Gas Station, Bangkok Bank, Tha vision Full Gospel Bangkok Church (Ruamnimit), Nakhon Thai Fresh Market"}},
+            {"exitNumber":"2","name":{"th":"ศูนย์บริการนิสสัน,โชว์รูมวอลโว่","en":"Nissan Car Dealer,Volvo Showroom"}},
+            {"exitNumber":"4","name":{"th":"วัดแม่พระกุหลาบทิพย์","en":"Maria Rosa Mystica Church"}}
+        ],
+        "YL08":[
+            {"exitNumber":"1","name":{"th":"โรงพยาบาลเวชธานี, ปั๊มน้ำมัน บางจาก, ลุมพินีเซ็นเตอร์ ลาดพร้าว ,แอสปาย 113","en":"Vejthani Hospital, Bangchak Gas Station, Lumpini Center Ladprao,Aspire 113"}},
+            {"exitNumber":"2","name":{"th":"ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร, แฮปปี้แลนด์ เซ็นเตอร์,เอ็นมาร์ค พลาซ่า,โลตัส บางกะปิ","en":"Bank For Agriculture and Agriculture Cooperatvies, Happyland Center ,N Mark Plaza,Lotus Bangkapi"}},
+            {"exitNumber":"3","name":{"th":"ธนาคารกรุงเทพ, สถานีย่อยสูบน้ำ คลองยายเผื่อน, แม็คโคร สาขาลาดพร้าว,ตลาดตะวันนา บางกะปิ,เดอะมอลล์บางกะปิ","en":"Bangkok Bank, Pumping Pubstation Klong Yai Phuen, Makro Lat Phrao ,Tawanna Market, Bangkapi,The Mall Bangkapi"}},
+            {"exitNumber":"4","name":{"th":"ปั๊มน้ำมัน คาลเท็ก,ปั๊มน้ำมัน เอสโซ่, ธนาคารไทยพาณิชย์, โชว์รูมโตโยต้า,ลีฟวิ่งเพลส คอนโดมิเนียม, คริสตจักรข่าวประเสริฐ กรุงเทพ","en":"Caltex Gas Station,Esso Gas Station, Siam Commercial Bank, Toyota Showroom,Living Place Condominium, Goodnews Bangkok Church"}}
+        ],
+        "YL09":[
+            {"exitNumber":"1","name":{"th":"ท่าเรือบางกะปิ, สำนักงานเขตบางกะปิ ,คอนโดบางกะปิ เซนเตอร์, พันธุ์ทิพย์ บางกะปิ,ตลาดบางกะปิ, โรงแรม เดอะพันธุ์ทิพย์ โฮเทล ลาดพร้าว แบงค็อก, มัสยิด ฟัตฮุ้ลบารี, โรงเรียนอนุบาลหัวหมาก,โรงเรียนหัวหมากวิทยานุสรณ์","en":"Pantip Bangkapi,Bangkapi Market, The Pantip Hotel Ladphrao Bangkok, Bangkapi Pier, Bangkapi District Office,Bangkapi Center Condo, Fathulbaree Mosque, Huamark Kindergarten,Huamarkwittayanusorn School"}},
+            {"exitNumber":"3","name":{"th":"สินเศรษฐีคอนโดมิเนียม,สินเศรษฐีคอมเพล็กซ์","en":"Sinsetthi Condominium,Sinsetthi Complex"}},
+            {"exitNumber":"4","name":{"th":"ท่าเรือเดอะมอลล์บางกะปิ, โลตัส บางกะปิ ,เดอะมอลล์บางกะปิ, โรมแรม มอลล์ สวีท, เมเจอร์ ซีนีแพล็กซ์ โลตัส บางกะปิ, สันติสุขการ์เด้น คอนโดมิเนียม, ศูนย์การเรียนปัญญาภิวัฒน์-บางกะปิ","en":"Lotus Bangkapi ,The Mall Bangkapi, Mall Suites Hotel, Major Cineplex Lotus Bangkapi, The Mall Bang kapi Pier, SantiSuk Garden Condominium, Panyapiwat Learning Center – Bangkapi"}}
+        ],
+        "YL10":[
+            {"exitNumber":"1","name":{"th":"ปั๊มน้ำมัน พีที,ปั๊มน้ำมัน บางจาก, เดอะ แกรนด์ โฟร์วิงส์ คอนเวนชั่น โฮเทล, บริษัท มิตซูบิซิ อิเล็คทริค กันยงพัฒนา จำกัด ,อาคารรอยัล ลี","en":"PT Gas Station,Bangchak Gas Station, The Grand Fourwings Convention Hotel, MITSUBISHI ELECTRIC KANG YONG WATANA CO.,LTD,Royal Lee"}},
+            {"exitNumber":"2","name":{"th":"บริษัท สินมั่นคงประกันภัย จำกัด (มหาชน),เจ ดับบลิว ทาวเวอร์","en":"Syn Mun Kong Insurance Public Company Limited,JW Tower"}},
+            {"exitNumber":"3","name":{"th":"โรงพยาบาลสัตว์ หัวหมากเพ็ทเพลส,โรงพยาบาลสมิติเวช ศรีนครินทร์, โรงเรียนอนุบาลชุติมา","en":"Hua Mak Pet Place,Samitivej Srinakarin Hospital, Chutima Kindergarden"}},
+            {"exitNumber":"4","name":{"th":"อาคาร ลลิล ,อาคารทีเอฟ, สวนปิยะภิรมย์","en":"Lalin Property Building,TF Building, Piyapirom Park"}}
+        ],
+        "YL11":[
+            {"exitNumber":"1","name":{"th":"แอร์พอร์ต เรล ลิงก์ หัวหมาก, บลิซ คอนโด พระราม 9,ริชพาร์ค ทริปเปิล สเตชั่น,ริชพาร์ค,ริชวอล์ค,ลุมพินี เพลส ศรีนครินทร์-หัวหมาก, โรงเรียนหัวหมาก, ศูนย์อิสลามศึกษา มัสยิดดาริสสลาม, โรงแรมเซน กรุงเทพฯ","en":"Airport Rail, Bliz Condo Rama IX,Rich Park triple Station,Rich Park,Rich Walk,Lumpini Place Srinagarindra-Huamark, Huamak School, Islamic Study Center,Masjid Darissalam, Zayn Hotel Bangkok"}},
+            {"exitNumber":"2","name":{"th":"อาสกาญจน์ ศรีนครินทร์, คริสตจักรสวนหลวง, เดคคอรูม เฟอร์นิเจอร์,แม็กซ์แวลู ซูเปอร์มาร์เก็ต, ธนาคารกรุงเทพ","en":"Asakan Srinagarindra, Suan Luang Church, Decoroom Furniture Store,MaxValue Supermarket, Bangkok Bank"}},
+            {"exitNumber":"3","name":{"th":"พี เอส ไอ สำนักงานใหญ่, โรงเรียนคลองกลันตัน, โรงพยาบาลสัตว์นครินทร์","en":"PSI, Khlong Kelantan School, Nakarin Veterinary Hospital"}},
+            {"exitNumber":"4","name":{"th":"สถานีรถไฟ หัวหมาก (รฟท.)","en":"Hua Mak Railway Station (SRT)"}}
+        ],
+        "YL12":[
+            {"exitNumber":"1","name":{"th":"โรงเรียนเตรียมอุดมศึกษาพัฒนาการ, โมเดิร์นฟอร์ม ศรีนครินทร์ ,โชว์รูมและศูนย์ นิสสัน, ปั๊มน้ำมัน เอสโซ่, ธัญญา พาร์ค","en":"Modernform Srinakarin,Nissan Car dealer, Esso Gas Sation, Thanya Park, Triamudomsuksa Pattanakarn School"}},
+            {"exitNumber":"2","name":{"th":"ปั๊มน้ำมัน เซลล์","en":"Shell Gas Sation"}},
+            {"exitNumber":"3","name":{"th":"ตลาดอนามัย ศรีนครินทร์ 24","en":"Srinakarin 24 Health Market"}},
+            {"exitNumber":"4","name":{"th":"รีเจนท์ ศรีนครินทร์ ทาวเวอร์ ,โชว์รูมและศูนย์ ฮอนด้า, ปั๊มน้ำมัน ซัสโก้","en":"Regent Srinakarin Tower,Honda Car dealer, Susco Gas Sation"}}
+        ],
+        "YL13":[
+            {"exitNumber":"1","name":{"th":"สมาคมคนหูหนวกแห่งประเทศไทย, คลินิก สัตวแพทย์ 20","en":"National Association of the Deaf in Thailand, Veterinary 20 Clinic"}},
+            {"exitNumber":"2","name":{"th":"โรงแรม แกรนลอร์ด","en":"Grand Lord Hotel"}},
+            {"exitNumber":"3","name":{"th":"ธนาคารไทยพาณิชย์, มัสยิดดารุ้ลอามีน, เมกะ เฟอร์นิเจอร์มาร์เก็ต, โชว์รูมและศูนย์เมอร์เซเดส-เบนซ์,โชว์รูมและศูนย์มิตซูบิชิ","en":"Mercedes-Benz,MITSUBISHI Car dealer, Mega Furniture Market, Siam Commercial Bank, Masjid Darul-Ameen"}},
+            {"exitNumber":"4","name":{"th":"ธนาคารกรุงศรีอยุธยา, วัดขจรศิริ, ตลาดเอี่ยมสมบัติ, พรีม่า ศรีนครินทร์","en":"Prima Srinagarindra Condo, Wat Khachonsiri, lam Sombat Market, Krungsri Bank"}}
+        ],
+        "YL14":[
+            {"exitNumber":"1","name":{"th":"โชว์รูมและศูนย์ ซูซูกิ, โรงพยาบาลสัตว์ กรุงเทพ-นครินทร์, ปั๊มน้ำมัน บางจาก ,ปั๊มน้ำมัน เซลล์","en":"Bangkok Gas Station ,Shell Gas Station, Bangkok-Nakarin Animal Hospital, Suzuki Car dealer"}},
+            {"exitNumber":"2","name":{"th":"วิทยาลัยดุสิตธานี, โรงแรมดุสิตปริ๊นเซส ศรีนครินทร์, เดอะ คลาส แอสเธติด เซ็นเตอร์ ,โตโยต้าชัวร์","en":"The CLASS Aesthetic Center,Toyota Sure, Dusit Princess Srinakarin Hotel, Dusit Thani College"}},
+            {"exitNumber":"3","name":{"th":"เดอะ ทรีโอ การ์เด้น คอนโดมิเนียม, อาคาร เบลสซิ่ง วิลล์, แม็คโคร ฟูดเซอร์วิส","en":"Trio Garden ,Blessing Will Building, Markro Food Service"}},
+            {"exitNumber":"4","name":{"th":"มัสยิดดารุ้ลอามีน, โชว์รูมและศูนย์อีซูซุ, ปั๊มแก๊สเวิล์ด แอลพีจี","en":"Masjid Darul-Ameen, Wolrd LPG Gas Station, Isuzu Car dealer"}}
+        ],
+        "YL15":[
+            {"exitNumber":"1","name":{"th":"ตลาดนัดรถไฟ ศรีนครินทร์,ห้างสรรพสินค้าโรบินสัน ศรีนครินทร์,โลตัส, โรงภาพยนตร์ซีคอน ซีนีเพล็กซ์","en":"Srinagarindra Train Night Market,Robinson Department Store Srinagarindra,Lotus's, Seacon Cineplex"}},
+            {"exitNumber":"2","name":{"th":"โรงเรียนอนุบาลเปล่งประสิทธิ์ ศรีนครินทร์, พาราไดซ์ เพลส,ศูนย์การค้าพาราไดซ์ พาร์ค,โฮมโปร พาราไดซ์ พาร์ค, โรงภาพยนตร์พาราไดซ์ ซีนีเพล็กซ์","en":"Paradise Place,Paradise Park Shopping Center,Homepro Paradise Park, Paradise Cineplex, Plengprasiddhi Kindergarten"}},
+            {"exitNumber":"3","name":{"th":"อาคารยงยุทธ ปัญญาสกุลวงศ์, ศรีนครินทร์ มาเก็ต","en":"Srinagarindra Food Court, Yongyuth Panyasakulwong Building"}},
+            {"exitNumber":"4","name":{"th":"โรงแรมเดอ โบตั๋น ศรีนครินทร์, คับเฮาส์, เคเค อาร์พาร์ทเม้นท์, ปั๊มน้ำมัน ปตท.","en":"Cub House, De Botan Srinagarindra Hotel, KK Apartment, PTT Gas Station"}}
+        ],
+        "YL16":[
+            {"exitNumber":"1","name":{"th":"สวนอุศม, สโมสรธนาคารกรุงเทพ, โรงพยาบาลสินแพทย์ ศรีนครินทร์","en":"Bangkok Bank Sports Club, Synphaet Srinagarindra Hospital, Suan Usom"}},
+            {"exitNumber":"2","name":{"th":"โรงแรม เดอะ วัน เรสซิเดนซ์,โรงแรม โรแมนซ์,โรงแรม บีทูบางนา พรีเมียร์,โรงแรม โนโวเทล กรุงเทพ บางนา, เดอะสปิริต คอนโด","en":"The spirit Condo, The One Residence Hotel,Romance Hotel,B2 Bangna Premier Hotel,Novotel Bangkok Bangna Hotel"}},
+            {"exitNumber":"3","name":{"th":"ศุภาลัยปาร์ค ศรีนครินทร์","en":"Supalai Park Srinagarindra"}},
+            {"exitNumber":"4","name":{"th":"โชว์รูมและศูนย์ฟอร์ด,โชว์รูมและศูนย์เอ็มจี,โชว์รูมและศูนย์โตโยต้า,ปาร์ควิวแมนชั่น,โชว์รูมและศูนย์ ฮอนด้า ,แม็ค อพาร์ทเม้นท์, ปั๊มน้ำมัน ปตท.","en":"Ford Car Dealer,MG Car dealer,Toyota Car dealer,Park View Mansion,Honda Car dealer,M.A.C. Apartment, PTT Gas Station"}}
+        ],
+        "YL17":[
+            {"exitNumber":"1","name":{"th":"โรงจอดและซ่อมบำรุงไฟฟ้าสายเหลือง,ศูนย์ควบคุมการเดินการเดินรถไฟฟ้าสายเหลือง,แขวงทางหลวงสมุทรปราการ สำนักงานทางหลวงที่ 13, โรมแรม เมเปิล","en":"Yellow Line Depot,Yellow Line Operations Control Center ,Department of Highways, Ministry of Transport Highways Samut Prakan Province, Maple Hotel"}},
+            {"exitNumber":"2","name":{"th":"อาคารจอดแล้วจร,โชว์รูมและศูนย์ นิสสัน,โชว์รูมและศูนย์ เมอร์เซเดส-เบนซ์","en":"Park & Ride,Nissan Car dealer,Mercedes-Benz Car dealer"}},
+            {"exitNumber":"3","name":{"th":"ศุภาลัยปาร์ค ศรีนครินทร์ ,อาคาร ไทย ประกันชีวิต 4 ,แอมเพิล ทาวเวอร์, โรงแรม เดอโบตั๋น บางนา","en":"De Botan Bangna Hotel"}},
+            {"exitNumber":"4","name":{"th":"วัดศรีเอี่ยม, โรงเรียนศรีเอี่ยมอนุสรณ์","en":"Supalai Park Srinagarindra,Thai Insurance For Life Project,Ample Tower, Wat Sriiam, Srieam Anusorn School"}}
+        ],
+        "YL18":[
+            {"exitNumber":"1","name":{"th":"ปั๊มน้ำมัน ปตท.","en":"PTT Gas Station"}},
+            {"exitNumber":"2","name":{"th":"นิว โนเปิล ศรีนครินทร์ - ลาซาล,เดอะพาร์กแลนด์ ศรีนครินทร์, พรีเมียร์ เพลส ,แม็คโคร ศรีนครินทร์","en":"NUE Noble Srinakarin Lasalle,The Parkland Srinagarin, Premier Place,Makro Srinakarin"}},
+            {"exitNumber":"3","name":{"th":"เอ.พี.นครินทร์, ปั๊มน้ำมัน บางจาก","en":"Bangchak Gas Station, A.P.NAKARINTR"}}
+        ],
+        "YL19":[
+            {"exitNumber":"1","name":{"th":"โรงเรียนนานาชาติ ไทย-สิงคโปร์, โรงแรม ลีมาร์ค เรสซิเด้นท์, ไดนาสตี้ ไทล์ท้อป","en":"Thai-Singapore Internatial School, Lee’s Mark Residence Hotel, Drynasty Tiletop"}},
+            {"exitNumber":"2","name":{"th":"ปั๊มน้ำมัน เอสโซ่,ปั๊มแก๊ส แอลพีจี ปตท., ธนาคารกรุงเทพ, โชว์รูมและศูนย์ โตโยต้า","en":"Esso Gas Station,PTT LPG Gas Station, Bangkok bank, TOYOTA Car dealer"}},
+            {"exitNumber":"3","name":{"th":"โรงแรม ทองธารา เฮ้าส์, ปั๊มน้ำมัน ซัสโก้, ศูนย์บริการอีซูซุ","en":"Thongtara House Boutique Hotel Srinakarin, SUSCO Gas Station, Isuzu Car Dealer"}},
+            {"exitNumber":"4","name":{"th":"โรงแรมเบย์, ปั๊มน้ำมัน พีที, ธนาคารกรุงไทย","en":"Bay Hotel, PT Gas Station, Krungthai Bank"}}
+        ],
+        "YL20":[
+            {"exitNumber":"1","name":{"th":"เอส เอฟ ซีนีมา แจส เออเบิร์น ศรีนครินทร์, ฟู้ดแลนด์ศรีนครินทร์ ,แจส เออเบิร์น ศรีนครินทร์, เคเอฟซี, ปั๊มน้ำมัน บางจาก","en":"Bangchak Gas Station, Foodland Srinagarindra, JAS Urban Srinakarin, KFC Drive Thru, SF Cinema JAS Urdan Srinakarin"}},
+            {"exitNumber":"2","name":{"th":"Palace Hotel","en":"-"}},
+            {"exitNumber":"3","name":{"th":"ที่ทำการไปรษณีย์ ด่านสำโรง, ตลาดศรีด่านศรีนครินทร์","en":"Dan Srinagarindra Market, Dan Samrong Post Office\\r\\n\\r\\n"}},
+            {"exitNumber":"4","name":{"th":"โรงพยาบาลสัตว์ศิรินครินทร์ ,โรงพยาบาลสัตว์ยูเว็ท&เอ็กโซติก บางนา","en":"Sirinakarin Pet Hospital,U Vet and Exotic Animal Hospital Bangna"}}
+        ],
+        "YL21":[
+            {"exitNumber":"1","name":{"th":"ปั๊มน้ำมัน ปตท.","en":"PTT Gas Station"}},
+            {"exitNumber":"2","name":{"th":"ปั๊มน้ำมันบางจาก, อรวิดาแกรนด์ คอนโด เรสซิเดนซ์, ธนาคารกรุงไทย","en":"Bangchak Gas Station, Onvida Residence, Krungthai Bank"}},
+            {"exitNumber":"3","name":{"th":"อาคารดับบลิวเอชเอ ทาวเวอร์","en":"WHA Tower"}},
+            {"exitNumber":"4","name":{"th":"โชว์รูมและศูนย์ นิสสัน","en":"Nissan Car dealer"}}
+        ],
+        "YL22":[
+            {"exitNumber":"1","name":{"th":"โชว์รูมและศูนย์โตโยต้า,โตโยต้า ชัวร์, โรงเรียนสิริวุฒิวิทยา, จุฬารัตน์ 2 คลินิกเวชกรรม, Chularat 2 Medical Clinic","en":"TOYOTA Car dealer,TOYOTA Sure, Siriwut Witthaya School"}},
+            {"exitNumber":"3","name":{"th":"เคนชิงตัน สุขุมวิท-เทพารักษ์ ,ไนท์บริดจ์ สุขุมวิท-เทพารักษ์, ปั๊มน้ำมัน เชลล์, ปั๊มน้ำมัน ปตท.","en":"Kensington Condominium,Knightsbridge Sukhumvit-Thepharak, Shell Gas Station"}},
+            {"exitNumber":"4","name":{"th":"ปาล์มไอส์แลนด์ เทพารักษ์","en":"PTT Gas Station, Palm Island Thepharak"}}
+        ],
+        "YL23":[
+            {"exitNumber":"1","name":{"th":"ธนาคารกสิกรไทย","en":"Kasikorn Bank"}},
+            {"exitNumber":"3","name":{"th":"สถานีตำรวจภูธรสำโรงเหนือ, เดอะ เมโทรโพลิส ดอนโดมิเนียม","en":"The Metropolis Condominium, Samrongnuea Police Station"}},
+            {"exitNumber":"4","name":{"th":"ธนาคารกรุงศรีอยุธยา, โชว์รูมและศูนย์อีซูซุ ,สายลม คอนโดเทล, ตลาดเทพารักษ์","en":"Bank of Ayudhya, Isuzu Car Dealer,Sailom Condotel, Theparak Market"}}
+        ]
+    },
+    "MRTPK":{
+        "PK01":[
+            {"exitNumber":"1","name":{"th":"สำนักงานคณะกรรมการกิจการกระจายเสียง กิจการโทรทัศน์ และกิจการโทรคมนาคมแห่งชาติ,ศาลหลักเมืองนนทบุรี,ศูนย์บริการสาธารณสุขที่ 1 รัตนาธิเบศร์ ,สำนักงานเทศบาลนครนนทบุรี,ศาลจังหวัดนนทบุรี ,ศาลแขวงนนทบุรี, อุทยานมกุฏรมยสราญ","en":"Office of The National Broadcasting and Telecommunications Commission,Nonthaburi City Pillar Shrine,Public Health Service Center 1, Rattanathibet,Nonthaburi City Municpality Office,Nonthaburi Provincial Court,Nonthaburi Kwaeng Court, Makut Rommayasaran Park"}},
+            {"exitNumber":"2","name":{"th":"โลตัส รัตนาธิเบศร์,เอสพลานาด งามวงศ์วาน-แคราย, วิทยาลัยเทคโนโลยีสยามบริหารธุรกิจ นนทบุรี","en":"Lotus Rattanathibet,Esplanad Ngamwongwan-Kharerai, Siam Business Administration Nonthaburi Technological College"}},
+            {"exitNumber":"3","name":{"th":"ยูดีไลท์ รัตนาธิเบศร์","en":"U DELIGHT Rattanathibet"}},
+            {"exitNumber":"4","name":{"th":"สถานีดาวเทียมไทยคม, สถานีตำรวจภูธรรัตนาธิเบศร์","en":"Thaicom Sattellite Station, Rattanathibet Police Station"}}
+        ],
+        "PK02":[
+            {"exitNumber":"1","name":{"th":"ยูดีไลท์ รัตนาธิเบศร์","en":"U DELIGHT Rattanathibet"}},
+            {"exitNumber":"2","name":{"th":"โลตัส รัตนาธิเบศร์, ปั๊มน้ำมันบางจาก, สำนักงานขนส่งจังหวัดนนทบุรี,ศูนย์โทรคมนาคม นนทบุรี","en":"Lotus Rattanathibet, Bangchak Gas Station, Nonthaburi Provincial Land Transport Office,Nonthaburi Telecommunication Center"}},
+            {"exitNumber":"3","name":{"th":"การไฟฟ้านครหลวง เขตนนทบุรี","en":"Metropolitan Electricity Authority Nonthaburi District"}},
+            {"exitNumber":"4","name":{"th":"สถาบันโรคทรวงอก","en":"Central Chest Institute of Thailand"}}
+        ],
+        "PK03":[
+            {"exitNumber":"1","name":{"th":"โรงเรียนสันติวัน ,ศูนย์การศึกษานอกระบบและการศึกษาตามอัธยาศัย อำเภอเมืองนนทบุรี, สถาบันพัฒนาสุขภาวะเขตเมือง นนทบุรี","en":"Santiwan School, Nonthaburi Provincial Non-Formal and Informal Education Center, Metropolitan Health and Wellness Institution Nonthaburi District"}},
+            {"exitNumber":"2","name":{"th":"โชว์รูมและศูนย์ฮอนด้า ,สำนักงานประปา สาขานนทบุรี ,กรมพลาธิการทหารบก, ปั๊มน้ำมัน ติวานนท์","en":"Honda Car dealer, Metropolitan Waterwork Authoririty Nonthaburi Branch, Quartermaster Dapartment Royal Thai Army, Tiwanon Gas Station"}},
+            {"exitNumber":"3","name":{"th":"โรงรับจำนำ สถานธนานุบาล เทศบาลนครนนทบุรี 3, ศูนย์พัฒนาคุณภาพชีวิตผู้สูงอายุ,ศูนย์นันทนาการเทศบาลนครนนทบุรี, สถานีดับเพลิงเทศบาลนครนนทบุรี, ศูนย์บริการสาธารณสุขที่ 6 สนามบินน้ำ","en":"Pawn-shop,Elderly Quality of Life Development Center, Nonthaburi Metropolitan Municipality Recreation Center, Nonthaburi Municipality Fire and Rescue Station, Nonthaburi Provincial Health Center Sanambin Nam"}},
+            {"exitNumber":"4","name":{"th":"โรงเรียนนนทบุรีพิทยาคม,โรงเรียนทานสัมฤทธิ์วิทยา","en":"Nonthaburiphitthayakhom School, Tan Samrit Wittaya School"}}
+        ],
+        "PK04":[
+            {"exitNumber":"1","name":{"th":"ธนาคารออมสิน, โรงเรียนสมานพิชากร","en":"Governent Savings Bank, Saman Pichakornn School"}},
+            {"exitNumber":"3","name":{"th":"โรงเรียนชลประทานสงเคราะห์, ตลาดสด ชลประทาน, โครงการชลประทานนนทบุรี","en":"Chonpratansongkroh School, Chonprathan Market, Nonthaburi Provincial Irrigation Project Office"}},
+            {"exitNumber":"4","name":{"th":"มัสยิดดารุ้ลมุตตากีน","en":"Darulmuttakeen Mosque"}}
+        ],
+        "PK05":[
+            {"exitNumber":"1","name":{"th":"สำนักงานทรัพยากรน้ำแห่งชาติ,กรมชลประทาน, วิทยาลัยการชลประทาน, ศูนย์การแพทย์ปัญญานันทภิกขุ ชลประทาน มหาวิทยาลัยศรีนครินทรวิโรฒ","en":"Office of The National Water Resources,Royal Irrigation Department, Irrigation College, Panyananthaphikkhu Chonprathan Medical Center Srinakharinwirot University"}},
+            {"exitNumber":"2","name":{"th":"มูลนิธิอนุเคราะห์คนพิการในพระบรมราชูปถัมภ์ของสมเด็จพระศรีนครินทราบรมราชชนนี,สถานสงเคราะห์เด็กอ่อน ปากเกร็ด,ศูนย์ราชการเทศบาลนครปากเกร็ด","en":"Foundation for the Welfare of the Crippled under the Royal Patronage of Her Royal Highness the Princess Mother,Pakkred Babies Home,Pakkred Municipality Government Center"}},
+            {"exitNumber":"3","name":{"th":"โรงเรียนกรมชลประทานวิทยา ,สถาบันปัญญาวิชชาลัย, วัดชลประทานรังสฤษดิ์ พระอารามหลวง","en":"Chonprathawitaya School,Panyavijjalaya Institute, Wat Cholpratarn Rangsarit Royal Monastery"}},
+            {"exitNumber":"4","name":{"th":"อุทยานชลประทานไทย,สำนักงานศึกษาธิการจังหวัดนนทบุรี","en":"Thailand Irrigation Park, Nonthaburi Provincial Education Office"}}
+        ],
+        "PK06":[
+            {"exitNumber":"1","name":{"th":"ไปรษณีย์ไทย สาขาห้าแยกปากเกร็ด,มูลนิธิอนุเคราะห์คนพิการในพระบรมราชูปถัมภ์ ของสมเด็จพระศรีนครินทราบรมราชชนี, ธนาคารกรุงไทย, โรงเรียนศรีสังวาลย์","en":"Hayaekpakkret Post Office,Foundation for the Welfare of the Crippled under the Royal Patronage of Her Royal Highness the Princess Mother, Krungthai Bank"}},
+            {"exitNumber":"2","name":{"th":"ศุภาลัย วิสต้า ห้าแยกปากเกร็ด, ธนาคารอาคารสงเคราะห์, ปั๊มแก๊ส เอ็นจีวี ปตท.,ปั๊มน้ำมัน เอสโซ่","en":"Supalai Vista Pakkret Intersection, Government Housing Bank"}},
+            {"exitNumber":"3","name":{"th":"บริษัท ออด๊าซอินดัสทรี่ จำกัด, คริสตจักรปากเกร็ด","en":"Audace Industries Co.,LTD"}},
+            {"exitNumber":"4","name":{"th":"ศูนย์เรียนรู้การพัฒนาสตรีและครอบครัวภาคกลาง จังหวัดนนทบุรี,สนามฟุตบอล เดอะ แฮททริก นนท์, ธนาคารกรุงเทพ","en":"Women and Family Development Learning Center, Nonthaburi,The Hattrick Non Football Field, Bangkok Bank"}}
+        ],
+        "PK07":[
+            {"exitNumber":"1","name":{"th":"บริษัท ไทยการ์เมนต์เอ็กซปอร์ต จำกัด,เดอะ คิทท์ แจ้งวัฒนะ, คลีนิคสงเคราะห์สัตว์","en":"Thai Garment Export Co., Ltd, The Krith Cheangwattana, Veterinanry Care\\r\\n\\r\\n"}},
+            {"exitNumber":"2","name":{"th":"โชว์รูมและศูนย์บริการ เกรท วอลล์ มอเตอร์,โชว์รูมและศูนย์บริการ บีเอ็มดับเบิลยู, ศาสนจักรของพระเยซูคริสต์ แห่งวิสุทธิชนยุคสุดท้าย, ปั๊มน้ำมัน ปตท.","en":"GWM Car Dealer,BMW Car Dealer, The Church of Jesus Christ of Latter-Day Saints, PTT Gas Station"}},
+            {"exitNumber":"3","name":{"th":"นารายา สำนักงานใหญ่ ,โชว์รูมและศูนย์บริการ อีซูซุุ,โชว์รูมและศูนย์บริการ มาสด้า,คอนโดมิเนียม บ้านสวนปาล์ม ,อาคาร จัสมิน อินเตอร์เนชั่นแนลทาวเวอร์, โรงเบียร์เยอรมันตะวันแดง","en":"Naraya Head Office,ISUZU Car dealer,MAZDA Car Dealer,Palm Garden Condominium,Jasmine International Tower, Tawandang German Brewery"}},
+            {"exitNumber":"4","name":{"th":"โชว์รูมและศูนย์บริการเมอร์เซเดส-เบนซ์,โชว์รูมและศูนย์บริการ ซูซูกิ, ปั๊มน้ำมัน บางจาก, บิ๊กซี เอ็กซ์ตร้า แจ้งวัฒนะ 2,โฮมโปร แจ้งวัฒนะ,ไอ.เอ็ม สแควร์, ธนาคารไทยพาณิชย์ (อาคารแจ้งวัฒนะ)","en":"Mercedes-benz Car dealer,SUZUKI Car Dealer, Bangchak GAS Station, Big C EXTRA Chaeng Watthana 2,HomePro Chaeng Watthana,I.M square, SCB CHAENGWATTANA BUILDIND"}}
+        ],
+        "PK08":[
+            {"exitNumber":"1","name":{"th":"ปั๊มน้ำมันบางจาก, ลุมพินี เพลส แจ้งวัฒนะ - ปากเกร็ด,ดุริยางค์ตำรวจ, ตลาดกันเอง แจ้งวัฒนะ-ปากเกร็ด 19,19 สเตชั่น พลาซ่า","en":"Bangchak Gas Station, LUMPINI PLACE Chaeng Watthana – Pak Kret,Police Band"}},
+            {"exitNumber":"2","name":{"th":"เขตอุตสาหกรรมซอฟต์แวร์ ประเทศไทย ,สำนักงานคณะกรรมการป้องกันและปราบปรามการทุจริตในภาครัฐ,แอสโทร คอนโดมิเนียม, โรงแรม ฮ็อป อินน์ แจ้งวัฒนะ,โรงแรมเบสท์เวสเทิร์นพลัส แวนด้าแกรนด์","en":"Software Park Thailand,Office of Public Sector Anti-Corruption Commission,Astro Condominium"}},
+            {"exitNumber":"3","name":{"th":"บริษัท เอช คิว ไอ กรุ๊ป จำกัด ,อาคารฟู้ดเทคโนโลยี,ธารา พาร์ค, เซฟส์คิดเช่น, โรงเรียนสาธิตสถาบันการจัดการปัญญาภิวัฒน์ ,สถาบันการจัดการปัญญาภิวัฒน์ (PIM)","en":"SQI GROUP Co.,Ltd,Food Technology,Tara Park"}},
+            {"exitNumber":"4","name":{"th":"สยามแก๊ส ,ปั๊มน้ำมันเซลล์, โชว์รูมและศูนย์นิสสัน, เซ็นทรัล แจ้งวัฒนะ, โรงพยาบาลส่งเสริมสุขภาพ ตำบลบางตลาด,โรงพยาบาลเวิลด์เมดิคอล","en":"Siam Gas LPG Station,Shell Gas Station, NISSAN Car dealer"}}
+        ],
+        "PK09":[
+            {"exitNumber":"1","name":{"th":"คูล โฮเทล, ป้ายรถเมล์และจุดจอดรถรับส่ง-ส่ง ไปอิมแพ็ค เมืองทองธานี, ธนาคารไทยพาณิชย์ (สาขาแจ้งวัฒนะ),ธนาคารกสิกรไทย","en":"Koo Hotel, Bus Stop & Shuttle Bus to IMPACT Muang Thong Thani, Siam Commercial Bank,Kasikorn Bank"}},
+            {"exitNumber":"2","name":{"th":"ไดนาสตี้ ไทล์ท็อป,ไทยวัสดุ แจ้งวัฒนะ, สวนมหามงคลเฉลิมพระชนมพรรษา 80","en":"DYNASTY TILETOP,Thai Watsadu Chaeng Watthana, Klongklua School, Mahamongkhon Chaloemphrakiat 80th Aniversary Memorial"}}
+        ],
+        "PK10":[
+            {"exitNumber":"1","name":{"th":"เดอะซี๊ด แจ้งวัฒนะ ,โชว์รูมและศูนย์บริการอีซูซุ ,สำนักเครื่องกลและสื่อสาร กรมทางหลวง, ชุมสายโทรศัพท์แจ้งวัฒนะ,ชาน แอท ดิ อเวนิว แจ้งวัฒนะ 14, บิ๊กซี แจ้งวัฒนะ,โลตัส แจ้งวัฒนะ","en":"The Seed Chaeng Wattthana,ISUZU Car dealer, Bureau of Mechanical Equipment and Communication Department of Highways"}},
+            {"exitNumber":"2","name":{"th":"นีตนาทคลีนิค,บริษัท อั๊คโซ่โนเบล เพ้นท์ส (ประเทศไทย) จำกัด ,โชว์รูมและศูนย์บริการฮอนด้า ,โชว์รูมและศูนย์มิตซูบิชิ,เดอะ เบส แจ้งวัฒนะ, โรงพยาบาลมงกุฎวัฒนะ","en":"Natanart Clinic,AKZO NOBEL PAINTSZ (THAILAND) COMPANY LIMITED,Honda Car dealer, Mitsubishi Car dealer,The Base Chaeng Wattthana"}},
+            {"exitNumber":"3","name":{"th":"นิว โนเบิล แจ้งวัฒนะ ,โชว์รูมและศูนย์โตโยต้า,ศุภาลัย ลอฟท์ แจ้งวัฒนะ ,ศุภาลัย ซิตี้ รีสอร์ท, ปั๊มน้ำมันเซลล์, แม็คโคร แจ้งวัฒนะ","en":"NUE Noble ChaengWattthana,Toyota Car dealer,Supalai Loft Chaeng Wattthana,Supalai City Resort, Shell Gas Station, Makro Chaeng Wattthana"}}
+        ],
+        "PK11":[
+            {"exitNumber":"1","name":{"th":"กองร้อยลาดตระเวนระยะไกลที่ 1,กรมทหารปืนใหญ่ต่อสู้อากาศยานที่ 1, บิ๊กซี แจ้งวัฒนะ,โลตัส แจ้งวัฒนะ","en":"Chaeng Watthana Telephone Exchange,Chan at the avenue Chaengwattana 14, Big C Chaengwattana,Lotus Chaeng Watthana"}},
+            {"exitNumber":"2","name":{"th":"โรงพยาบาลมงกุฎวัฒนะ","en":"Mongkutwattana Hospital"}},
+            {"exitNumber":"3","name":{"th":"ธนาคารกรุงไทย, โรงแรม ทีเค. พาเลซ แอนด์ คอนเวนชั่น, ปั๊มน้ำมันเซลล์","en":"Krungthai Bank, TK. Palace Hotel, Shell Gas Station"}},
+            {"exitNumber":"4","name":{"th":"มณฑลทหารบกที่ 11","en":"11th Military Circle"}}
+        ],
+        "PK12":[
+            {"exitNumber":"1","name":{"th":"กองร้อยลาดตระเวนระยะไกลที่ 1,กรมทหารปืนใหญ่ต่อสู้อากาศยานที่ 1, ปั๊มน้ำมัน บางจาก","en":"1th Long Range Reconnaissance patral Company,1th Antiaircraft Artillery Regiment, Bangchak GAS Station"}},
+            {"exitNumber":"2","name":{"th":"กระทรวงยุติธรรม, ปั๊มน้ำมัน ปตท. ,ปั๊มน้ำมันเซลล์","en":"Ministry of Justice, PTT Gas Station,Shell Gas Station"}},
+            {"exitNumber":"3","name":{"th":"ศาลปกครอง,พิพิธภัณฑ์ศาลปกครอง,บริษัท โทรคมนาคมแห่งชาติ จำกัด (มหาชน),หอประชุมไปรษณีย์ไทย,ที่ทำการไปรษณีย์หลักสี่","en":"The Administrative Court,Administrative Court Museum,National Telecom PCL,Thailand Post Auditorium,Lak Si Post Office"}},
+            {"exitNumber":"4","name":{"th":"กรมการกงสุล,อาคารจอดรถ (อาคารA),ศูนย์ราชการเฉลิมพระเกียรติ (อาคารA),กรมสอบสวนคดีพิเศษ","en":"Department of Consular Affairs,Parking Building (Building A),Government Complex (Building A),Department of Special Investigation"}}
+        ],
+        "PK13":[
+            {"exitNumber":"1","name":{"th":"กองสรรพาวุธเบาที่ 1,กระทรวงยุติธรรม, ปั๊มน้ำมัน ปตท., \\r\\n","en":"1st Ordnance Division,Ministry of Justice, PTT Gas Station"}},
+            {"exitNumber":"2","name":{"th":"สำนักงานเขตหลักสี่, ปั๊มน้ำมัน คาลเท็กซ์, ไอทีสแควร์","en":"Lak si District Office, Caltex Gas Station, IT Square"}},
+            {"exitNumber":"3","name":{"th":"บริษัท โทรคมนาคมแห่งชาติ จำกัด (มหาชน),สำนักงานคณะกรรมการกิจการกระจายเสียง กิจการโทรทัศน์ และกิจการโทรคมนาคมแห่งชาติ ภาค 1,สถาบันวิจัยจุฬาภรณ์","en":"National Telecom PCL,Office of The National Broadcasting and Telecommunications Commission Region 1,Chulabhorn Research Institute"}},
+            {"exitNumber":"4","name":{"th":"บริษัท ไปรษณีย์ไทย จำกัด,ที่ทำการไปรษณีย์หลักสี่, โรงเรียนการไปรษณีย์","en":"Thailand Post Co.,Ltd.,Lak Si Post Office, IT Square"}}
+        ],
+        "PK14":[
+            {"exitNumber":"1","name":{"th":"ไอทีสแควร์, วัดหลักสี่ พระอารามหลวง, สำนักงานเขตหลักสี่,สถาบันวิจัยจุฬาภรณ์,สำนักงาน กสทช. ภาค 1","en":"IT Square, Wat Lak Si Phra Aramiiuang, Lak si District Office,Chulabhorn Research Institute,Office of the NBTC Region 1"}},
+            {"exitNumber":"2","name":{"th":"ตลาดนัด ซอยแจ้งวัฒนะ 6, โชว์รูมและศูนย์โตโยต้า, วิทยาลัยเทคโนโลยีรัตนโกสินทร์","en":"Market, Soi Chaengwattana 6, Toyota Car dealer, Rattanakosin Technological College"}}
+        ],
+        "PK15":[
+            {"exitNumber":"1","name":{"th":"โรงเรียนเจริญผล, โชว์รูมและศูนย์โตโยต้า ,ค็อกพิท, ธนาคารกรุงเทพ, แม็กช์แวลู","en":"Charoenpol Wittaya School, Toyota Car dealer,Cockpit, Bangkok Bank, Max Valu"}},
+            {"exitNumber":"2","name":{"th":"โรงแรม บีทู ดอนเมือง พรีเมียร์","en":"B2 Don Mueang premier Hotel"}},
+            {"exitNumber":"3","name":{"th":"มหาวิทยาลัยราชภัฎ พระนคร,โรงเรียนมัธยมสาธิตวัดพระศรีมหาธาตุ มหาวิทยาลัยราชภัฏพระนคร, พระนครแกรนด์วิว","en":"Phranakhon Rajabhat University,Wat Phra Sri Mahathat Secondary Demonstation School, Phranakhon Rajabhat University, Phranakhon Grand View"}},
+            {"exitNumber":"4","name":{"th":"พลัมคอนโด แจ้งวัฒนะ","en":"Plum Condo Changwattana"}}
+        ],
+        "PK16":[
+            {"exitNumber":"1","name":{"th":"สถานีตำรวจนครบาลบางเขน, โรงเรียนไทยนิยมสงเคราะห์, สวนรักษ์ธรรมชาติ, หมู่บ้านอัมรินทร์นิเวศน์ 1,รีเจ้นโฮม 10 คอนโดมิเนียม,รีเจ้นโฮม 18 คอนโดมิเนียม,รีเจ้นท์โฮม 15 คอนโดมิเนียม,ศูนย์ควบคุมการจราจรวงเวียนบางเขน, คริสตจักร หลักสี่ลูเธอร์แรน, ","en":"Bangkhen Police Station, Thainiyomsongkhrao School, Rak Thammachat Park, Ammarin Niwet Village 1,Regent Home 10 Condominium, Regent Home 18 Condominium,Regent Home 15 Condominium,Bang Khen Roundabout Traffic Control Center, Laksi Lutheran Church, B2 Don Mueang premier Hotel\\r\\n\\r\\n\\r\\n\\r\\n"}},
+            {"exitNumber":"2","name":{"th":"มหาวิทยาลัยเกริก, โมดิช อินเตอร์เชนจ์ คอนโดมิเนียม,ไปรษณีย์ รามอินทรา","en":"Krirk University, MODIZ INTERCHANGE Condominium,Raminthra Post Office"}},
+            {"exitNumber":"3","name":{"th":"วัดพระศรีมหาธาตุ วรมหาวิหาร, โรงเรียนประชาภิบาล,โรงเรียนมัธยมสาธิตวัดพระศรีมหาธาตุ มหาวิทยาลัยราชภัฏพระนคร, สำนักงานเขตบางเขน,ห้องสมุดประชาชน กรุงเทพมหานคร เขตบางเขน,สถาบันป้องกันควบคุมโรคเขตเมือง,สถาบันพัฒนาสุขภาวะเขตเมือง,การไฟฟ้านครหลวง เขตบางเขน ,อาคารพุทธวิชชาลัย มหาวิทยาลัยราชภัฏพระนคร,สำนักงานการประปานครหลวง สาขาบางเขน,ชุมสายโทรศัพท์ หลักสี่","en":"Prachapiban School,Wat Phra Sri Mahathat Secondary Demonstation School, Phranakhon Rajabhat University, Bang Khen District Office,Bangkok Public Library Bang Khen District,Institute for Urban Disease Control and Prevention, Metropolitan Health and Wellness Institution,Metropolitan Electricity Authority Bang Khen District, Buddhawichalaya Building Phranakhon Rajabhat University, Metropolitan Waterworks Authority Bang Khen, Laksi Telephone Exchange, Wat Phra Sri Mahathat Waramahawihan"}}
+        ],
+        "PK17":[
+            {"exitNumber":"1","name":{"th":"มหาวิทยาลัยเกริก, เซ็นทรัล รามอินทรา, ลุมพินี เพลส รามอินทรา-หลักสี่","en":"Krirk University, Central Ramindra, Lumpini Place Ramindra-Laksi\\r\\n\\r\\n"}},
+            {"exitNumber":"2","name":{"th":"โรงเรียนปราโมชวิทยารามอินทรา, แกรนด์รามอินทราซอย 5, ลุมพินีวิลล์ รามอินทรา-หลักสี่,ลุมพินี คอนโดทาวน์ รามอินทรา-หลักสี่, ปั๊มน้ำมันเชลล์, โรงพยาบาลดูดไขมัน คุณหมอลูกหนู, สถานพยาบาลสัตว์ รามอินทรา ซอย 5","en":"Pramochwitthaya Raminthra School, Grand Ramintra Soi 5, Lumpini Ville Ramindra-Laksi,Lumpini Condo Town Ramindra-Laksi, Shell Gas station, KMB Hospital, Animal Hospital Ramintra Soi 5"}},
+            {"exitNumber":"3","name":{"th":"ศูนย์พัฒนากีฬากองทัพบก รามอินทรา","en":"Royal Thai Army Sports Center"}},
+            {"exitNumber":"4","name":{"th":"โรงเรียนประชาภิบาล","en":"Prachapiban School"}}
+        ],
+        "PK18":[
+            {"exitNumber":"1","name":{"th":"บ้านพักข้าราชการตำรวจ กองการเงิน,สำนักงานตำรวจสื่อสาร","en":"Police Finance Division s Residence,Police Communications Division"}},
+            {"exitNumber":"2","name":{"th":"ปั๊มแก๊ส เบสท์ แอลพีจี","en":"BEST LPG Gas station"}},
+            {"exitNumber":"3","name":{"th":"ปั๊มน้ำมันเชลล์, บิ๊กซี เอ็กซ์ตร้า รามอินทรา","en":"Shell Gas Station, BIG C EXTRA – Ram Inthra"}},
+            {"exitNumber":"4","name":{"th":"การไฟฟ้านครหลวง สถานีย่อยลาดปลาเค้า,สำนักงานสรรพากรพื้นที่กรุงเทพมหานคร 8, ตลาดลาดปลาเค้า, ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร สาขาย่อยรามอินทรา กม.2,ธนาคารกรุงศรีอยุธยา","en":"Metropolitan Electricity Authority Lat Pla Khao,Bangkok Area Revenue Office 8, Lat Pla Khao Market, Bank for Agriculture and Agricultural Cooperatives (BAAC), Ram Indra Km.2 Branch,Bank of Ayudhya"}}
+        ],
+        "PK19":[
+            {"exitNumber":"1","name":{"th":"ศูนย์รถยนต์โตโยต้า, ฟู้ดแลนด์","en":"Toyota dealer, Foodland"}},
+            {"exitNumber":"2","name":{"th":"แฟลตการเคหะแห่งชาติบางเขน,เคหะชุมชนรามอินทรา\\r\\n\\r\\n","en":"Government Housing Authority Bang Khen,Ram Inthea Community Housing"}},
+            {"exitNumber":"3","name":{"th":"อีส พาร์ค","en":"Ease Park"}},
+            {"exitNumber":"4","name":{"th":"ไปรษณีย์ไทย สาขาไตรรัตน์, ธนาคารกรุงเทพ, ปตท.LPG และน้ำมัน ,ปั๊มน้ำมันเชลล์","en":"Tri Rattana Post Office, Bangkok Bank, PTT LPG and Oil, Shell Gas station"}}
+        ],
+        "PK20":[
+            {"exitNumber":"1","name":{"th":"แฟลตการเคหะแห่งชาติ,แฟลตการเคหะแห่งชาติบางเขน,เคหะชุมชนรามอินทรา","en":"National Housing Authority ,Government Housing Authority Bang Khen,Ram Intra Community Housing"}},
+            {"exitNumber":"2","name":{"th":"ปูทองอพาร์ทเมนท์,กองบินตำรวจ,สำนักงานจเรตำรวจ,ดี คอนโด รามอินทรา","en":"Puthong Apartment ,Thai Police Aviation Division,Office of Inspector General,D Condo Ramindra"}},
+            {"exitNumber":"3","name":{"th":"เบนซ์ทองหล่อ-รามอินทรา,ศูนย์รถยนต์นิสสัน, ธนาคารไทยพาณิชย์ ,ธนาคารกรุงศรีอยุธยา","en":"Mercedes – Benz Ramintra Car,Nissan dealer, Siam Commercial Bank,Bank of Ayudhya"}},
+            {"exitNumber":"4","name":{"th":"เกีย รามอินทรา, อีส พาร์ค","en":"KIA Ramintra, Ease Park"}}
+        ],
+        "PK21":[
+            {"exitNumber":"1","name":{"th":"สวนวัชราภิรมย์","en":"Watcharapirom Park"}},
+            {"exitNumber":"2","name":{"th":"โรงเรียนอนุบาลปราโมชพัฒนา","en":"Pramochpattana Kindergarten"}},
+            {"exitNumber":"3","name":{"th":"ตลาดเลียบด่วนรามอินทรา เฟสใหม่","en":"Liab Duan Market, Ramintra, new phase"}},
+            {"exitNumber":"4","name":{"th":"ศูนย์ส่งเสริมและพัฒนาอาชีวศึกษาภาคตะวันออกและกรุงเทพมหานคร,สำนักพัฒนาสมรรถนะครูและบุคลากรอาชีวศึกษา","en":"Center of Vacational Education Promotion and Development Eastern Tegion and Bangkok,Bereau of Personnel Competency Development"}}
+        ],
+        "PK22":[
+            {"exitNumber":"1","name":{"th":"ปั๊มน้ำมัน ปตท.,ปั๊มน้ำมัน เอสโซ่, โรงเรียนสุขฤทัย","en":"PTT Gas Station,ESSO GAS Station, Sukrutai School"}},
+            {"exitNumber":"2","name":{"th":"โชว์รูมและศูนย์ฟอร์ด","en":"Ford Car dealer"}},
+            {"exitNumber":"3","name":{"th":"โรงเรียนเตรียมแพทย์ เตรียมวิทย์พัฒนา กรุงเทพมหานคร, โรงพยาบาลสัตว์ยูเว็ท รามอินทรา,สัตวแพทย์รามอินทรา 44, ธนาคารออมสิน","en":"Triamwit Pattana Pre-Medical School, Animal Hospital U-VET Ramintra,Animal Hospital Ramintra 44, Government Savings Bank"}},
+            {"exitNumber":"4","name":{"th":"ปั๊มน้ำมันคาลเท็กซ์, โรงเรียนสายอักษร, บมจ.สยามสปอร์ต ซินดิเคท\\r\\n\\r\\n","en":"Caltex Gas Station, Saiaksorn School, Siam Sport Syndicate PCL"}}
+        ],
+        "PK23":[
+            {"exitNumber":"1","name":{"th":"AM 789 มอเตอร์","en":"AM 789 motor"}},
+            {"exitNumber":"2","name":{"th":"กม 8 เพลส ,บิ๊กซี มาร์เก็ต","en":"KM 8 Place, Big C Market"}},
+            {"exitNumber":"3","name":{"th":"ธรรมลักษณ์เพลส","en":"Thammalak Place"}},
+            {"exitNumber":"4","name":{"th":"มัสยิดอัล-เอาว์ก๊อฟ, ปั๊มแก๊ส เวิลด์แก๊ส","en":"Masjid Al-Awkof, World Gas LPG"}}
+        ],
+        "PK24":[
+            {"exitNumber":"1","name":{"th":"โลตัส, เคเอฟซี, ปั๊มน้ำมันซัสโก้, โชว์รูมและศูนย์นิสสัน ,โชว์รูมและศูนย์อีซูซุ","en":"Lotus's, KFC, Susco Gas Station, Nissan Car dealer,Isuzu Car dealer"}},
+            {"exitNumber":"2","name":{"th":"ตลาดมิ่งมิตร รามอินทรา กม.9, ดิ แอลลี่, ปั๊มน้ำมันบางจาก,น้ำมันปั๊มเอสโซ่, โชว์รูมและศูนย์โตโยต้า, โรงพยาบาล อินทรารัตน์\\r\\n\\r\\n","en":"Mingmit Market, Ramintra Km.9, The Alley, Bang Chak Gas Station,Esso Gas Station, Toyota Car dealer, Intrarat Hospital\\r\\n\\r\\n"}},
+            {"exitNumber":"3","name":{"th":"คลังสินค้าลาซาด้า เอ็กช์เพรส, เกื้อการุนย์สัตวแพทย์","en":"Lazada Express KNY, Kuakarun Veterinary"}},
+            {"exitNumber":"4","name":{"th":"โชว์รูมและศูนย์มาสด้า ,โชว์รูมและศูนย์ฮอนด้า,ลุมพินีคอนโดทาวน์รามอินทรา-นวมินทร์, โรงพยาบาลสินแพทย์ รามอินทรา, โรงพยาบาลสัตว์โอะไดจินิ ,โรงพยาบาลสัตว์ ทองหล่อ, โรงแรมโอเค บีเคเค","en":"Mazda Car dealer,Honda Car dealer,Lumpini Condo Town Ramindra Navamin, Synphaet Hospital, Odaijini Pet Hospital,Thonglor Pet Hospital, OK HOTEL BKK"}}
+        ],
+        "PK25":[
+            {"exitNumber":"1","name":{"th":"เดอะ พรอมานาด, สถานีตำรวจทางหลวง 2 กองกำกับการ 8","en":"The Promenade, Highway Police Station 2 Supervision Division 8"}},
+            {"exitNumber":"2","name":{"th":"แฟชั่นไอส์แลนด์, โรบินสัน, โชว์รูมเอ็มจี\\r\\n\\r\\n","en":"Fashion Island,Robinson, MG Car dealer"}}
+        ],
+        "PK26":[
+            {"exitNumber":"1","name":{"th":"ปั๊มน้ำมัน ปตท, โชว์รูมและศูนย์เมอร์เซเดส-เบนซ์, โรมแรมโกรว์ เรสซิเดนช์","en":"PTT Gas Station, Mercedes – Benz Car dealer, Grow Residence hotel"}},
+            {"exitNumber":"2","name":{"th":"โรงพยาบาลนพรัตนราชธานี","en":"Nopparat Rajathanee Hospital"}},
+            {"exitNumber":"3","name":{"th":"วิทยาลัยพยาบาลบรมราชชนนี นพรัตน์วชิระ, อมอรินี่","en":"Boromrajanani College of Nursing Nopparat Vajira, Amorini"}},
+            {"exitNumber":"4","name":{"th":"หมวดทางหลวงรามอินทรา, รวมมิตร คลาวด์ คิทเช่น","en":"Ram Inthra Highway Sub District, Ruammit Cloud Kitchen"}}
+        ],
+        "PK27":[
+            {"exitNumber":"2","name":{"th":"วี วี เอส แมนชั่น, ปั๊มน้ำมัน และ LPG PT","en":"VVS Mansion, PT Gas & LPG Station"}},
+            {"exitNumber":"3","name":{"th":"นิคมอุตสาหกรรมบางชัน, ปั๊มน้ำมันบางจาก","en":"Bang Chan Indurtrial Estate, Bang Chak Gas Station"}},
+            {"exitNumber":"4","name":{"th":"หัวปลาช่องนนทรี สาขารามอินทรา","en":"Chong Nonsi fish head Ramintra"}}
+        ],
+        "PK28":[
+            {"exitNumber":"1","name":{"th":"ปั๊มน้ำมัน ปตท ,ปั๊มน้ำมันเชลล์, กิฟฟารีนสาขามีนบุรี,หมู่บ้านริมสวนรามอินทรา,หมู่บ้านสินธานี","en":"PTT Gas Station ,Shell Gas Station, Giffarine, Minburi branch,Rim Suan Ramintra Village,Sinthanee Village"}},
+            {"exitNumber":"2","name":{"th":"ห้องสมุดเพื่อการเรียนรู้มีนบุรี, โรงเรียนเศรษฐบุตรบำเพ็ญ, ธนาคารไทยพาณิชย์","en":"Minburi Discovery, Setthabut Bamphen School, Siam Commercial Bank"}},
+            {"exitNumber":"3","name":{"th":"สวนบึงกระเทียม, โรงพยาบาล สินแพทย์ เสรีรักษ์","en":"Bueng Krathiem Park, Synphaet Sereerak Hospital"}},
+            {"exitNumber":"4","name":{"th":"ปั๊มน้ำมันคาลเท็กซ์, เจ ดับเบิลยู สเตชั่น รามอินทรา,โชว์รูมซูซูกิ,โชว์รูมและศูนย์โตโยต้า,การไฟฟ้านครหลวง เขตมีนบุรี","en":"Caltex Gas Station, JW Station at Ramintra,Suzuki Car dealer,Toyota Car dealer,Metropolitan Electricity Authority Minburi District"}}
+        ],
+        "PK29":[
+            {"exitNumber":"1","name":{"th":"โรงเรียนสุขเนตร,ศูนย์การศึกษานอกระบบและการศึกษาตามอัธยาศัย มีนบุรี,วิทยาลัยเทคนิคมีนบุรี, ธนาคารทหารไทยธนชาต","en":"Sukkanate School,Minburi Disctric Non-Formal and Informal Education Centre,Minburi Technical College, TMB ThanaBank"}},
+            {"exitNumber":"2","name":{"th":"ศูนย์ฝึกอาชีพกรุงเทพมหานคร จตุจักร 2 มีนบุรี, ธนาคารกรุงไทย, ตลาดนัดจตุจักร มีนบุรี ,ตลาดมีนบุรี","en":"BMA Vocational Training Center Chatuchak Market 2 Min Buri, Kruang Thai Bank, Chatuchak Market 2 Min Buri,Min Buri Market"}},
+            {"exitNumber":"3","name":{"th":"โรงเรียน มีนบุรีศึกษา, ธนาคารออมสิน ,ธนาคารกสิกรไทย,ธนาคารกรุงเทพ,ธนาคารอิสลามแห่งประเทศไทย, ตลาดมาร์เก็ตพาเหรด มีนบุรี, ท่าเรือตลาดมีนบุรี","en":"Government Savings Bank,Kasikorn Bank,Bangkok Bank,Islamic Bank of Thailand, Market Parade Minburi, Talat Min Buri Pier"}},
+            {"exitNumber":"4","name":{"th":"ธนาคารยูโอบี, โรงพยาบาลนวมินทร์ 9, สำนักงานประกันสังคมกรุงเทพมหานครพื้นที่ 10,สำนักงานบังคับคดีแพ่ง กรุงเทพมหานคร 3, โรงพยาบาลนวมินทร์","en":"Minburisueksa School, UOB Bank, Navamin 9 Hospital, Social Security Bangkok Office Area 10,Civil Case Enforcement Bangkok Office 3, Navaminthra Hospital"}}
+        ],
+        "PK30":[
+            {"exitNumber":"1","name":{"th":"อาคารจอดรถ, โรงเรียนมีนประสาทวิทยา","en":"Park and Ride Building, Min Prasat Wittaya School"}},
+            {"exitNumber":"2","name":{"th":"ศูนย์ซ่อมบำรุง, มหาวิทยาลัยเกษมบัณฑิต วิทยาเขตร่มเกล้า","en":"Depot, Kasem Bundit University Romklao Campus"}}
+        ]
+    }
+}

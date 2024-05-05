@@ -1,0 +1,140 @@
+{
+    "0": {
+      "type": "fa",
+      "icon": "fa-light fa-escalator",
+      "th": "บันไดเลื่อน",
+      "en": "Escalator"
+    },
+    "1": {
+      "type": "image",
+      "icon": "http://128.199.77.61/test/uploads/facilities/facility_2020-02-06_14-42-35.png",
+      "th": "พื้นที่สำหรับหนีภัยของคนพิการ",
+      "en": "Refuge Area for disabled persons"
+    },
+    "2": {
+      "type": "fa",
+      "icon": "fa-light fa-elevator",
+      "th": "ลิฟต์",
+      "en": "Lift"
+    },
+    "3": {
+      "type": "fa",
+      "icon": "fa-light fa-person-walking-luggage",
+      "th": "ศูนย์บริการนักท่องเที่ยว",
+      "en": "Tourist Information Center (TIC)"
+    },
+    "4": {
+      "type": "fa",
+      "icon": "fa-light fa-computer-classic",
+      "th": "ศูนย์บริการบัตรแรบบิทและแครอท",
+      "en": "Rabbit & Carrot Service Center"
+    },
+    "5": {
+      "type": "fa",
+      "icon": "fa-light fa-grid-2",
+      "th": "ศูนย์บริการประชาขน (BMA)",
+      "en": "Bangkok Metropolitan Administration Express Service"
+    },
+    "6": {
+      "type": "fa",
+      "icon": "fa-light fa-money-bill-transfer",
+      "th": "ศูนย์แลกเปลี่ยนเงิน",
+      "en": "Money Exchange"
+    },
+    "7": {
+      "type": "fa",
+      "icon": "fa-light fa-bridge",
+      "th": "ทางเชื่อมเข้าสถานี",
+      "en": "Skybridge connection"
+    },
+    "8": {
+      "type": "fa",
+      "icon": "fa-light fa-square-plus",
+      "th": "ห้องพยาบาล",
+      "en": "First Aid Room"
+    },
+    "9": {
+      "type": "fa",
+      "icon": "fa-light fa-circle-bolt",
+      "th": "เครื่องวินิจฉัยการเต้นของหัวใจ (AED)",
+      "en": "Automated External Defibrillator (AED)"
+    },
+    "10": {
+      "type": "fa",
+      "icon": "fa-light fa-money-from-bracket",
+      "th": "เครื่องเอทีเอ็ม",
+      "en": "ATM"
+    },
+    "11": {
+      "type": "fa",
+      "icon": "fa-light fa-wifi",
+      "th": "ไวไฟ",
+      "en": "Wi-Fi"
+    },
+    "12": {
+      "type": "fa",
+      "icon": "fa-light fa-wheelchair-move",
+      "th": "ทางลาดสำหรับรถเข็น",
+      "en": "Ramp for disabled"
+    },
+    "13": {
+      "type": "fa",
+      "icon": "fa-light fa-restroom-simple",
+      "th": "ห้องน้ำ",
+      "en": "Toilets"
+    },
+    "14": {
+      "type": "fa",
+      "icon": "fa-light fa-box",
+      "th": "บริการรับ-ส่งพัสดุ",
+      "en": "Parcel delivery service"
+    },
+    "15": {
+      "type": "fa",
+      "icon": "fa-light fa-credit-card",
+      "th": "ศูนย์ตรวจสอบเครดิตบูโร",
+      "en": "National Credit Bureau"
+    },
+    "16": {
+      "type": "image",
+      "icon": "http://128.199.77.61/test/uploads/facilities/facility_2020-02-06_14-42-00.png",
+      "th": "ลิฟต์ราวบันไดสำหรับคนพิการ",
+      "en": "Stairlift for disabled passenger use"
+    },
+    "17": {
+      "type": "fa",
+      "icon": "fa-light fa-square-phone-flip",
+      "th": "โทรศัพท์สาธารณะ",
+      "en": "Public Phone"
+    },
+    "18": {
+      "type": "fa",
+      "icon": "fa-light fa-router",
+      "th": "ร้านเช่า Wi-Fi",
+      "en": "Wi-Fi Rental Center"
+    },
+    "19": {
+      "type": "fa",
+      "icon": "fa-light fa-square-parking",
+      "th": "ที่จอดรถ",
+      "en": "Car Parking"
+    },
+    "20": {
+      "type": "image",
+      "icon": "http://128.199.77.61/test/uploads/facilities/facility_2021-08-12_13-29-05.png",
+      "th": "ที่จอดรถสำหรับคนพิการ",
+      "en": "Parking for people with disabilities"
+    },
+    "21": {
+      "type": "fa",
+      "icon": "fa-light fa-person-walking-with-cane",
+      "th": "พื้นผิวต่างสัมผัสสำหรับผู้พิการทางสายตา",
+      "en": "Pathway for a person with visually impaired"
+    },
+    "22": {
+      "type": "fa",
+      "icon": "fa-light fa-fire-extinguisher",
+      "th": "สายฉีดดับเพลิง",
+      "en": "Fire Hose"
+    }
+  }
