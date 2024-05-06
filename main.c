@@ -46,10 +46,9 @@ void displayStationInfo(char *code) {
 void readStationsFromFile(const char *filename) {
     FILE *file = fopen(filename, "r");
     if (file == NULL) {
-        printf("Error: Could not open file %s\n", filename);
+        printf(ANSI_COLOR_LIGHT_RED "Error: Could not open file %s\n" ANSI_RESET_ALL, filename);
         exit(1);
     }
-
     char line[1024];
     char buffer[1024];
     int count = 0;
@@ -57,9 +56,6 @@ void readStationsFromFile(const char *filename) {
     while (fgets(line, 1024, file)) {
         Station station;
         parse_csv_line_graph_station(line, &station);
-        // Here you can store the parsed station information in an array or perform other operations
-        // For demonstration, let's just print the station name
-        // printf("Station Name: %s\n", station.name);
         stations[numStations++] = station;
         count++;
     }
@@ -94,10 +90,9 @@ void firstPanel(){
         	clearScreen();
         	printHeader(10, numStations);
     		printSplitedLine();
-    		printf(ANSI_COLOR_GOLD ANSI_STYLE_BOLD " Display Station Info\n" ANSI_RESET_ALL);
+    		printf(ANSI_COLOR_GOLD ANSI_STYLE_BOLD " Find station to display it details\n" ANSI_RESET_ALL);
             char code[50];
-            printf("Enter station full code: ");
-            scanf("%s", code);
+            findStationByName(stations, code);
             displayStationInfo(code);
             enterAnyKey();
 			clearScreen();

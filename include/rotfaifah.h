@@ -10,19 +10,14 @@
 #include "echo.h"
 #include "textDecoration.h"
 #include "BFSHelper.h"
+#include "textHelper.h"
+#include "searchHelper.h"
 
 void delay(int milli_seconds);
 void clearScreen(void);
 void getCurrentDate();
 void delLastEnteredLine();
 void TextShowUpDelay(char Text[], int _delay);
-void printHeader(int totalLine, int totalStation);
-void printSplitedLine();
-void printOption(int opt, char *name);
-void printEnterChoice();
-void printMSGLightWhite(char *msg);
-void printMenu();
-void printError(char *msg);
 int count_string(char *main_string, char *sub_string);
 void enterAnyKey();
 void parse_csv_line_graph_station(char *line, Station *station);
