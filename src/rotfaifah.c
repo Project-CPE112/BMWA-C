@@ -4,10 +4,28 @@
 #include <time.h>
 #include <stdlib.h>
 #include <math.h>
-#include <conio.h>
 #include <ctype.h>
 
 #include "../include/rotfaifah.h"
+
+#ifdef _WIN32
+    #include <conio.h>
+#else
+    #include <curses.h>
+#endif
+
+#ifdef _WIN32
+    void enterAnyKey() {
+        while (getchar() != '\n'); // Clear input buffer
+        printf("Enter any key to continue...");
+        _getch(); // Wait for a key press
+    }
+#else
+    void enterAnyKey() {
+        printf("Enter any key to continue...");
+        getchar(); // Wait for a key press
+    }
+#endif
 
 void clearScreen(void){
     #ifdef _WIN32
@@ -61,16 +79,6 @@ int count_string(char *main_string, char *sub_string) {
         ptr++; // Move pointer to search for the next occurrence
     }
     return count;
-}
-
-void enterAnyKey(){
-	while (getchar() != '\n');
-    printMSGLightWhite("Enter any key to continue...");
-    char ch;
-    while(1){
-        ch = _getch();
-       	break;
-	}
 }
 
 void parse_csv_line_graph_station(char *line, Station *station) {

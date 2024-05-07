@@ -4,8 +4,14 @@
 #include <time.h>
 #include <stdlib.h>
 #include <math.h>
-#include <conio.h>
 #include <ctype.h>
+
+#ifdef _WIN32
+    #include <conio.h>
+#else
+    #include <curses.h>
+#endif
+
 #include "structure.h"
 #include "echo.h"
 #include "textDecoration.h"
