@@ -1,1 +1,1 @@
-void findStationByName(Station *station, char *code);
+void findStationByName(Station *station, char *code, int numStations, char *title);

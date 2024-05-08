@@ -93,8 +93,9 @@ void firstPanel(){
     		printSplitedLine();
     		printf(ANSI_COLOR_GOLD ANSI_STYLE_BOLD " Find station to display it details\n" ANSI_RESET_ALL);
             char code[50];
-            findStationByName(stations, code);
+            findStationByName(stations, code, numStations,"Find station to display it details\n");
             displayStationInfo(code);
+            printf("Hello world!\n");
             enterAnyKey();
 			clearScreen();
 			firstPanel();
