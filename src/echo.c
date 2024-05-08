@@ -2,7 +2,7 @@
 // Platform-specific includes
 #ifdef _WIN32
     #include <windows.h>
-#elif __linux__
+#elif __linux__ || __APPLE__
     #include <termios.h>
     #include <unistd.h>
 #endif

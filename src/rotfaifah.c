@@ -8,10 +8,10 @@
 
 #include "../include/rotfaifah.h"
 
+#include <stdio.h>
+
 #ifdef _WIN32
     #include <conio.h>
-#else
-    #include <curses.h>
 #endif
 
 #ifdef _WIN32
@@ -21,9 +21,15 @@
         _getch(); // Wait for a key press
     }
 #else
+    int getch() {
+        char ch[40];
+        scanf("%s", ch);
+        return 0;
+    }
+
     void enterAnyKey() {
-        printf("Enter any key to continue...");
-        getchar(); // Wait for a key press
+        printf("Enter any key and press enter to continue...");
+        getch(); // Wait for a key press
     }
 #endif
 

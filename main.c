@@ -4,6 +4,7 @@
 void firstPanel();
 
 int numStations = 0;
+
 Station stations[MAX_STATIONS];
 
 // Function to display station information
@@ -132,7 +133,9 @@ void firstPanel(){
             break;
         }
         default:
+            clearScreen();
             printError("Invalid option");
+			firstPanel();
             break;
     }
 }

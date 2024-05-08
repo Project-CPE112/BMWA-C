@@ -1,6 +1,8 @@
 CC = gcc
 CFLAGS = -Iinclude -mconsole
-LDFLAGS = -luser32 -lgdi32 # Additional libraries might be needed for console apps
+LDFLAGS_MACOS = -framework Cocoa
+LDFLAGS_WINDOWS = -luser32 -lgdi32
+LDFLAGS = $(shell if [ `uname` = "Darwin" ]; then echo $(LDFLAGS_MACOS); else echo $(LDFLAGS_WINDOWS); fi)
 
 SRCS = $(wildcard src/*.c)
 OBJS = $(patsubst src/%.c,obj/%.o,$(SRCS))

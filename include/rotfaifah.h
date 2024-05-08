@@ -8,8 +8,6 @@
 
 #ifdef _WIN32
     #include <conio.h>
-#else
-    #include <curses.h>
 #endif
 
 #include "structure.h"
@@ -21,7 +19,7 @@
 
 void delay(int milli_seconds);
 void clearScreen(void);
-void getCurrentDate();
+void getCurrentDate(char *dateStr, int size);
 void delLastEnteredLine();
 void TextShowUpDelay(char Text[], int _delay);
 int count_string(char *main_string, char *sub_string);
