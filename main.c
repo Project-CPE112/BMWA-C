@@ -85,7 +85,6 @@ void firstPanel(){
 		printError("Invalid option");
         firstPanel();
     }
-    char ch;
     switch (option) {
         case 1: {
         	clearScreen();
@@ -95,7 +94,6 @@ void firstPanel(){
             char code[50];
             findStationByName(stations, code, numStations,"Find station to display it details\n");
             displayStationInfo(code);
-            printf("Hello world!\n");
             enterAnyKey();
 			clearScreen();
 			firstPanel();
