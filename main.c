@@ -4,8 +4,10 @@
 void firstPanel();
 
 int numStations = 0;
+int pricePairsCount = 0;
 
 Station stations[MAX_STATIONS];
+pricePair priceTable[MAX_PRICE_TABLE_SIZE]; 
 
 // Function to display station information
 void displayStationInfo(char *code) {
@@ -53,13 +55,28 @@ void readStationsFromFile(const char *filename) {
     }
     char line[1024];
     char buffer[1024];
-    int count = 0;
     fgets(buffer, 1024, file); //Skip first line
     while (fgets(line, 1024, file)) {
         Station station;
         parse_csv_line_graph_station(line, &station);
         stations[numStations++] = station;
-        count++;
+    }
+    fclose(file);
+}
+
+void createPriceTable(const char *filename) {
+    FILE *file = fopen(filename, "r");
+    if (file == NULL) {
+        printf(ANSI_COLOR_LIGHT_RED "Error: Could not open file %s\n" ANSI_RESET_ALL, filename);
+        exit(1);
+    }
+    char line[1024];
+    char buffer[1024]; // heading exclude
+    fgets(buffer, 1024, file); //Skip first line
+    while (fgets(line, 1024, file)) {
+        pricePair pair;
+        readPriceDataFromCSV(line, &pair);
+        priceTable[pricePairsCount++] = pair;
     }
     fclose(file);
 }
@@ -67,6 +84,7 @@ void readStationsFromFile(const char *filename) {
 int main() {
     clearScreen();
     readStationsFromFile("metro_graph.csv");
+    createPriceTable("priceTable.csv");
     firstPanel();
     return 0;
 }
@@ -80,6 +98,7 @@ void firstPanel(){
     printOption(2, "Find routes");
     printOption(3, "Exit program");
     printEnterChoice();
+    // printf("%s to %s : %d baht\n", priceTable[0].staCode1, priceTable[0].staCode2, priceTable[0].price);
     int optionScan = scanf("%d", &option);
     if(optionScan != 1){
     	clearScreen();
@@ -111,14 +130,17 @@ void firstPanel(){
 			
 			int foundRoutesCount;
 			char** routes = FindRoute(stations, start, end, 20, &foundRoutesCount);
-			
+			int* prices = calculateRoutesPrice(priceTable, routes, foundRoutesCount);
+            sortingByPrice(routes, prices, foundRoutesCount);
+
 			if (routes != NULL && foundRoutesCount > 0) {
 			    printf("Possible routes:\n");
 			    for (int i = 0; i < foundRoutesCount; i++) {
-			        printf("[Total: %d] %s\n", count_string(routes[i],",") + 1, routes[i]);
+			        printf("[Total: %d | Price: %d] %s\n\n", count_string(routes[i],",") + 1, prices[i], routes[i]);
 			        free(routes[i]); // Free each individual route
 			    }
 			    free(routes); // Free the routes array
+                free(prices);
 			} else {
 			    printError("No routes found.");
 			}

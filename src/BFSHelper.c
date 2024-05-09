@@ -84,6 +84,71 @@ void freeQueue(Queue* queue) {
     }
 }
 
+int getUnderscoreIndex(char* str) {
+    for (int i = 0; i < strlen(str); i++) {
+        if (str[i] == '_') return i;
+    }
+    return -1;
+}
+
+char** insertInterchangeMarks(char** routes, int routesCount) {
+    char** newRoutes = (char**)malloc(routesCount * sizeof(char*));
+    if (newRoutes == NULL) {
+        return NULL;
+    }
+
+    for (int i = 0; i < routesCount; i++) {
+        char result[2000] = "";
+        char* dupRoute = strdup(routes[i]);
+
+        if (dupRoute == NULL) {
+            return NULL;
+        }
+
+        char* sta1 = strtok(dupRoute, ",");
+        char* sta2 = strtok(NULL, ",");
+
+        while (sta1 != NULL && sta2 != NULL) {
+            int udIndex1 = getUnderscoreIndex(sta1);
+            int udIndex2 = getUnderscoreIndex(sta2);
+            char* code1 = strdup(sta1);
+            char* code2 = strdup(sta2);
+            // remove station code after underscore of full code
+            memset(code1 + udIndex1, '\0', sizeof(char) * strlen(sta1)-udIndex1);
+            memset(code2 + udIndex2, '\0', sizeof(char) * strlen(sta2)-udIndex2);
+
+            if (strcmp(code1, code2) != 0) {
+                // interchange detected
+                if (strlen(result) > 0) {
+                    strcat(result, ",INT,");
+                    strcat(result, sta2);
+                } else {
+                    strcpy(result, sta1);
+                    strcat(result, ",INT,");
+                    strcat(result, sta2);
+                }
+            } else {
+                // no interchange
+                if (strlen(result) > 0) {
+                    strcat(result, ",");
+                    strcat(result, sta2);
+                } else {
+                    strcpy(result, sta1);
+                    strcat(result, ",");
+                    strcat(result, sta2);
+                }
+            }
+            sta1 = sta2;
+            sta2 = strtok(NULL, ",");
+        }
+
+        newRoutes[i] = strdup(result); // Store result in newRoutes
+        free(dupRoute);
+    }
+
+    return newRoutes;
+}
+
 int min = INT_MAX;
 
 // Function to find routes between startStation and endStation
@@ -113,6 +178,8 @@ char** FindRoute(Station graph[], char* startStation, char* endStation, int rout
     // Enqueue the start station
     enqueue(queue, startStation, "");
 
+    char* prevStation = NULL;
+
     // BFS loop
     while (queue->front != NULL && routesCount < routeCount) {
         // Dequeue a station and path
@@ -131,10 +198,12 @@ char** FindRoute(Station graph[], char* startStation, char* endStation, int rout
         if (strlen(path) > 0) {
             strcpy(updatedPath, path);
             strcat(updatedPath, ",");
+            // if (detectInterchange(currentStation, prevStation)) strcat(updatedPath, ",INT");
             strcat(updatedPath, currentStation);
         } else {
             strcpy(updatedPath, currentStation);
         }
+        prevStation = strdup(currentStation);
 
         // Check if we reached the destination
         if (strcmp(currentStation, endStation) == 0) {
@@ -167,5 +236,5 @@ char** FindRoute(Station graph[], char* startStation, char* endStation, int rout
     *foundRoutesCount = routesCount;
 
     // Return the routes array
-    return routes;
+    return insertInterchangeMarks(routes, *foundRoutesCount);
 }
