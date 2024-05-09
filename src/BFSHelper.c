@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <ctype.h>
+#include <limits.h>
 
 #include "../include/rotfaifah.h"
 #include "../include/textDecoration.h"
@@ -83,6 +84,8 @@ void freeQueue(Queue* queue) {
     }
 }
 
+int min = INT_MAX;
+
 // Function to find routes between startStation and endStation
 char** FindRoute(Station graph[], char* startStation, char* endStation, int routeCount, int* foundRoutesCount) {
     if (!startStation || !endStation) {
@@ -91,7 +94,7 @@ char** FindRoute(Station graph[], char* startStation, char* endStation, int rout
     }
 
     // Initialize routes array
-    char** routes = (char**)malloc(routeCount * sizeof(char*));
+    char** routes = (char**)malloc(routeCount * sizeof(char*)); //array of string
     if (routes == NULL) {
         *foundRoutesCount = 0;
         return NULL;
@@ -135,8 +138,15 @@ char** FindRoute(Station graph[], char* startStation, char* endStation, int rout
 
         // Check if we reached the destination
         if (strcmp(currentStation, endStation) == 0) {
-            routes[routesCount] = strdup(updatedPath);
-            routesCount++;
+            int numRoute = count_string(updatedPath,",")+1;
+            // Find minimum Route
+            if(min > numRoute) {
+                min = numRoute;
+            } // Compare minimum Route if more than 10 don't push it to array
+            if((numRoute-min) <= 10){
+                routes[routesCount] = strdup(updatedPath);
+                routesCount++;
+            }
         }
 
         // Enqueue all connected stations
