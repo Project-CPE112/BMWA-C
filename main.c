@@ -71,6 +71,15 @@ int main() {
     return 0;
 }
 
+char *CodeToName(char *code, Station *stations, int numStations) {
+    for (int i = 0; i < numStations; i++) {
+        if (strcmp(stations[i].fullCode, code) == 0) {
+            return stations[i].name;
+        }
+    }
+    return NULL; // Return NULL if code not found
+}
+
 void firstPanel(){
     int option;
     printHeader(10, numStations);
@@ -94,7 +103,7 @@ void firstPanel(){
     		printSplitedLine();
     		printf(ANSI_COLOR_GOLD ANSI_STYLE_BOLD " Find station to display it details\n" ANSI_RESET_ALL);
             char code[50];
-            findStationByName(stations, code, numStations,"Find station to display it details\n");
+            findStationByName(stations, code, numStations,"Find station to display it details\n", NULL);
             displayStationInfo(code);
             enterAnyKey();
 			clearScreen();
@@ -104,10 +113,59 @@ void firstPanel(){
         case 2: {
             clearScreen();
 			char start[50], end[50];
-			printf("Enter start station: ");
-			scanf("%s", start);
-			printf("Enter end station: ");
-			scanf("%s", end);
+
+            // start changing fucking code 
+            printOption(1, "Insert Departure First : ");
+            printOption(2, "Insert Destination First : ");
+
+            printEnterChoice();
+
+            int choice;
+            int optionScan = scanf("%d", &choice);
+            if(optionScan != 1){
+                clearScreen();
+                while (getchar() != '\n');
+                printError("Invalid option");
+                firstPanel();
+            }
+            char show[50];
+            char des[50], dep[50];
+
+            switch (choice) {
+                case 1: {
+                    printf("Enter departure station: ");
+                    findStationByName(stations, start, numStations,"Find Departure station\n", NULL);
+                    
+                    strcpy(dep,CodeToName(start, stations, numStations));
+
+                    snprintf(show, sizeof(show), "Departure station : %s\n", dep);
+
+                    findStationByName(stations, end, numStations,"Find Destination station\n",show);
+
+                    strcpy(des,CodeToName(end, stations,numStations));
+
+
+                    printf("Departure station : %s\n", dep);
+			        printf("Destination station : %s\n", des);
+                    break;
+                }
+                case 2: {
+                    printf("Enter destination station: ");
+                    findStationByName(stations, end, numStations,"Find Destination station\n", NULL);
+                    strcpy(des,CodeToName(end, stations,numStations));
+                    snprintf(show, sizeof(show), "Departure station : %s\n", des);
+
+
+                    findStationByName(stations, start, numStations, "Find Departure station\n", show);
+
+                    strcpy(des,CodeToName(end, stations,numStations));
+
+                    printf("Destination station : %s\n", des);
+                    printf("Departure station : %s\n", dep);
+                    break;
+                }
+                break;
+            }
 			
 			int foundRoutesCount;
 			char** routes = FindRoute(stations, start, end, 20, &foundRoutesCount);

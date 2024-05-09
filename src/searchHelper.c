@@ -1,10 +1,14 @@
 #include "../include/rotfaifah.h"
 
-void findStationByName(Station *station, char *code, int numStations, char *title){
+void findStationByName(Station *station, char *code, int numStations, char *title, char *show) {
+    
     clearScreen();
     int selector = 0;
     int end = 0;
     int isESC = 0;
+    if(show != NULL){
+        printf(show);
+    }
     printf(ANSI_COLOR_GOLD "%s ", title);
     char sname[50];
     printSplitedLine();
@@ -21,7 +25,7 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
             foundStation[foundStationCnt] = i;
             foundStationCnt++;
         }else{
-            // Debugging search
+            // Debugging search 
             // printf("[%s | %s][%s | %s] Find with %s\n", station[i].name, station[i].shortCode, station[i].nameLowercase, station[i].shortCodeLowercase, lowersname);
         }
     }
@@ -45,7 +49,7 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
                 switch (optionTry) {
                     case 1:
                         clearScreen();
-                        findStationByName(station, code, numStations, title);
+                        findStationByName(station, code, numStations, title, NULL);
                         break;
                     case 2:
                         clearScreen();
@@ -127,7 +131,7 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
             clearScreen();
         }else{
             clearScreen();
-            findStationByName(station, code, numStations, title);
+            findStationByName(station, code, numStations, title, NULL);
         }
     }
     return;
