@@ -62,8 +62,9 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
         int endPoint = 10;
         if(foundStationCnt < 10) endPoint = foundStationCnt;
         while (!end) {
-            printf(ANSI_COLOR_GOLD "%s", title);
-            printf("STARTPOINT: %d, ENDPOINT: %d\n", startPoint, endPoint);
+            printf(ANSI_COLOR_GOLD "%s" ANSI_RESET_ALL, title);
+            // selector cursor debugging
+            // printf(ANSI_COLOR_LIGHT_YELLOW "STARTPOINT: %d, ENDPOINT: %d, SELECTOR: %d\n", startPoint, endPoint, selector);
             printf(ANSI_COLOR_LIGHT_WHITE "Find station: " ANSI_COLOR_GOLD "%s\n", sname);
             printf(ANSI_COLOR_LIGHT_WHITE "Found total: " ANSI_COLOR_GOLD "%d\n" ANSI_RESET_ALL,foundStationCnt);
             printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " [%c] " ANSI_COLOR_LIGHT_WHITE "To go up | " ANSI_COLOR_GOLD "[%c] " ANSI_COLOR_LIGHT_WHITE "To go down\n", 24, 25);
