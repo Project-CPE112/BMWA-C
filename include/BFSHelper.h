@@ -6,3 +6,5 @@ QueueNode* dequeue(Queue* queue);
 void freeQueueNode(QueueNode* node);
 void freeQueue(Queue* queue);
 char** FindRoute(Station graph[], char* startStation, char* endStation, int routeCount, int* foundRoutesCount);
+int getUnderscoreIndex(char* str);
+char** insertInterchangeMarks(char** routes, int routesCount);

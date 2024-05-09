@@ -16,6 +16,7 @@
 #include "BFSHelper.h"
 #include "textHelper.h"
 #include "searchHelper.h"
+#include "priceHelper.h"
 
 void delay(int milli_seconds);
 void clearScreen(void);
