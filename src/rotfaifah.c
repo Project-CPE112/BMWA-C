@@ -162,6 +162,10 @@ void parse_csv_line_graph_station(char *line, Station *station) {
         col++;
         token = strtok(NULL, delim);
     }
+    strcpy(station->nameLowercase, station->name);
+    strlwr(station->nameLowercase);
+    strcpy(station->shortCodeLowercase, station->shortCode);
+    strlwr(station->shortCodeLowercase);
     int unionTotal = 0;
     for(int i = 0;i < cCount;i++){
     	strcpy(station->connectAll[unionTotal].sta, station->connections[i].sta);

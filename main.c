@@ -12,6 +12,7 @@ void displayStationInfo(char *code) {
     for (int i = 0; i < numStations; i++) {
         if (strcmp(stations[i].fullCode, code) == 0) {
             printf("Station Name: %s\n", stations[i].name);
+            printf("Station Name Lowercase: %s\n", stations[i].nameLowercase);
             printf("Short Code: %s\n", stations[i].shortCode);
             printf("Full Code: %s\n", stations[i].fullCode);
             if(!(strcmp(stations[i].connectionWith, "BLANK") == 0))
@@ -64,6 +65,7 @@ void readStationsFromFile(const char *filename) {
 }
 
 int main() {
+    clearScreen();
     readStationsFromFile("metro_graph.csv");
     firstPanel();
     return 0;

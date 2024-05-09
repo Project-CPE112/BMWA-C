@@ -7,7 +7,9 @@
 typedef struct {
 	int staID;
     char name[50];
+    char nameLowercase[50];
     char shortCode[10];
+    char shortCodeLowercase[10];
     char fullCode[50];
     char connectionWith[150];
     char connectionWith2[150];

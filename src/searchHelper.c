@@ -4,7 +4,6 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
     clearScreen();
     int selector = 0;
     int end = 0;
-    int searched = 0;
     int isESC = 0;
     printf(ANSI_COLOR_GOLD "%s ", title);
     char sname[50];
@@ -13,18 +12,23 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
     scanf(" %[^\n]", sname);
     int foundStation[numStations];
     int foundStationCnt = -1;
+    char lowersname[50];
+    strcpy(lowersname, sname);
+    strlwr(lowersname);
     for (int i = 0; i < numStations; i++) {
-        if (strstr(station[i].name, sname) != NULL || strstr(station[i].shortCode, sname) != NULL) {
+        if (strstr(station[i].nameLowercase, lowersname) != NULL || strstr(station[i].shortCodeLowercase, lowersname) != NULL) {
             if(foundStationCnt == -1) foundStationCnt = 0;
             foundStation[foundStationCnt] = i;
             foundStationCnt++;
+        }else{
+            // Debugging search
+            // printf("[%s | %s][%s | %s] Find with %s\n", station[i].name, station[i].shortCode, station[i].nameLowercase, station[i].shortCodeLowercase, lowersname);
         }
     }
     clearScreen();
     if(foundStationCnt == -1){
         printError("Station not found");
         int optionTry = 0;
-
         while(optionTry == 0){
             printSplitedLine();
             printMenu();
@@ -56,11 +60,10 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
     }else{
         int startPoint = 0;
         int endPoint = 10;
+        if(foundStationCnt < 10) endPoint = foundStationCnt;
         while (!end) {
-            if(searched == 0){
-                searched = 1;
-            }
             printf(ANSI_COLOR_GOLD "%s", title);
+            printf("STARTPOINT: %d, ENDPOINT: %d\n", startPoint, endPoint);
             printf(ANSI_COLOR_LIGHT_WHITE "Find station: " ANSI_COLOR_GOLD "%s\n", sname);
             printf(ANSI_COLOR_LIGHT_WHITE "Found total: " ANSI_COLOR_GOLD "%d\n" ANSI_RESET_ALL,foundStationCnt);
             printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " [%c] " ANSI_COLOR_LIGHT_WHITE "To go up | " ANSI_COLOR_GOLD "[%c] " ANSI_COLOR_LIGHT_WHITE "To go down\n", 24, 25);
