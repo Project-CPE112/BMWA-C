@@ -49,5 +49,6 @@ typedef struct Queue {
 
 typedef struct routesNode{
 	int visitedCount;
+	int price;
 	char *visitedRoute;
 } routesNode;

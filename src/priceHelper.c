@@ -90,24 +90,3 @@ int* calculateRoutesPrice(pricePair* priceTable, char** routes, int routesCount)
     }
     return routesPrice;
 }
-
-void sortingByPrice(char** routes, int* prices, int routesCount) {
-    // selection sort (;
-    for (int i = 0; i < routesCount; i++) {
-        int jMin = i;
-        for (int j = i + 1; j < routesCount; j++) {
-            if (prices[j] < prices[jMin]) jMin = j;
-        }
-        if (jMin != i) {
-            // swapping
-            int temp = prices[i];
-            prices[i] = prices[jMin];
-            prices[jMin] = temp;
-
-            char* tempR;
-            strcpy(tempR, routes[i]);
-            strcpy(routes[i], routes[jMin]);
-            strcpy(routes[jMin], tempR);
-        }
-    }
-}
