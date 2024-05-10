@@ -134,8 +134,8 @@ void firstPanel(){
 			char start[50], end[50];
 
             // start changing fucking code 
-            printOption(1, "Insert Departure First : ");
-            printOption(2, "Insert Destination First : ");
+            printOption(1, "Insert Departure First");
+            printOption(2, "Insert Destination First");
 
             printEnterChoice();
 
@@ -195,7 +195,7 @@ void firstPanel(){
 			int foundRoutesCount;
 			char** routes = FindRoute(stations, start, end, 20, &foundRoutesCount);
 			int* prices = calculateRoutesPrice(priceTable, routes, foundRoutesCount);
-            sortingByPrice(routes, prices, foundRoutesCount);
+            //sortingByPrice(routes, prices, foundRoutesCount);
 
 			if (routes != NULL && foundRoutesCount > 0) {
 			    printf("Possible routes:\n");
