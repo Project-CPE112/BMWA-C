@@ -36,6 +36,10 @@ void printHeader(int totalLine, int totalStation){
 
 void printSplitedLine() { printf(ANSI_COLOR_LIGHT_GREEN ANSI_STYLE_STRIKE ANSI_STYLE_BOLD "=================================================\n" ANSI_RESET_ALL); }
 
+void printSplitedLineColoring(int r, int g, int b) { 
+	printf("%s" ANSI_STYLE_STRIKE ANSI_STYLE_BOLD "=================================================\n" ANSI_RESET_ALL, ANSI_COLOR_RGB2(r,g,b)); 
+}
+
 void printOption(int opt, char *name) { printf("  %c " ANSI_COLOR_GOLD "[%d]" ANSI_RESET_ALL " %s\n", ARROW_ASCII, opt, name); }
 
 void printEnterChoice(){ printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD " Enter your choice: " ANSI_RESET_ALL); }
