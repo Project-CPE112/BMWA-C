@@ -1,6 +1,6 @@
 #include "../include/rotfaifah.h"
 
-void Displayroutes(routesNode *routeList,int Countroutes){
+void Displayroutes(Station *stations,routesNode *routeList,int Countroutes,int numStations){
     int end = 0;
     int startpoint = 0;
     int selector = 0;
@@ -57,45 +57,50 @@ void Displayroutes(routesNode *routeList,int Countroutes){
                 }
             }
             if(end == 1)
-                Displayselectedroutes(routeList[selector].visitedRoute);
+                Displayselectedroutes(stations,routeList[selector].visitedRoute,numStations);
     }
 }
 
-void Displayselectedroutes(char *routes){
+void Displayselectedroutes(Station *stations,char *routes,int numStations){
     char *token = strtok(routes,",");
     while(token != NULL){
         int index = findcolour(token);
+        char *temp = CodeToName(token,stations,numStations);
+        if(strcmp(token,"INT") == 0) index = 10; 
         switch (index)
         {
         case 0://MRTBL
-            printf(ANSI_COLOR_BLUE "%s" "\n->\n",token);
+            printf(ANSI_COLOR_BLUE "%s" "\n->\n",temp);
             break;
         case 1://ARL
-            printf(ANSI_COLOR_RED "%s" "\n->\n",token);
+            printf(ANSI_COLOR_RED "%s" "\n->\n",temp);
             break;
         case 2://BTSSIL
-            printf(ANSI_COLOR_GREEN "%s" "\n->\n",token);
+            printf(ANSI_COLOR_GREEN "%s" "\n->\n",temp);
             break;
         case 3://BTSSUK
-            printf(ANSI_COLOR_LIGHT_GREEN "%s" "\n->\n",token);
+            printf(ANSI_COLOR_LIGHT_GREEN "%s" "\n->\n",temp);
             break;
         case 4://BTSGL
-            printf(ANSI_COLOR_YELLOW "%s" "\n->\n",token);
+            printf(ANSI_COLOR_YELLOW "%s" "\n->\n",temp);
             break;
         case 5://MRTYL
-            printf(ANSI_COLOR_LIGHT_YELLOW "%s" "\n->\n",token);
+            printf(ANSI_COLOR_LIGHT_YELLOW "%s" "\n->\n",temp);
             break;
         case 6://MRTPL
-            printf(ANSI_COLOR_LIGHT_MAGENTA "%s" "\n->\n",token);
+            printf(ANSI_COLOR_LIGHT_MAGENTA "%s" "\n->\n",temp);
             break;
         case 7://MRTPK
-            printf(ANSI_COLOR_BLUE "%s" "\n->\n",token);
+            printf(ANSI_COLOR_BLUE "%s" "\n->\n",temp);
             break;
         case 8://SRTETLR
-            printf(ANSI_COLOR_LIGHT_RED "%s" "\n->\n",token);
+            printf(ANSI_COLOR_LIGHT_RED "%s" "\n->\n",temp);
             break;
         case 9://SRTETDR
-            printf(ANSI_COLOR_RED "%s" "\n->\n",token);
+            printf(ANSI_COLOR_RED "%s" "\n->\n",temp);
+            break;
+        case 10://INT
+            printf(ANSI_COLOR_WHITE "INT\n->\n");
             break;
         default:
             break;
@@ -103,6 +108,7 @@ void Displayselectedroutes(char *routes){
         // printf("%s\n->\n",token);
         token = strtok(NULL,",");
     }
+    printf(ANSI_RESET_ALL);
 }
 
 int findcolour(char *station){

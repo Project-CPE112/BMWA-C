@@ -1,3 +1,3 @@
-void Displayroutes(routesNode *routeList,int Countroutes);
-void Displayselectedroutes(char *routes);
+void Displayroutes(Station *stations,routesNode *routeList,int Countroutes,int numStations);
+void Displayselectedroutes(Station *stations,char *routes,int numStations);
 int findcolour(char *station);

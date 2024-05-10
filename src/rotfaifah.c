@@ -187,3 +187,12 @@ void parse_csv_line_graph_station(char *line, Station *station) {
 	}
 	station->connectAllCount = unionTotal;
 }
+
+char *CodeToName(char *code, Station *stations, int numStations) {
+    for (int i = 0; i < numStations; i++) {
+        if (strcmp(stations[i].fullCode, code) == 0) {
+            return stations[i].name;
+        }
+    }
+    return NULL; // Return NULL if code not found
+}
