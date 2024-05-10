@@ -13,33 +13,41 @@ pricePair priceTable[MAX_PRICE_TABLE_SIZE];
 void displayStationInfo(char *code) {
     for (int i = 0; i < numStations; i++) {
         if (strcmp(stations[i].fullCode, code) == 0) {
-            printf("Station Name: %s\n", stations[i].name);
-            printf("Station Name Lowercase: %s\n", stations[i].nameLowercase);
-            printf("Short Code: %s\n", stations[i].shortCode);
-            printf("Full Code: %s\n", stations[i].fullCode);
-            if(!(strcmp(stations[i].connectionWith, "BLANK") == 0))
-	            printf("Connection With: %s\n", stations[i].connectionWith);
-            if(!(strcmp(stations[i].connectionWith2, "BLANK") == 0))
-            	printf("Connection With: %s\n", stations[i].connectionWith2);
-            printf("Connections (%d): \n", stations[i].conCount);
+            printSplitedLineColoring(73, 73, 73);
+            printf("Station Name: " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "%s\n" ANSI_RESET_ALL, stations[i].name);
+            printf(ANSI_COLOR_CYAN "Short Code: " ANSI_STYLE_BOLD ANSI_COLOR_GREEN "%s\n" ANSI_RESET_ALL, stations[i].shortCode);
+            printf(ANSI_COLOR_CYAN "Full Code: " ANSI_STYLE_BOLD ANSI_COLOR_GREEN "%s\n" ANSI_RESET_ALL, stations[i].fullCode);
+            printSplitedLineColoring(73, 73, 73);
+            
+            if(!(strcmp(stations[i].connectionWith, "BLANK") == 0)){
+	            printf(ANSI_COLOR_LIGHT_MAGENTA "Connection With: " ANSI_STYLE_BOLD ANSI_COLOR_RED "%s\n" ANSI_RESET_ALL, stations[i].connectionWith);
+                printSplitedLineColoring(73, 73, 73);}
+            if(!(strcmp(stations[i].connectionWith2, "BLANK") == 0)){
+            	printf(ANSI_COLOR_LIGHT_MAGENTA "Connection With: " ANSI_STYLE_BOLD ANSI_COLOR_RED "%s\n" ANSI_RESET_ALL, stations[i].connectionWith2);
+                printSplitedLineColoring(73, 73, 73);}
+        
+            printf("Connections ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD"%d" ANSI_RESET_ALL"): \n", stations[i].conCount);
             for (int j = 0; j < stations[i].conCount; j++) {
-                printf(" - %s (Time: %d, Platform: %s, ID: %d)\n", stations[i].connections[j].sta,
+                printf(" - %s ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_CYAN"Platform: %s "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n", stations[i].connections[j].sta,
                         stations[i].connections[j].time, stations[i].connections[j].platform, stations[i].connections[j].staID);
             }
-            printf("Interchanges (%d):\n", stations[i].intCount);
+            printSplitedLineColoring(73, 73, 73);
+            printf("Interchanges ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD"%d" ANSI_RESET_ALL"): \n", stations[i].intCount);
             for (int j = 0; j < stations[i].intCount; j++) {
-                printf(" - %s (Time: %d, ID: %d)\n", stations[i].interchanges[j].sta, stations[i].interchanges[j].time, stations[i].interchanges[j].staID);
+                printf(" - %s ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n", stations[i].interchanges[j].sta, stations[i].interchanges[j].time, stations[i].interchanges[j].staID);
             }
-            printf("All Connected Stations (%d):\n", stations[i].connectAllCount);
+            printSplitedLineColoring(73, 73, 73);
+            printf("All Connected Stations ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD"%d" ANSI_RESET_ALL"): \n", stations[i].connectAllCount);
             for(int j = 0; j < stations[i].connectAllCount; j++){
             	if(stations[i].connectAll[j].type == 1){
-            		printf(" - [C #%d] %s (Time: %d, Platform: %s, ID: %d)\n", j, stations[i].connectAll[j].sta, stations[i].connectAll[j].time, stations[i].connectAll[j].platform, stations[i].connectAll[j].staID);
+            		printf(" - "ANSI_COLOR_LIGHT_MAGENTA"[C #%d] "ANSI_RESET_ALL"%s ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_CYAN"Platform: %s "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n", j, stations[i].connectAll[j].sta, stations[i].connectAll[j].time, stations[i].connectAll[j].platform, stations[i].connectAll[j].staID);
 				}else if(stations[i].connectAll[j].type == 2){
-					printf(" - [I #%d] %s (Time: %d, Platform: Walking Connection, ID: %d)\n", j, stations[i].connectAll[j].sta, stations[i].connectAll[j].time, stations[i].connectAll[j].staID);
+					printf(" - "ANSI_COLOR_LIGHT_MAGENTA"[C #%d] "ANSI_RESET_ALL"%s ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_CYAN"Platform: Walking Connection "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n", j, stations[i].connectAll[j].sta, stations[i].connectAll[j].time, stations[i].connectAll[j].staID);
 				}else{
 					printf("Invalid Format\n");
 				}
 			}
+            printSplitedLineColoring(73, 73, 73);
             return;
         }
     }
