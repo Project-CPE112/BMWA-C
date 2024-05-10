@@ -20,6 +20,11 @@
 #define ANSI_COLOR_LIGHT_WHITE        "\x1b[97m"
 
 #define ANSI_RGB_COLOR(r, g, b)       "\x1b[38;2;" #r ";" #g ";" #b "m"
+#define ANSI_RGB_COLOR2(r, g, b) ({ \
+    char escape_sequence[20]; \
+    sprintf(escape_sequence, "\x1b[38;2;%d;%d;%dm", r, g, b); \
+    escape_sequence; \
+})
 
 #define ANSI_BACKGROUND_BLACK         "\x1b[40m"
 #define ANSI_BACKGROUND_RED           "\x1b[41m"
@@ -40,6 +45,11 @@
 #define ANSI_BACKGROUND_LIGHT_WHITE   "\x1b[107m"
 
 #define ANSI_RGB_BACKGROUND(r, g, b)  "\x1b[48;2;" #r ";" #g ";" #b "m"
+#define ANSI_RGB_BACKGROUND2(r, g, b) ({ \
+    char escape_sequence[20]; \
+    sprintf(escape_sequence, "\x1b[48;2;%d;%d;%dm", r, g, b); \
+    escape_sequence; \
+})
 
 #define ANSI_COLOR_GOLD               ANSI_RGB_COLOR(255,223,0)
 #define ANSI_BACKGROUND_GOLD          ANSI_RGB_BACKGROUND(255,223,0)
