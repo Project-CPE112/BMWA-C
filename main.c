@@ -198,7 +198,7 @@ void firstPanel(){
                 detectBangSue(routes[i]);
             }
 			int* prices = calculateRoutesPrice(priceTable, routes, foundRoutesCount);
-            // sortingByPrice(routes, prices, foundRoutesCount);
+            sortingByPrice(routes, prices, foundRoutesCount);
 
 			if (routes != NULL && foundRoutesCount > 0) {
 			    printf("Possible routes:\n");
