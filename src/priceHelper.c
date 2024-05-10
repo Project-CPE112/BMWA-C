@@ -104,7 +104,8 @@ void sortingByPrice(char** routes, int* prices, int routesCount) {
             prices[i] = prices[jMin];
             prices[jMin] = temp;
 
-            char* tempR = routes[i];
+            char* tempR;
+            strcpy(tempR, routes[i]);
             strcpy(routes[i], routes[jMin]);
             strcpy(routes[jMin], tempR);
         }

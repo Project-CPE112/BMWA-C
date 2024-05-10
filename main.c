@@ -163,7 +163,6 @@ void firstPanel(){
 
                     strcpy(des,CodeToName(end, stations,numStations));
 
-
                     printf("Departure station : %s\n", dep);
 			        printf("Destination station : %s\n", des);
                     break;
@@ -186,7 +185,13 @@ void firstPanel(){
                 }
                 break;
             }
-			
+			if(strcmp(start, end) == 0){
+                printError("No path found!");
+                enterAnyKey();
+                clearScreen();
+                firstPanel();
+                break;
+            }
 			int foundRoutesCount;
 			char** routes = FindRoute(stations, start, end, 20, &foundRoutesCount);
 			int* prices = calculateRoutesPrice(priceTable, routes, foundRoutesCount);

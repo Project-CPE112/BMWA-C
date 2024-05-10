@@ -38,4 +38,4 @@ run: app
 	@./Bangkok\ Metro
 
 clean:
-	@rm -f $(OBJS) $(MAIN_OBJ) "Bangkok Metro"
+	@rm -rf obj/*.o obj "Bangkok Metro" main.o
