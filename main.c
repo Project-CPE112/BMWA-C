@@ -171,7 +171,7 @@ void firstPanel(){
                 case 2: {
                     printf("Enter destination station: ");
                     findStationByName(stations, end, numStations,"Find Destination station\n", NULL);
-                    strcpy(des,CodeToName(end, stations,numStations));
+                    strcpy(dep,CodeToName(start, stations,numStations));
                     snprintf(show, sizeof(show), "Departure station : %s\n", des);
 
 
@@ -194,8 +194,8 @@ void firstPanel(){
 			if (routes != NULL && foundRoutesCount > 0) {
 			    printf("Possible routes:\n");
 			    for (int i = 0; i < foundRoutesCount; i++) {
-			        printf("[Total: %d | Price: %d] %s\n\n", count_string(routes[i],",") + 1, prices[i], routes[i]);
-			        free(routes[i]); // Free each individual route
+			        printf("[Total: %d | Price: %d] %s\n\n", count_string(routes[i], ",") + 1 - countSubString(routes[i], ",INT,"), prices[i], routes[i]);
+                    free(routes[i]); // Free each individual route
 			    }
 			    free(routes); // Free the routes array
                 free(prices);

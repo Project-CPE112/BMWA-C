@@ -238,3 +238,14 @@ char** FindRoute(Station graph[], char* startStation, char* endStation, int rout
     // Return the routes array
     return insertInterchangeMarks(routes, *foundRoutesCount);
 }
+
+int countSubString(const char *str, const char *substr){
+    int count = 0;
+    const char *tmp = str;
+    while(tmp = strstr(tmp, substr))
+    {
+        count++;
+        tmp++;
+    }
+    return count;
+}

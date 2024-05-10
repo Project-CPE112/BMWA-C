@@ -8,3 +8,4 @@ void freeQueue(Queue* queue);
 char** FindRoute(Station graph[], char* startStation, char* endStation, int routeCount, int* foundRoutesCount);
 int getUnderscoreIndex(char* str);
 char** insertInterchangeMarks(char** routes, int routesCount);
+int countSubString(const char *str, const char *substr);
