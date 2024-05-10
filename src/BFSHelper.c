@@ -149,10 +149,9 @@ char** insertInterchangeMarks(char** routes, int routesCount) {
     return newRoutes;
 }
 
-int min = INT_MAX;
-
 // Function to find routes between startStation and endStation
 char** FindRoute(Station graph[], char* startStation, char* endStation, int routeCount, int* foundRoutesCount) {
+    int min = INT_MAX;
     if (!startStation || !endStation) {
         *foundRoutesCount = 0;
         return NULL;

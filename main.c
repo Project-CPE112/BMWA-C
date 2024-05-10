@@ -229,7 +229,6 @@ void firstPanel(){
                     routeList[i].visitedCount, routeList[i].price, routeList[i].visitedRoute
                     );
 			    }
-			    free(routeList); // Free the routes list array
 			    free(routes); // Free the routes array
                 free(prices);
 			} else {
