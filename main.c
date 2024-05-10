@@ -198,7 +198,8 @@ void firstPanel(){
                 detectBangSue(routes[i]);
             }
 			int* prices = calculateRoutesPrice(priceTable, routes, foundRoutesCount);
-        
+            //sortingByPrice(routes, prices, foundRoutesCount);
+
 			if (routes != NULL && foundRoutesCount > 0) {
                 routesNode routeList[foundRoutesCount];
                 int realTotal = 0; //for remove bangsue interchange
@@ -224,11 +225,12 @@ void firstPanel(){
                 sortRoutes(routeList, foundRoutesCount);
                 
                 printf("Possible routes:\n");
-			    for (int i = 0; i < foundRoutesCount; i++) {
-                    printf("[Total: %d | Price: %d] %s\n\n", 
-                    routeList[i].visitedCount, routeList[i].price, routeList[i].visitedRoute
-                    );
-			    }
+                Displayroutes(routeList,foundRoutesCount);
+			    // for (int i = 0; i < foundRoutesCount; i++) {
+                //     printf("[Total: %d | Price: %d] %s\n\n", 
+                //     routeList[i].visitedCount, routeList[i].price, routeList[i].visitedRoute
+                //     );
+			    // }
 			    free(routes); // Free the routes array
                 free(prices);
 			} else {
