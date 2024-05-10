@@ -97,15 +97,6 @@ int main() {
     return 0;
 }
 
-char *CodeToName(char *code, Station *stations, int numStations) {
-    for (int i = 0; i < numStations; i++) {
-        if (strcmp(stations[i].fullCode, code) == 0) {
-            return stations[i].name;
-        }
-    }
-    return NULL; // Return NULL if code not found
-}
-
 void firstPanel(){
     int option;
     printHeader(10, numStations);
@@ -232,11 +223,12 @@ void firstPanel(){
                 sortRoutes(routeList, foundRoutesCount);
                 
                 printf("Possible routes:\n");
-			    for (int i = 0; i < foundRoutesCount; i++) {
-                    printf("[Total: %d | Price: %d] %s\n\n", 
-                    routeList[i].visitedCount, routeList[i].price, routeList[i].visitedRoute
-                    );
-			    }
+			    Displayroutes(stations,routeList,foundRoutesCount,numStations);
+                // for (int i = 0; i < foundRoutesCount; i++) {
+                //     printf("[Total: %d | Price: %d] %s\n\n", 
+                //     routeList[i].visitedCount, routeList[i].price, routeList[i].visitedRoute
+                //     );
+			    // }
 			    free(routes); // Free the routes array
                 free(prices);
 			} else {
