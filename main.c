@@ -172,13 +172,13 @@ void firstPanel(){
                     printf("Enter destination station: ");
                     findStationByName(stations, end, numStations,"Find Destination station\n", NULL);
                     
-                    strcpy(des,CodeToName(start, stations,numStations));
+                    strcpy(des,CodeToName(end, stations,numStations));
                     snprintf(show, sizeof(show), "Departure station : %s\n", des);
 
 
                     findStationByName(stations, start, numStations, "Find Departure station\n", show);
 
-                    strcpy(dep,CodeToName(end, stations,numStations));
+                    strcpy(dep,CodeToName(start, stations,numStations));
 
                     printf("Destination station : %s\n", des);
                     printf("Departure station : %s\n", dep);
