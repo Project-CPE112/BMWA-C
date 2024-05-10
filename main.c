@@ -194,13 +194,23 @@ void firstPanel(){
             }
 			int foundRoutesCount;
 			char** routes = FindRoute(stations, start, end, 20, &foundRoutesCount);
+            for (int i = 0; i < foundRoutesCount; i++) {
+                detectBangSue(routes[i]);
+            }
 			int* prices = calculateRoutesPrice(priceTable, routes, foundRoutesCount);
             sortingByPrice(routes, prices, foundRoutesCount);
 
 			if (routes != NULL && foundRoutesCount > 0) {
 			    printf("Possible routes:\n");
 			    for (int i = 0; i < foundRoutesCount; i++) {
-			        printf("[Total: %d | Price: %d] %s\n\n", count_string(routes[i], ",") + 1 - countSubString(routes[i], ",INT,"), prices[i], routes[i]);
+                    int duplicatePath = 0; // checking for special case (Bang Sue Interchange)
+                    for (int j = 0; j < i; j++) {
+                        if (i != j && strcmp(routes[i], routes[j]) == 0) {
+                            duplicatePath = 1;
+                            break;
+                        }
+                    }
+			        if (!duplicatePath) printf("[Total: %d | Price: %d] %s\n\n", count_string(routes[i], ",") + 1 - countSubString(routes[i], ",INT,"), prices[i], routes[i]);
                     free(routes[i]); // Free each individual route
 			    }
 			    free(routes); // Free the routes array

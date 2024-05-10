@@ -249,3 +249,30 @@ int countSubString(const char *str, const char *substr){
     }
     return count;
 }
+
+void detectBangSue(char* route) {
+    if (strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01")) {
+        char* subIndex = strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01");
+        memmove(subIndex + 10, subIndex + 27, strlen(subIndex + 27) + 1);
+    }
+    else if (strstr(route, "MRTBL_BL11,INT,SRTETDR_RN01,INT,SRTETLR_RW01")) {
+        char* subIndex = strstr(route, "MRTBL_BL11,INT,SRTETDR_RN01,INT,SRTETLR_RW01");
+        memmove(subIndex + 10, subIndex + 27, strlen(subIndex + 27) + 1);
+    }
+    else if (strstr(route, "SRTETLR_RW01,INT,MRTBL_BL11,INT,SRTETDR_RN01")) {
+        char* subIndex = strstr(route, "SRTETLR_RW01,INT,MRTBL_BL11,INT,SRTETDR_RN01");
+        memmove(subIndex + 12, subIndex + 27, strlen(subIndex + 27) + 1);
+    }
+    else if (strstr(route, "SRTETLR_RW01,INT,SRTETDR_RN01,INT,MRTBL_BL11")) {
+        char* subIndex = strstr(route, "SRTETLR_RW01,INT,SRTETDR_RN01,INT,MRTBL_BL11");
+        memmove(subIndex + 12, subIndex + 29, strlen(subIndex + 29) + 1);
+    }
+    else if (strstr(route, "SRTETDR_RN01,INT,MRTBL_BL11,INT,SRTETLR_RW01")) {
+        char* subIndex = strstr(route, "SRTETDR_RN01,INT,MRTBL_BL11,INT,SRTETLR_RW01");
+        memmove(subIndex + 12, subIndex + 27, strlen(subIndex + 27) + 1);
+    }
+    else if (strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01,INT,MRTBL_BL11")) {
+        char* subIndex = strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01,INT,MRTBL_BL11");
+        memmove(subIndex + 12, subIndex + 29, strlen(subIndex + 29) + 1);
+    }
+}
