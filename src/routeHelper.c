@@ -58,14 +58,60 @@ void Displayroutes(routesNode *routeList,int Countroutes){
             }
             if(end == 1)
                 Displayselectedroutes(routeList[selector].visitedRoute);
-
     }
 }
 
 void Displayselectedroutes(char *routes){
     char *token = strtok(routes,",");
     while(token != NULL){
-        printf("%s\n->\n",token);
+        int index = findcolour(token);
+        switch (index)
+        {
+        case 0://MRTBL
+            printf(ANSI_COLOR_BLUE "%s" "\n->\n",token);
+            break;
+        case 1://ARL
+            printf(ANSI_COLOR_RED "%s" "\n->\n",token);
+            break;
+        case 2://BTSSIL
+            printf(ANSI_COLOR_GREEN "%s" "\n->\n",token);
+            break;
+        case 3://BTSSUK
+            printf(ANSI_COLOR_LIGHT_GREEN "%s" "\n->\n",token);
+            break;
+        case 4://BTSGL
+            printf(ANSI_COLOR_YELLOW "%s" "\n->\n",token);
+            break;
+        case 5://MRTYL
+            printf(ANSI_COLOR_LIGHT_YELLOW "%s" "\n->\n",token);
+            break;
+        case 6://MRTPL
+            printf(ANSI_COLOR_LIGHT_MAGENTA "%s" "\n->\n",token);
+            break;
+        case 7://MRTPK
+            printf(ANSI_COLOR_BLUE "%s" "\n->\n",token);
+            break;
+        case 8://SRTETLR
+            printf(ANSI_COLOR_LIGHT_RED "%s" "\n->\n",token);
+            break;
+        case 9://SRTETDR
+            printf(ANSI_COLOR_RED "%s" "\n->\n",token);
+            break;
+        default:
+            break;
+        }
+        // printf("%s\n->\n",token);
         token = strtok(NULL,",");
+    }
+}
+
+int findcolour(char *station){
+    char stationName[9][10] = {"MRTBL","ARL","BTSSIL","BTSSUK","BTSGL","MRTYL","MRTPL","MRTPK","SRTETLR","SRTETDR"};
+    int i;
+    for(i=0;i<=9;i++){
+        int status = strstr(station,stationName[i]);
+        if(status){
+            return i;
+        }
     }
 }
