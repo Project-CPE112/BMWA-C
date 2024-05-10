@@ -112,10 +112,10 @@ void Displayselectedroutes(Station *stations,char *routes,int numStations){
 }
 
 int findcolour(char *station){
-    char stationName[9][10] = {"MRTBL","ARL","BTSSIL","BTSSUK","BTSGL","MRTYL","MRTPL","MRTPK","SRTETLR","SRTETDR"};
+    char stationName[][10] = {"MRTBL","ARL","BTSSIL","BTSSUK","BTSGL","MRTYL","MRTPL","MRTPK","SRTETLR","SRTETDR"};
     int i;
     for(i=0;i<=9;i++){
-        int status = strstr(station,stationName[i]);
+        char* status = strstr(station,stationName[i]);
         if(status){
             return i;
         }
