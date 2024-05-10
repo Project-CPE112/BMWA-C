@@ -276,3 +276,30 @@ void detectBangSue(char* route) {
         memmove(subIndex + 12, subIndex + 29, strlen(subIndex + 29) + 1);
     }
 }
+
+
+void sortRoutes(routesNode *routeList, int size) {
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - i - 1; j++) {
+            if (compareRoutesNode(&routeList[j], &routeList[j + 1]) > 0) {
+                // Swap routeList[j] and routeList[j+1]
+                routesNode temp = routeList[j];
+                routeList[j] = routeList[j + 1];
+                routeList[j + 1] = temp;
+            }
+        }
+    }
+}
+
+// Comparison function for qsort
+int compareRoutesNode(routesNode *routeA, routesNode *routeB) {
+        // Compare based on price
+    if (routeA->price != routeB->price)
+        return routeA->price - routeB->price;
+    // If prices are equal, compare based on visitedCount
+    else if (routeA->visitedCount != routeB->visitedCount)
+        return routeA->visitedCount - routeB->visitedCount;
+    // If visitedCounts are also equal, compare based on visitedRoute
+    else
+        return strcmp(routeA->visitedRoute, routeB->visitedRoute);
+}

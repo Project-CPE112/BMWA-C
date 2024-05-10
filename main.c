@@ -198,26 +198,44 @@ void firstPanel(){
                 detectBangSue(routes[i]);
             }
 			int* prices = calculateRoutesPrice(priceTable, routes, foundRoutesCount);
-            //sortingByPrice(routes, prices, foundRoutesCount);
-
+        
 			if (routes != NULL && foundRoutesCount > 0) {
-			    printf("Possible routes:\n");
-			    for (int i = 0; i < foundRoutesCount; i++) {
-                    int duplicatePath = 0; // checking for special case (Bang Sue Interchange)
-                    for (int j = 0; j < i; j++) {
-                        if (i != j && strcmp(routes[i], routes[j]) == 0) {
+                routesNode routeList[foundRoutesCount];
+                int realTotal = 0; //for remove bangsue interchange
+                for(int i = 0; i < foundRoutesCount; i++){
+                    int duplicatePath = 0;
+                    for (int j = 0; j < realTotal; j++) {
+                        if (i != j && strcmp(routes[i], routeList[j].visitedRoute) == 0) {
                             duplicatePath = 1;
                             break;
                         }
                     }
-			        if (!duplicatePath) printf("[Total: %d | Price: %d] %s\n\n", count_string(routes[i], ",") + 1 - countSubString(routes[i], ",INT,"), prices[i], routes[i]);
-                    free(routes[i]); // Free each individual route
+                    if (!duplicatePath){
+                        routeList[realTotal].price = prices[i];
+                        routeList[realTotal].visitedCount = count_string(routes[i], ",") + 1 - countSubString(routes[i], ",INT,");
+                        routeList[realTotal].visitedRoute = strdup(routes[i]);
+                        realTotal++;
+                    }
+                    free(routes[i]);
+                }
+
+                foundRoutesCount = realTotal;
+			    
+                sortRoutes(routeList, foundRoutesCount);
+                
+                printf("Possible routes:\n");
+			    for (int i = 0; i < foundRoutesCount; i++) {
+                    printf("[Total: %d | Price: %d] %s\n\n", 
+                    routeList[i].visitedCount, routeList[i].price, routeList[i].visitedRoute
+                    );
 			    }
+			    free(routeList); // Free the routes list array
 			    free(routes); // Free the routes array
                 free(prices);
 			} else {
 			    printError("No routes found.");
 			}
+
 			enterAnyKey();
 			clearScreen();
 			firstPanel();
