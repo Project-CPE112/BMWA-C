@@ -67,17 +67,21 @@ void printStationInfo(char *code, Station *stations, int numStations) {
             	printf(ANSI_COLOR_LIGHT_MAGENTA "Connection With: " ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_RED "%s\n" ANSI_RESET_ALL, stations[i].connectionWith2);
                 printSplitedLineColoring(73, 73, 73);
             }
-            printf(ANSI_COLOR_LIGHT_WHITE "Connections ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD"%d" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE"): \n" ANSI_RESET_ALL, stations[i].conCount);
+            printf(ANSI_COLOR_LIGHT_WHITE "Connections ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD "%d" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE"): \n" ANSI_RESET_ALL, stations[i].conCount);
             for (int j = 0; j < stations[i].conCount; j++) {
-                printf(ANSI_COLOR_LIGHT_WHITE " - " "%s" ANSI_RESET_ALL " (" ANSI_COLOR_LIGHT_YELLOW "Time: %d " ANSI_COLOR_LIGHT_CYAN "Platform: %s" ANSI_RESET_ALL ")\n", 
-                stations[i].connections[j].sta,stations[i].connections[j].time, stations[i].connections[j].platform, stations[i].connections[j].staID);
+                printf(ANSI_COLOR_LIGHT_WHITE " - " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s" ANSI_RESET_ALL " (" ANSI_COLOR_LIGHT_YELLOW "Time: %d " ANSI_COLOR_LIGHT_CYAN "Platform: %s" ANSI_RESET_ALL ")\n", 
+                CodeToShortCode(stations[i].connections[j].sta, stations, numStations),
+                CodeToName(stations[i].connections[j].sta, stations, numStations),
+                stations[i].connections[j].time, stations[i].connections[j].platform, stations[i].connections[j].staID);
             }
             printSplitedLineColoring(73, 73, 73);
             if(stations[i].intCount != 0){
-                printf(ANSI_COLOR_LIGHT_WHITE "Interchanges ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD"%d" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE"): \n" ANSI_RESET_ALL, stations[i].intCount);
+                printf(ANSI_COLOR_LIGHT_WHITE "Interchanges ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD "%d" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE"): \n" ANSI_RESET_ALL, stations[i].intCount);
                 for (int j = 0; j < stations[i].intCount; j++) {
-                    printf(ANSI_COLOR_LIGHT_WHITE " - " "%s" ANSI_RESET_ALL " (" ANSI_COLOR_LIGHT_YELLOW "Time: %d" ANSI_RESET_ALL")\n", 
-                    stations[i].interchanges[j].sta, stations[i].interchanges[j].time, stations[i].interchanges[j].staID);
+                    printf(ANSI_COLOR_LIGHT_WHITE " - " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s" ANSI_RESET_ALL " (" ANSI_COLOR_LIGHT_YELLOW "Time: %d" ANSI_RESET_ALL")\n", 
+                    CodeToShortCode(stations[i].interchanges[j].sta, stations, numStations),
+                    CodeToName(stations[i].interchanges[j].sta, stations, numStations),
+                     stations[i].interchanges[j].time, stations[i].interchanges[j].staID);
                 }
                 printSplitedLineColoring(73, 73, 73);
             }
