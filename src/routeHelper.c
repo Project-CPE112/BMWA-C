@@ -1,6 +1,6 @@
 #include "../include/rotfaifah.h"
 
-void Displayroutes(Station *stations, routesNode *routeList, int Countroutes, 
+void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes, 
                    int numStations, pricePair *priceTable, char *startStaCode, char *endStaCode){
     int end = 0;
     int endToShow = 0;
@@ -76,7 +76,7 @@ void Displayroutes(Station *stations, routesNode *routeList, int Countroutes,
         }
         if(endToShow == 1 && end == 0){
             clearScreen();
-            Displayselectedroutes(stations,routeList[selector].visitedRoute,numStations, priceTable);
+            DisplaySelectedRoutes(stations,routeList[selector].visitedRoute,numStations, priceTable);
             fflush(stdin);
             endToShow = 0;
             end = 0;
@@ -84,14 +84,14 @@ void Displayroutes(Station *stations, routesNode *routeList, int Countroutes,
     }
 }
 
-int Displayselectedroutes(Station *stations, char *routes, int numStations, pricePair *priceTable){
+int DisplaySelectedRoutes(Station *stations, char *routes, int numStations, pricePair *priceTable){
     char *dupRoutes = strdup(routes);
     char *token = strtok(dupRoutes,",");
     char *startStation = NULL;
     char *latestStation = NULL;
     int count = 0;
     while(token != NULL){
-        int index = findcolour(token);
+        int index = findColour(token);
         char *temp = CodeToName(token,stations,numStations);
         char *tempShortCode = CodeToShortCode(token,stations,numStations);
         int length;
@@ -169,12 +169,12 @@ int Displayselectedroutes(Station *stations, char *routes, int numStations, pric
         token = strtok(NULL,",");
     }
     delLastEnteredLine();
-    printf(ANSI_COLOR_LIGHT_WHITE "Price: %d\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
+    printf(ANSI_COLOR_LIGHT_WHITE "Price: %d\n\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
     enterAnyKeyToGoBack();
     clearScreen();
 }
 
-int findcolour(char *station){
+int findColour(char *station){
     char stationName[][10] = {"MRTBL","ARL","BTSSIL","BTSSUK","BTSGL","MRTYL","MRTPL","MRTPK","SRTETLR","SRTETDR"};
     int i;
     for(i=0;i<=9;i++){

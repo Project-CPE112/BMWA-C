@@ -179,7 +179,7 @@ void firstPanel(){
 			    
                 sortRoutes(routeList, foundRoutesCount);
                 clearScreen();
-			    Displayroutes(stations,routeList,foundRoutesCount,numStations, priceTable, start, end);
+			    DisplayRoutes(stations,routeList,foundRoutesCount,numStations, priceTable, start, end);
 			    free(routes); // Free the routes array
                 free(prices);
 			} else {
