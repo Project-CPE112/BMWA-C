@@ -85,7 +85,7 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes,
 }
 
 int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int routeFare, int numStations, pricePair *priceTable) {
-    printf(ANSI_COLOR_LIGHT_WHITE "Showing Routes " ANSI_COLOR_GOLD "#%d\n]n", routeNo + 1);
+    printf(ANSI_COLOR_LIGHT_WHITE "Showing Routes " ANSI_COLOR_GOLD "#%d\n\n", routeNo + 1);
     char *dupRoutes = strdup(routes);
     char *token = strtok(dupRoutes,",");
     char *startStation = NULL;
@@ -178,7 +178,7 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
     }
     delLastEnteredLine();
     printf(ANSI_COLOR_LIGHT_WHITE "Fare: %d\n\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
-    printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD "Total Fare: " ANSI_COLOR_GOLD "#%d\n" ANSI_RESET_ALL, routeFare);
+    printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD "Total Fare: " ANSI_COLOR_GOLD "฿%d\n" ANSI_RESET_ALL, routeFare);
 
     enterAnyKeyToGoBack();
     clearScreen();
