@@ -30,7 +30,7 @@
     }
     void changeLocale() {
         SetConsoleOutputCP(65001);
-        printf("Code page changed to 437 on Windows.\n");
+        printf(ANSI_COLOR_LIGHT_YELLOW "Enable UTF-8 Encoding instead of Code page 437 or Code page 874.\n" ANSI_RESET_ALL);
     }
 #else
     int getch() {
