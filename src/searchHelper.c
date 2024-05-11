@@ -12,6 +12,7 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
     printf(ANSI_COLOR_GOLD "%s ", title);
     char sname[50];
     printSplitedLine();
+    printf(ANSI_COLOR_LIGHT_CYAN "(Type ALL to show all)\n" ANSI_RESET_ALL);
     printf("Find station: ");
     scanf(" %[^\n]", sname);
     int foundStation[numStations];
@@ -20,13 +21,19 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
     strcpy(lowersname, sname);
     strlwr(lowersname);
     for (int i = 0; i < numStations; i++) {
-        if (strstr(station[i].nameLowercase, lowersname) != NULL || strstr(station[i].shortCodeLowercase, lowersname) != NULL) {
+        if(strcmp("ALL", sname) == 0){
             if(foundStationCnt == -1) foundStationCnt = 0;
             foundStation[foundStationCnt] = i;
             foundStationCnt++;
         }else{
-            // Debugging search 
-            // printf("[%s | %s][%s | %s] Find with %s\n", station[i].name, station[i].shortCode, station[i].nameLowercase, station[i].shortCodeLowercase, lowersname);
+            if (strstr(station[i].nameLowercase, lowersname) != NULL || strstr(station[i].shortCodeLowercase, lowersname) != NULL) {
+                if(foundStationCnt == -1) foundStationCnt = 0;
+                foundStation[foundStationCnt] = i;
+                foundStationCnt++;
+            }else{
+                // Debugging search 
+                // printf("[%s | %s][%s | %s] Find with %s\n", station[i].name, station[i].shortCode, station[i].nameLowercase, station[i].shortCodeLowercase, lowersname);
+            }
         }
     }
     clearScreen();
@@ -64,14 +71,18 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
         if(optionTry == 2) return;
     }else{
         int startPoint = 0;
-        int endPoint = 10;
-        if(foundStationCnt < 10) endPoint = foundStationCnt;
+        int endPoint = 15;
+        if(foundStationCnt < 15) endPoint = foundStationCnt;
         while (!end) {
             printf(ANSI_COLOR_GOLD "%s" ANSI_RESET_ALL, title);
             // selector cursor debugging
             // printf(ANSI_COLOR_LIGHT_YELLOW "STARTPOINT: %d, ENDPOINT: %d, SELECTOR: %d\n", startPoint, endPoint, selector);
-            printf(ANSI_COLOR_LIGHT_WHITE "Find station: " ANSI_COLOR_GOLD "%s\n", sname);
-            printf(ANSI_COLOR_LIGHT_WHITE "Found total: " ANSI_COLOR_GOLD "%d\n" ANSI_RESET_ALL,foundStationCnt);
+            if(strcmp("ALL", sname) == 0)
+                printf(ANSI_COLOR_LIGHT_WHITE "Show all " ANSI_COLOR_GOLD "193"  ANSI_COLOR_LIGHT_WHITE" stations\n");
+            else{
+                printf(ANSI_COLOR_LIGHT_WHITE "Find station: " ANSI_COLOR_GOLD "%s\n", sname);
+                printf(ANSI_COLOR_LIGHT_WHITE "Found total: " ANSI_COLOR_GOLD "%d\n" ANSI_RESET_ALL,foundStationCnt);
+            }
             printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " [%s] " ANSI_COLOR_LIGHT_WHITE "To go up | " ANSI_COLOR_GOLD "[%s] " ANSI_COLOR_LIGHT_WHITE "To go down\n", ARROW_UP_UTF8, ARROW_DOWN_UTF8);
             printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " Enter " ANSI_COLOR_LIGHT_WHITE "To choose\n");
             printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " ESC " ANSI_COLOR_LIGHT_WHITE "To go back\n");
