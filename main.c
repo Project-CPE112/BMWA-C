@@ -92,6 +92,7 @@ void firstPanel(){
             // start changing fucking code 
             printOption(1, "Insert Departure First");
             printOption(2, "Insert Destination First");
+            printOption(3, "Go back!");
 
             printEnterChoice();
 
@@ -140,9 +141,19 @@ void firstPanel(){
                     // printf("Departure station : %s\n", dep);
                     break;
                 }
+                case 3: {
+                    optionPass = 2;
+                    break;
+                }
                 default:
                     optionPass = 0;
                     break;
+            }
+            if(optionPass == 2){
+                enterAnyKey();
+                clearScreen();
+                firstPanel();
+                break;
             }
             if(optionPass == 0){
                 printError("Invalid Option!");
