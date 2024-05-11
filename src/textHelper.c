@@ -40,7 +40,7 @@ void printSplitedLineColoring(int r, int g, int b) {
 	printf("%s" ANSI_STYLE_STRIKE ANSI_STYLE_BOLD "=================================================\n" ANSI_RESET_ALL, ANSI_RGB_COLOR2(r,g,b)); 
 }
 
-void printOption(int opt, char *name) { printf("  %s " ANSI_COLOR_GOLD "[%d]" ANSI_RESET_ALL " %s\n", ARROW_ASCII, opt, name); }
+void printOption(int opt, char *name) { printf("  %s " ANSI_COLOR_GOLD "[%d]" ANSI_RESET_ALL " %s\n", ARROW_UTF8, opt, name); }
 
 void printEnterChoice(){ printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD " Enter your choice: " ANSI_RESET_ALL); }
 
