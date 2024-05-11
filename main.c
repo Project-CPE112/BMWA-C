@@ -28,21 +28,35 @@ void displayStationInfo(char *code) {
         
             printf("Connections ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD"%d" ANSI_RESET_ALL"): \n", stations[i].conCount);
             for (int j = 0; j < stations[i].conCount; j++) {
-                printf(" - %s ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_CYAN"Platform: %s "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n", stations[i].connections[j].sta,
-                        stations[i].connections[j].time, stations[i].connections[j].platform, stations[i].connections[j].staID);
+                printf(" - ");
+                printf(DisplayColorStation(stations, stations[i].connections[j].sta));
+                printf("%s" ANSI_RESET_ALL " ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_CYAN"Platform: %s "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n", 
+                stations[i].connections[j].sta,stations[i].connections[j].time, stations[i].connections[j].platform, stations[i].connections[j].staID);
             }
             printSplitedLineColoring(73, 73, 73);
             printf("Interchanges ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD"%d" ANSI_RESET_ALL"): \n", stations[i].intCount);
             for (int j = 0; j < stations[i].intCount; j++) {
-                printf(" - %s ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n", stations[i].interchanges[j].sta, stations[i].interchanges[j].time, stations[i].interchanges[j].staID);
+                printf(" - ");
+                printf(DisplayColorStation(stations, stations[i].interchanges[j].sta));
+                printf("%s" ANSI_RESET_ALL " ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n", 
+                stations[i].interchanges[j].sta, stations[i].interchanges[j].time, stations[i].interchanges[j].staID);
+            
             }
             printSplitedLineColoring(73, 73, 73);
             printf("All Connected Stations ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD"%d" ANSI_RESET_ALL"): \n", stations[i].connectAllCount);
             for(int j = 0; j < stations[i].connectAllCount; j++){
             	if(stations[i].connectAll[j].type == 1){
-            		printf(" - "ANSI_COLOR_LIGHT_MAGENTA"[C #%d] "ANSI_RESET_ALL"%s ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_CYAN"Platform: %s "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n", j, stations[i].connectAll[j].sta, stations[i].connectAll[j].time, stations[i].connectAll[j].platform, stations[i].connectAll[j].staID);
+            		printf(" - "ANSI_COLOR_LIGHT_MAGENTA"[C #%d] ", j);
+                    printf(DisplayColorStation(stations, stations[i].connectAll[j].sta));
+                    printf("%s",stations[i].connectAll[j].sta);
+                    printf(ANSI_RESET_ALL" ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_CYAN"Platform: %s "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n"
+                    , stations[i].connectAll[j].time, stations[i].connectAll[j].platform, stations[i].connectAll[j].staID); 
 				}else if(stations[i].connectAll[j].type == 2){
-					printf(" - "ANSI_COLOR_LIGHT_MAGENTA"[C #%d] "ANSI_RESET_ALL"%s ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_CYAN"Platform: Walking Connection "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n", j, stations[i].connectAll[j].sta, stations[i].connectAll[j].time, stations[i].connectAll[j].staID);
+					printf(" - "ANSI_COLOR_LIGHT_MAGENTA"[C #%d] ", j);
+                    printf(DisplayColorStation(stations, stations[i].connectAll[j].sta));
+                    printf("%s",stations[i].connectAll[j].sta);
+                    printf(ANSI_RESET_ALL" ("ANSI_COLOR_LIGHT_YELLOW"Time: %d "ANSI_COLOR_LIGHT_CYAN"Platform: Walking Connection "ANSI_COLOR_LIGHT_GREEN"ID: %d"ANSI_RESET_ALL")\n"
+                    , stations[i].connectAll[j].time, stations[i].connectAll[j].staID);
 				}else{
 					printf("Invalid Format\n");
 				}
@@ -223,7 +237,7 @@ void firstPanel(){
                 sortRoutes(routeList, foundRoutesCount);
                 
                 printf("Possible routes:\n");
-			    Displayroutes(stations,routeList,foundRoutesCount,numStations);
+			    Displayroutes(stations,routeList,foundRoutesCount,numStations, priceTable);
                 // for (int i = 0; i < foundRoutesCount; i++) {
                 //     printf("[Total: %d | Price: %d] %s\n\n", 
                 //     routeList[i].visitedCount, routeList[i].price, routeList[i].visitedRoute

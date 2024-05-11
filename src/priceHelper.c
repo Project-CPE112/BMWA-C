@@ -90,3 +90,15 @@ int* calculateRoutesPrice(pricePair* priceTable, char** routes, int routesCount)
     }
     return routesPrice;
 }
+
+int calculatePriceBetweenStation(pricePair* priceTable, char* startStation, char* prevStation){
+    int priceBetweenStation = 0;
+    for (int j = 0; j < MAX_PRICE_TABLE_SIZE; j++) {
+        if (((strcmp(prevStation, priceTable[j].staCode1) == 0) && (strcmp(startStation, priceTable[j].staCode2) == 0)) ||
+        ((strcmp(prevStation, priceTable[j].staCode2) == 0) && (strcmp(startStation, priceTable[j].staCode1) == 0))) {
+            priceBetweenStation += priceTable[j].price;
+            break;
+        }
+    }
+    return priceBetweenStation;
+}

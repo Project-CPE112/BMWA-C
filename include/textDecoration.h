@@ -9,6 +9,7 @@
 #define ANSI_COLOR_MAGENTA            "\x1b[35m"
 #define ANSI_COLOR_CYAN               "\x1b[36m"
 #define ANSI_COLOR_WHITE              "\x1b[37m"
+#define ANSI_COLOR_PINK               "\x1b[95m"
 
 #define ANSI_COLOR_LIGHT_BLACK        "\x1b[90m"
 #define ANSI_COLOR_LIGHT_RED          "\x1b[91m"

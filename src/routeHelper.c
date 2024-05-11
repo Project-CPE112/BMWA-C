@@ -1,6 +1,6 @@
 #include "../include/rotfaifah.h"
 
-void Displayroutes(Station *stations,routesNode *routeList,int Countroutes,int numStations){
+void Displayroutes(Station *stations,routesNode *routeList,int Countroutes,int numStations, pricePair *priceTable){
     int end = 0;
     int startpoint = 0;
     int selector = 0;
@@ -57,50 +57,81 @@ void Displayroutes(Station *stations,routesNode *routeList,int Countroutes,int n
                 }
             }
             if(end == 1)
-                Displayselectedroutes(stations,routeList[selector].visitedRoute,numStations);
+                Displayselectedroutes(stations,routeList[selector].visitedRoute,numStations, priceTable);
     }
 }
 
-void Displayselectedroutes(Station *stations,char *routes,int numStations){
+void Displayselectedroutes(Station *stations, char *routes, int numStations, pricePair *priceTable){
     char *token = strtok(routes,",");
+    char *startStation = NULL;
+    char *latestStation = NULL;
+    int count = 0;
     while(token != NULL){
         int index = findcolour(token);
         char *temp = CodeToName(token,stations,numStations);
+        char *underscore_pos = strchr(token, '_');
+        int length;
+        if (underscore_pos != NULL) {
+            length = underscore_pos - token;
+        }
         if(strcmp(token,"INT") == 0) index = 10; 
+        if(index != 10){
+            if(count == 0){
+                startStation = strdup(token);
+            }
+            latestStation = strdup(token);
+            count++; 
+        }else{
+            count = 0;
+        }
         switch (index)
         {
         case 0://MRTBL
-            printf(ANSI_COLOR_BLUE "%s" "\n->\n",temp);
+            printf(ANSI_COLOR_WHITE"[%.*s] ", length, token);
+            printf(ANSI_COLOR_BLUE "%s" "\n->\n", temp);
             break;
         case 1://ARL
-            printf(ANSI_COLOR_RED "%s" "\n->\n",temp);
+            printf(ANSI_COLOR_WHITE"[%.*s] ", length, token);
+            printf(ANSI_COLOR_RED "%s" "\n->\n", temp);
             break;
         case 2://BTSSIL
-            printf(ANSI_COLOR_GREEN "%s" "\n->\n",temp);
+            printf(ANSI_COLOR_WHITE"[%.*s] ", length, token);
+            printf(ANSI_COLOR_GREEN "%s" "\n->\n", temp);
             break;
         case 3://BTSSUK
-            printf(ANSI_COLOR_LIGHT_GREEN "%s" "\n->\n",temp);
+            printf(ANSI_COLOR_WHITE"[%.*s] ", length, token);
+            printf(ANSI_COLOR_LIGHT_GREEN "%s" "\n->\n", temp);
             break;
         case 4://BTSGL
-            printf(ANSI_COLOR_YELLOW "%s" "\n->\n",temp);
+            printf(ANSI_COLOR_WHITE"[%.*s] ", length, token);
+            printf(ANSI_COLOR_GOLD "%s" "\n->\n", temp);
             break;
         case 5://MRTYL
-            printf(ANSI_COLOR_LIGHT_YELLOW "%s" "\n->\n",temp);
+            printf(ANSI_COLOR_WHITE"[%.*s] ", length, token);
+            printf(ANSI_COLOR_LIGHT_YELLOW "%s" "\n->\n", temp);
             break;
         case 6://MRTPL
-            printf(ANSI_COLOR_LIGHT_MAGENTA "%s" "\n->\n",temp);
+            printf(ANSI_COLOR_WHITE"[%.*s] ", length, token);
+            printf(ANSI_COLOR_LIGHT_MAGENTA "%s" "\n->\n", temp);
             break;
         case 7://MRTPK
-            printf(ANSI_COLOR_BLUE "%s" "\n->\n",temp);
+            printf(ANSI_COLOR_WHITE"[%.*s] ", length, token);
+            printf(ANSI_COLOR_PINK "%s" "\n->\n", temp);
             break;
         case 8://SRTETLR
-            printf(ANSI_COLOR_LIGHT_RED "%s" "\n->\n",temp);
+            printf(ANSI_COLOR_WHITE"[%.*s] ", length, token);
+            printf(ANSI_COLOR_LIGHT_RED "%s" "\n->\n", temp);
             break;
         case 9://SRTETDR
-            printf(ANSI_COLOR_RED "%s" "\n->\n",temp);
+            printf(ANSI_COLOR_WHITE"[%.*s] ", length, token);
+            printf(ANSI_COLOR_RED "%s" "\n->\n", temp);
             break;
         case 10://INT
-            printf(ANSI_COLOR_WHITE "INT\n->\n");
+            printf(ANSI_COLOR_WHITE "Price: %d\n", calculatePriceBetweenStation(priceTable, startStation, latestStation));
+            printf(ANSI_COLOR_WHITE "--------------\n");
+            printf(ANSI_COLOR_WHITE "INTERCHANGE\n");
+            printf(ANSI_COLOR_WHITE "--------------\n");
+            printf(ANSI_COLOR_WHITE "->\n");
             break;
         default:
             break;
@@ -108,7 +139,46 @@ void Displayselectedroutes(Station *stations,char *routes,int numStations){
         // printf("%s\n->\n",token);
         token = strtok(NULL,",");
     }
-    printf(ANSI_RESET_ALL);
+    printf(ANSI_RESET_ALL"Price: %d\n", calculatePriceBetweenStation(priceTable, startStation, latestStation));
+}
+
+char* DisplayColorStation(Station *stations, char *station){
+    int index = findcolour(station);
+    switch (index)
+    {
+    case 0://MRTBL
+        return ANSI_COLOR_BLUE;
+        break;
+    case 1://ARL
+        return ANSI_COLOR_RED;
+        break;
+    case 2://BTSSIL
+        return ANSI_COLOR_GREEN;
+        break;
+    case 3://BTSSUK
+        return ANSI_COLOR_LIGHT_GREEN;
+        break;
+    case 4://BTSGL
+        return ANSI_COLOR_GOLD;
+        break;
+    case 5://MRTYL
+        return ANSI_COLOR_LIGHT_YELLOW;
+        break;
+    case 6://MRTPL
+        return ANSI_COLOR_LIGHT_MAGENTA;
+        break;
+    case 7://MRTPK
+        return ANSI_COLOR_PINK;
+        break;
+    case 8://SRTETLR
+        return ANSI_COLOR_LIGHT_RED;
+        break;
+    case 9://SRTETDR
+        return ANSI_COLOR_RED;
+        break;
+    default:
+        break;
+    }
 }
 
 int findcolour(char *station){

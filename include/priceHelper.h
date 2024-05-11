@@ -8,3 +8,4 @@ typedef struct pricePair{
 
 void readPriceDataFromCSV(char* line, pricePair* pair);
 int* calculateRoutesPrice(pricePair* priceTable, char** routes, int routesCount);
+int calculatePriceBetweenStation(pricePair* priceTable, char* startStation, char* prevStation);
