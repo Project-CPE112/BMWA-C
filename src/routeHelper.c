@@ -85,7 +85,7 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes,
 }
 
 int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int routeFare, int numStations, pricePair *priceTable) {
-    printf(ANSI_COLOR_LIGHT_WHITE "Showing Routes " ANSI_COLOR_GOLD "#%d\n", routeNo);
+    printf(ANSI_COLOR_LIGHT_WHITE "Showing Routes " ANSI_COLOR_GOLD "#%d\n]n", routeNo + 1);
     char *dupRoutes = strdup(routes);
     char *token = strtok(dupRoutes,",");
     char *startStation = NULL;
