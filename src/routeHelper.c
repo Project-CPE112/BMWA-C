@@ -26,11 +26,11 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes,
             char *asciiArrow = ARROW_UTF8_NULL;
             if(i == selector) asciiArrow = ARROW_UTF8;
             if(i == selector)
-                printf(ANSI_COLOR_GOLD "%s " "[%d] " ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Price: %d ฺBaht]\n",
+                printf(ANSI_COLOR_GOLD "%s " "[%d] " ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Price: %d Baht]\n",
                 asciiArrow, i + 1,
                 routeList[i].visitedCount, routeList[i].price );
             else
-                printf(ANSI_COLOR_GOLD "%s " "[%d] " ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Price: %d ฺBaht]\n",
+                printf(ANSI_COLOR_GOLD "%s " "[%d] " ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Price: %d Baht]\n",
                 asciiArrow, i + 1, 
                 routeList[i].visitedCount, routeList[i].price );
         }
