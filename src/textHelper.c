@@ -49,3 +49,40 @@ void printMSGLightWhite(char *msg){ printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOL
 void printMenu() { printf(ANSI_STYLE_BOLD " Menu:\n" ANSI_RESET_ALL); }
 
 void printError(char *msg) { printf(ANSI_COLOR_LIGHT_RED "%s\n" ANSI_RESET_ALL, msg); }
+
+// Function to display station information
+void printStationInfo(char *code, Station *stations, int numStations) {
+    for (int i = 0; i < numStations; i++) {
+        if (strcmp(stations[i].fullCode, code) == 0) {
+            printSplitedLineColoring(73, 73, 73);
+            printf(ANSI_COLOR_LIGHT_WHITE "Station Name: " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_STYLE_BOLD ANSI_COLOR_GOLD " %s\n" ANSI_RESET_ALL, stations[i].shortCode, stations[i].name);
+            
+            printSplitedLineColoring(73, 73, 73);
+            if(!(strcmp(stations[i].connectionWith, "BLANK") == 0)){
+	            printf(ANSI_COLOR_LIGHT_MAGENTA "Connection With: " ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_RED "%s\n" ANSI_RESET_ALL, stations[i].connectionWith);
+                if((strcmp(stations[i].connectionWith2, "BLANK") == 0))
+                    printSplitedLineColoring(73, 73, 73);
+            }
+            if(!(strcmp(stations[i].connectionWith2, "BLANK") == 0)){
+            	printf(ANSI_COLOR_LIGHT_MAGENTA "Connection With: " ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_RED "%s\n" ANSI_RESET_ALL, stations[i].connectionWith2);
+                printSplitedLineColoring(73, 73, 73);
+            }
+            printf(ANSI_COLOR_LIGHT_WHITE "Connections ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD"%d" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE"): \n" ANSI_RESET_ALL, stations[i].conCount);
+            for (int j = 0; j < stations[i].conCount; j++) {
+                printf(ANSI_COLOR_LIGHT_WHITE " - " "%s" ANSI_RESET_ALL " (" ANSI_COLOR_LIGHT_YELLOW "Time: %d " ANSI_COLOR_LIGHT_CYAN "Platform: %s" ANSI_RESET_ALL ")\n", 
+                stations[i].connections[j].sta,stations[i].connections[j].time, stations[i].connections[j].platform, stations[i].connections[j].staID);
+            }
+            printSplitedLineColoring(73, 73, 73);
+            if(stations[i].intCount != 0){
+                printf(ANSI_COLOR_LIGHT_WHITE "Interchanges ("ANSI_STYLE_BOLD ANSI_COLOR_GOLD"%d" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE"): \n" ANSI_RESET_ALL, stations[i].intCount);
+                for (int j = 0; j < stations[i].intCount; j++) {
+                    printf(ANSI_COLOR_LIGHT_WHITE " - " "%s" ANSI_RESET_ALL " (" ANSI_COLOR_LIGHT_YELLOW "Time: %d" ANSI_RESET_ALL")\n", 
+                    stations[i].interchanges[j].sta, stations[i].interchanges[j].time, stations[i].interchanges[j].staID);
+                }
+                printSplitedLineColoring(73, 73, 73);
+            }
+            return;
+        }
+    }
+    printError("Station not found!");
+}

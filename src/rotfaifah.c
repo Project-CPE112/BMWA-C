@@ -16,9 +16,16 @@
 
 #ifdef _WIN32
     void enterAnyKey() {
-        while (getchar() != '\n'); // Clear input buffer
+        fflush(stdin);
+        // while (getchar() != '\n'); // Clear input buffer
         printf("Enter any key to continue...");
-        _getch(); // Wait for a key press
+        getchar(); // Wait for a key press
+    }
+    void enterAnyKeyToGoBack() {
+        fflush(stdin);
+        // while (getchar() != '\n'); // Clear input buffer
+        printf("Enter any key to go back...");
+        getchar(); // Wait for a key press
     }
 #else
     int getch() {
@@ -29,6 +36,10 @@
 
     void enterAnyKey() {
         printf("Enter any key and press enter to continue...");
+        getch(); // Wait for a key press
+    }
+    void enterAnyKeyToGoBack() {
+        printf("Enter any key and press enter to go back...");
         getch(); // Wait for a key press
     }
 #endif
@@ -192,6 +203,14 @@ char *CodeToName(char *code, Station *stations, int numStations) {
     for (int i = 0; i < numStations; i++) {
         if (strcmp(stations[i].fullCode, code) == 0) {
             return stations[i].name;
+        }
+    }
+    return NULL; // Return NULL if code not found
+}
+char *CodeToShortCode(char *code, Station *stations, int numStations) {
+    for (int i = 0; i < numStations; i++) {
+        if (strcmp(stations[i].fullCode, code) == 0) {
+            return stations[i].shortCode;
         }
     }
     return NULL; // Return NULL if code not found
