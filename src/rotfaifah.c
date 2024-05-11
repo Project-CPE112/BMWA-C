@@ -12,20 +12,25 @@
 
 #ifdef _WIN32
     #include <conio.h>
+    #include <windows.h>
+#else
+    #include <locale.h>
 #endif
 
 #ifdef _WIN32
     void enterAnyKey() {
         fflush(stdin);
-        // while (getchar() != '\n'); // Clear input buffer
         printf("Enter any key to continue...");
         getchar(); // Wait for a key press
     }
     void enterAnyKeyToGoBack() {
         fflush(stdin);
-        // while (getchar() != '\n'); // Clear input buffer
         printf("Enter any key to go back...");
         getchar(); // Wait for a key press
+    }
+    void changeLocale() {
+        SetConsoleOutputCP(437);
+        printf("Code page changed to 437 on Windows.\n");
     }
 #else
     int getch() {
@@ -41,6 +46,10 @@
     void enterAnyKeyToGoBack() {
         printf("Enter any key and press enter to go back...");
         getch(); // Wait for a key press
+    }
+    void changeLocale() {
+        setlocale(LC_ALL, "en_US.UTF-8");
+        printf("Locale set to UTF-8 on macOS and Linux.\n");
     }
 #endif
 

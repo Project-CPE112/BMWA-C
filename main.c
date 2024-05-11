@@ -45,6 +45,8 @@ void createPriceTable(const char *filename) {
 }
 
 int main() {
+    changeLocale();
+    printf(ANSI_COLOR_LIGHT_CYAN "Initialization Rotfaifah....." ANSI_RESET_ALL);
     clearScreen();
     readStationsFromFile("metro_graph.csv");
     createPriceTable("priceTable.csv");

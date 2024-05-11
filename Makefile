@@ -35,7 +35,6 @@ main.o: main.c
 .PHONY: run clean
 
 run: app
-	@chcp 437 > nul
 	@./Bangkok\ Metro
 
 clean:
