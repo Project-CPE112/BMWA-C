@@ -26,11 +26,11 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes,
             char *asciiArrow = ARROW_UTF8_NULL;
             if(i == selector) asciiArrow = ARROW_UTF8;
             if(i == selector)
-                printf(ANSI_COLOR_GOLD "%s " "[%d] " ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Price: %d Baht]\n",
+                printf(ANSI_COLOR_GOLD "%s " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "[Routes #%d]" ANSI_RESET_ALL ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Fare: %d Baht]\n" ANSI_RESET_ALL,
                 asciiArrow, i + 1,
                 routeList[i].visitedCount, routeList[i].price );
             else
-                printf(ANSI_COLOR_GOLD "%s " "[%d] " ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Price: %d Baht]\n",
+                printf(ANSI_COLOR_GOLD "%s " ANSI_COLOR_GOLD "[Routes #%d]" ANSI_RESET_ALL ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Fare: %d Baht]\n" ANSI_RESET_ALL,
                 asciiArrow, i + 1, 
                 routeList[i].visitedCount, routeList[i].price );
         }
@@ -76,7 +76,7 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes,
         }
         if(endToShow == 1 && end == 0){
             clearScreen();
-            DisplaySelectedRoutes(stations,routeList[selector].visitedRoute,numStations, priceTable);
+            DisplaySelectedRoutes(stations,routeList[selector].visitedRoute, selector, routeList[selector].price, numStations, priceTable);
             fflush(stdin);
             endToShow = 0;
             end = 0;
@@ -84,7 +84,8 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes,
     }
 }
 
-int DisplaySelectedRoutes(Station *stations, char *routes, int numStations, pricePair *priceTable){
+int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int routeFare, int numStations, pricePair *priceTable) {
+    printf(ANSI_COLOR_LIGHT_WHITE "Showing Routes " ANSI_COLOR_GOLD "#%d\n", routeNo);
     char *dupRoutes = strdup(routes);
     char *token = strtok(dupRoutes,",");
     char *startStation = NULL;
@@ -158,7 +159,7 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int numStations, pric
             printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 10://INT
-            printf(ANSI_COLOR_LIGHT_WHITE "Price: %d\n", calculatePriceBetweenStation(priceTable, startStation, latestStation));
+            printf(ANSI_COLOR_LIGHT_WHITE "Fare: %d\n", calculatePriceBetweenStation(priceTable, startStation, latestStation));
             printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
             printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION \n");
             printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
@@ -176,7 +177,9 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int numStations, pric
         token = strtok(NULL,",");
     }
     delLastEnteredLine();
-    printf(ANSI_COLOR_LIGHT_WHITE "Price: %d\n\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
+    printf(ANSI_COLOR_LIGHT_WHITE "Fare: %d\n\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
+    printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD "Total Fare: " ANSI_COLOR_GOLD "#%d\n" ANSI_RESET_ALL, routeFare);
+
     enterAnyKeyToGoBack();
     clearScreen();
 }

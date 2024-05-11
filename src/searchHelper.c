@@ -2,12 +2,13 @@
 
 void findStationByName(Station *station, char *code, int numStations, char *title, char *show) {
     
-    clearScreen();
     int selector = 0;
     int end = 0;
     int isESC = 0;
     if(show != NULL){
-        printf(show);
+        // printf(show);
+    }else{
+        clearScreen();
     }
     printf(ANSI_COLOR_GOLD "%s ", title);
     char sname[50];

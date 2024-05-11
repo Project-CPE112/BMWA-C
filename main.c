@@ -104,7 +104,7 @@ void firstPanel(){
                 printError("Invalid option");
                 firstPanel();
             }
-            char show[100];
+            char show[5] = "SHOW";
             char des[50], dep[50];
             int optionPass = 0;
             switch (choice) {
@@ -115,7 +115,7 @@ void firstPanel(){
                     
                     strcpy(dep,CodeToName(start, stations, numStations));
 
-                    snprintf(show, sizeof(show), ANSI_COLOR_LIGHT_WHITE "Departure station: " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s\n" ANSI_RESET_ALL, CodeToShortCode(start, stations, numStations), dep);
+                    printf(ANSI_COLOR_LIGHT_WHITE "Departure station: " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s\n" ANSI_RESET_ALL, CodeToShortCode(start, stations, numStations), dep);
 
                     findStationByName(stations, end, numStations,"Find Destination station\n",show);
 
@@ -131,7 +131,8 @@ void firstPanel(){
                     findStationByName(stations, end, numStations,"Find Destination station\n", NULL);
                     
                     strcpy(des,CodeToName(end, stations, numStations));
-                    snprintf(show, sizeof(show), ANSI_COLOR_LIGHT_WHITE "Destination station: " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s\n" ANSI_RESET_ALL, CodeToShortCode(end, stations, numStations), des);
+                    
+                    printf(ANSI_COLOR_LIGHT_WHITE "Destination station: " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s\n" ANSI_RESET_ALL, CodeToShortCode(end, stations, numStations), des);
 
                     findStationByName(stations, start, numStations, "Find Departure station\n", show);
 
