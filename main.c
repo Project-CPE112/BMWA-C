@@ -153,7 +153,7 @@ void firstPanel(){
 			int foundRoutesCount;
 			char** routes = FindRoute(stations, start, end, 20, &foundRoutesCount);
             for (int i = 0; i < foundRoutesCount; i++) {
-                detectBangSue(routes[i]);
+                detectSpecialCases(routes[i]);
             }
 			int* prices = calculateRoutesPrice(priceTable, routes, foundRoutesCount);
         

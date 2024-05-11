@@ -249,7 +249,7 @@ int countSubString(const char *str, const char *substr){
     return count;
 }
 
-void detectBangSue(char* route) {
+void detectSpecialCases(char* route) {
     // Bang Sue Interchange
     if (strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01")) {
         char* subIndex = strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01");

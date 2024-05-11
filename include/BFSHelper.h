@@ -9,7 +9,7 @@ char** FindRoute(Station graph[], char* startStation, char* endStation, int rout
 int getUnderscoreIndex(char* str);
 char** insertInterchangeMarks(char** routes, int routesCount);
 int countSubString(const char *str, const char *substr);
-void detectBangSue(char* route);
+void detectSpecialCases(char* route);
 
 // Comparison function for qsort
 void sortRoutes(routesNode *routeList, int size);
