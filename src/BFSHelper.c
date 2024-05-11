@@ -250,6 +250,7 @@ int countSubString(const char *str, const char *substr){
 }
 
 void detectBangSue(char* route) {
+    // Bang Sue Interchange
     if (strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01")) {
         char* subIndex = strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01");
         memmove(subIndex + 10, subIndex + 27, strlen(subIndex + 27) + 1);
@@ -261,6 +262,7 @@ void detectBangSue(char* route) {
     else if (strstr(route, "SRTETLR_RW01,INT,MRTBL_BL11,INT,SRTETDR_RN01")) {
         char* subIndex = strstr(route, "SRTETLR_RW01,INT,MRTBL_BL11,INT,SRTETDR_RN01");
         memmove(subIndex + 12, subIndex + 27, strlen(subIndex + 27) + 1);
+        *(subIndex + 15) = '0';
     }
     else if (strstr(route, "SRTETLR_RW01,INT,SRTETDR_RN01,INT,MRTBL_BL11")) {
         char* subIndex = strstr(route, "SRTETLR_RW01,INT,SRTETDR_RN01,INT,MRTBL_BL11");
@@ -269,10 +271,21 @@ void detectBangSue(char* route) {
     else if (strstr(route, "SRTETDR_RN01,INT,MRTBL_BL11,INT,SRTETLR_RW01")) {
         char* subIndex = strstr(route, "SRTETDR_RN01,INT,MRTBL_BL11,INT,SRTETLR_RW01");
         memmove(subIndex + 12, subIndex + 27, strlen(subIndex + 27) + 1);
+        *(subIndex + 15) = '0';
     }
     else if (strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01,INT,MRTBL_BL11")) {
         char* subIndex = strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01,INT,MRTBL_BL11");
         memmove(subIndex + 12, subIndex + 29, strlen(subIndex + 29) + 1);
+    }
+
+    // Siam CEN interchange
+    if (strstr(route, "BTSSUK_CEN,INT,BTSSIL_CEN")) {
+        char* subIndex = strstr(route, "BTSSUK_CEN,INT,BTSSIL_CEN");
+        *(subIndex + 13) = '0';
+    }
+    else if (strstr(route, "BTSSIL_CEN,INT,BTSSUK_CEN")) {
+        char* subIndex = strstr(route, "BTSSIL_CEN,INT,BTSSUK_CEN");
+        *(subIndex + 13) = '0';
     }
 }
 

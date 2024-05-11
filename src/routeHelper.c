@@ -96,6 +96,7 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int numStations, pric
         char *tempShortCode = CodeToShortCode(token,stations,numStations);
         int length;
         if(strcmp(token,"INT") == 0) index = 10; 
+        else if(strcmp(token,"IN0") == 0) index = 11; 
         if(index != 10){
             if(count == 0){
                 startStation = strdup(token);
@@ -161,6 +162,12 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int numStations, pric
             printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
             printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION \n");
             printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
+            printf(ANSI_COLOR_LIGHT_WHITE"  %c  \n" ANSI_RESET_ALL, 25);
+            break;
+        case 11://IN0 (Interchange without charge)
+            printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
+            printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Charge) \n");
+            printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
             printf(ANSI_COLOR_LIGHT_WHITE"  %c  \n" ANSI_RESET_ALL, 25);
             break;
         default:
