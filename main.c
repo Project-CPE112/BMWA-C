@@ -105,9 +105,10 @@ void firstPanel(){
             }
             char show[100];
             char des[50], dep[50];
-
+            int optionPass = 0;
             switch (choice) {
                 case 1: {
+                    optionPass = 1;
                     printf("Enter departure station: ");
                     findStationByName(stations, start, numStations,"Find Departure station\n", NULL);
                     
@@ -124,6 +125,7 @@ void firstPanel(){
                     break;
                 }
                 case 2: {
+                    optionPass = 1;
                     printf("Enter destination station: ");
                     findStationByName(stations, end, numStations,"Find Destination station\n", NULL);
                     
@@ -138,6 +140,15 @@ void firstPanel(){
                     // printf("Departure station : %s\n", dep);
                     break;
                 }
+                default:
+                    optionPass = 0;
+                    break;
+            }
+            if(optionPass == 0){
+                printError("Invalid Option!");
+                enterAnyKey();
+                clearScreen();
+                firstPanel();
                 break;
             }
 			if(strcmp(start, end) == 0){

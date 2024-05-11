@@ -29,7 +29,7 @@
         getchar(); // Wait for a key press
     }
     void changeLocale() {
-        SetConsoleOutputCP(437);
+        SetConsoleOutputCP(65001);
         printf("Code page changed to 437 on Windows.\n");
     }
 #else

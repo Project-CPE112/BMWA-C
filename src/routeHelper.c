@@ -18,21 +18,21 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes,
                CodeToShortCode(endStaCode, stations, numStations), 
                CodeToName(endStaCode, stations, numStations));
         printSplitedLine();
-        printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " [%c] " ANSI_COLOR_LIGHT_WHITE "To go up | " ANSI_COLOR_GOLD "[%c] " ANSI_COLOR_LIGHT_WHITE "To go down\n", 24, 25);
+        printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " [%s] " ANSI_COLOR_LIGHT_WHITE "To go up | " ANSI_COLOR_GOLD "[%s] " ANSI_COLOR_LIGHT_WHITE "To go down\n", ARROW_UP_UTF8, ARROW_DOWN_UTF8);
         printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " Enter " ANSI_COLOR_LIGHT_WHITE "To choose\n");
         printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " ESC " ANSI_COLOR_LIGHT_WHITE "To go back\n");
         printSplitedLine();
         for(int i = startpoint;i< endpoint;i++){
-            int asciiArrow = 0;
-             if(i == selector) asciiArrow = ARROW_ASCII;
-             if(i == selector)
-                    printf(ANSI_COLOR_GOLD "%c " "[%d] " ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN "[Total: %d | Price: %d]\n",
-                    asciiArrow, i + 1,
-                    routeList[i].visitedCount, routeList[i].price );
+            char *asciiArrow = ARROW_UTF8_NULL;
+            if(i == selector) asciiArrow = ARROW_UTF8;
+            if(i == selector)
+                printf(ANSI_COLOR_GOLD "%s " "[%d] " ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Price: %d ฺBaht]\n",
+                asciiArrow, i + 1,
+                routeList[i].visitedCount, routeList[i].price );
             else
-                    printf(ANSI_COLOR_GOLD "%c " "[%d] " ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN "[Total: %d | Price: %d]\n",
-                    asciiArrow, i + 1, 
-                    routeList[i].visitedCount, routeList[i].price );
+                printf(ANSI_COLOR_GOLD "%s " "[%d] " ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Price: %d ฺBaht]\n",
+                asciiArrow, i + 1, 
+                routeList[i].visitedCount, routeList[i].price );
         }
     
         printSplitedLine();
@@ -110,65 +110,65 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int numStations, pric
         case 0://MRTBL
             printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
             printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 1://ARL
             printf(ANSI_COLOR_RED"[%s] ", tempShortCode);
             printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 2://BTSSIL
             printf(ANSI_COLOR_GREEN"[%s] ", tempShortCode);
             printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 3://BTSSUK
             printf(ANSI_COLOR_LIGHT_GREEN"[%s] ", tempShortCode);
             printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 4://BTSGL
             printf(ANSI_COLOR_GOLD"[%s] ", tempShortCode);
             printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 5://MRTYL
             printf(ANSI_COLOR_LIGHT_YELLOW"[%s] ", tempShortCode);
             printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 6://MRTPL
             printf(ANSI_COLOR_LIGHT_MAGENTA"[%s] ", tempShortCode);
             printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 7://MRTPK
             printf(ANSI_COLOR_PINK"[%s] ", tempShortCode);
             printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 8://SRTETLR
             printf(ANSI_COLOR_LIGHT_RED"[%s] ", tempShortCode);
             printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 9://SRTETDR
             printf(ANSI_COLOR_RED"[%s] ", tempShortCode);
             printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 10://INT
             printf(ANSI_COLOR_LIGHT_WHITE "Price: %d\n", calculatePriceBetweenStation(priceTable, startStation, latestStation));
             printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
             printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION \n");
             printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
-            printf(ANSI_COLOR_LIGHT_WHITE"  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         case 11://IN0 (Interchange without charge)
             printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
             printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Charge) \n");
             printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-            printf(ANSI_COLOR_LIGHT_WHITE"  %c  \n" ANSI_RESET_ALL, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
         default:
             break;

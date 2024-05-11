@@ -64,11 +64,17 @@
 #define ANSI_PLACEMENT_SUB            "\x1b[74m"
 #define ANSI_PLACEMENT_SUPER          "\x1b[73m"
 
-#define ARROW_ASCII                   175
+#define ARROW_UTF8                    "\u00bb"
+#define ARROW_UTF8_NULL               "\u00a0"
 
-#define BOX_UpperLeft                 201 
-#define BOX_UpperRight                187  
-#define BOX_LowerLeft                 200  
-#define BOX_LowerRight                188   
-#define BOX_Vertical                  186    
-#define BOX_Horizontal                205
+#define ARROW_UP_UTF8                 "\u2191"
+#define ARROW_DOWN_UTF8               "\u2193"
+#define ARROW_LEFT_UTF8               "\u2190"
+#define ARROW_RIGHT_UTF8              "\u2191"
+
+#define BOX_UpperLeft                 "\u2554"
+#define BOX_UpperRight                "\u2557"
+#define BOX_LowerLeft                 "\u255a"
+#define BOX_LowerRight                "\u255d"
+#define BOX_Vertical                  "\u2551"
+#define BOX_Horizontal                "\u2550"

@@ -14,23 +14,23 @@ void printHeader(int totalLine, int totalStation){
     //set to ASCII Character 218, 191, 192, 217, 179, 196 to create the box for header
 
 	printf(ANSI_COLOR_LIGHT_WHITE);
-	printf(" %c", BOX_UpperLeft);
+	printf(" %s", BOX_UpperLeft);
 	for(int i = 0;i<43;i++){
-		printf("%c", BOX_Horizontal);
+		printf("%s", BOX_Horizontal);
 	}
-	printf("%c \n", BOX_UpperRight);
-//	printf(" %c                                           %c \n", BOX_Vertical, BOX_Vertical);
-	printf(" %c " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "RotFaiFah Application" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE "                     %c \n", BOX_Vertical, BOX_Vertical);
-//	printf(" %c                                           %c \n", BOX_Vertical, BOX_Vertical);
-	printf(" %c Current Date: " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "%s" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE "                  %c \n", BOX_Vertical, currentDate, BOX_Vertical);
-//	printf(" %c                                           %c \n", BOX_Vertical, BOX_Vertical);
-	printf(" %c Total Station: " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "%3d" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE " | Total Line: " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "%3d" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE "      %c \n", BOX_Vertical, totalStation, totalLine, BOX_Vertical);
-//	printf(" %c                                           %c \n", BOX_Vertical, BOX_Vertical);
-	printf(" %c", BOX_LowerLeft);
+	printf("%s \n", BOX_UpperRight);
+//	printf(" %s                                           %s \n", BOX_Vertical, BOX_Vertical);
+	printf(" %s " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "RotFaiFah Application" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE "                     %s \n", BOX_Vertical, BOX_Vertical);
+//	printf(" %s                                           %s \n", BOX_Vertical, BOX_Vertical);
+	printf(" %s Current Date: " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "%s" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE "                  %s \n", BOX_Vertical, currentDate, BOX_Vertical);
+//	printf(" %s                                           %s \n", BOX_Vertical, BOX_Vertical);
+	printf(" %s Total Station: " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "%3d" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE " | Total Line: " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "%3d" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE "      %s \n", BOX_Vertical, totalStation, totalLine, BOX_Vertical);
+//	printf(" %s                                           %s \n", BOX_Vertical, BOX_Vertical);
+	printf(" %s", BOX_LowerLeft);
 	for(int i = 0;i<43;i++){
-		printf("%c", BOX_Horizontal);
+		printf("%s", BOX_Horizontal);
 	}
-	printf("%c \n", BOX_LowerRight);
+	printf("%s \n", BOX_LowerRight);
 	printf(ANSI_RESET_ALL);
 }
 
@@ -40,7 +40,7 @@ void printSplitedLineColoring(int r, int g, int b) {
 	printf("%s" ANSI_STYLE_STRIKE ANSI_STYLE_BOLD "=================================================\n" ANSI_RESET_ALL, ANSI_RGB_COLOR2(r,g,b)); 
 }
 
-void printOption(int opt, char *name) { printf("  %c " ANSI_COLOR_GOLD "[%d]" ANSI_RESET_ALL " %s\n", ARROW_ASCII, opt, name); }
+void printOption(int opt, char *name) { printf("  %s " ANSI_COLOR_GOLD "[%d]" ANSI_RESET_ALL " %s\n", ARROW_ASCII, opt, name); }
 
 void printEnterChoice(){ printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD " Enter your choice: " ANSI_RESET_ALL); }
 

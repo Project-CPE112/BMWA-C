@@ -56,6 +56,7 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
                         break;
                     default:
                         optionTry = 0;
+                        clearScreen();
                         break;
                 }
             }
@@ -71,19 +72,19 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
             // printf(ANSI_COLOR_LIGHT_YELLOW "STARTPOINT: %d, ENDPOINT: %d, SELECTOR: %d\n", startPoint, endPoint, selector);
             printf(ANSI_COLOR_LIGHT_WHITE "Find station: " ANSI_COLOR_GOLD "%s\n", sname);
             printf(ANSI_COLOR_LIGHT_WHITE "Found total: " ANSI_COLOR_GOLD "%d\n" ANSI_RESET_ALL,foundStationCnt);
-            printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " [%c] " ANSI_COLOR_LIGHT_WHITE "To go up | " ANSI_COLOR_GOLD "[%c] " ANSI_COLOR_LIGHT_WHITE "To go down\n", 24, 25);
+            printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " [%s] " ANSI_COLOR_LIGHT_WHITE "To go up | " ANSI_COLOR_GOLD "[%s] " ANSI_COLOR_LIGHT_WHITE "To go down\n", ARROW_UP_UTF8, ARROW_DOWN_UTF8);
             printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " Enter " ANSI_COLOR_LIGHT_WHITE "To choose\n");
             printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " ESC " ANSI_COLOR_LIGHT_WHITE "To go back\n");
             printSplitedLine();
             for(int i = startPoint; i < endPoint;i++){
-                int asciiArrow = 0;
-                if(i == selector) asciiArrow = ARROW_ASCII;
+                char *asciiArrow = ARROW_UTF8_NULL;
+                if(i == selector) asciiArrow = ARROW_UTF8;
                 if(i == selector)
-                    printf(ANSI_COLOR_GOLD "%c " ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN " [%s] " ANSI_COLOR_LIGHT_YELLOW "%s\n" ANSI_RESET_ALL,
+                    printf(ANSI_COLOR_GOLD "%s" ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN " [%s] " ANSI_COLOR_LIGHT_YELLOW "%s\n" ANSI_RESET_ALL,
                         asciiArrow,
                         station[foundStation[i]].shortCode, station[foundStation[i]].name);
                 else
-                    printf(ANSI_COLOR_GOLD "%c " ANSI_COLOR_LIGHT_CYAN " [%s] " ANSI_COLOR_LIGHT_YELLOW "%s\n" ANSI_RESET_ALL,
+                    printf(ANSI_COLOR_GOLD "%s" ANSI_COLOR_LIGHT_CYAN " [%s] " ANSI_COLOR_LIGHT_YELLOW "%s\n" ANSI_RESET_ALL,
                         asciiArrow,
                         station[foundStation[i]].shortCode, station[foundStation[i]].name);
             }
