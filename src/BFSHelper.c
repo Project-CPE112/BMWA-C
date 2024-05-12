@@ -114,29 +114,26 @@ char** insertInterchangeMarks(char** routes, int routesCount) {
             char* code1 = strdup(sta1);
             char* code2 = strdup(sta2);
             // remove station code after underscore of full code
-            memset(code1 + udIndex1, '\0', sizeof(char) * strlen(sta1)-udIndex1);
-            memset(code2 + udIndex2, '\0', sizeof(char) * strlen(sta2)-udIndex2);
+            *(code1 + udIndex1) = '\0';
+            *(code2 + udIndex2) = '\0';
+            // old version, just in case the above version have bug
+            // memset(code1 + udIndex1, '\0', sizeof(char) * strlen(sta1)-udIndex1);
+            // memset(code2 + udIndex2, '\0', sizeof(char) * strlen(sta2)-udIndex2);
 
             if (strcmp(code1, code2) != 0) {
                 // interchange detected
-                if (strlen(result) > 0) {
-                    strcat(result, ",INT,");
-                    strcat(result, sta2);
-                } else {
+                if (strlen(result) <= 0) {
                     strcpy(result, sta1);
-                    strcat(result, ",INT,");
-                    strcat(result, sta2);
                 }
+                strcat(result, ",INT,");
+                strcat(result, sta2);
             } else {
                 // no interchange
-                if (strlen(result) > 0) {
-                    strcat(result, ",");
-                    strcat(result, sta2);
-                } else {
+                if (strlen(result) <= 0) {
                     strcpy(result, sta1);
-                    strcat(result, ",");
-                    strcat(result, sta2);
                 }
+                strcat(result, ",");
+                strcat(result, sta2);
             }
             sta1 = sta2;
             sta2 = strtok(NULL, ",");
@@ -276,6 +273,14 @@ void detectSpecialCases(char* route) {
     else if (strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01,INT,MRTBL_BL11")) {
         char* subIndex = strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01,INT,MRTBL_BL11");
         memmove(subIndex + 12, subIndex + 29, strlen(subIndex + 29) + 1);
+    }
+    else if (strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01")) {
+        char* subIndex = strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01");
+        *(subIndex + 15) = '0';
+    }
+    else if (strstr(route, "SRTETLR_RW01,INT,SRTETDR_RN01")) {
+        char* subIndex = strstr(route, "SRTETLR_RW01,INT,SRTETDR_RN01");
+        *(subIndex + 15) = '0';
     }
 
     // Siam CEN interchange

@@ -40,62 +40,24 @@ int* calculateRoutesPrice(pricePair* priceTable, char** routes, int routesCount)
             if (strcmp(currentStation, "INT") == 0) {
                 // interchanged, calculate this range price
                 currentStation = strtok(NULL, ",");
-                if (latestInter != NULL) {
-                    for (int j = 0; j < MAX_PRICE_TABLE_SIZE; j++) {
-                        if (((strcmp(latestInter, priceTable[j].staCode1) == 0) && (strcmp(prevStation, priceTable[j].staCode2) == 0)) ||
-                        ((strcmp(latestInter, priceTable[j].staCode2) == 0) && (strcmp(prevStation, priceTable[j].staCode1) == 0))) {
-                            // printf("route %d: from %s to %s, %d baht\n", i, latestInter, prevStation, priceTable[j].price);
-                            routesPrice[i] += priceTable[j].price;
-                            break;
-                        }
-                    }
-                }
-                else {
-                    for (int j = 0; j < MAX_PRICE_TABLE_SIZE; j++) {
-                        if (((strcmp(startStation, priceTable[j].staCode1) == 0) && (strcmp(prevStation, priceTable[j].staCode2) == 0)) ||
-                        ((strcmp(startStation, priceTable[j].staCode2) == 0) && (strcmp(prevStation, priceTable[j].staCode1) == 0))) {
-                            // printf("route %d: from %s to %s, %d baht\n", i, startStation, prevStation, priceTable[j].price);
-                            routesPrice[i] += priceTable[j].price;
-                            break;
-                        }
-                    }
-                }
+                if (latestInter != NULL) routesPrice[i] += calculatePriceBetweenStation(priceTable, latestInter, prevStation);
+                else routesPrice[i] += calculatePriceBetweenStation(priceTable, startStation, prevStation);
                 latestInter = strdup(currentStation);
             }
             prevStation = strdup(currentStation);
             currentStation = strtok(NULL, ",");
         }
-        if (latestInter != NULL) {
-            // printf("[1]route %d: Last range from %s to %s\n", i, latestInter, prevStation);
-            for (int j = 0; j < MAX_PRICE_TABLE_SIZE; j++) {
-                if (((strcmp(latestInter, priceTable[j].staCode1) == 0) && (strcmp(prevStation, priceTable[j].staCode2) == 0)) ||
-                ((strcmp(latestInter, priceTable[j].staCode2) == 0) && (strcmp(prevStation, priceTable[j].staCode1) == 0))) {
-                    // printf("route %d: from %s to %s, ending %d baht\n", i, latestInter, prevStation, priceTable[j].price);
-                    routesPrice[i] += priceTable[j].price;
-                    break;
-                }
-            }
-        }
-        else {
-            // printf("[2]route %d: Last range from %s to %s\n", i, startStation, prevStation);
-            for (int j = 0; j < MAX_PRICE_TABLE_SIZE; j++) {
-                if (((strcmp(prevStation, priceTable[j].staCode1) == 0) && (strcmp(startStation, priceTable[j].staCode2) == 0)) ||
-                ((strcmp(prevStation, priceTable[j].staCode2) == 0) && (strcmp(startStation, priceTable[j].staCode1) == 0))) {
-                    // printf("route %d: from %s to %s, ending %d baht\n", i, startStation, prevStation, priceTable[j].price);
-                    routesPrice[i] += priceTable[j].price;
-                    break;
-                }
-            }
-        }
+        if (latestInter != NULL) routesPrice[i] += calculatePriceBetweenStation(priceTable, latestInter, prevStation);
+        else routesPrice[i] += calculatePriceBetweenStation(priceTable, startStation, prevStation);
     }
     return routesPrice;
 }
 
-int calculatePriceBetweenStation(pricePair* priceTable, char* startStation, char* prevStation){
+int calculatePriceBetweenStation(pricePair* priceTable, char* srcStation, char* destStation){
     int priceBetweenStation = 0;
     for (int j = 0; j < MAX_PRICE_TABLE_SIZE; j++) {
-        if (((strcmp(prevStation, priceTable[j].staCode1) == 0) && (strcmp(startStation, priceTable[j].staCode2) == 0)) ||
-        ((strcmp(prevStation, priceTable[j].staCode2) == 0) && (strcmp(startStation, priceTable[j].staCode1) == 0))) {
+        if (((strcmp(destStation, priceTable[j].staCode1) == 0) && (strcmp(srcStation, priceTable[j].staCode2) == 0)) ||
+        ((strcmp(destStation, priceTable[j].staCode2) == 0) && (strcmp(srcStation, priceTable[j].staCode1) == 0))) {
             priceBetweenStation += priceTable[j].price;
             break;
         }

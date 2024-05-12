@@ -193,7 +193,7 @@ void firstPanel(){
                     }
                     if (!duplicatePath){
                         routeList[realTotal].price = prices[i];
-                        routeList[realTotal].visitedCount = count_string(routes[i], ",") + 1 - countSubString(routes[i], ",INT,");
+                        routeList[realTotal].visitedCount = count_string(routes[i], ",") + 1 - countSubString(routes[i], ",INT,") - countSubString(routes[i], ",IN0,");
                         routeList[realTotal].visitedRoute = strdup(routes[i]);
                         realTotal++;
                     }

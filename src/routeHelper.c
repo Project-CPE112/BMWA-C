@@ -165,9 +165,9 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
             printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
             printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
-        case 11://IN0 (Interchange without charge)
+        case 11://IN0 (Interchange without fare)
             printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-            printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Charge) \n");
+            printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
             printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
             printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
             break;
