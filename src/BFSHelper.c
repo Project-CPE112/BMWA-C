@@ -238,7 +238,7 @@ char** FindRoute(Station graph[], char* startStation, char* endStation, int rout
 int countSubString(const char *str, const char *substr){
     int count = 0;
     const char *tmp = str;
-    while(tmp = strstr(tmp, substr))
+    while(tmp == strstr(tmp, substr))
     {
         count++;
         tmp++;
@@ -304,33 +304,12 @@ void detectSpecialCases(char* route) {
         *(subIndex + 13) = '0';
     }
 
-    // BL01 Tha Phra Interchange
-    char seed[] = ",MRTBL_BL01,IN0";
-    if (strstr(route, "MRTBL_BL33,MRTBL_BL01,MRTBL_BL02")) {
-        // char* subIndex = strstr(route, "MRTBL_BL33,MRTBL_BL01,MRTBL_BL02");
-        // memmove(subIndex + strlen(seed) + 10, subIndex + 10, strlen(subIndex + 10) + 1);
-        // for (int i = 0; i < strlen(seed); i++) *(subIndex + 10 + i) = seed[i];
-    }
-    else if (strstr(route, "MRTBL_BL32,MRTBL_BL01,MRTBL_BL02")) {
-        // char* subIndex = strstr(route, "MRTBL_BL32,MRTBL_BL01,MRTBL_BL02");
-        // memmove(subIndex + strlen(seed) + 10, subIndex + 10, strlen(subIndex + 10) + 1);
-        // for (int i = 0; i < strlen(seed); i++) *(subIndex + 10 + i) = seed[i];
-    }
-    else if (strstr(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL33")) {
-        // char* subIndex = strstr(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL33");
-        // memmove(subIndex + strlen(seed) + 10, subIndex + 10, strlen(subIndex + 10) + 1);
-        // for (int i = 0; i < strlen(seed); i++) *(subIndex + 10 + i) = seed[i];
-    }
-    else if (strstr(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL32")) {
-        // char* subIndex = strstr(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL32");
-        // memmove(subIndex + strlen(seed) + 10, subIndex + 10, strlen(subIndex + 10) + 1);
-        // for (int i = 0; i < strlen(seed); i++) *(subIndex + 10 + i) = seed[i];
-    }
-
-    replaceSubstring(route, "MRTBL_BL33,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL02");
-    replaceSubstring(route, "MRTBL_BL32,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL02");
-    replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL32");
-    replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL33");
+    // replaceSubstring(route, "MRTBL_BL33,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL02");
+    // replaceSubstring(route, "MRTBL_BL32,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL32,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL02");
+    // replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL33", "MRTBL_BL02,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL33");
+    // replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL32", "MRTBL_BL02,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL32");
+    // replaceSubstring(route, "MRTBL_BL10,INT,MRTPL_PP16", "MRTBL_BL10,IN0,MRTPL_PP16");
+    // replaceSubstring(route, "MRTPL_PP16,INT,MRTBL_BL10", "MRTPL_PP16,IN0,MRTBL_BL10");
 
 }
 

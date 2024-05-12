@@ -197,6 +197,7 @@ void firstPanel(){
                         routeList[realTotal].visitedRoute = strdup(routes[i]);
                         realTotal++;
                     }
+                    free(routes[i]);
                 }
 
                 int oldTotal = foundRoutesCount;

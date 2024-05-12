@@ -21,12 +21,12 @@
     void enterAnyKey() {
         fflush(stdin);
         printf("Enter any key to continue...");
-        getchar(); // Wait for a key press
+        _getch(); // Wait for a key press
     }
     void enterAnyKeyToGoBack() {
         fflush(stdin);
         printf("Enter any key to go back...");
-        getchar(); // Wait for a key press
+        _getch(); // Wait for a key press
     }
     void changeLocale() {
         SetConsoleOutputCP(65001);

@@ -91,6 +91,9 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
     char *startStation = NULL;
     char *latestStation = NULL;
     int count = 0;
+    int thaphra33 = 0;
+    int thaphra32 = 0;
+    int thaphra02 = 0;
     while(token != NULL){
         int index = findColour(token);
         char *temp = CodeToName(token,stations,numStations);
@@ -109,9 +112,94 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
         }
         switch (index){
         case 0://MRTBL
-            printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
-            printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            if(strcmp(tempShortCode,"BL33") == 0) thaphra33 = 1;
+            else if(strcmp(tempShortCode,"BL32") == 0) thaphra32 = 1;
+            else if(strcmp(tempShortCode,"BL02") == 0) thaphra02 = 1;
+            else if(strcmp(tempShortCode,"BL01") == 0){
+
+            }else{
+                printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            }
+            if(strcmp(tempShortCode,"BL01") == 0){
+                if(thaphra02 == 1) thaphra02 = 2;
+                if(thaphra32 == 1) thaphra32 = 2;
+                if(thaphra33 == 1) thaphra33 = 2;
+            }else{
+                if(strcmp(tempShortCode,"BL33") == 0 && (thaphra02 == 2)) thaphra02 = 3;
+                if(strcmp(tempShortCode,"BL32") == 0 && (thaphra02 == 2)) thaphra02 = 3;
+                if(strcmp(tempShortCode,"BL02") == 0 && (thaphra33 == 2 || thaphra32 == 2)){
+                    if(thaphra32 == 2) thaphra32 = 3;
+                    if(thaphra33 == 2) thaphra33 = 3;
+                }
+            }
+            if(strcmp(tempShortCode,"BL33") == 0 && thaphra02 == 3){
+                delLastEnteredLine();
+                delLastEnteredLine();
+                printf(ANSI_COLOR_BLUE"[%s] ", "BL02");
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", "Charan 13");
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
+                printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
+                printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            }
+            if(strcmp(tempShortCode,"BL32") == 0 && thaphra02 == 3){
+                delLastEnteredLine();
+                delLastEnteredLine();
+                printf(ANSI_COLOR_BLUE"[%s] ", "BL02");
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", "Charan 13");
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
+                printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
+                printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            }
+            if(strcmp(tempShortCode,"BL02") == 0 && (thaphra33 == 3 || thaphra32 == 3)){
+                delLastEnteredLine();
+                delLastEnteredLine();
+                if(thaphra33 == 3){
+                    printf(ANSI_COLOR_BLUE"[%s] ", "BL33");
+                    printf(ANSI_COLOR_LIGHT_WHITE "%s", "Bang Phai");
+                    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                }else if(thaphra32 == 3){
+                    printf(ANSI_COLOR_BLUE"[%s] ", "BL32");
+                    printf(ANSI_COLOR_LIGHT_WHITE "%s", "Itsaraphap");
+                    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                }
+                printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
+                printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
+                printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            }
             break;
         case 1://ARL
             printf(ANSI_COLOR_RED"[%s] ", tempShortCode);
