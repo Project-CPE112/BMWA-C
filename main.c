@@ -197,14 +197,15 @@ void firstPanel(){
                         routeList[realTotal].visitedRoute = strdup(routes[i]);
                         realTotal++;
                     }
-                    free(routes[i]);
                 }
 
+                int oldTotal = foundRoutesCount;
                 foundRoutesCount = realTotal;
 			    
                 sortRoutes(routeList, foundRoutesCount);
                 clearScreen();
 			    DisplayRoutes(stations,routeList,foundRoutesCount,numStations, priceTable, start, end);
+                // for (int i = 0; i < oldTotal; i++) free(routes[i]);
 			    free(routes); // Free the routes array
                 free(prices);
 			} else {

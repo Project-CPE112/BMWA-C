@@ -246,8 +246,19 @@ int countSubString(const char *str, const char *substr){
     return count;
 }
 
+void replaceSubstring(char *str, const char *search, const char *replace) {
+    char *pos = strstr(str, search);
+    if (pos != NULL) {
+        int searchLen = strlen(search);
+        int replaceLen = strlen(replace);
+        memmove(pos + replaceLen, pos + searchLen, strlen(pos + searchLen) + 1);
+        memcpy(pos, replace, replaceLen);
+        replaceSubstring(str + replaceLen, search, replace);
+    }
+}
+
 void detectSpecialCases(char* route) {
-    // Bang Sue Interchange
+    // Bang Sue 3-Ways Interchange
     if (strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01")) {
         char* subIndex = strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01");
         memmove(subIndex + 10, subIndex + 27, strlen(subIndex + 27) + 1);
@@ -292,6 +303,35 @@ void detectSpecialCases(char* route) {
         char* subIndex = strstr(route, "BTSSIL_CEN,INT,BTSSUK_CEN");
         *(subIndex + 13) = '0';
     }
+
+    // BL01 Tha Phra Interchange
+    char seed[] = ",MRTBL_BL01,IN0";
+    if (strstr(route, "MRTBL_BL33,MRTBL_BL01,MRTBL_BL02")) {
+        // char* subIndex = strstr(route, "MRTBL_BL33,MRTBL_BL01,MRTBL_BL02");
+        // memmove(subIndex + strlen(seed) + 10, subIndex + 10, strlen(subIndex + 10) + 1);
+        // for (int i = 0; i < strlen(seed); i++) *(subIndex + 10 + i) = seed[i];
+    }
+    else if (strstr(route, "MRTBL_BL32,MRTBL_BL01,MRTBL_BL02")) {
+        // char* subIndex = strstr(route, "MRTBL_BL32,MRTBL_BL01,MRTBL_BL02");
+        // memmove(subIndex + strlen(seed) + 10, subIndex + 10, strlen(subIndex + 10) + 1);
+        // for (int i = 0; i < strlen(seed); i++) *(subIndex + 10 + i) = seed[i];
+    }
+    else if (strstr(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL33")) {
+        // char* subIndex = strstr(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL33");
+        // memmove(subIndex + strlen(seed) + 10, subIndex + 10, strlen(subIndex + 10) + 1);
+        // for (int i = 0; i < strlen(seed); i++) *(subIndex + 10 + i) = seed[i];
+    }
+    else if (strstr(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL32")) {
+        // char* subIndex = strstr(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL32");
+        // memmove(subIndex + strlen(seed) + 10, subIndex + 10, strlen(subIndex + 10) + 1);
+        // for (int i = 0; i < strlen(seed); i++) *(subIndex + 10 + i) = seed[i];
+    }
+
+    replaceSubstring(route, "MRTBL_BL33,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL02");
+    replaceSubstring(route, "MRTBL_BL32,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL02");
+    replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL32");
+    replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL33");
+
 }
 
 

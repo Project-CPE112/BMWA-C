@@ -27,7 +27,7 @@ obj:
 	@mkdir -p obj
 
 app: $(OBJS) $(MAIN_OBJ)
-	@$(CC) $(CFLAGS) $^ $(LDFLAGS) -o "Bangkok Metro"
+	@$(CC) $(CFLAGS) $^ $(LDFLAGS) -o "BangkokMetro"
 
 main.o: main.c
 	@$(CC) $(CFLAGS) -c $< -o $@
@@ -35,7 +35,7 @@ main.o: main.c
 .PHONY: run clean
 
 run: app
-	@./Bangkok\ Metro
+	@./BangkokMetro
 
 clean:
-	@rm -rf obj/*.o obj "Bangkok Metro" main.o
+	@rm -rf obj/*.o obj "BangkokMetro" main.o

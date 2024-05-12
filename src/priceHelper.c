@@ -50,6 +50,7 @@ int* calculateRoutesPrice(pricePair* priceTable, char** routes, int routesCount)
         if (latestInter != NULL) routesPrice[i] += calculatePriceBetweenStation(priceTable, latestInter, prevStation);
         else routesPrice[i] += calculatePriceBetweenStation(priceTable, startStation, prevStation);
     }
+    printf("%d\n", routesPrice[0]);
     return routesPrice;
 }
 
