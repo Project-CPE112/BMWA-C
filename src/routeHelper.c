@@ -94,6 +94,11 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
     int thaphra33 = 0;
     int thaphra32 = 0;
     int thaphra02 = 0;
+    int thaphraint = 0;
+    if(strstr(routes,"MRTBL_BL32,MRTBL_BL01,MRTBL_BL02")) thaphraint = 1;
+    else if(strstr(routes,"MRTBL_BL33,MRTBL_BL01,MRTBL_BL02")) thaphraint = 1;
+    else if(strstr(routes,"MRTBL_BL02,MRTBL_BL01,MRTBL_BL32")) thaphraint = 1;
+    else if(strstr(routes,"MRTBL_BL02,MRTBL_BL01,MRTBL_BL33")) thaphraint = 1;
     while(token != NULL){
         int index = findColour(token);
         char *temp = CodeToName(token,stations,numStations);
@@ -112,6 +117,8 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
         }
         switch (index){
         case 0://MRTBL
+            if(thaphraint == 1){
+            //start of code that need 4 indent space
             if(strcmp(tempShortCode,"BL33") == 0) thaphra33 = 1;
             else if(strcmp(tempShortCode,"BL32") == 0) thaphra32 = 1;
             else if(strcmp(tempShortCode,"BL02") == 0) thaphra02 = 1;
@@ -196,6 +203,12 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
                 printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
                 printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
                 printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
+                printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
+                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            }
+            //end of code that need 4 indent space
+            }else{
                 printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
                 printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
                 printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
