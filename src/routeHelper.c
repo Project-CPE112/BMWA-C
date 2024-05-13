@@ -95,10 +95,10 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
     int thaphra32 = 0;
     int thaphra02 = 0;
     int thaphraint = 0;
-    if(strstr(routes,"MRTBL_BL32,MRTBL_BL01,MRTBL_BL02")) thaphraint = 1;
-    else if(strstr(routes,"MRTBL_BL33,MRTBL_BL01,MRTBL_BL02")) thaphraint = 1;
-    else if(strstr(routes,"MRTBL_BL02,MRTBL_BL01,MRTBL_BL32")) thaphraint = 1;
-    else if(strstr(routes,"MRTBL_BL02,MRTBL_BL01,MRTBL_BL33")) thaphraint = 1;
+    if(strstr(routes,"MRTBL_BL32,MRTBL_BL01,MRTBL_BL02") != NULL) thaphraint = 1;
+    else if(strstr(routes,"MRTBL_BL33,MRTBL_BL01,MRTBL_BL02") != NULL) thaphraint = 1;
+    else if(strstr(routes,"MRTBL_BL02,MRTBL_BL01,MRTBL_BL32") != NULL) thaphraint = 1;
+    else if(strstr(routes,"MRTBL_BL02,MRTBL_BL01,MRTBL_BL33") != NULL) thaphraint = 1;
     while(token != NULL){
         int index = findColour(token);
         char *temp = CodeToName(token,stations,numStations);
