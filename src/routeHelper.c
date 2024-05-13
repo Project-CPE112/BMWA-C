@@ -11,12 +11,10 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes,
     while(!end) {
         printSplitedLine();
         printf(ANSI_COLOR_LIGHT_WHITE "Found" ANSI_STYLE_BOLD ANSI_COLOR_GOLD " %d " ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE "routes for\n" ANSI_RESET_ALL, Countroutes);
-        printf(ANSI_COLOR_LIGHT_WHITE "Departure station: " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s\n" ANSI_RESET_ALL, 
-               CodeToShortCode(startStaCode, stations, numStations), 
-               CodeToName(startStaCode, stations, numStations));
-        printf(ANSI_COLOR_LIGHT_WHITE "Destination station: " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s\n" ANSI_RESET_ALL, 
-               CodeToShortCode(endStaCode, stations, numStations), 
-               CodeToName(endStaCode, stations, numStations));
+        printf(ANSI_COLOR_LIGHT_WHITE "Departure station: ");
+        printStationText(startStaCode, stations, numStations, 1);
+        printf(ANSI_COLOR_LIGHT_WHITE "Destination station: ");
+        printStationText(endStaCode, stations, numStations, 1);
         printSplitedLine();
         printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " [%s] " ANSI_COLOR_LIGHT_WHITE "To go up | " ANSI_COLOR_GOLD "[%s] " ANSI_COLOR_LIGHT_WHITE "To go down\n", ARROW_UP_UTF8, ARROW_DOWN_UTF8);
         printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " Enter " ANSI_COLOR_LIGHT_WHITE "To choose\n");
