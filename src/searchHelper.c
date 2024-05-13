@@ -89,16 +89,13 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
             printf(ANSI_COLOR_LIGHT_WHITE "Press" ANSI_COLOR_GOLD " ESC " ANSI_COLOR_LIGHT_WHITE "To go back\n");
             printSplitedLine();
             for(int i = startPoint; i < endPoint;i++){
-                char *asciiArrow = ARROW_UTF8_NULL;
-                if(i == selector) asciiArrow = ARROW_UTF8;
-                if(i == selector)
-                    printf(ANSI_COLOR_GOLD "%s" ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN " [%s] " ANSI_COLOR_LIGHT_YELLOW "%s\n" ANSI_RESET_ALL,
-                        asciiArrow,
-                        station[foundStation[i]].shortCode, station[foundStation[i]].name);
-                else
-                    printf(ANSI_COLOR_GOLD "%s" ANSI_COLOR_LIGHT_CYAN " [%s] " ANSI_COLOR_LIGHT_YELLOW "%s\n" ANSI_RESET_ALL,
-                        asciiArrow,
-                        station[foundStation[i]].shortCode, station[foundStation[i]].name);
+                if(i == selector){
+                    printf(ANSI_COLOR_GOLD "%s ", ARROW_UTF8);
+                    printStationText(station[foundStation[i]].fullCode, station, numStations, 1);
+                }else{
+                    printf(ANSI_COLOR_GOLD "%s ", ARROW_UTF8_NULL);
+                    printStationText(station[foundStation[i]].fullCode, station, numStations, 0);
+                }
             }
             printSplitedLine();
             int trueCodeSkip = 0; //check press enter or up arrow or down arrow

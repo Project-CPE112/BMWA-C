@@ -100,8 +100,9 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
     //else if(strstr(routes,"MRTBL_BL02,MRTBL_BL01,MRTBL_BL32") != NULL) thaphraint = 1;
     //else if(strstr(routes,"MRTBL_BL02,MRTBL_BL01,MRTBL_BL33") != NULL) thaphraint = 1;
     while(token != NULL){
-        int index = findColour(token);
+        int index = 0;
         char *temp = CodeToName(token,stations,numStations);
+        char *tempFullCode = strdup(token);
         char *tempShortCode = CodeToShortCode(token,stations,numStations);
         int length;
         if(strcmp(token,"INT") == 0) index = 10; 
@@ -116,193 +117,94 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
             count = 0;
         }
         switch (index){
-        case 0://MRTBL
-            if(strcmp(token,"MRTBL_BL0X") == 0){
-                printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
-                printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
-                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            case 0://MRTBL
+                if(strcmp(tempFullCode,"MRTBL_BL0X") == 0){
+                    printStationText("MRTBL_BL01", stations, numStations, 0);
+                    printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
+                    printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
+                    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
+                    printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                    printStationText("MRTBL_BL01", stations, numStations, 0);
+                    printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                }else{
+                    printStationText(tempFullCode, stations, numStations, 0);
+                    printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                }
+                break;
+            // case 1://ARL
+            // printStationText(tempFullCode, station, numStations, 0);
+            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            //     break;
+            // case 2://BTSSIL
+            //     printStationText(tempFullCode, station, numStations, 0);
+            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            //     break;
+            // case 3://BTSSUK
+            //     printStationText(tempFullCode, station, numStations, 0);
+            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            //     break;
+            // case 4://BTSGL
+            //     printStationText(tempFullCode, station, numStations, 0);
+            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            //     break;
+            // case 5://MRTYL
+            //     printStationText(tempFullCode, station, numStations, 0);
+            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            //     break;
+            // case 6://MRTPL
+            //     printStationText(tempFullCode, station, numStations, 0);
+            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            //     break;
+            // case 7://MRTPK
+            //     printStationText(tempFullCode, station, numStations, 0);
+            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            //     break;
+            // case 8://SRTETLR
+            //     printStationText(tempFullCode, station, numStations, 0);
+            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            //     break;
+            // case 9://SRTETDR
+            //     printStationText(tempFullCode, station, numStations, 0);
+            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+            //     break;
+            case 10://INT
+                printf(ANSI_COLOR_LIGHT_WHITE "Fare: %d\n", calculatePriceBetweenStation(priceTable, startStation, latestStation));
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
+                printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION \n");
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
+                printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                break;
+            case 11://IN0 (Interchange without fare)
                 printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
                 printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
                 printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
                 printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-                printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
-                printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
-                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //if(thaphraint == 1){
-            ////start of code that need 4 indent space
-            //if(strcmp(tempShortCode,"BL33") == 0) thaphra33 = 1;
-            //else if(strcmp(tempShortCode,"BL32") == 0) thaphra32 = 1;
-            //else if(strcmp(tempShortCode,"BL02") == 0) thaphra02 = 1;
-            //else if(strcmp(tempShortCode,"BL01") == 0){
-
-            //}else{
-            //    printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //}
-            //if(strcmp(tempShortCode,"BL01") == 0){
-            //    if(thaphra02 == 1) thaphra02 = 2;
-            //    if(thaphra32 == 1) thaphra32 = 2;
-            //    if(thaphra33 == 1) thaphra33 = 2;
-            //}else{
-            //    if(strcmp(tempShortCode,"BL33") == 0 && (thaphra02 == 2)) thaphra02 = 3;
-            //    if(strcmp(tempShortCode,"BL32") == 0 && (thaphra02 == 2)) thaphra02 = 3;
-            //    if(strcmp(tempShortCode,"BL02") == 0 && (thaphra33 == 2 || thaphra32 == 2)){
-            //        if(thaphra32 == 2) thaphra32 = 3;
-            //        if(thaphra33 == 2) thaphra33 = 3;
-            //    }
-            //}
-            //if(strcmp(tempShortCode,"BL33") == 0 && thaphra02 == 3){
-            //    delLastEnteredLine();
-            //    delLastEnteredLine();
-            //    printf(ANSI_COLOR_BLUE"[%s] ", "BL02");
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", "Charan 13");
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-            //    printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
-            //    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-            //    printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //}
-            //if(strcmp(tempShortCode,"BL32") == 0 && thaphra02 == 3){
-            //    delLastEnteredLine();
-            //    delLastEnteredLine();
-            //    printf(ANSI_COLOR_BLUE"[%s] ", "BL02");
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", "Charan 13");
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-            //    printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
-            //    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-            //    printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //}
-            //if(strcmp(tempShortCode,"BL02") == 0 && (thaphra33 == 3 || thaphra32 == 3)){
-            //    delLastEnteredLine();
-            //    delLastEnteredLine();
-            //    if(thaphra33 == 3){
-            //        printf(ANSI_COLOR_BLUE"[%s] ", "BL33");
-            //        printf(ANSI_COLOR_LIGHT_WHITE "%s", "Bang Phai");
-            //        printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    }else if(thaphra32 == 3){
-            //        printf(ANSI_COLOR_BLUE"[%s] ", "BL32");
-            //        printf(ANSI_COLOR_LIGHT_WHITE "%s", "Itsaraphap");
-            //        printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    }
-            //    printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-            //    printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
-            //    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-            //    printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    printf(ANSI_COLOR_BLUE"[%s] ", "BL01");
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", "Tha Phra");
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //    printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
-            //    printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            //    printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //}
-            //end of code that need 4 indent space
-            }else{
-                printf(ANSI_COLOR_BLUE"[%s] ", tempShortCode);
-                printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-                printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            }
-            break;
-        case 1://ARL
-            printf(ANSI_COLOR_RED"[%s] ", tempShortCode);
-            printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            break;
-        case 2://BTSSIL
-            printf(ANSI_COLOR_GREEN"[%s] ", tempShortCode);
-            printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            break;
-        case 3://BTSSUK
-            printf(ANSI_COLOR_LIGHT_GREEN"[%s] ", tempShortCode);
-            printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            break;
-        case 4://BTSGL
-            printf(ANSI_COLOR_GOLD"[%s] ", tempShortCode);
-            printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            break;
-        case 5://MRTYL
-            printf(ANSI_COLOR_LIGHT_YELLOW"[%s] ", tempShortCode);
-            printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            break;
-        case 6://MRTPL
-            printf(ANSI_COLOR_LIGHT_MAGENTA"[%s] ", tempShortCode);
-            printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            break;
-        case 7://MRTPK
-            printf(ANSI_COLOR_PINK"[%s] ", tempShortCode);
-            printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            break;
-        case 8://SRTETLR
-            printf(ANSI_COLOR_LIGHT_RED"[%s] ", tempShortCode);
-            printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            break;
-        case 9://SRTETDR
-            printf(ANSI_COLOR_RED"[%s] ", tempShortCode);
-            printf(ANSI_COLOR_LIGHT_WHITE "%s", temp);
-            printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            break;
-        case 10://INT
-            printf(ANSI_COLOR_LIGHT_WHITE "Fare: %d\n", calculatePriceBetweenStation(priceTable, startStation, latestStation));
-            printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
-            printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION \n");
-            printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
-            printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            break;
-        case 11://IN0 (Interchange without fare)
-            printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-            printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
-            printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-            printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            break;
-        default:
-            break;
+                break;
+            default:
+                break;
         }
+        free(temp);
+        free(tempFullCode);
+        free(tempShortCode);
         token = strtok(NULL,",");
     }
     delLastEnteredLine();
     printf(ANSI_COLOR_LIGHT_WHITE "Fare: %d\n\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
     printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD "Total Fare: " ANSI_COLOR_GOLD "฿%d\n" ANSI_RESET_ALL, routeFare);
-
+    free(startStation);
+    free(latestStation);
     enterAnyKeyToGoBack();
     clearScreen();
 }
 
-int findColour(char *station){
-    char stationName[][10] = {"MRTBL","ARL","BTSSIL","BTSSUK","BTSGL","MRTYL","MRTPL","MRTPK","SRTETLR","SRTETDR"};
-    int i;
-    for(i=0;i<=9;i++){
-        char* status = strstr(station,stationName[i]);
-        if(status){
-            return i;
-        }
-    }
-}
+// int findColour(char *station){
+//     char stationName[][10] = {"MRTBL","ARL","BTSSIL","BTSSUK","BTSGL","MRTYL","MRTPL","MRTPK","SRTETLR","SRTETDR"};
+//     int i;
+//     for(i=0;i<=9;i++){
+//         char* status = strstr(station,stationName[i]);
+//         if(status){
+//             return i;
+//         }
+//     }
+// }

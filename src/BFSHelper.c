@@ -262,52 +262,36 @@ void detectSpecialCases(char* route) {
     if (strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01")) {
         char* subIndex = strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01");
         memmove(subIndex + 10, subIndex + 27, strlen(subIndex + 27) + 1);
-    }
-    else if (strstr(route, "MRTBL_BL11,INT,SRTETDR_RN01,INT,SRTETLR_RW01")) {
+    }else if (strstr(route, "MRTBL_BL11,INT,SRTETDR_RN01,INT,SRTETLR_RW01")) {
         char* subIndex = strstr(route, "MRTBL_BL11,INT,SRTETDR_RN01,INT,SRTETLR_RW01");
         memmove(subIndex + 10, subIndex + 27, strlen(subIndex + 27) + 1);
-    }
-    else if (strstr(route, "SRTETLR_RW01,INT,MRTBL_BL11,INT,SRTETDR_RN01")) {
+    }else if (strstr(route, "SRTETLR_RW01,INT,MRTBL_BL11,INT,SRTETDR_RN01")) {
         char* subIndex = strstr(route, "SRTETLR_RW01,INT,MRTBL_BL11,INT,SRTETDR_RN01");
         memmove(subIndex + 12, subIndex + 27, strlen(subIndex + 27) + 1);
         *(subIndex + 15) = '0';
-    }
-    else if (strstr(route, "SRTETLR_RW01,INT,SRTETDR_RN01,INT,MRTBL_BL11")) {
+    }else if (strstr(route, "SRTETLR_RW01,INT,SRTETDR_RN01,INT,MRTBL_BL11")) {
         char* subIndex = strstr(route, "SRTETLR_RW01,INT,SRTETDR_RN01,INT,MRTBL_BL11");
         memmove(subIndex + 12, subIndex + 29, strlen(subIndex + 29) + 1);
-    }
-    else if (strstr(route, "SRTETDR_RN01,INT,MRTBL_BL11,INT,SRTETLR_RW01")) {
+    }else if (strstr(route, "SRTETDR_RN01,INT,MRTBL_BL11,INT,SRTETLR_RW01")) {
         char* subIndex = strstr(route, "SRTETDR_RN01,INT,MRTBL_BL11,INT,SRTETLR_RW01");
         memmove(subIndex + 12, subIndex + 27, strlen(subIndex + 27) + 1);
         *(subIndex + 15) = '0';
-    }
-    else if (strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01,INT,MRTBL_BL11")) {
+    }else if (strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01,INT,MRTBL_BL11")) {
         char* subIndex = strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01,INT,MRTBL_BL11");
         memmove(subIndex + 12, subIndex + 29, strlen(subIndex + 29) + 1);
     }
-    else if (strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01")) {
-        char* subIndex = strstr(route, "SRTETDR_RN01,INT,SRTETLR_RW01");
-        *(subIndex + 15) = '0';
-    }
-    else if (strstr(route, "SRTETLR_RW01,INT,SRTETDR_RN01")) {
-        char* subIndex = strstr(route, "SRTETLR_RW01,INT,SRTETDR_RN01");
-        *(subIndex + 15) = '0';
-    }
 
-    // Siam CEN interchange
-    if (strstr(route, "BTSSUK_CEN,INT,BTSSIL_CEN")) {
-        char* subIndex = strstr(route, "BTSSUK_CEN,INT,BTSSIL_CEN");
-        *(subIndex + 13) = '0';
-    }
-    else if (strstr(route, "BTSSIL_CEN,INT,BTSSUK_CEN")) {
-        char* subIndex = strstr(route, "BTSSIL_CEN,INT,BTSSUK_CEN");
-        *(subIndex + 13) = '0';
-    }
+    replaceSubstring(route, "SRTETDR_RN01,INT,SRTETLR_RW01", "SRTETDR_RN01,IN0,SRTETLR_RW01");
+    replaceSubstring(route, "SRTETLR_RW01,INT,SRTETDR_RN01", "SRTETLR_RW01,IN0,SRTETDR_RN01");
+
+    replaceSubstring(route, "BTSSUK_CEN,INT,BTSSIL_CEN", "BTSSUK_CEN,IN0,BTSSIL_CEN");
+    replaceSubstring(route, "BTSSIL_CEN,INT,BTSSUK_CEN", "BTSSIL_CEN,IN0,BTSSUK_CEN");
 
     replaceSubstring(route, "MRTBL_BL33,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL0X,MRTBL_BL02");
     replaceSubstring(route, "MRTBL_BL32,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL32,MRTBL_BL0X,MRTBL_BL02");
     replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL33", "MRTBL_BL02,MRTBL_BL0X,MRTBL_BL33");
     replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL32", "MRTBL_BL02,MRTBL_BL0X,MRTBL_BL32");
+
     replaceSubstring(route, "MRTBL_BL10,INT,MRTPL_PP16", "MRTBL_BL10,IN0,MRTPL_PP16");
     replaceSubstring(route, "MRTPL_PP16,INT,MRTBL_BL10", "MRTPL_PP16,IN0,MRTBL_BL10");
 

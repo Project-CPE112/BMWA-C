@@ -105,7 +105,6 @@ void firstPanel(){
                 firstPanel();
             }
             char show[5] = "SHOW";
-            char des[50], dep[50];
             int optionPass = 0;
             switch (choice) {
                 case 1: {
@@ -113,16 +112,11 @@ void firstPanel(){
                     printf("Enter departure station: ");
                     findStationByName(stations, start, numStations,"Find Departure station\n", NULL);
                     
-                    strcpy(dep,CodeToName(start, stations, numStations));
 
-                    printf(ANSI_COLOR_LIGHT_WHITE "Departure station: " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s\n" ANSI_RESET_ALL, CodeToShortCode(start, stations, numStations), dep);
+                    printf(ANSI_COLOR_LIGHT_WHITE "Departure station: ");
+                    printStationText(start, stations, numStations, 1);
 
                     findStationByName(stations, end, numStations,"Find Destination station\n",show);
-
-                    strcpy(des,CodeToName(end, stations,numStations));
-
-                    // printf("Departure station : %s\n", dep);
-			        // printf("Destination station : %s\n", des);
                     break;
                 }
                 case 2: {
@@ -130,16 +124,10 @@ void firstPanel(){
                     printf("Enter destination station: ");
                     findStationByName(stations, end, numStations,"Find Destination station\n", NULL);
                     
-                    strcpy(des,CodeToName(end, stations, numStations));
-                    
-                    printf(ANSI_COLOR_LIGHT_WHITE "Destination station: " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s\n" ANSI_RESET_ALL, CodeToShortCode(end, stations, numStations), des);
+                    printf(ANSI_COLOR_LIGHT_WHITE "Destination station: ");
+                    printStationText(end, stations, numStations, 1);
 
                     findStationByName(stations, start, numStations, "Find Departure station\n", show);
-
-                    strcpy(dep,CodeToName(start, stations, numStations));
-
-                    // printf("Destination station : %s\n", des);
-                    // printf("Departure station : %s\n", dep);
                     break;
                 }
                 case 3: {
@@ -171,8 +159,10 @@ void firstPanel(){
                 break;
             }
             printf(ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN "Finding your routes...\n");
-            printf(ANSI_COLOR_LIGHT_WHITE "Departure station: " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s\n" ANSI_RESET_ALL, CodeToShortCode(start, stations, numStations), dep);
-            printf(ANSI_COLOR_LIGHT_WHITE "Destination station: " ANSI_COLOR_LIGHT_CYAN "[%s]" ANSI_COLOR_LIGHT_WHITE " %s\n" ANSI_RESET_ALL, CodeToShortCode(end, stations, numStations), des);
+            printf(ANSI_COLOR_LIGHT_WHITE "Departure station: ");
+            printStationText(start, stations, numStations, 1);
+            printf(ANSI_COLOR_LIGHT_WHITE "Destination station: ");
+            printStationText(end, stations, numStations, 1);
 			int foundRoutesCount;
 			char** routes = FindRoute(stations, start, end, 20, &foundRoutesCount);
             for (int i = 0; i < foundRoutesCount; i++) {
