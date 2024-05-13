@@ -304,12 +304,12 @@ void detectSpecialCases(char* route) {
         *(subIndex + 13) = '0';
     }
 
-    // replaceSubstring(route, "MRTBL_BL33,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL02");
-    // replaceSubstring(route, "MRTBL_BL32,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL32,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL02");
-    // replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL33", "MRTBL_BL02,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL33");
-    // replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL32", "MRTBL_BL02,MRTBL_BL01,IN0,MRTBL_BL01,MRTBL_BL32");
-    // replaceSubstring(route, "MRTBL_BL10,INT,MRTPL_PP16", "MRTBL_BL10,IN0,MRTPL_PP16");
-    // replaceSubstring(route, "MRTPL_PP16,INT,MRTBL_BL10", "MRTPL_PP16,IN0,MRTBL_BL10");
+    replaceSubstring(route, "MRTBL_BL33,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL33,MRTBL_BL0X,MRTBL_BL02");
+    replaceSubstring(route, "MRTBL_BL32,MRTBL_BL01,MRTBL_BL02", "MRTBL_BL32,MRTBL_BL0X,MRTBL_BL02");
+    replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL33", "MRTBL_BL02,MRTBL_BL0X,MRTBL_BL33");
+    replaceSubstring(route, "MRTBL_BL02,MRTBL_BL01,MRTBL_BL32", "MRTBL_BL02,MRTBL_BL0X,MRTBL_BL32");
+    replaceSubstring(route, "MRTBL_BL10,INT,MRTPL_PP16", "MRTBL_BL10,IN0,MRTPL_PP16");
+    replaceSubstring(route, "MRTPL_PP16,INT,MRTBL_BL10", "MRTPL_PP16,IN0,MRTBL_BL10");
 
 }
 
