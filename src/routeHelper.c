@@ -99,9 +99,9 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
     //else if(strstr(routes,"MRTBL_BL02,MRTBL_BL01,MRTBL_BL33") != NULL) thaphraint = 1;
     while(token != NULL){
         int index = 0;
-        char *temp = CodeToName(token,stations,numStations);
+        char *temp = strdup(CodeToName(token,stations,numStations));
         char *tempFullCode = strdup(token);
-        char *tempShortCode = CodeToShortCode(token,stations,numStations);
+        char *tempShortCode = strdup(CodeToShortCode(token,stations,numStations));
         int length;
         if(strcmp(token,"INT") == 0) index = 10; 
         else if(strcmp(token,"IN0") == 0) index = 11; 

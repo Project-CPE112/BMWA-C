@@ -174,8 +174,6 @@ char** FindRoute(Station graph[], char* startStation, char* endStation, int rout
     // Enqueue the start station
     enqueue(queue, startStation, "");
 
-    char* prevStation = NULL;
-
     // BFS loop
     while (queue->front != NULL && routesCount < routeCount) {
         // Dequeue a station and path
@@ -199,7 +197,6 @@ char** FindRoute(Station graph[], char* startStation, char* endStation, int rout
         } else {
             strcpy(updatedPath, currentStation);
         }
-        prevStation = strdup(currentStation);
 
         // Check if we reached the destination
         if (strcmp(currentStation, endStation) == 0) {
