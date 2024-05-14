@@ -20,7 +20,7 @@ void printHeader(int totalLine, int totalStation){
 	}
 	printf("%s \n", BOX_UpperRight);
 //	printf(" %s                                           %s \n", BOX_Vertical, BOX_Vertical);
-	printf(" %s " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "RotFaiFah Application" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE "                     %s \n", BOX_Vertical, BOX_Vertical);
+	printf(" %s " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "MOD METRO Application" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE "                     %s \n", BOX_Vertical, BOX_Vertical);
 //	printf(" %s                                           %s \n", BOX_Vertical, BOX_Vertical);
 	printf(" %s Current Date: " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "%s" ANSI_RESET_ALL ANSI_COLOR_LIGHT_WHITE "                  %s \n", BOX_Vertical, currentDate, BOX_Vertical);
 //	printf(" %s                                           %s \n", BOX_Vertical, BOX_Vertical);
