@@ -23,11 +23,11 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes, in
             char *asciiArrow = ARROW_UTF8_NULL;
             if(i == selector) asciiArrow = ARROW_UTF8;
             if(i == selector)
-                printf(ANSI_COLOR_GOLD "%s " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "[Routes #%d]" ANSI_RESET_ALL ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Fare: %d Baht]\n" ANSI_RESET_ALL,
+                printf(ANSI_COLOR_GOLD "%s " ANSI_STYLE_BOLD ANSI_COLOR_GOLD "[Routes #%d]" ANSI_RESET_ALL ANSI_STYLE_BOLD ANSI_COLOR_LIGHT_CYAN "[Total: " ANSI_COLOR_GOLD "%d " ANSI_COLOR_LIGHT_CYAN "Stations | Fare: " ANSI_COLOR_GOLD "%d " ANSI_COLOR_LIGHT_CYAN "Baht]\n" ANSI_RESET_ALL,
                 asciiArrow, i + 1,
                 routeList[i].visitedCount, routeList[i].price );
             else
-                printf(ANSI_COLOR_GOLD "%s " ANSI_COLOR_GOLD "[Routes #%d]" ANSI_RESET_ALL ANSI_COLOR_LIGHT_CYAN "[Total: %d Stations | Fare: %d Baht]\n" ANSI_RESET_ALL,
+                printf(ANSI_COLOR_GOLD "%s " ANSI_COLOR_GOLD "[Routes #%d]" ANSI_RESET_ALL ANSI_COLOR_LIGHT_CYAN "[Total: " ANSI_COLOR_GOLD "%d " ANSI_COLOR_LIGHT_CYAN "Stations | Fare: " ANSI_COLOR_GOLD "%d " ANSI_COLOR_LIGHT_CYAN "Baht]\n" ANSI_RESET_ALL,
                 asciiArrow, i + 1, 
                 routeList[i].visitedCount, routeList[i].price );
         }
