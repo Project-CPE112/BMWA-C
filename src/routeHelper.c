@@ -183,7 +183,6 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
         token = strtok(NULL,",");
     }
     delLastEnteredLine();
-    moveCursorUp(1);
     printf(ANSI_COLOR_LIGHT_WHITE "Fare:" ANSI_COLOR_GOLD " %d฿\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
     
     printSplitedLine();
