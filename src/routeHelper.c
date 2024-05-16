@@ -158,7 +158,7 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
             case 10://INT
                 passingAnInterchange = 1;
                 routeInterchange++;
-                printf(ANSI_COLOR_LIGHT_WHITE "Fare:" ANSI_COLOR_GOLD " %d฿\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
+                printf(ANSI_COLOR_LIGHT_WHITE "Fare:" ANSI_COLOR_GOLD " ฿%d\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
                 printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n"ANSI_RESET_ALL);
                 printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION \n"ANSI_RESET_ALL);
                 printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n"ANSI_RESET_ALL);
@@ -183,7 +183,7 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
         token = strtok(NULL,",");
     }
     delLastEnteredLine();
-    printf(ANSI_COLOR_LIGHT_WHITE "Fare:" ANSI_COLOR_GOLD " %d฿\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
+    printf(ANSI_COLOR_LIGHT_WHITE "Fare:" ANSI_COLOR_GOLD " ฿%d\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
     
     printSplitedLine();
     
