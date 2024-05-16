@@ -144,7 +144,8 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
                 }else{ //Normal case
                     char *staColor = printStationColorOnly(tempFullCode, stations, numStations);
                     if(passingAnInterchange) delLastLine();
-                    if(passingAnInterchange) moveCursorUp(1);
+                    // if(passingAnInterchange) moveCursorUp(1);
+                    // if(passingAnInterchange) moveCursorUp(1);
                     if(passingAnInterchange) printf(" %s%s ",staColor,ANSI_BLOCK);
                     if(passingAnInterchange) printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
                     printf(" %s%s ",staColor,ANSI_BLOCK);
