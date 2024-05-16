@@ -110,3 +110,29 @@ void printStationText(char *code, Station *stations, int numStations, int needBo
         }
     }
 }
+
+char *printStationColorOnly(char *code, Station *stations, int numStations) {
+    char lineName[][10] = {"BTSSUK", "MRTBL", "BTSSIL", "MRTPL", "ARL", 
+                            "BTSGL", "SRTETDR", "SRTETLR", "MRTYL", "MRTPK"};
+    int rColor[10] = {113, 49, 49, 104, 232, 204, 240, 217, 230, 226};
+    int gColor[10] = {176, 96, 93, 50, 86, 153, 24, 106, 230, 163};
+    int bColor[10] = {71, 158, 54, 121, 88, 51, 24, 106, 23, 193};
+    
+    char *poi = NULL; // Initialize poi to NULL
+    int print = 0;
+    
+    for (int i = 0; i < 10; i++) {
+        if (strstr(code, lineName[i]) != NULL) {
+            print = 1;
+            poi = generate_ansi_rgb_color(rColor[i], gColor[i], bColor[i]);
+            break; // Exit loop once a match is found
+        }
+    }
+    
+    if (!print) {
+        // If no match is found, return NULL
+        return NULL;
+    }
+    
+    return poi;
+}

@@ -8,3 +8,4 @@ void printMenu();
 void printError(char *msg);
 void printStationInfo(char *code, Station *stations, int numStations);
 void printStationText(char *code, Station *stations, int numStations, int needBold);
+char *printStationColorOnly(char *code, Station *stations, int numStations);

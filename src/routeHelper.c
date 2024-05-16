@@ -1,7 +1,6 @@
 #include "../include/rotfaifah.h"
 
-void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes, 
-                   int numStations, pricePair *priceTable, char *startStaCode, char *endStaCode){
+void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes, int numStations, pricePair *priceTable, char *startStaCode, char *endStaCode){
     int end = 0;
     int endToShow = 0;
     int startpoint = 0;
@@ -74,7 +73,9 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes,
         }
         if(endToShow == 1 && end == 0){
             clearScreen();
-            DisplaySelectedRoutes(stations,routeList[selector].visitedRoute, selector, routeList[selector].price, numStations, priceTable);
+            DisplaySelectedRoutes(stations,routeList[selector].visitedRoute, selector, 
+            routeList[selector].visitedCount, routeList[selector].price, startStaCode, endStaCode, 
+            numStations, priceTable);
             fflush(stdin);
             endToShow = 0;
             end = 0;
@@ -82,102 +83,95 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes,
     }
 }
 
-int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int routeFare, int numStations, pricePair *priceTable) {
-    printf(ANSI_COLOR_LIGHT_WHITE "Showing Routes " ANSI_COLOR_GOLD "#%d\n\n", routeNo + 1);
+int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int routeVisCount, 
+                          int routeFare, char *startSta, char *endSta, int numStations, 
+                          pricePair *priceTable) {
+    
+    printf(ANSI_COLOR_LIGHT_WHITE "Showing Routes " ANSI_COLOR_GOLD "#%d\n" ANSI_RESET_ALL, routeNo + 1);
+    printSplitedLine();
+    
     char *dupRoutes = strdup(routes);
     char *token = strtok(dupRoutes,",");
     char *startStation = NULL;
     char *latestStation = NULL;
+    
     int count = 0;
-    //int thaphra33 = 0;
-    //int thaphra32 = 0;
-    //int thaphra02 = 0;
-    //int thaphraint = 0;
-    //if(strstr(routes,"MRTBL_BL32,MRTBL_BL01,MRTBL_BL02") != NULL) thaphraint = 1;
-    //else if(strstr(routes,"MRTBL_BL33,MRTBL_BL01,MRTBL_BL02") != NULL) thaphraint = 1;
-    //else if(strstr(routes,"MRTBL_BL02,MRTBL_BL01,MRTBL_BL32") != NULL) thaphraint = 1;
-    //else if(strstr(routes,"MRTBL_BL02,MRTBL_BL01,MRTBL_BL33") != NULL) thaphraint = 1;
+    int passingAnInterchange = 0;
+    int routeInterchange = 0;
+    
     while(token != NULL){
         int index = 0;
+        int length;
+        int isToBeBold = 0;
+        int isIntr = 0;
+        
         char *temp = strdup(CodeToName(token,stations,numStations));
         char *tempFullCode = strdup(token);
         char *tempShortCode = strdup(CodeToShortCode(token,stations,numStations));
-        int length;
+        
         if(strcmp(token,"INT") == 0) index = 10; 
         else if(strcmp(token,"IN0") == 0) index = 11; 
+        
         if(index != 10){
             if(count == 0){
                 startStation = strdup(token);
+                isToBeBold = 1;
             }
             latestStation = strdup(token);
             count++; 
         }else{
             count = 0;
         }
+        
         switch (index){
-            case 0://MRTBL
-                if(strcmp(tempFullCode,"MRTBL_BL0X") == 0){
+            case 0:
+                if(strcmp(tempFullCode,"MRTBL_BL0X") == 0){ //MRTBL_BL0X : Interchange without fare Special
+                    char *staColor = printStationColorOnly("MRTBL_BL01", stations, numStations);
+                    printf(" %s%s ",staColor,ANSI_BLOCK);
                     printStationText("MRTBL_BL01", stations, numStations, 0);
+                    printf(" %s%s ",staColor,ANSI_BLOCK);
+                    routeInterchange++;
                     printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-                    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-                    printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
-                    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
+                    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n" ANSI_RESET_ALL);
+                    printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n" ANSI_RESET_ALL);
+                    printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n" ANSI_RESET_ALL);
+                    printf(" %s%s ",staColor,ANSI_BLOCK);
                     printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-                    printStationText("MRTBL_BL01", stations, numStations, 0);
+                    printf(" %s%s ",staColor,ANSI_BLOCK);
+                    printStationText("MRTBL_BL01", stations, numStations, 1);
+                    printf(" %s%s ",staColor,ANSI_BLOCK);
                     printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-                }else{
-                    printStationText(tempFullCode, stations, numStations, 0);
+                }else{ //Normal case
+                    char *staColor = printStationColorOnly(tempFullCode, stations, numStations);
+                    if(passingAnInterchange) delLastLine();
+                    if(passingAnInterchange) moveCursorUp(1);
+                    if(passingAnInterchange) printf(" %s%s ",staColor,ANSI_BLOCK);
+                    if(passingAnInterchange) printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                    printf(" %s%s ",staColor,ANSI_BLOCK);
+                    printStationText(tempFullCode, stations, numStations, isToBeBold);
+                    printf(" %s%s ",staColor,ANSI_BLOCK);
                     printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                    passingAnInterchange = 0;
                 }
                 break;
-            // case 1://ARL
-            // printStationText(tempFullCode, station, numStations, 0);
-            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //     break;
-            // case 2://BTSSIL
-            //     printStationText(tempFullCode, station, numStations, 0);
-            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //     break;
-            // case 3://BTSSUK
-            //     printStationText(tempFullCode, station, numStations, 0);
-            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //     break;
-            // case 4://BTSGL
-            //     printStationText(tempFullCode, station, numStations, 0);
-            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //     break;
-            // case 5://MRTYL
-            //     printStationText(tempFullCode, station, numStations, 0);
-            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //     break;
-            // case 6://MRTPL
-            //     printStationText(tempFullCode, station, numStations, 0);
-            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //     break;
-            // case 7://MRTPK
-            //     printStationText(tempFullCode, station, numStations, 0);
-            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //     break;
-            // case 8://SRTETLR
-            //     printStationText(tempFullCode, station, numStations, 0);
-            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //     break;
-            // case 9://SRTETDR
-            //     printStationText(tempFullCode, station, numStations, 0);
-            //     printf(ANSI_COLOR_LIGHT_WHITE"\n  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
-            //     break;
             case 10://INT
-                printf(ANSI_COLOR_LIGHT_WHITE "Fare: %d\n", calculatePriceBetweenStation(priceTable, startStation, latestStation));
-                printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
-                printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION \n");
-                printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n");
-                printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                passingAnInterchange = 1;
+                routeInterchange++;
+                printf(ANSI_COLOR_LIGHT_WHITE "Fare:" ANSI_COLOR_GOLD " %d฿\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n"ANSI_RESET_ALL);
+                printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION \n"ANSI_RESET_ALL);
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------\n"ANSI_RESET_ALL);
+                printf("%s ",ANSI_BLOCK);
+                printf(ANSI_COLOR_LIGHT_WHITE"  %s  " ANSI_RESET_ALL, ARROW_DOWN_UTF8);
                 break;
             case 11://IN0 (Interchange without fare)
-                printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-                printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare) \n");
-                printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n");
-                printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
+                passingAnInterchange = 1;
+                routeInterchange++;
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n" ANSI_RESET_ALL);
+                printf(ANSI_COLOR_LIGHT_WHITE " INTERCHANGE STATION (No Fare)   \n" ANSI_RESET_ALL);
+                printf(ANSI_COLOR_LIGHT_WHITE "---------------------------------\n" ANSI_RESET_ALL);
+                printf("%s ",ANSI_BLOCK);
+                printf(ANSI_COLOR_LIGHT_WHITE"  %s  " ANSI_RESET_ALL, ARROW_DOWN_UTF8);
                 break;
             default:
                 break;
@@ -188,21 +182,25 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
         token = strtok(NULL,",");
     }
     delLastEnteredLine();
-    printf(ANSI_COLOR_LIGHT_WHITE "Fare: %d\n\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
-    printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD "Total Fare: " ANSI_COLOR_GOLD "฿%d\n" ANSI_RESET_ALL, routeFare);
+    moveCursorUp(1);
+    printf(ANSI_COLOR_LIGHT_WHITE "Fare:" ANSI_COLOR_GOLD " %d฿\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
+    
+    printSplitedLine();
+    
+    printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD "Route(" ANSI_COLOR_GOLD "#%d" ANSI_COLOR_LIGHT_WHITE ")\n"ANSI_RESET_ALL, routeNo + 1);
+    printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD " %s Departure station: " ANSI_RESET_ALL, ANSI_BULLET);
+    printStationText(startSta, stations, numStations, 0);
+    printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD " %s Destination station: " ANSI_RESET_ALL, ANSI_BULLET);
+    printStationText(endSta, stations, numStations, 0);
+    
+    printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD " %s Total Fare: " ANSI_COLOR_GOLD "฿%d\n" ANSI_RESET_ALL, ANSI_BULLET, routeFare);
+    printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD " %s Total Interchanged Station: " ANSI_COLOR_GOLD "%d Station(s)\n" ANSI_RESET_ALL, ANSI_BULLET, routeInterchange);
+    printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD " %s Total Passed Station: " ANSI_COLOR_GOLD "%d Station(s)\n" ANSI_RESET_ALL, ANSI_BULLET, routeVisCount);
+    
+    printSplitedLine();
+    
     free(startStation);
     free(latestStation);
     enterAnyKeyToGoBack();
     clearScreen();
 }
-
-// int findColour(char *station){
-//     char stationName[][10] = {"MRTBL","ARL","BTSSIL","BTSSUK","BTSGL","MRTYL","MRTPL","MRTPK","SRTETLR","SRTETDR"};
-//     int i;
-//     for(i=0;i<=9;i++){
-//         char* status = strstr(station,stationName[i]);
-//         if(status){
-//             return i;
-//         }
-//     }
-// }

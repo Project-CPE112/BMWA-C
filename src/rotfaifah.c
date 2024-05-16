@@ -80,6 +80,22 @@ void delLastEnteredLine(){
   	for(int i=0; i<100; i++) printf(" ");
   	for(int i=0; i<100; i++) printf("\b");
 }
+void delLastLine(){
+	// printf("%c[1A back", 033);
+  	for(int i=0; i<100; i++) printf("\b");
+  	for(int i=0; i<100; i++) printf(" ");
+  	for(int i=0; i<100; i++) printf("\b");
+}
+
+void moveCursorUp(int n) {
+    printf("\x1b[%dA", n);
+}
+
+// Function to move the cursor down 'n' lines
+void moveCursorDown(int n) {
+    printf("\x1b[%dB", n);
+}
+
 
 void TextShowUpDelay(char Text[], int _delay){
     int length = strlen(Text);
