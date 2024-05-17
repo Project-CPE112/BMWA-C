@@ -14,3 +14,5 @@ void detectSpecialCases(char* route);
 // Comparison function for qsort
 void sortRoutes(routesNode *routeList, int size);
 int compareRoutesNode(routesNode *routeA, routesNode *routeB);
+char *replace_substring(const char *str, const char *old_sub, const char *new_sub);
+void replaceSubstring(char *str, const char *search, const char *replace);

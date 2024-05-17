@@ -165,6 +165,7 @@ void firstPanel(){
             printStationText(end, stations, numStations, 1);
 			int foundRoutesCount;
 			char** routes = FindRoute(stations, start, end, 20, &foundRoutesCount);
+            int bangsueOverwriteRoutes[foundRoutesCount];
             for (int i = 0; i < foundRoutesCount; i++) {
                 detectSpecialCases(routes[i]);
             }
@@ -181,6 +182,7 @@ void firstPanel(){
                             break;
                         }
                     }
+
                     if (!duplicatePath){
                         routeList[realTotal].price = prices[i];
                         routeList[realTotal].visitedCount = count_string(routes[i], ",") + 1 - countSubString(routes[i], ",INT,") - countSubString(routes[i], ",IN0,");
@@ -189,14 +191,16 @@ void firstPanel(){
                     }
                     free(routes[i]);
                 }
-
+                // die();
                 int oldTotal = foundRoutesCount;
                 foundRoutesCount = realTotal;
 			    
                 sortRoutes(routeList, foundRoutesCount);
                 clearScreen();
 			    DisplayRoutes(stations,routeList,foundRoutesCount,numStations, priceTable, start, end);
-                // for (int i = 0; i < oldTotal; i++) free(routes[i]);
+                for (int i = 0; i < oldTotal; i++) free(routes[i]);
+                // int aea;
+                // scanf("%d",&aea);
 			    free(routes); // Free the routes array
                 free(prices);
 			} else {

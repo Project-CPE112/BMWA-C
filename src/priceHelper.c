@@ -56,6 +56,7 @@ int* calculateRoutesPrice(pricePair* priceTable, char** routes, int routesCount)
 
 int calculatePriceBetweenStation(pricePair* priceTable, char* srcStation, char* destStation){
     int priceBetweenStation = 0;
+    if(strcmp(srcStation, destStation) == 0) return priceBetweenStation;
     for (int j = 0; j < MAX_PRICE_TABLE_SIZE; j++) {
         if (((strcmp(destStation, priceTable[j].staCode1) == 0) && (strcmp(srcStation, priceTable[j].staCode2) == 0)) ||
         ((strcmp(destStation, priceTable[j].staCode2) == 0) && (strcmp(srcStation, priceTable[j].staCode1) == 0))) {

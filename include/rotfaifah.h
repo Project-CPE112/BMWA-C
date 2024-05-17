@@ -22,6 +22,9 @@
 void enterAnyKey();
 void enterAnyKeyToGoBack();
 void changeLocale();
+
+int stringStartsWith(const char *a, const char *b);
+
 void delay(int milli_seconds);
 void clearScreen(void);
 void getCurrentDate(char *dateStr, int size);

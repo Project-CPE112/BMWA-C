@@ -253,9 +253,55 @@ void replaceSubstring(char *str, const char *search, const char *replace) {
         replaceSubstring(str + replaceLen, search, replace);
     }
 }
+char *replace_substring(const char *str, const char *old_sub, const char *new_sub) {
+    // Edge case: Check if the old substring is empty
+    if (!old_sub || !*old_sub) {
+        return strdup(str);
+    }
+
+    const char *pos, *next_pos;
+    size_t old_len = strlen(old_sub);
+    size_t new_len = strlen(new_sub);
+    size_t count = 0;
+
+    // Count the number of times old_sub appears in str
+    pos = str;
+    while ((next_pos = strstr(pos, old_sub)) != NULL) {
+        count++;
+        pos = next_pos + old_len;
+    }
+
+    // Allocate memory for the new string
+    size_t new_str_len = strlen(str) + (new_len - old_len) * count + 1;
+    char *new_str = (char *)malloc(new_str_len);
+    if (!new_str) {
+        return NULL; // Memory allocation failed
+    }
+
+    // Replace occurrences of old_sub with new_sub
+    char *current_pos = new_str;
+    pos = str;
+    while ((next_pos = strstr(pos, old_sub)) != NULL) {
+        // Copy the part before the old_sub
+        size_t copy_len = next_pos - pos;
+        memcpy(current_pos, pos, copy_len);
+        current_pos += copy_len;
+
+        // Copy the new_sub in place of old_sub
+        memcpy(current_pos, new_sub, new_len);
+        current_pos += new_len;
+
+        // Move past the old_sub
+        pos = next_pos + old_len;
+    }
+
+    // Copy the remaining part of the original string
+    strcpy(current_pos, pos);
+
+    return new_str;
+}
 
 void detectSpecialCases(char* route) {
-    // Bang Sue 3-Ways Interchange
     if (strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01")) {
         char* subIndex = strstr(route, "MRTBL_BL11,INT,SRTETLR_RW01,INT,SRTETDR_RN01");
         memmove(subIndex + 10, subIndex + 27, strlen(subIndex + 27) + 1);
@@ -292,8 +338,37 @@ void detectSpecialCases(char* route) {
     replaceSubstring(route, "MRTBL_BL10,INT,MRTPL_PP16", "MRTBL_BL10,IN0,MRTPL_PP16");
     replaceSubstring(route, "MRTPL_PP16,INT,MRTBL_BL10", "MRTPL_PP16,IN0,MRTBL_BL10");
 
+    // char *bangsue101 = "MRTBL_BL11,INT,SRTETDR_RN01";
+    // char *bangsue102 = "MRTBL_BL11,INT,SRTETLR_RW01";
+    // char *bangsue103 = "SRTETDR_RN01,INT,MRTBL_BL11";
+    // char *bangsue104 = "SRTETLR_RW01,INT,MRTBL_BL11";
+    // char *bangsue105 = "SRTETDR_RN01,IN0,SRTETLR_RW01";
+    // char *bangsue106 = "SRTETLR_RW01,IN0,SRTETDR_RN01";
+    // if((stringStartsWith(route, bangsue101) == 1)) {
+    //     replaceSubstring(route, "MRTBL_BL11,INT,", "");
+    // }
+    // if((stringStartsWith(route, bangsue102) == 1)) {
+    //     replaceSubstring(route, "MRTBL_BL11,INT,", "");
+    // }
+    // if((stringStartsWith(route, bangsue103) == 1)) {
+    //     replaceSubstring(route, "SRTETDR_RN01,INT,", "");
+    // }
+    // if((stringStartsWith(route, bangsue104) == 1)) {
+    //     replaceSubstring(route, "SRTETLR_RW01,INT,", "");
+    // }
+    // if((stringStartsWith(route, bangsue105) == 1)) {
+    //     replaceSubstring(route, "SRTETDR_RN01,IN0,", "");
+    // }
+    // if((stringStartsWith(route, bangsue106) == 1)) {
+    //     replaceSubstring(route, "SRTETLR_RW01,IN0,", "");
+    // }
+    // printf("Check %s\n with %s.\nand the result is %d.\n",route, bangsue101, stringStartsWith(route, bangsue101));
+    // printf("Check %s\n with %s.\nand the result is %d.\n",route, bangsue102, stringStartsWith(route, bangsue102));
+    // printf("Check %s\n with %s.\nand the result is %d.\n",route, bangsue103, stringStartsWith(route, bangsue103));
+    // printf("Check %s\n with %s.\nand the result is %d.\n",route, bangsue104, stringStartsWith(route, bangsue104));
+    // printf("Check %s\n with %s.\nand the result is %d.\n",route, bangsue105, stringStartsWith(route, bangsue105));
+    // printf("Check %s\n with %s.\nand the result is %d.\n",route, bangsue106, stringStartsWith(route, bangsue106));
 }
-
 
 void sortRoutes(routesNode *routeList, int size) {
     for (int i = 0; i < size - 1; i++) {
