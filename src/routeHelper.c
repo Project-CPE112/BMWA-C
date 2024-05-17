@@ -42,7 +42,7 @@ void DisplayRoutes(Station *stations, routesNode *routeList, int Countroutes, in
                 case 72: // Up arrow
                     if(selector != 0) selector--;
                     trueCodeSkip = 1;
-                    if(selector == startpoint && startpoint != 0){
+                    if(selector == startpoint - 1 && startpoint != 0){
                         startpoint--;
                         endpoint--;
                     }

@@ -107,7 +107,7 @@ void findStationByName(Station *station, char *code, int numStations, char *titl
                     case 72: // Up arrow
                         if(selector != 0) selector--;
                         trueCodeSkip = 1;
-                        if(selector == startPoint && startPoint != 0){
+                        if(selector == startPoint - 1 && startPoint != 0){
                             startPoint--;
                             endPoint--;
                         }
