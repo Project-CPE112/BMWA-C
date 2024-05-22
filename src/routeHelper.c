@@ -143,10 +143,10 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
                     printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
                 }else{ //Normal case
                     char *staColor = printStationColorOnly(tempFullCode, stations, numStations);
-                    if(passingAnInterchange) delLastLine();
-                    if(passingAnInterchange) moveCursorUp(1);
+                    // if(passingAnInterchange) delLastLine();
                     // if(passingAnInterchange) moveCursorUp(1);
-                    if(passingAnInterchange) printf(" %s%s ",staColor,ANSI_BLOCK);
+                    // if(passingAnInterchange) moveCursorUp(1);
+                    if(passingAnInterchange) printf("\r %s%s ",staColor,ANSI_BLOCK);
                     if(passingAnInterchange) printf(ANSI_COLOR_LIGHT_WHITE"  %s  \n" ANSI_RESET_ALL, ARROW_DOWN_UTF8);
                     printf(" %s%s ",staColor,ANSI_BLOCK);
                     printStationText(tempFullCode, stations, numStations, isToBeBold);
@@ -189,10 +189,11 @@ int DisplaySelectedRoutes(Station *stations, char *routes, int routeNo, int rout
         free(tempShortCode);
         token = strtok(NULL,",");
     }
-    delLastEnteredLine();
+    // delLastEnteredLine();
     moveCursorUp(1);
     printf(ANSI_COLOR_LIGHT_WHITE "Fare:" ANSI_COLOR_GOLD " ฿%d\n" ANSI_RESET_ALL, calculatePriceBetweenStation(priceTable, startStation, latestStation));
-    moveCursorDown(1);
+    // moveCursorDown(2);
+    printf("\n");
     printSplitedLine();
     
     printf(ANSI_COLOR_LIGHT_WHITE ANSI_STYLE_BOLD "Route(" ANSI_COLOR_GOLD "#%d" ANSI_COLOR_LIGHT_WHITE ")\n"ANSI_RESET_ALL, routeNo + 1);

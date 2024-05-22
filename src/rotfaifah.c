@@ -93,12 +93,12 @@ void delLastLine(){
 }
 
 void moveCursorUp(int n) {
-    printf("\x1b[%dA", n);
+    printf("\033[%dA", n);
 }
 
 // Function to move the cursor down 'n' lines
 void moveCursorDown(int n) {
-    printf("\x1b[%dB", n);
+    printf("\033[%dB", n);
 }
 
 

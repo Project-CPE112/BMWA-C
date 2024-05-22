@@ -74,7 +74,7 @@ char* generate_ansi_rgb_bg_color(int r, int g, int b);
 #define ARROW_LEFT_UTF8               "\u2190"
 #define ARROW_RIGHT_UTF8              "\u2191"
 
-#define ANSI_BLOCK                    "\u258B"
+#define ANSI_BLOCK                    "||"
 #define ANSI_BULLET                   "\u2022"
 
 #define BOX_UpperLeft                 "\u2554"
